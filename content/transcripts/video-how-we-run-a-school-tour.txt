@@ -1,0 +1,14 @@
+[Transcript placeholder]
+
+Replace VIDEO_ID_REPLACE_ME and this transcript before indexing.
+
+If children appear in the video:
+- confirm parent consent, and set `video.consentConfirmed: true`
+- consider privacy (avoid full names, blur faces if needed)
+
+Suggested structure:
+00:00 Intro
+00:30 What we watch for
+02:10 Questions parents ask
+05:00 Commute and daily routine
+07:30 Next steps

@@ -1,0 +1,26 @@
+{
+  "partners": [
+    {
+      "slug": "example-visa-agent",
+      "name": "Example Visa Agent Bali",
+      "category": "Visas",
+      "status": "check",
+      "url": "https://example.com",
+      "bestFor": "Families who want fast communication and clear checklists.",
+      "languages": [
+        "English",
+        "Bahasa Indonesia"
+      ],
+      "areas": [
+        "Online",
+        "Bali"
+      ],
+      "services": [
+        "eVOA help",
+        "KITAS consultation",
+        "Document checklist"
+      ],
+      "note": "Placeholder partner. Mark as verified when agreements/tracking are in place."
+    }
+  ]
+}

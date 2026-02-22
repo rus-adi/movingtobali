@@ -1,0 +1,44 @@
+{
+  "name": "moving-to-bali-empathy-school",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "validate": "node scripts/validate-content.mjs",
+    "validate:strict": "node scripts/validate-content.mjs --strict",
+    "new:blog": "node scripts/new-content.mjs blog",
+    "new:guide": "node scripts/new-content.mjs guides",
+    "new:area": "node scripts/new-content.mjs areas",
+    "new:resource": "node scripts/new-content.mjs resources",
+    "new:video-post": "node scripts/new-video-post.mjs",
+    "audit:review": "node scripts/audit-review.mjs",
+    "audit:review:strict": "node scripts/audit-review.mjs --strict",
+    "new:daily-blog": "node scripts/new-daily-blog.mjs",
+    "suggest:links": "node scripts/suggest-links.mjs",
+    "check:links": "node scripts/check-links.mjs --all",
+    "check:official-links": "node scripts/check-links.mjs --official",
+    "check:official-links:write": "node scripts/check-links.mjs --official --write"
+  },
+  "dependencies": {
+    "next": "14.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "gray-matter": "^4.0.3",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "remark-gfm": "^4.0.0",
+    "unist-util-visit": "^5.0.0",
+    "github-slugger": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.0"
+  }
+}

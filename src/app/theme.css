@@ -1,0 +1,26 @@
+:root{
+  /*
+    Brand tokens for movingtobali.empathy.school
+
+    Goal: match the Empathy School palette (earthy neutrals + natural greens).
+    If you want an exact match, replace the hex codes below with the exact values used on empathy.school.
+  */
+
+  /* Core surfaces */
+  --bg: #fbf7f0;           /* warm sand */
+  --card: #ffffff;         /* paper */
+  --text: #1f2a24;         /* deep forest */
+  --muted: rgba(31,42,36,0.72);
+  --border: rgba(31,42,36,0.14);
+
+  /* Brand accents */
+  --accent: #2f6b4f;       /* natural green */
+  --accent2: #8fb996;      /* sage */
+  --danger: #c2412d;       /* terracotta */
+
+  /* UI */
+  --shadow: 0 12px 30px rgba(31,42,36,0.10);
+  --surface: rgba(31,42,36,0.04);
+  --surface2: rgba(31,42,36,0.06);
+  --field: rgba(255,255,255,0.95);
+}

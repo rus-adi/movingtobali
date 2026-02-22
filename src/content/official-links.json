@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Indonesia eVisa / e-VOA portal (official immigration site)",
+    "url": "https://evisa.imigrasi.go.id/",
+    "note": "Source-of-truth for e-VOA, eVisa, and related updates.",
+    "category": "Immigration",
+    "lastVerified": "2026-02-22",
+    "reviewCadenceDays": 30
+  },
+  {
+    "title": "All Indonesia Arrival Card (online arrival card service)",
+    "url": "https://allindonesia.imigrasi.go.id/",
+    "note": "If/when required, this is where arrival-card details should be confirmed.",
+    "category": "Arrival",
+    "lastVerified": "2026-02-22",
+    "reviewCadenceDays": 30
+  },
+  {
+    "title": "Bali tourist levy (Love Bali \u2013 official site)",
+    "url": "https://lovebali.baliprov.go.id/",
+    "note": "Official information for the Bali tourist levy.",
+    "category": "Tourist levy",
+    "lastVerified": "2026-02-22",
+    "reviewCadenceDays": 30
+  },
+  {
+    "title": "Empathy School \u2013 Move To Bali page",
+    "url": "https://empathy.school/move-to-bali/",
+    "note": "Empathy School\u2019s main moving-to-Bali page.",
+    "category": "Empathy School",
+    "lastVerified": "2026-02-22",
+    "reviewCadenceDays": 90
+  },
+  {
+    "title": "Empathy School \u2013 Our Partners page",
+    "url": "https://empathy.school/our-partners/",
+    "note": "Empathy School\u2019s partner page (reference).",
+    "category": "Empathy School",
+    "lastVerified": "2026-02-22",
+    "reviewCadenceDays": 90
+  },
+  {
+    "title": "Empathy School \u2013 Summer Camp page",
+    "url": "https://empathy.school/summer-camp-2025/",
+    "note": "Empathy School\u2019s camp page (reference).",
+    "category": "Empathy School",
+    "lastVerified": "2026-02-22",
+    "reviewCadenceDays": 90
+  }
+]
