@@ -6,6 +6,7 @@ import { asInt, paginate } from "@/lib/pagination";
 import { getAllContent } from "@/lib/content";
 import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema, buildBreadcrumbSchema } from "@/lib/schema";
 import { getSiteUrl } from "@/lib/site";
+import { badge, btnRow, buttonDisabled, buttonSecondary, cardCls } from "@/components/ui/styles";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -79,44 +80,52 @@ export default function FaqPage({ searchParams }: Props) {
   };
   if (faqSchema.mainEntity.length) schemas.push(faqSchema);
 
+  const prevHref = `/faq?${new URLSearchParams({ q: q || "", page: String(Math.max(1, page - 1)) }).toString()}`;
+  const nextHref = `/faq?${new URLSearchParams({ q: q || "", page: String(page + 1) }).toString()}`;
+
   return (
     <main>
       <JsonLd data={schemas} />
 
-      <section style={{ padding: "56px 0 24px 0" }}>
+      <section className="bg-gray-50 py-16 md:py-24">
         <div className="container">
-          <div className="badge">FAQ</div>
-          <h1 className="h1" style={{ marginTop: 12 }}>Questions parents ask</h1>
-          <p className="lead" style={{ maxWidth: 980 }}>
+          <div className={badge}>FAQ</div>
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Questions parents ask</h1>
+          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
             Short answers here, then links to the deeper guide so you can act on it.
           </p>
 
-          <div style={{ marginTop: 18 }}>
+          <div className="mt-8">
             <SearchBoxUrl placeholder="Search FAQs… (e.g., eVOA, deposit, school tour, Sanur)" />
           </div>
 
-          <div style={{ marginTop: 14, color: "var(--muted)" }}>
+          <div className="mt-4 text-sm text-gray-600">
             {total} question{total === 1 ? "" : "s"} found
           </div>
 
-          <div className="btnRow">
-            <Link className="button secondary" href="/start-here">Start here</Link>
-            <Link className="button secondary" href="/guides">Browse guides</Link>
-            <Link className="button secondary" href="/official-links">Official links</Link>
+          <div className={btnRow}>
+            <Link className={buttonSecondary} href="/start-here">Start here</Link>
+            <Link className={buttonSecondary} href="/guides">Browse guides</Link>
+            <Link className={buttonSecondary} href="/official-links">Official links</Link>
           </div>
         </div>
       </section>
 
-      <section style={{ padding: "0 0 60px 0" }}>
+      <section className="py-16 md:py-24">
         <div className="container">
-          <div style={{ display: "grid", gap: 12 }}>
+          <div className="grid gap-6">
             {items.map((f, idx) => (
-              <div key={`${f.sourceUrl}-${idx}`} className="card">
-                <strong>{f.q}</strong>
-                <p style={{ marginTop: 10, color: "var(--muted)" }}>{f.a}</p>
-                <div style={{ marginTop: 10 }}>
-                  <span className="badge">From</span>{" "}
-                  <Link href={f.sourceUrl} style={{ color: "rgba(205,240,255,0.95)" }} data-track="faq_source_open" data-url={f.sourceUrl}>
+              <div key={`${f.sourceUrl}-${idx}`} className={cardCls}>
+                <strong className="text-sm font-semibold text-gray-900">{f.q}</strong>
+                <p className="mt-3 text-sm leading-6 text-gray-600">{f.a}</p>
+                <div className="mt-4 flex flex-wrap items-center gap-2 text-sm">
+                  <span className={badge}>From</span>
+                  <Link
+                    href={f.sourceUrl}
+                    className="font-semibold text-blue-700 underline underline-offset-4 hover:text-blue-800"
+                    data-track="faq_source_open"
+                    data-url={f.sourceUrl}
+                  >
                     {f.sourceTitle}
                   </Link>
                 </div>
@@ -124,22 +133,18 @@ export default function FaqPage({ searchParams }: Props) {
             ))}
           </div>
 
-          <div style={{ marginTop: 18 }}>
-            {/* simple pagination reuse */}
-            {/* We reuse Pagination but its UI is a bit bigger; for FAQ, keep minimal */}
-            <div style={{ display: "flex", gap: 10, alignItems: "center", justifyContent: "center", flexWrap: "wrap" }}>
-              {page > 1 ? (
-                <Link className="button secondary" href={`/faq?${new URLSearchParams({ q: q || "", page: String(page - 1) }).toString()}`}>Prev</Link>
-              ) : (
-                <span className="button secondary disabled">Prev</span>
-              )}
-              <span className="badge">Page {page}</span>
-              {(page * pageSize) < total ? (
-                <Link className="button secondary" href={`/faq?${new URLSearchParams({ q: q || "", page: String(page + 1) }).toString()}`}>Next</Link>
-              ) : (
-                <span className="button secondary disabled">Next</span>
-              )}
-            </div>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+            {page > 1 ? (
+              <Link className={buttonSecondary} href={prevHref}>Prev</Link>
+            ) : (
+              <span className={`${buttonSecondary} ${buttonDisabled}`}>Prev</span>
+            )}
+            <span className={badge}>Page {page}</span>
+            {(page * pageSize) < total ? (
+              <Link className={buttonSecondary} href={nextHref}>Next</Link>
+            ) : (
+              <span className={`${buttonSecondary} ${buttonDisabled}`}>Next</span>
+            )}
           </div>
         </div>
       </section>

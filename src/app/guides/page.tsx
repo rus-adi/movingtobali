@@ -7,6 +7,7 @@ import PostCard from "@/components/PostCard";
 import { getAllCategories, getAllContent, getAllTags, encodeParam } from "@/lib/content";
 import { asInt, paginate } from "@/lib/pagination";
 import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
+import { badge, btnRow, buttonSecondary, cardCls, pill, grid2 } from "@/components/ui/styles";
 
 export function generateMetadata(): Metadata {
   return {
@@ -46,49 +47,53 @@ export default function GuidesIndexPage({ searchParams }: Props) {
     <main>
       <JsonLd data={schemas} />
 
-      <section style={{ padding: "56px 0 24px 0" }}>
+      <section className="bg-gray-50 py-16 md:py-24">
         <div className="container">
-          <div className="badge">Guides</div>
-          <h1 className="h1" style={{ marginTop: 12 }}>Evergreen guides</h1>
-          <p className="lead" style={{ maxWidth: 980 }}>
-            Longer than blog posts, more structured, with copy/paste checklists you can actually use.
-          </p>
+          <div className="grid items-start gap-12 md:grid-cols-2">
+            <div className="space-y-6">
+              <div className={badge}>Guides</div>
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Evergreen guides</h1>
+              <p className="max-w-3xl text-base text-gray-600 sm:text-lg">
+                Longer than blog posts, more structured, with copy/paste checklists you can actually use.
+              </p>
+            </div>
 
-          <div style={{ marginTop: 18 }}>
-            <SearchBoxUrl placeholder="Search guides… (e.g., agent, rent, checklist, safety)" />
-          </div>
+            <div className={cardCls}>
+              <SearchBoxUrl placeholder="Search guides… (e.g., agent, rent, checklist, safety)" />
 
-          <div style={{ marginTop: 18, display: "flex", gap: 10, flexWrap: "wrap" }}>
-            <a className="pill" href="/start-here">Start here</a>
-            <a className="pill" href="/visas">Visas</a>
-            <a className="pill" href="/housing">Housing</a>
-            <a className="pill" href="/areas">Areas</a>
-            <a className="pill" href="/costs">Costs</a>
-          </div>
+              <div className="mt-6 flex flex-wrap gap-2">
+                <a className={pill} href="/start-here">Start here</a>
+                <a className={pill} href="/visas">Visas</a>
+                <a className={pill} href="/housing">Housing</a>
+                <a className={pill} href="/areas">Areas</a>
+                <a className={pill} href="/costs">Costs</a>
+              </div>
 
-          <div style={{ marginTop: 18, display: "flex", gap: 10, flexWrap: "wrap" }}>
-            {categories.map((c) => (
-              <Link key={c} className="pill" href={`/guides/category/${encodeParam(c)}`}>{c}</Link>
-            ))}
-            {tags.map((t) => (
-              <Link key={t} className="pill" href={`/guides/tag/${encodeParam(t)}`}>#{t}</Link>
-            ))}
+              <div className="mt-6 flex flex-wrap gap-2">
+                {categories.map((c) => (
+                  <Link key={c} className={pill} href={`/guides/category/${encodeParam(c)}`}>{c}</Link>
+                ))}
+                {tags.map((t) => (
+                  <Link key={t} className={pill} href={`/guides/tag/${encodeParam(t)}`}>#{t}</Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section style={{ padding: "0 0 60px 0" }}>
+      <section className="py-16 md:py-24">
         <div className="container">
           {q ? (
-            <div className="card" style={{ marginBottom: 16 }}>
+            <div className={`${cardCls} mb-8`}>
               Showing results for <strong>{q}</strong> ({total} guide{total === 1 ? "" : "s"})
-              <div className="btnRow">
-                <Link className="button secondary" href="/guides">Clear search</Link>
+              <div className={btnRow}>
+                <Link className={buttonSecondary} href="/guides">Clear search</Link>
               </div>
             </div>
           ) : null}
 
-          <div className="grid2">
+          <div className={grid2}>
             {items.map((p) => (
               <PostCard key={p.slug} item={p} />
             ))}

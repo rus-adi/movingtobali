@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState, type FormEvent } from "react";
+import { btnRow, buttonPrimary, buttonSecondary, cardCls, inputBase } from "@/components/ui/styles";
 
 declare global {
   interface Window {
@@ -98,78 +99,78 @@ export default function ContactForm({ topic, from, partnerSlug, partnerName, fal
   }
 
   return (
-    <div className="card">
-      <strong>{title}</strong>
-      <p style={{ marginTop: 10, color: "var(--muted)" }}>
+    <div className={cardCls}>
+      <strong className="text-sm font-semibold text-gray-900">{title}</strong>
+      <p className="mt-3 text-sm leading-6 text-gray-600">
         Share a few details and we’ll reply with next steps. If you’re requesting an intro, we’ll ask the partner if they can take new families.
       </p>
 
-      <form onSubmit={onSubmit} style={{ marginTop: 14, display: "grid", gap: 12 }} aria-label="Contact form">
-        <div style={{ display: "grid", gap: 6 }}>
-          <label htmlFor="name" style={{ fontSize: 13, color: "var(--muted)" }}>Full name (optional)</label>
-          <input id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} autoComplete="name" className="input" />
+      <form onSubmit={onSubmit} className="mt-6 grid gap-5" aria-label="Contact form">
+        <div className="grid gap-2">
+          <label htmlFor="name" className="text-xs font-medium text-gray-600">Full name (optional)</label>
+          <input id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} autoComplete="name" className={inputBase} />
         </div>
 
-        <div style={{ display: "grid", gap: 6 }}>
-          <label htmlFor="email" style={{ fontSize: 13, color: "var(--muted)" }}>Email (required)</label>
-          <input id="email" name="email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" className="input" />
+        <div className="grid gap-2">
+          <label htmlFor="email" className="text-xs font-medium text-gray-600">Email (required)</label>
+          <input id="email" name="email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" className={inputBase} />
         </div>
 
-        <div style={{ display: "grid", gap: 6 }}>
-          <label htmlFor="whatsapp" style={{ fontSize: 13, color: "var(--muted)" }}>WhatsApp / phone (optional)</label>
-          <input id="whatsapp" name="whatsapp" type="tel" value={whatsapp} onChange={(e) => setWhatsapp(e.target.value)} autoComplete="tel" className="input" />
+        <div className="grid gap-2">
+          <label htmlFor="whatsapp" className="text-xs font-medium text-gray-600">WhatsApp / phone (optional)</label>
+          <input id="whatsapp" name="whatsapp" type="tel" value={whatsapp} onChange={(e) => setWhatsapp(e.target.value)} autoComplete="tel" className={inputBase} />
         </div>
 
-        <div className="grid2" style={{ gap: 12 }}>
-          <div style={{ display: "grid", gap: 6 }}>
-            <label htmlFor="kidsAges" style={{ fontSize: 13, color: "var(--muted)" }}>Kids’ ages (optional)</label>
-            <input id="kidsAges" name="kidsAges" value={kidsAges} onChange={(e) => setKidsAges(e.target.value)} placeholder="e.g., 3 and 7" className="input" />
+        <div className="grid gap-5 md:grid-cols-2">
+          <div className="grid gap-2">
+            <label htmlFor="kidsAges" className="text-xs font-medium text-gray-600">Kids’ ages (optional)</label>
+            <input id="kidsAges" name="kidsAges" value={kidsAges} onChange={(e) => setKidsAges(e.target.value)} placeholder="e.g., 3 and 7" className={inputBase} />
           </div>
 
-          <div style={{ display: "grid", gap: 6 }}>
-            <label htmlFor="timeline" style={{ fontSize: 13, color: "var(--muted)" }}>Timeline (optional)</label>
-            <input id="timeline" name="timeline" value={timeline} onChange={(e) => setTimeline(e.target.value)} placeholder="e.g., moving in June, staying 6 months" className="input" />
+          <div className="grid gap-2">
+            <label htmlFor="timeline" className="text-xs font-medium text-gray-600">Timeline (optional)</label>
+            <input id="timeline" name="timeline" value={timeline} onChange={(e) => setTimeline(e.target.value)} placeholder="e.g., moving in June, staying 6 months" className={inputBase} />
           </div>
         </div>
 
-        <div style={{ display: "grid", gap: 6 }}>
-          <label htmlFor="message" style={{ fontSize: 13, color: "var(--muted)" }}>Message (required)</label>
-          <textarea id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} rows={6} className="input" />
+        <div className="grid gap-2">
+          <label htmlFor="message" className="text-xs font-medium text-gray-600">Message (required)</label>
+          <textarea id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} rows={6} className={inputBase} />
         </div>
 
         {/* Honeypot field */}
-        <div style={{ display: "none" }} aria-hidden="true">
+        <div className="hidden" aria-hidden="true">
           <label htmlFor="company">Company</label>
-          <input id="company" name="company" value={company} onChange={(e) => setCompany(e.target.value)} className="input" />
+          <input id="company" name="company" value={company} onChange={(e) => setCompany(e.target.value)} className={inputBase} />
         </div>
 
-        <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center" }}>
-          <button className="button primary" type="submit" disabled={status === "submitting"} data-track="contact_submit_click" data-topic={topic}>
+        <div className={btnRow}>
+          <button className={buttonPrimary} type="submit" disabled={status === "submitting"} data-track="contact_submit_click" data-topic={topic}>
             {status === "submitting" ? "Sending…" : "Send message"}
           </button>
 
-          <a className="button secondary" href={mailto} data-track="contact_fallback_mailto" data-topic={topic}>
+          <a className={buttonSecondary} href={mailto} data-track="contact_fallback_mailto" data-topic={topic}>
             Email instead
           </a>
         </div>
 
-        <div style={{ marginTop: 6, fontSize: 13, color: "var(--muted)" }}>
-          By sending this form, you agree to our <a href="/privacy">Privacy Policy</a>.
+        <div className="text-xs text-gray-600">
+          By sending this form, you agree to our <a href="/privacy" className="underline underline-offset-4">Privacy Policy</a>.
         </div>
 
         {status === "success" ? (
-          <div className="card" style={{ marginTop: 6, borderColor: "rgba(134,239,172,0.35)" }}>
-            <strong>Received.</strong>
-            <div style={{ marginTop: 8, color: "var(--muted)" }}>
+          <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
+            <strong className="text-sm font-semibold text-gray-900">Received.</strong>
+            <div className="mt-3 text-sm leading-6 text-gray-600">
               Thanks — we’ll respond by email as soon as we can.
             </div>
           </div>
         ) : null}
 
         {status === "error" ? (
-          <div className="card" style={{ marginTop: 6, borderColor: "rgba(251,113,133,0.35)" }}>
-            <strong>Couldn’t send.</strong>
-            <div style={{ marginTop: 8, color: "var(--muted)" }}>
+          <div className="rounded-2xl border border-rose-200 bg-rose-50 p-5">
+            <strong className="text-sm font-semibold text-gray-900">Couldn’t send.</strong>
+            <div className="mt-3 text-sm leading-6 text-gray-600">
               {errorMsg || "Please try again or email us directly."}
             </div>
           </div>

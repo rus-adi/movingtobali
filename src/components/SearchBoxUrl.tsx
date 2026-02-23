@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { buttonSecondary, inputBase } from "@/components/ui/styles";
 
 type Props = {
   paramName?: string;
@@ -30,16 +31,15 @@ export default function SearchBoxUrl({ paramName = "q", placeholder = "Search…
   return (
     <div className={className}>
       <label className="sr-only" htmlFor={`search-${paramName}`}>Search</label>
-      <div style={{ display: "flex", gap: 8 }}>
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
         <input
           id={`search-${paramName}`}
           value={value}
           onChange={(e) => setValue(e.target.value)}
           placeholder={placeholder}
-          className="input"
-          style={{ flex: 1 }}
+          className={inputBase}
         />
-        <button className="button" onClick={() => update(value)} type="button" data-track="search_submit">
+        <button className={buttonSecondary} onClick={() => update(value)} type="button" data-track="search_submit">
           Search
         </button>
       </div>

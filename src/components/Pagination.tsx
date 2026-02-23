@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { badge, buttonDisabled, buttonSecondary } from "@/components/ui/styles";
+import { cn } from "@/lib/cn";
 
 type Props = {
   basePath: string;
@@ -31,22 +33,40 @@ export default function Pagination({ basePath, page, pageSize, total, query = {}
   for (let p = start; p <= end; p++) pages.push(p);
 
   return (
-    <nav aria-label="Pagination" style={{ display: "flex", gap: 10, alignItems: "center", justifyContent: "center", marginTop: 18, flexWrap: "wrap" }}>
-      <Link className={`button secondary ${page === 1 ? "disabled" : ""}`} aria-disabled={page === 1} href={buildHref(basePath, { ...query, page: String(prev) })}>
+    <nav
+      aria-label="Pagination"
+      className="mt-10 flex flex-wrap items-center justify-center gap-3"
+    >
+      <Link
+        className={cn(buttonSecondary, page === 1 && buttonDisabled)}
+        aria-disabled={page === 1}
+        href={buildHref(basePath, { ...query, page: String(prev) })}
+      >
         Prev
       </Link>
 
       {pages.map((p) => (
-        <Link key={p} className={`button secondary ${p === page ? "active" : ""}`} href={buildHref(basePath, { ...query, page: String(p) })}>
+        <Link
+          key={p}
+          className={cn(
+            buttonSecondary,
+            p === page && "border-blue-200 bg-blue-50 text-blue-700"
+          )}
+          href={buildHref(basePath, { ...query, page: String(p) })}
+        >
           {p}
         </Link>
       ))}
 
-      <Link className={`button secondary ${page === totalPages ? "disabled" : ""}`} aria-disabled={page === totalPages} href={buildHref(basePath, { ...query, page: String(next) })}>
+      <Link
+        className={cn(buttonSecondary, page === totalPages && buttonDisabled)}
+        aria-disabled={page === totalPages}
+        href={buildHref(basePath, { ...query, page: String(next) })}
+      >
         Next
       </Link>
 
-      <span style={{ opacity: 0.7, fontSize: 13 }}>Page {page} of {totalPages}</span>
+      <span className={cn(badge, "text-xs")}>Page {page} of {totalPages}</span>
     </nav>
   );
 }

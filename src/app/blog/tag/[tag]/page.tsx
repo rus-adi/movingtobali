@@ -7,6 +7,7 @@ import PostCard from "@/components/PostCard";
 import { decodeParam, encodeParam, getAllContent, getAllTags } from "@/lib/content";
 import { asInt, paginate } from "@/lib/pagination";
 import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
+import { badge, btnRow, buttonSecondary, grid2 } from "@/components/ui/styles";
 
 export function generateStaticParams() {
   const tags = getAllTags("blog");
@@ -32,31 +33,32 @@ export default function BlogTagPage({ params, searchParams }: { params: { tag: s
 
   const { total, items } = paginate(all, page, pageSize);
 
+  const basePath = `/blog/tag/${encodeParam(tag)}`;
   const schemas = [
     buildOrganizationSchema(),
     buildWebSiteSchema(),
-    buildWebPageSchema({ pathname: `/blog/tag/${encodeParam(tag)}`, name: `Blog tag: ${tag}`, description: `Blog posts tagged “${tag}”.` }),
+    buildWebPageSchema({ pathname: basePath, name: `Blog tag: ${tag}`, description: `Blog posts tagged “${tag}”.` }),
   ];
 
   return (
     <main>
       <JsonLd data={schemas} />
-      <section style={{ padding: "56px 0 24px 0" }}>
+      <section className="bg-gray-50 py-16 md:py-24">
         <div className="container">
-          <div className="badge">Blog tag</div>
-          <h1 className="h1" style={{ marginTop: 12 }}>#{tag}</h1>
-          <div className="btnRow">
-            <Link className="button secondary" href="/blog">Back to blog</Link>
+          <div className={badge}>Blog tag</div>
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">#{tag}</h1>
+          <div className={btnRow}>
+            <Link className={buttonSecondary} href="/blog">Back to blog</Link>
           </div>
         </div>
       </section>
 
-      <section style={{ padding: "0 0 60px 0" }}>
+      <section className="py-16 md:py-24">
         <div className="container">
-          <div className="grid2">
+          <div className={grid2}>
             {items.map((p) => <PostCard key={p.slug} item={p} />)}
           </div>
-          <Pagination basePath={`/blog/tag/${encodeParam(tag)}`} page={page} pageSize={pageSize} total={total} />
+          <Pagination basePath={basePath} page={page} pageSize={pageSize} total={total} />
         </div>
       </section>
     </main>

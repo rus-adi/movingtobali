@@ -5,6 +5,7 @@ import ContactForm from "@/components/ContactForm";
 import { getSite } from "@/lib/site";
 import { getPartnerBySlug } from "@/lib/partners";
 import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
+import { badge, cardCls } from "@/components/ui/styles";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -57,26 +58,26 @@ export default function ContactPage({ searchParams }: Props) {
     <main>
       <JsonLd data={schemas} />
 
-      <section style={{ padding: "56px 0 24px 0" }}>
+      <section className="bg-gray-50 py-16 md:py-24">
         <div className="container">
-          <div className="badge">Contact</div>
-          <h1 className="h1" style={{ marginTop: 12 }}>Ask a question</h1>
-          <p className="lead" style={{ maxWidth: 980 }}>
+          <div className={badge}>Contact</div>
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Ask a question</h1>
+          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
             We keep contact simple on purpose. If you need an intro to a provider, tell us your situation and we’ll reply with next steps.
           </p>
         </div>
       </section>
 
-      <section style={{ padding: "0 0 60px 0" }}>
-        <div className="container" style={{ display: "grid", gap: 18 }}>
+      <section className="py-16 md:py-24">
+        <div className="container grid gap-6">
           {showDisclosure ? <DisclosureNotice compact /> : null}
 
-          <div className="card">
-            <strong>Topic</strong>
-            <div style={{ marginTop: 10, color: "var(--muted)" }}>{topic}</div>
+          <div className={cardCls}>
+            <strong className="text-sm font-semibold text-gray-900">Topic</strong>
+            <div className="mt-3 text-sm leading-6 text-gray-600">{topic}</div>
             {partnerSlug ? (
-              <div style={{ marginTop: 10, color: "var(--muted)" }}>
-                <strong>Partner:</strong> {partnerName || partnerSlug}
+              <div className="mt-3 text-sm leading-6 text-gray-600">
+                <strong className="font-semibold text-gray-900">Partner:</strong> {partnerName || partnerSlug}
               </div>
             ) : null}
           </div>
@@ -89,8 +90,10 @@ export default function ContactPage({ searchParams }: Props) {
             fallbackMailto={mailto}
           />
 
-          <div className="card" style={{ color: "var(--muted)" }}>
-            Prefer to self-serve? Start with <a href="/start-here">Start here</a> and then follow the pillar that matches your stage.
+          <div className={cardCls}>
+            <div className="text-sm leading-6 text-gray-600">
+              Prefer to self-serve? Start with <a href="/start-here" className="underline underline-offset-4">Start here</a> and then follow the pillar that matches your stage.
+            </div>
           </div>
         </div>
       </section>

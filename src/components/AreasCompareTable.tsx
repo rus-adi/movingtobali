@@ -10,37 +10,60 @@ export default function AreasCompareTable({ areas }: { areas: ContentItem[] }) {
   if (!areas?.length) return null;
 
   return (
-    <div className="tableWrap" role="region" aria-label="Areas comparison table" tabIndex={0}>
-      <table className="table">
+    <div
+      className="overflow-x-auto rounded-2xl border border-gray-200 bg-white shadow-sm"
+      role="region"
+      aria-label="Areas comparison table"
+      tabIndex={0}
+    >
+      <table className="min-w-[860px] w-full border-collapse text-sm">
         <thead>
-          <tr>
-            <th style={{ width: "18%" }}>Area</th>
-            <th>Region</th>
-            <th>Pace</th>
-            <th>Traffic</th>
-            <th>Walkability</th>
-            <th>Family fit</th>
-            <th>Beach</th>
-            <th>Nature</th>
-            <th style={{ width: "22%" }}>Note</th>
+          <tr className="bg-gray-50">
+            <th className="sticky top-0 w-[18%] border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+              Area
+            </th>
+            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+              Region
+            </th>
+            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+              Pace
+            </th>
+            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+              Traffic
+            </th>
+            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+              Walkability
+            </th>
+            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+              Family fit
+            </th>
+            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+              Beach
+            </th>
+            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+              Nature
+            </th>
+            <th className="sticky top-0 w-[22%] border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+              Note
+            </th>
           </tr>
         </thead>
         <tbody>
           {areas.map((a) => (
-            <tr key={a.slug}>
-              <td>
-                <Link href={`/areas/${a.slug}`} style={{ color: "inherit" }}>
-                  <strong>{a.title.replace(/\sfor families$/i, "")}</strong>
+            <tr key={a.slug} className="border-b border-gray-200 last:border-b-0">
+              <td className="px-3 py-3 align-top">
+                <Link href={`/areas/${a.slug}`} className="font-semibold text-gray-900 hover:text-blue-700">
+                  {a.title.replace(/\sfor families$/i, "")}
                 </Link>
               </td>
-              <td>{v(a.category)}</td>
-              <td>{v(a.area?.pace)}</td>
-              <td>{v(a.area?.traffic)}</td>
-              <td>{v(a.area?.walkability)}</td>
-              <td>{v(a.area?.familyFit)}</td>
-              <td>{v(a.area?.beachAccess)}</td>
-              <td>{v(a.area?.natureAccess)}</td>
-              <td style={{ color: "var(--muted)" }}>{v(a.area?.note)}</td>
+              <td className="px-3 py-3 align-top">{v(a.category)}</td>
+              <td className="px-3 py-3 align-top">{v(a.area?.pace)}</td>
+              <td className="px-3 py-3 align-top">{v(a.area?.traffic)}</td>
+              <td className="px-3 py-3 align-top">{v(a.area?.walkability)}</td>
+              <td className="px-3 py-3 align-top">{v(a.area?.familyFit)}</td>
+              <td className="px-3 py-3 align-top">{v(a.area?.beachAccess)}</td>
+              <td className="px-3 py-3 align-top">{v(a.area?.natureAccess)}</td>
+              <td className="px-3 py-3 align-top text-gray-600">{v(a.area?.note)}</td>
             </tr>
           ))}
         </tbody>

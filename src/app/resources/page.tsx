@@ -7,6 +7,7 @@ import PostCard from "@/components/PostCard";
 import { getAllCategories, getAllContent, getAllTags, encodeParam } from "@/lib/content";
 import { asInt, paginate } from "@/lib/pagination";
 import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
+import { badge, btnRow, buttonSecondary, cardCls, grid2, pill } from "@/components/ui/styles";
 
 export function generateMetadata(): Metadata {
   return {
@@ -26,7 +27,10 @@ export default function ResourcesIndexPage({ searchParams }: Props) {
   const all = getAllContent("resources");
   const filtered = q
     ? all.filter((p) => {
-        const hay = [p.title, p.description, p.category, p.tags.join(" "), p.resourceType].filter(Boolean).join(" ").toLowerCase();
+        const hay = [p.title, p.description, p.category, p.tags.join(" "), p.resourceType]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase();
         return hay.includes(q);
       })
     : all;
@@ -46,41 +50,45 @@ export default function ResourcesIndexPage({ searchParams }: Props) {
     <main>
       <JsonLd data={schemas} />
 
-      <section style={{ padding: "56px 0 24px 0" }}>
+      <section className="bg-gray-50 py-16 md:py-24">
         <div className="container">
-          <div className="badge">Resources</div>
-          <h1 className="h1" style={{ marginTop: 12 }}>Templates & checklists</h1>
-          <p className="lead" style={{ maxWidth: 980 }}>
-            Short tools you can use immediately—tour questions, decision matrices, first-week checklists, and planning prompts.
-          </p>
+          <div className="grid items-start gap-12 md:grid-cols-2">
+            <div className="space-y-6">
+              <div className={badge}>Resources</div>
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Templates & checklists</h1>
+              <p className="max-w-3xl text-base text-gray-600 sm:text-lg">
+                Short tools you can use immediately—tour questions, decision matrices, first-week checklists, and planning prompts.
+              </p>
+            </div>
 
-          <div style={{ marginTop: 18 }}>
-            <SearchBoxUrl placeholder="Search resources… (e.g., checklist, tour, decision)" />
-          </div>
+            <div className={cardCls}>
+              <SearchBoxUrl placeholder="Search resources… (e.g., checklist, tour, decision)" />
 
-          <div style={{ marginTop: 18, display: "flex", gap: 10, flexWrap: "wrap" }}>
-            {categories.map((c) => (
-              <Link key={c} className="pill" href={`/resources/category/${encodeParam(c)}`}>{c}</Link>
-            ))}
-            {tags.map((t) => (
-              <Link key={t} className="pill" href={`/resources/tag/${encodeParam(t)}`}>#{t}</Link>
-            ))}
+              <div className="mt-6 flex flex-wrap gap-2">
+                {categories.map((c) => (
+                  <Link key={c} className={pill} href={`/resources/category/${encodeParam(c)}`}>{c}</Link>
+                ))}
+                {tags.map((t) => (
+                  <Link key={t} className={pill} href={`/resources/tag/${encodeParam(t)}`}>#{t}</Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section style={{ padding: "0 0 60px 0" }}>
+      <section className="py-16 md:py-24">
         <div className="container">
           {q ? (
-            <div className="card" style={{ marginBottom: 16 }}>
+            <div className={`${cardCls} mb-8`}>
               Showing results for <strong>{q}</strong> ({total} item{total === 1 ? "" : "s"})
-              <div className="btnRow">
-                <Link className="button secondary" href="/resources">Clear search</Link>
+              <div className={btnRow}>
+                <Link className={buttonSecondary} href="/resources">Clear search</Link>
               </div>
             </div>
           ) : null}
 
-          <div className="grid2">
+          <div className={grid2}>
             {items.map((p) => (
               <PostCard key={p.slug} item={p} />
             ))}

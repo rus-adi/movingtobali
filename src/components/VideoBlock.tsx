@@ -1,11 +1,20 @@
 import type { VideoBlock as VideoBlockType } from "@/lib/content";
 import { loadTranscript } from "@/lib/transcripts";
 import { getSite } from "@/lib/site";
+import {
+  badgeAccent,
+  badgeGood,
+  btnRow,
+  buttonPrimary,
+  buttonSecondary,
+  cardCls,
+  pill,
+} from "@/components/ui/styles";
 
 function badgeForPermission(p: VideoBlockType["permission"]) {
-  if (p === "owned") return { text: "Owned video", cls: "good" };
-  if (p === "licensed") return { text: "Licensed use", cls: "accent" };
-  return { text: "Used with permission", cls: "accent" };
+  if (p === "owned") return { text: "Owned video", cls: badgeGood };
+  if (p === "licensed") return { text: "Licensed use", cls: badgeAccent };
+  return { text: "Used with permission", cls: badgeAccent };
 }
 
 export default function VideoBlock({ video }: { video: VideoBlockType }) {
@@ -18,24 +27,31 @@ export default function VideoBlock({ video }: { video: VideoBlockType }) {
   const permission = badgeForPermission(video.permission);
 
   return (
-    <div className="card" style={{ padding: 18 }}>
-      <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center", justifyContent: "space-between" }}>
-        <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center" }}>
-          <span className="badge good">Video</span>
-          <span className={`badge ${permission.cls}`}>{permission.text}</span>
+    <div className={cardCls}>
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className={badgeGood}>Video</span>
+          <span className={permission.cls}>{permission.text}</span>
         </div>
-        <a className="pill" href={watchUrl} target="_blank" rel="noreferrer" data-track="video_watch_youtube" data-youtubeid={video.youtubeId}>
+        <a
+          className={pill}
+          href={watchUrl}
+          target="_blank"
+          rel="noreferrer"
+          data-track="video_watch_youtube"
+          data-youtubeid={video.youtubeId}
+        >
           Watch on YouTube
         </a>
       </div>
 
-      <div style={{ marginTop: 14 }}>
-        <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden", borderRadius: 14, border: "1px solid var(--border)" }}>
+      <div className="mt-6 overflow-hidden rounded-2xl border border-gray-200">
+        <div className="aspect-video w-full">
           <iframe
             src={embedUrl}
             title={video.title || "YouTube video"}
             loading="lazy"
-            style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+            className="h-full w-full"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
@@ -44,39 +60,45 @@ export default function VideoBlock({ video }: { video: VideoBlockType }) {
       </div>
 
       {video.summary ? (
-        <div style={{ marginTop: 14 }}>
-          <strong>Summary</strong>
-          <p style={{ marginTop: 8, color: "var(--muted)" }}>{video.summary}</p>
+        <div className="mt-6">
+          <strong className="text-sm font-semibold text-gray-900">Summary</strong>
+          <p className="mt-3 text-sm leading-6 text-gray-600">{video.summary}</p>
         </div>
       ) : null}
 
       {transcript ? (
-        <div style={{ marginTop: 12 }}>
-          <details>
-            <summary style={{ cursor: "pointer" }}>
-              <strong>Transcript</strong> <span style={{ color: "var(--muted)" }}>(click to expand)</span>
+        <div className="mt-6">
+          <details className="rounded-2xl border border-gray-200 bg-gray-50 p-5">
+            <summary className="cursor-pointer text-sm font-semibold text-gray-900">
+              Transcript <span className="font-normal text-gray-600">(click to expand)</span>
             </summary>
-            <div id="transcript" style={{ marginTop: 12, color: "var(--muted)", whiteSpace: "pre-wrap" }}>
+            <div id="transcript" className="mt-4 whitespace-pre-wrap text-sm leading-6 text-gray-600">
               {transcript}
             </div>
           </details>
         </div>
       ) : (
-        <div style={{ marginTop: 12, color: "var(--muted)" }}>
+        <div className="mt-6 text-sm leading-6 text-gray-600">
           <em>No transcript added yet.</em> To follow the site standard, add either <code>video.transcript</code> or <code>video.transcriptFile</code>.
         </div>
       )}
 
-      <div style={{ marginTop: 16, borderTop: "1px solid var(--border)", paddingTop: 14 }}>
-        <strong>Next step</strong>
-        <p style={{ marginTop: 8, color: "var(--muted)" }}>
+      <div className="mt-8 border-t border-gray-200 pt-6">
+        <strong className="text-sm font-semibold text-gray-900">Next step</strong>
+        <p className="mt-3 text-sm leading-6 text-gray-600">
           If your family is considering Bali, start with the roadmap, then follow the pillar that matches your stage.
         </p>
-        <div className="btnRow">
-          <a className="button primary" href={video.ctaHref || site.ctas.primary.href} data-track="video_cta_primary">
+        <div className={btnRow}>
+          <a className={buttonPrimary} href={video.ctaHref || site.ctas.primary.href} data-track="video_cta_primary">
             {video.ctaText || site.ctas.primary.text}
           </a>
-          <a className="button secondary" href={site.ctas.empathy.href} target="_blank" rel="noreferrer" data-track="video_cta_empathy">
+          <a
+            className={buttonSecondary}
+            href={site.ctas.empathy.href}
+            target="_blank"
+            rel="noreferrer"
+            data-track="video_cta_empathy"
+          >
             {site.ctas.empathy.text}
           </a>
         </div>

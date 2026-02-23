@@ -7,6 +7,7 @@ import PostCard from "@/components/PostCard";
 import { decodeParam, encodeParam, getAllContent, getAllTags } from "@/lib/content";
 import { asInt, paginate } from "@/lib/pagination";
 import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
+import { badge, btnRow, buttonSecondary, grid2 } from "@/components/ui/styles";
 
 export function generateStaticParams() {
   const tags = getAllTags("areas").filter((t) => !["areas","neighborhoods"].includes(String(t)));
@@ -42,19 +43,19 @@ export default function AreasTagPage({ params, searchParams }: { params: { tag: 
   return (
     <main>
       <JsonLd data={schemas} />
-      <section style={{ padding: "56px 0 24px 0" }}>
+      <section className="bg-gray-50 py-16 md:py-24">
         <div className="container">
-          <div className="badge">Areas tag</div>
-          <h1 className="h1" style={{ marginTop: 12 }}>#{tag}</h1>
-          <div className="btnRow">
-            <Link className="button secondary" href="/areas">Back to areas</Link>
+          <div className={badge}>Areas tag</div>
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">#{tag}</h1>
+          <div className={btnRow}>
+            <Link className={buttonSecondary} href="/areas">Back to areas</Link>
           </div>
         </div>
       </section>
 
-      <section style={{ padding: "0 0 60px 0" }}>
+      <section className="py-16 md:py-24">
         <div className="container">
-          <div className="grid2">
+          <div className={grid2}>
             {items.map((p) => <PostCard key={p.slug} item={p} />)}
           </div>
           <Pagination basePath={pathname} page={page} pageSize={pageSize} total={total} />

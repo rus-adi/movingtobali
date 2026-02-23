@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getAllContent, type ContentItem } from "@/lib/content";
 import officialLinks from "@/content/official-links.json";
+import { badge, badgeWarn, btnRow, buttonPrimary, cardCls, grid3 } from "@/components/ui/styles";
 
 export const metadata: Metadata = {
   title: "Review dashboard",
@@ -189,67 +190,65 @@ export default function AdminReviewPage() {
 
   return (
     <main>
-      <section style={{ padding: "56px 0 18px 0" }}>
+      <section className="bg-gray-50 py-16 md:py-24">
         <div className="container">
-          <div className="badge warn">Internal</div>
-          <h1 className="h1" style={{ marginTop: 12 }}>Content review dashboard</h1>
-          <p className="lead" style={{ maxWidth: 980 }}>
+          <div className={badgeWarn}>Internal</div>
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Content review dashboard</h1>
+          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
             This page is <strong>noindex</strong>. It exists to help you ship cleaner content (freshness, FAQs, internal links).
           </p>
         </div>
       </section>
 
-      <section style={{ padding: "0 0 60px 0" }}>
-        <div className="container" style={{ display: "grid", gap: 18 }}>
+      <section className="py-16 md:py-24">
+        <div className="container grid gap-6">
+          {officialIssues.length ? (
+            <div className={cardCls}>
+              <strong className="text-sm font-semibold text-gray-900">Official links need review</strong>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                These are the “source-of-truth” portals referenced in visa/entry guides. Update <code>lastVerified</code> after checking.
+              </p>
+              <div className="mt-6 grid gap-3">
+                {officialIssues.slice(0, 12).map((o) => (
+                  <div key={o.url} className="flex flex-wrap items-center justify-between gap-3">
+                    <span className="text-sm text-gray-600">{o.title}</span>
+                    <span className={badgeWarn}>{o.issue}</span>
+                  </div>
+                ))}
+              </div>
+              <div className={btnRow}>
+                <a className={buttonPrimary} href="/official-links">Open official links page</a>
+              </div>
+            </div>
+          ) : null}
 
-{officialIssues.length ? (
-  <div className="card">
-    <strong>Official links need review</strong>
-    <p style={{ marginTop: 8, color: "var(--muted)" }}>
-      These are the “source-of-truth” portals referenced in visa/entry guides. Update <code>lastVerified</code> after checking.
-    </p>
-    <div style={{ marginTop: 10, display: "grid", gap: 10 }}>
-      {officialIssues.slice(0, 12).map((o) => (
-        <div key={o.url} style={{ display: "flex", gap: 10, justifyContent: "space-between", flexWrap: "wrap" }}>
-          <span>{o.title}</span>
-          <span className="badge warn">{o.issue}</span>
-        </div>
-      ))}
-    </div>
-    <div className="btnRow" style={{ marginTop: 12 }}>
-      <a className="button primary" href="/official-links">Open official links page</a>
-    </div>
-  </div>
-) : null}
-
-
-          <div className="grid3">
+          <div className={grid3}>
             {byKind.map((r) => (
-              <div key={r.kind} className="card">
-                <strong style={{ textTransform: "capitalize" }}>{r.kind}</strong>
-                <div style={{ marginTop: 10, color: "var(--muted)" }}>
-                  Total: <strong>{r.count}</strong> · Flagged: <strong>{r.flagged}</strong>
+              <div key={r.kind} className={cardCls}>
+                <strong className="text-sm font-semibold text-gray-900 capitalize">{r.kind}</strong>
+                <div className="mt-4 text-sm text-gray-600">
+                  Total: <strong className="text-gray-900">{r.count}</strong> · Flagged: <strong className="text-gray-900">{r.flagged}</strong>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="card">
-            <strong>Flagged pages ({issues.length})</strong>
-            <div style={{ marginTop: 12, display: "grid", gap: 12 }}>
+          <div className={cardCls}>
+            <strong className="text-sm font-semibold text-gray-900">Flagged pages ({issues.length})</strong>
+            <div className="mt-6 grid gap-6">
               {issues.length ? (
                 issues
-                  .sort((a, b) => (a.kind.localeCompare(b.kind) || a.title.localeCompare(b.title)))
+                  .sort((a, b) => a.kind.localeCompare(b.kind) || a.title.localeCompare(b.title))
                   .map((it) => (
-                    <div key={it.key} style={{ borderTop: "1px solid var(--border)", paddingTop: 12 }}>
-                      <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "baseline" }}>
-                        <a href={it.path} style={{ fontWeight: 650, textDecoration: "none" }}>
+                    <div key={it.key} className="border-t border-gray-200 pt-6 first:border-t-0 first:pt-0">
+                      <div className="flex flex-wrap items-baseline gap-3">
+                        <a href={it.path} className="font-semibold text-gray-900 hover:text-blue-700">
                           {it.title}
                         </a>
-                        <span className="badge">{it.kind}</span>
-                        {it.updated ? <span style={{ fontSize: 13, color: "var(--muted)" }}>Updated: {it.updated}</span> : null}
+                        <span className={badge}>{it.kind}</span>
+                        {it.updated ? <span className="text-xs text-gray-500">Updated: {it.updated}</span> : null}
                       </div>
-                      <ul style={{ margin: "10px 0 0 18px", color: "var(--muted)" }}>
+                      <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-gray-600">
                         {it.issues.map((m, idx) => (
                           <li key={idx}>{m}</li>
                         ))}
@@ -257,15 +256,15 @@ export default function AdminReviewPage() {
                     </div>
                   ))
               ) : (
-                <div style={{ marginTop: 10, color: "var(--muted)" }}>
-                  Nothing flagged. (Still do a human read-through before launch.)
-                </div>
+                <div className="text-sm text-gray-600">Nothing flagged. (Still do a human read-through before launch.)</div>
               )}
             </div>
           </div>
 
-          <div className="card" style={{ color: "var(--muted)" }}>
-            Tip: run <code>npm run validate:strict</code> and <code>npm run audit:review</code> before launching.
+          <div className={cardCls}>
+            <div className="text-sm text-gray-600">
+              Tip: run <code>npm run validate:strict</code> and <code>npm run audit:review</code> before launching.
+            </div>
           </div>
         </div>
       </section>

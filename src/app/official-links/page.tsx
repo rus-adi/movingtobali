@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import officialLinks from "@/content/official-links.json";
 import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
+import { badge, badgeWarn, buttonPrimary, card, cardCls, grid2, btnRow } from "@/components/ui/styles";
 
 export const metadata: Metadata = {
   title: "Official links",
@@ -54,56 +55,56 @@ export default function OfficialLinksPage() {
     <main>
       <JsonLd data={schemas} />
 
-      <section style={{ padding: "56px 0 24px 0" }}>
+      <section className="bg-gray-50 py-16 md:py-24">
         <div className="container">
-          <div className="badge">Reference</div>
-          <h1 className="h1" style={{ marginTop: 12 }}>Official links we reference</h1>
-          <p className="lead" style={{ maxWidth: 980 }}>
+          <div className={badge}>Reference</div>
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Official links we reference</h1>
+          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
             Visa and entry procedures can change. This page is the “bookmark list” we keep pointing families to when details shift.
           </p>
 
           {newest ? (
-            <div style={{ marginTop: 12, display: "flex", gap: 10, flexWrap: "wrap" }}>
-              <span className="badge">Last reviewed: {newest}</span>
-              <span className="badge">Tip: revisit monthly for visas/entry</span>
+            <div className="mt-6 flex flex-wrap gap-2">
+              <span className={badge}>Last reviewed: {newest}</span>
+              <span className={badge}>Tip: revisit monthly for visas/entry</span>
             </div>
           ) : null}
         </div>
       </section>
 
-      <section style={{ padding: "0 0 60px 0" }}>
+      <section className="py-16 md:py-24">
         <div className="container">
-          <div className="card" style={{ marginBottom: 18 }}>
-            <strong>Important</strong>
-            <p style={{ marginTop: 8, color: "var(--muted)" }}>
+          <div className={`${cardCls} mb-10`}>
+            <strong className="text-sm font-semibold text-gray-900">Important</strong>
+            <p className="mt-3 text-sm leading-6 text-gray-600">
               We write from experience, not as legal advice. When you’re unsure, confirm through official portals or a qualified agent.
             </p>
           </div>
 
-          <div style={{ display: "grid", gap: 18 }}>
+          <div className="grid gap-8">
             {grouped.map((g) => (
-              <div key={g.category} className="card">
-                <h2 style={{ marginTop: 0 }}>{g.category}</h2>
+              <div key={g.category} className={cardCls}>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900">{g.category}</h2>
 
-                <div className="grid2" style={{ marginTop: 12 }}>
+                <div className={`${grid2} mt-8`}>
                   {g.items.map((l) => {
                     const ago = daysAgo(l.lastVerified);
                     const cadence = l.reviewCadenceDays ? `${l.reviewCadenceDays} days` : null;
 
                     return (
-                      <div key={l.url} className="card" style={{ padding: 16 }}>
-                        <strong>{l.title}</strong>
-                        {l.note ? <p style={{ marginTop: 8, color: "var(--muted)" }}>{l.note}</p> : null}
+                      <div key={l.url} className={`${card} p-5`}>
+                        <strong className="text-sm font-semibold text-gray-900">{l.title}</strong>
+                        {l.note ? <p className="mt-3 text-sm leading-6 text-gray-600">{l.note}</p> : null}
 
-                        <div style={{ marginTop: 10, display: "flex", gap: 10, flexWrap: "wrap" }}>
-                          {l.lastVerified ? <span className="badge">Verified: {l.lastVerified}</span> : <span className="badge warn">Needs verification</span>}
-                          {typeof ago === "number" ? <span className="badge">{ago} days ago</span> : null}
-                          {cadence ? <span className="badge">Review: every {cadence}</span> : null}
+                        <div className="mt-4 flex flex-wrap gap-2">
+                          {l.lastVerified ? <span className={badge}>Verified: {l.lastVerified}</span> : <span className={badgeWarn}>Needs verification</span>}
+                          {typeof ago === "number" ? <span className={badge}>{ago} days ago</span> : null}
+                          {cadence ? <span className={badge}>Review: every {cadence}</span> : null}
                         </div>
 
-                        <div className="btnRow" style={{ marginTop: 12 }}>
+                        <div className={btnRow}>
                           <a
-                            className="button primary"
+                            className={buttonPrimary}
                             href={l.url}
                             target="_blank"
                             rel="noreferrer"

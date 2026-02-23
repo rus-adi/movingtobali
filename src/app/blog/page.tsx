@@ -8,6 +8,7 @@ import { getAllCategories, getAllContent, getAllTags, encodeParam } from "@/lib/
 import { asInt, paginate } from "@/lib/pagination";
 import { getSite } from "@/lib/site";
 import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
+import { badge, btnRow, buttonSecondary, cardCls, grid2, pill } from "@/components/ui/styles";
 
 export function generateMetadata(): Metadata {
   const site = getSite();
@@ -55,41 +56,45 @@ export default function BlogIndexPage({ searchParams }: Props) {
     <main>
       <JsonLd data={schemas} />
 
-      <section style={{ padding: "56px 0 24px 0" }}>
+      <section className="bg-gray-50 py-16 md:py-24">
         <div className="container">
-          <div className="badge">Blog</div>
-          <h1 className="h1" style={{ marginTop: 12 }}>Daily posts</h1>
-          <p className="lead" style={{ maxWidth: 980 }}>
-            Short, practical posts that answer one question at a time. For deeper guides, see the Guides section.
-          </p>
+          <div className="grid items-start gap-12 md:grid-cols-2">
+            <div className="space-y-6">
+              <div className={badge}>Blog</div>
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Daily posts</h1>
+              <p className="max-w-3xl text-base text-gray-600 sm:text-lg">
+                Short, practical posts that answer one question at a time. For deeper guides, see the Guides section.
+              </p>
+            </div>
 
-          <div style={{ marginTop: 18 }}>
-            <SearchBoxUrl placeholder="Search posts… (e.g., visa, Ubud, budgeting, routines)" />
-          </div>
+            <div className={cardCls}>
+              <SearchBoxUrl placeholder="Search posts… (e.g., visa, Ubud, budgeting, routines)" />
 
-          <div style={{ marginTop: 18, display: "flex", gap: 10, flexWrap: "wrap" }}>
-            {categories.map((c) => (
-              <Link key={c} className="pill" href={`/blog/category/${encodeParam(c)}`}>{c}</Link>
-            ))}
-            {tags.map((t) => (
-              <Link key={t} className="pill" href={`/blog/tag/${encodeParam(t)}`}>#{t}</Link>
-            ))}
+              <div className="mt-6 flex flex-wrap gap-2">
+                {categories.map((c) => (
+                  <Link key={c} className={pill} href={`/blog/category/${encodeParam(c)}`}>{c}</Link>
+                ))}
+                {tags.map((t) => (
+                  <Link key={t} className={pill} href={`/blog/tag/${encodeParam(t)}`}>#{t}</Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section style={{ padding: "0 0 60px 0" }}>
+      <section className="py-16 md:py-24">
         <div className="container">
           {q ? (
-            <div className="card" style={{ marginBottom: 16 }}>
+            <div className={`${cardCls} mb-8`}>
               Showing results for <strong>{q}</strong> ({total} post{total === 1 ? "" : "s"})
-              <div className="btnRow">
-                <Link className="button secondary" href="/blog">Clear search</Link>
+              <div className={btnRow}>
+                <Link className={buttonSecondary} href="/blog">Clear search</Link>
               </div>
             </div>
           ) : null}
 
-          <div className="grid2">
+          <div className={grid2}>
             {items.map((p) => (
               <PostCard key={p.slug} item={p} />
             ))}

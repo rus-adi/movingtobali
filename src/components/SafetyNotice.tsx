@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { card, pill } from "@/components/ui/styles";
 
 export default function SafetyNotice({ kind }: { kind: "visa" | "housing" | "general" }) {
   const title = kind === "visa" ? "Visa & residency note" : kind === "housing" ? "Housing note" : "Important note";
@@ -10,14 +11,14 @@ export default function SafetyNotice({ kind }: { kind: "visa" | "housing" | "gen
         : "This page shares experience-based guidance for families. Verify any critical details with official sources.";
 
   return (
-    <div className="card" style={{ padding: 16 }}>
-      <strong>{title}</strong>
-      <div style={{ marginTop: 8, color: "var(--muted)" }}>{body}</div>
-      <div style={{ marginTop: 10, display: "flex", gap: 10, flexWrap: "wrap" }}>
-        <Link className="pill" href="/official-links" data-track="notice_official_links">
+    <div className={`${card} p-6`}>
+      <strong className="text-sm font-semibold text-gray-900">{title}</strong>
+      <div className="mt-3 text-sm leading-6 text-gray-600">{body}</div>
+      <div className="mt-4 flex flex-wrap gap-3">
+        <Link className={pill} href="/official-links" data-track="notice_official_links">
           Official links
         </Link>
-        <Link className="pill" href="/contact?topic=Question" data-track="notice_contact">
+        <Link className={pill} href="/contact?topic=Question" data-track="notice_contact">
           Ask a question
         </Link>
       </div>

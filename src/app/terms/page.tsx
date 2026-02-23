@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import RichTextBlock from "@/components/RichTextBlock";
 import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
+import { badge, cardCls } from "@/components/ui/styles";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
@@ -21,21 +23,21 @@ export default function TermsPage() {
     <main>
       <JsonLd data={schemas} />
 
-      <section style={{ padding: "56px 0 18px 0" }}>
+      <section className="bg-gray-50 py-16 md:py-24">
         <div className="container">
-          <div className="badge">Terms</div>
-          <h1 className="h1" style={{ marginTop: 12 }}>Terms of Use</h1>
-          <p className="lead" style={{ maxWidth: 980 }}>
+          <div className={badge}>Terms</div>
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Terms of Use</h1>
+          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
             By using this site, you agree to the terms below.
           </p>
         </div>
       </section>
 
-      <section style={{ padding: "0 0 60px 0" }}>
-        <div className="container" style={{ display: "grid", gap: 18 }}>
-          <div className="card">
-            <strong>Informational use only</strong>
-            <div className="prose" style={{ marginTop: 10 }}>
+      <section className="py-16 md:py-24">
+        <div className="container grid gap-6">
+          <div className={cardCls}>
+            <strong className="text-sm font-semibold text-gray-900">Informational use only</strong>
+            <RichTextBlock className="mt-4">
               <p>
                 Content on this site is provided for informational purposes, based on experience and research.
                 It is not immigration, legal, medical, or tax advice.
@@ -43,51 +45,49 @@ export default function TermsPage() {
               <p>
                 Rules, pricing, and requirements can change. Always verify critical details with official sources and qualified professionals.
               </p>
-            </div>
+            </RichTextBlock>
           </div>
 
-          <div className="card">
-            <strong>No guarantees</strong>
-            <div className="prose" style={{ marginTop: 10 }}>
+          <div className={cardCls}>
+            <strong className="text-sm font-semibold text-gray-900">No guarantees</strong>
+            <RichTextBlock className="mt-4">
               <p>
                 We do not guarantee outcomes such as visa approval, rental availability, school admissions, pricing, or service quality.
                 You are responsible for your decisions and due diligence.
               </p>
-            </div>
+            </RichTextBlock>
           </div>
 
-          <div className="card">
-            <strong>Partner links</strong>
-            <div className="prose" style={{ marginTop: 10 }}>
+          <div className={cardCls}>
+            <strong className="text-sm font-semibold text-gray-900">Partner links</strong>
+            <RichTextBlock className="mt-4">
               <p>
                 Some links may be partner links. If you contact a partner through our site, we may receive a referral fee at no extra cost to you.
                 Read more on <a href="/disclosure">Disclosure</a>.
               </p>
-            </div>
+            </RichTextBlock>
           </div>
 
-          <div className="card">
-            <strong>Copyright</strong>
-            <div className="prose" style={{ marginTop: 10 }}>
+          <div className={cardCls}>
+            <strong className="text-sm font-semibold text-gray-900">Copyright</strong>
+            <RichTextBlock className="mt-4">
               <p>
                 Unless otherwise noted, site content is owned by Empathy School or its licensors.
                 You may share links and short excerpts with attribution.
               </p>
-            </div>
+            </RichTextBlock>
           </div>
 
-          <div className="card">
-            <strong>Contact</strong>
-            <div className="prose" style={{ marginTop: 10 }}>
+          <div className={cardCls}>
+            <strong className="text-sm font-semibold text-gray-900">Contact</strong>
+            <RichTextBlock className="mt-4">
               <p>
                 Questions? Use <a href="/contact?topic=Terms">Contact</a>.
               </p>
-            </div>
+            </RichTextBlock>
           </div>
 
-          <div style={{ fontSize: 13, color: "var(--muted)" }}>
-            Last updated: {LAST_UPDATED}
-          </div>
+          <div className="text-xs text-gray-500">Last updated: {LAST_UPDATED}</div>
         </div>
       </section>
     </main>
