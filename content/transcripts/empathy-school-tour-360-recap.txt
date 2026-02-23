@@ -1,0 +1,22 @@
+[Detailed recap placeholder — replace with the real YouTube transcript when available]
+
+This site standard is: every embedded video should have a transcript (best) or a detailed recap (acceptable) for SEO + accessibility.
+
+We have not pulled the official transcript in this build. Please replace this file with the real transcript from YouTube (“Show transcript”) before relying on it for indexing.
+
+Suggested recap structure for the Empathy School 360° tour (fill in with what you actually see):
+
+00:00 Intro — what this tour covers
+00:30 Campus entrance + first impressions
+01:15 Classroom spaces — how rooms are laid out and used
+02:30 Outdoor areas — nature time, play spaces, shaded areas
+03:45 Project / activity areas — hands-on learning spaces
+05:00 Daily flow — how kids move through the campus
+06:30 Parent logistics — drop-off/pick-up, where parents wait (if shown)
+07:30 Closing — what to do next / how to book a tour
+
+Notes to capture while you review:
+- What feels calm / regulated vs overstimulating
+- Where kids can focus quietly vs be active
+- What you want to ask about supervision and support
+- What kind of child might thrive here (and who might not)

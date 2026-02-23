@@ -10,13 +10,31 @@ tags:
 category: Start
 draft: false
 noindex: false
+video:
+  youtubeId: "vTds0BelBf0"
+  title: "Why Bali Became the Home of Empathy School"
+  summary: "A short founder story about why Bali became home for Empathy School — and a calm reminder that the first decisions (timeline, budget, and areas) shape everything that comes next."
+  transcriptFile: "content/transcripts/founder-story-why-bali-became-home.txt"
+  uploadDate: "2026-02-23"
+  permission: "owned"
+  childrenVisible: false
+  consentConfirmed: false
+  ctaText: "Explore schools & learning"
+  ctaHref: "/schools"
+social:
+  youtubeUrl: "https://www.youtube.com/watch?v=vTds0BelBf0"
+  instagramUrl: "https://www.instagram.com/reel/DUDKz7SkZLB/"
+  instagram:
+    - label: "12 families: first Bali trip"
+      url: "https://www.instagram.com/reel/DUh7pLJEz-q/"
+    - label: "Empathy School in Bali"
+      url: "https://www.instagram.com/reel/DUDKz7SkZLB/"
 faqs:
 - q: "How long should we visit before deciding to relocate?"
   a: "If you can, plan at least 2–4 weeks. It’s enough time to feel routines (school run, errands, evenings) rather than just holiday mode."
 - q: "What should we decide first?"
-  a: "'Timeline + budget + area short list. Those three decisions shape almost everything"
-else: visas, housing, and school options.'
-updated: '2026-02-22'
+  a: "Timeline + budget + area short list. Those three decisions shape almost everything else: visas, housing, and school options."
+updated: '2026-02-23'
 ---
 
 ## Quick start

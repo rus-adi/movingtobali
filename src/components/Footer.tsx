@@ -47,6 +47,8 @@ export default function Footer() {
             <div className="text-sm font-semibold text-gray-900">Site</div>
             <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-2 text-sm text-gray-600 sm:grid-cols-3">
               <a className="transition-colors hover:text-gray-900" href="/start-here">Start here</a>
+              <a className="transition-colors hover:text-gray-900" href="/schools">Schools</a>
+              <a className="transition-colors hover:text-gray-900" href="/camps">Camps</a>
               <a className="transition-colors hover:text-gray-900" href="/areas">Bali areas</a>
               <a className="transition-colors hover:text-gray-900" href="/costs">Costs</a>
               <a className="transition-colors hover:text-gray-900" href="/family-life">Family life</a>

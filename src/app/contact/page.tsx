@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import DisclosureNotice from "@/components/DisclosureNotice";
 import ContactForm from "@/components/ContactForm";
+import VideoBlock from "@/components/VideoBlock";
 import { getSite } from "@/lib/site";
 import { getPartnerBySlug } from "@/lib/partners";
 import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
+import type { VideoBlock as VideoBlockType } from "@/lib/content";
 import { badge, cardCls } from "@/components/ui/styles";
 
 export const metadata: Metadata = {
@@ -14,6 +16,21 @@ export const metadata: Metadata = {
 };
 
 type Props = { searchParams?: { topic?: string; from?: string; partner?: string } };
+
+const CONTACT_VIDEO: VideoBlockType = {
+  youtubeId: "VvBVtTIXdbU",
+  title: "Why this hub exists (short)",
+  summary:
+    "If you’re unsure where to begin, this short clip explains the purpose of the hub: reduce overwhelm with a calm roadmap and practical next steps.",
+  transcript:
+    "Detailed recap (not verbatim)\n\n- This hub exists to make the early phase of planning less stressful for families.\n- Start with sequencing: timeline → budget range → shortlist areas → then visas/housing/schools.\n- If you’re stuck, send a message with your kids’ ages, timeline, and what you’ve already tried.\n",
+  uploadDate: "2026-02-23",
+  permission: "owned",
+  childrenVisible: false,
+  consentConfirmed: false,
+  ctaText: "Start here",
+  ctaHref: "/start-here",
+};
 
 export default function ContactPage({ searchParams }: Props) {
   const site = getSite();
@@ -89,6 +106,8 @@ export default function ContactPage({ searchParams }: Props) {
             partnerName={partnerName || undefined}
             fallbackMailto={mailto}
           />
+
+          <VideoBlock video={CONTACT_VIDEO} />
 
           <div className={cardCls}>
             <div className="text-sm leading-6 text-gray-600">

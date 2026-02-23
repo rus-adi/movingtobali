@@ -2,7 +2,19 @@ import type { SocialBlock } from "@/lib/content";
 import { cardCls, pill } from "@/components/ui/styles";
 
 export default function SocialLinks({ social }: { social?: SocialBlock }) {
-  if (!social || (!social.instagramUrl && !social.youtubeUrl)) return null;
+  if (!social) return null;
+
+  const youtube = [
+    ...(Array.isArray(social.youtube) ? social.youtube : []),
+    ...(social.youtubeUrl ? [{ url: social.youtubeUrl, label: "YouTube link" }] : []),
+  ].filter((x) => x && x.url);
+
+  const instagram = [
+    ...(Array.isArray(social.instagram) ? social.instagram : []),
+    ...(social.instagramUrl ? [{ url: social.instagramUrl, label: "Instagram post" }] : []),
+  ].filter((x) => x && x.url);
+
+  if (!youtube.length && !instagram.length) return null;
 
   return (
     <div className={cardCls}>
@@ -12,16 +24,31 @@ export default function SocialLinks({ social }: { social?: SocialBlock }) {
       </p>
 
       <div className="mt-4 flex flex-wrap gap-3">
-        {social.youtubeUrl ? (
-          <a className={pill} href={social.youtubeUrl} target="_blank" rel="noreferrer" data-track="social_youtube_open">
-            YouTube link
+        {youtube.map((x) => (
+          <a
+            key={`yt:${x.url}`}
+            className={pill}
+            href={x.url}
+            target="_blank"
+            rel="noreferrer"
+            data-track="social_youtube_open"
+          >
+            {x.label || "YouTube"}
           </a>
-        ) : null}
-        {social.instagramUrl ? (
-          <a className={pill} href={social.instagramUrl} target="_blank" rel="noreferrer" data-track="social_instagram_open">
-            Instagram post
+        ))}
+
+        {instagram.map((x) => (
+          <a
+            key={`ig:${x.url}`}
+            className={pill}
+            href={x.url}
+            target="_blank"
+            rel="noreferrer"
+            data-track="social_instagram_open"
+          >
+            {x.label || "Instagram"}
           </a>
-        ) : null}
+        ))}
       </div>
     </div>
   );

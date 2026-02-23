@@ -20,6 +20,9 @@ export type VideoBlock = {
 export type SocialBlock = {
   instagramUrl?: string;
   youtubeUrl?: string;
+  /** Optional expanded lists (kept lightweight: links only, not embeds). */
+  instagram?: { url: string; label?: string }[];
+  youtube?: { url: string; label?: string }[];
 };
 
 
