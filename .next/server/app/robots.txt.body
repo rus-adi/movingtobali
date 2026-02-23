@@ -1,6 +1,0 @@
-User-Agent: *
-Allow: /
-Disallow: /go/
-Disallow: /admin/
-
-Sitemap: https://movingtobali.empathy.school/sitemap.xml
