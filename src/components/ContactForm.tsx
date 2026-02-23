@@ -159,7 +159,7 @@ export default function ContactForm({ topic, from, partnerSlug, partnerName, fal
         </div>
 
         {status === "success" ? (
-          <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
+          <div className="rounded-2xl border border-blue-200 bg-blue-50 p-5 shadow-sm">
             <strong className="text-sm font-semibold text-gray-900">Received.</strong>
             <div className="mt-3 text-sm leading-6 text-gray-600">
               Thanks — we’ll respond by email as soon as we can.
@@ -168,7 +168,7 @@ export default function ContactForm({ topic, from, partnerSlug, partnerName, fal
         ) : null}
 
         {status === "error" ? (
-          <div className="rounded-2xl border border-rose-200 bg-rose-50 p-5">
+          <div className="rounded-2xl border border-gray-200 bg-gray-50 p-5 shadow-sm">
             <strong className="text-sm font-semibold text-gray-900">Couldn’t send.</strong>
             <div className="mt-3 text-sm leading-6 text-gray-600">
               {errorMsg || "Please try again or email us directly."}

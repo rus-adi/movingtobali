@@ -75,7 +75,7 @@ export default function SearchPage({ searchParams }: Props) {
                         <div key={r.slug} className="grid gap-1">
                           <Link
                             href={routeFor(r.kind, r.slug)}
-                            className="font-semibold text-blue-700 underline underline-offset-4 hover:text-blue-800"
+                            className="font-semibold text-blue-600 underline underline-offset-4 transition-colors hover:text-blue-700"
                             data-track="search_open"
                             data-kind={r.kind}
                             data-slug={r.slug}

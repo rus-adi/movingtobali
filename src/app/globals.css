@@ -1,2 +1,65 @@
 @import "tailwindcss";
 @config "../../tailwind.config.js";
+
+/*
+  Subtle page-load section reveal (fade + slide up) with stagger.
+  Minimal CSS only for keyframes + stagger; all other styling uses Tailwind utilities.
+*/
+
+@layer utilities {
+  @keyframes section-in {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  main > section {
+    opacity: 0;
+    transform: translateY(14px);
+    animation: section-in 700ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  /* Stagger the first few sections for a premium, sequential reveal (then cap). */
+  main > section:nth-of-type(1) {
+    animation-delay: 0ms;
+  }
+  main > section:nth-of-type(2) {
+    animation-delay: 110ms;
+  }
+  main > section:nth-of-type(3) {
+    animation-delay: 220ms;
+  }
+  main > section:nth-of-type(4) {
+    animation-delay: 330ms;
+  }
+  main > section:nth-of-type(5) {
+    animation-delay: 440ms;
+  }
+  main > section:nth-of-type(6) {
+    animation-delay: 550ms;
+  }
+  main > section:nth-of-type(7) {
+    animation-delay: 660ms;
+  }
+  main > section:nth-of-type(8) {
+    animation-delay: 770ms;
+  }
+  main > section:nth-of-type(n + 9) {
+    animation-delay: 850ms;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main > section {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}

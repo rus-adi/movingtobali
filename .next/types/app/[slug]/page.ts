@@ -1,4 +1,4 @@
-// File: /media/Data/PROJECTS/moving-to-bali-batch14-official-links-linkcheck/src/app/[slug]/page.tsx
+// File: /media/Data/PROJECTS/moving-to-bali/src/app/[slug]/page.tsx
 import * as entry from '../../../../src/app/[slug]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

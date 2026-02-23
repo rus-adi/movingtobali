@@ -46,21 +46,21 @@ export default function Footer() {
           <div>
             <div className="text-sm font-semibold text-gray-900">Site</div>
             <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-2 text-sm text-gray-600 sm:grid-cols-3">
-              <a className="hover:text-gray-900" href="/start-here">Start here</a>
-              <a className="hover:text-gray-900" href="/areas">Bali areas</a>
-              <a className="hover:text-gray-900" href="/costs">Costs</a>
-              <a className="hover:text-gray-900" href="/family-life">Family life</a>
-              <a className="hover:text-gray-900" href="/guides">Guides</a>
-              <a className="hover:text-gray-900" href="/blog">Blog</a>
-              <a className="hover:text-gray-900" href="/resources">Resources</a>
-              <a className="hover:text-gray-900" href="/partners">Partners</a>
-              <a className="hover:text-gray-900" href="/contact">Contact</a>
-              <a className="hover:text-gray-900" href="/about">About</a>
-              <a className="hover:text-gray-900" href="/disclosure">Disclosure</a>
-              <a className="hover:text-gray-900" href="/privacy">Privacy</a>
-              <a className="hover:text-gray-900" href="/terms">Terms</a>
-              <a className="hover:text-gray-900" href="/faq">FAQ hub</a>
-              <a className="hover:text-gray-900" href="/official-links">Official links</a>
+              <a className="transition-colors hover:text-gray-900" href="/start-here">Start here</a>
+              <a className="transition-colors hover:text-gray-900" href="/areas">Bali areas</a>
+              <a className="transition-colors hover:text-gray-900" href="/costs">Costs</a>
+              <a className="transition-colors hover:text-gray-900" href="/family-life">Family life</a>
+              <a className="transition-colors hover:text-gray-900" href="/guides">Guides</a>
+              <a className="transition-colors hover:text-gray-900" href="/blog">Blog</a>
+              <a className="transition-colors hover:text-gray-900" href="/resources">Resources</a>
+              <a className="transition-colors hover:text-gray-900" href="/partners">Partners</a>
+              <a className="transition-colors hover:text-gray-900" href="/contact">Contact</a>
+              <a className="transition-colors hover:text-gray-900" href="/about">About</a>
+              <a className="transition-colors hover:text-gray-900" href="/disclosure">Disclosure</a>
+              <a className="transition-colors hover:text-gray-900" href="/privacy">Privacy</a>
+              <a className="transition-colors hover:text-gray-900" href="/terms">Terms</a>
+              <a className="transition-colors hover:text-gray-900" href="/faq">FAQ hub</a>
+              <a className="transition-colors hover:text-gray-900" href="/official-links">Official links</a>
             </div>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">

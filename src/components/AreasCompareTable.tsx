@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ContentItem } from "@/lib/content";
+import { card } from "@/components/ui/styles";
 
 function v(x?: string) {
   const s = (x || "").trim();
@@ -11,7 +12,7 @@ export default function AreasCompareTable({ areas }: { areas: ContentItem[] }) {
 
   return (
     <div
-      className="overflow-x-auto rounded-2xl border border-gray-200 bg-white shadow-sm"
+      className={`overflow-x-auto ${card}`}
       role="region"
       aria-label="Areas comparison table"
       tabIndex={0}
@@ -52,7 +53,7 @@ export default function AreasCompareTable({ areas }: { areas: ContentItem[] }) {
           {areas.map((a) => (
             <tr key={a.slug} className="border-b border-gray-200 last:border-b-0">
               <td className="px-3 py-3 align-top">
-                <Link href={`/areas/${a.slug}`} className="font-semibold text-gray-900 hover:text-blue-700">
+                <Link href={`/areas/${a.slug}`} className="font-semibold text-gray-900 transition-colors hover:text-blue-600">
                   {a.title.replace(/\sfor families$/i, "")}
                 </Link>
               </td>

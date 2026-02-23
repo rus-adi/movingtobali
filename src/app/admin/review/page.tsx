@@ -242,7 +242,7 @@ export default function AdminReviewPage() {
                   .map((it) => (
                     <div key={it.key} className="border-t border-gray-200 pt-6 first:border-t-0 first:pt-0">
                       <div className="flex flex-wrap items-baseline gap-3">
-                        <a href={it.path} className="font-semibold text-gray-900 hover:text-blue-700">
+                        <a href={it.path} className="font-semibold text-gray-900 transition-colors hover:text-blue-600">
                           {it.title}
                         </a>
                         <span className={badge}>{it.kind}</span>

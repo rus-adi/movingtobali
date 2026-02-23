@@ -7,7 +7,7 @@ const base = "text-gray-600 leading-7";
 export const richTextCls =
   base +
   " [&_p]:my-4" +
-  " [&_a]:text-blue-700 [&_a]:underline [&_a]:underline-offset-4" +
+  " [&_a]:text-blue-600 [&_a]:underline [&_a]:underline-offset-4 [&_a]:transition-colors [&_a]:duration-200 [&_a:hover]:text-blue-700" +
   " [&_h2]:mt-10 [&_h2]:mb-3 [&_h2]:text-3xl [&_h2]:font-bold [&_h2]:tracking-tight [&_h2]:text-gray-900" +
   " [&_h3]:mt-8 [&_h3]:mb-2 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:tracking-tight [&_h3]:text-gray-900" +
   " [&_code]:rounded-lg [&_code]:border [&_code]:border-gray-200 [&_code]:bg-gray-50 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:font-mono [&_code]:text-[0.95em]" +
