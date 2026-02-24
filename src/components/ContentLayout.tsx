@@ -5,9 +5,11 @@ import VideoBlock from "@/components/VideoBlock";
 import SocialLinks from "@/components/SocialLinks";
 import Toc from "@/components/Toc";
 import RichText from "@/components/RichText";
+import FaqBlock from "@/components/FaqBlock";
 import DisclosureNotice from "@/components/DisclosureNotice";
 import SafetyNotice from "@/components/SafetyNotice";
 import { getSite } from "@/lib/site";
+import { getEffectiveFaqs } from "@/lib/faqs";
 import {
   badge,
   badgeAccent,
@@ -54,6 +56,7 @@ export default function ContentLayout({
   primaryPillar?: ContentItem | null;
 }) {
   const site = getSite();
+  const faqs = getEffectiveFaqs(item);
 
   const dateLabel = item.date
     ? new Date(item.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })
@@ -84,9 +87,7 @@ export default function ContentLayout({
             {item.video?.youtubeId ? <span className={badgeGood}>video</span> : null}
           </div>
 
-          <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            {item.title}
-          </h1>
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">{item.title}</h1>
 
           <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">{item.description}</p>
 
@@ -157,8 +158,12 @@ export default function ContentLayout({
           ) : null}
 
           <div className={`${grid2} items-start`}>
-            <div className={cardCls}>
-              <RichText html={html} />
+            <div className="grid gap-6">
+              <div className={cardCls}>
+                <RichText html={html} />
+              </div>
+
+              <FaqBlock faqs={faqs} />
             </div>
 
             <div className="grid gap-6">

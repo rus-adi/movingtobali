@@ -20,6 +20,7 @@ export function generateMetadata({ params }: { params: { category: string } }): 
     title: `Guide category: ${category}`,
     description: `Guides in the “${category}” category.`,
     alternates: { canonical: `/guides/category/${encodeParam(category)}` },
+    robots: { index: false, follow: true },
   };
 }
 

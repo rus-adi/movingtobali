@@ -20,6 +20,7 @@ export function generateMetadata({ params }: { params: { category: string } }): 
     title: `Category: ${category}`,
     description: `Blog posts in the “${category}” category.`,
     alternates: { canonical: `/blog/category/${encodeParam(category)}` },
+    robots: { index: false, follow: true },
   };
 }
 

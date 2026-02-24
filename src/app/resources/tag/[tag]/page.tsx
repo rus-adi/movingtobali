@@ -20,6 +20,7 @@ export function generateMetadata({ params }: { params: { tag: string } }): Metad
     title: `Resource tag: ${tag}`,
     description: `Resources tagged “${tag}”.`,
     alternates: { canonical: `/resources/tag/${encodeParam(tag)}` },
+    robots: { index: false, follow: true },
   };
 }
 

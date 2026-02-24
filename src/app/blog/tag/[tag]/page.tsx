@@ -20,6 +20,7 @@ export function generateMetadata({ params }: { params: { tag: string } }): Metad
     title: `Tag: ${tag}`,
     description: `Blog posts tagged “${tag}”.`,
     alternates: { canonical: `/blog/tag/${encodeParam(tag)}` },
+    robots: { index: false, follow: true },
   };
 }
 

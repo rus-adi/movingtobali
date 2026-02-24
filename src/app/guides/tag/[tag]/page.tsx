@@ -20,6 +20,7 @@ export function generateMetadata({ params }: { params: { tag: string } }): Metad
     title: `Guide tag: ${tag}`,
     description: `Guides tagged “${tag}”.`,
     alternates: { canonical: `/guides/tag/${encodeParam(tag)}` },
+    robots: { index: false, follow: true },
   };
 }
 

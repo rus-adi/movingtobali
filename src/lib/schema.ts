@@ -1,6 +1,7 @@
 import type { ContentItem, VideoBlock } from "@/lib/content";
 import { absoluteUrl, getSite, getSiteUrl } from "@/lib/site";
 import { loadTranscript, truncateForSchema } from "@/lib/transcripts";
+import { getEffectiveFaqs } from "@/lib/faqs";
 
 export function buildOrganizationSchema() {
   const site = getSite();
@@ -85,7 +86,45 @@ export function buildArticleSchema(item: ContentItem, pathname: string) {
   return schema;
 }
 
-export function buildVideoObjectSchema(video: VideoBlock, pageTitle: string, pageDescription: string, pathname: string) {
+export function buildFaqPageSchema(
+  faqs: { q: string; a: string }[],
+  pathname: string,
+  opts?: { name?: string; description?: string }
+) {
+  const siteUrl = getSiteUrl();
+
+  const cleaned = (faqs || [])
+    .map((f) => ({ q: String((f as any)?.q || "").trim(), a: String((f as any)?.a || "").trim() }))
+    .filter((f) => f.q && f.a)
+    .slice(0, 10);
+
+  if (!cleaned.length) return null;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    name: opts?.name,
+    description: opts?.description,
+    url: `${siteUrl}${pathname}`,
+    inLanguage: "en",
+    mainEntity: cleaned.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: f.a,
+      },
+    })),
+  };
+}
+
+export function buildVideoObjectSchema(
+  video: VideoBlock,
+  pageTitle: string,
+  pageDescription: string,
+  pathname: string,
+  fallbackUploadDate?: string
+) {
   const site = getSite();
   const siteUrl = getSiteUrl();
   const transcriptText = loadTranscript(video);
@@ -103,7 +142,7 @@ export function buildVideoObjectSchema(video: VideoBlock, pageTitle: string, pag
     embedUrl,
     contentUrl: watchUrl,
     thumbnailUrl: [thumb],
-    uploadDate: video.uploadDate,
+    uploadDate: video.uploadDate || fallbackUploadDate,
     publisher: {
       "@type": "Organization",
       name: site.brand.publisherName || site.brand.name,
@@ -124,25 +163,38 @@ export function buildVideoObjectSchema(video: VideoBlock, pageTitle: string, pag
 
 export function buildSchemasForContentPage(item: ContentItem, pathname: string) {
   const siteUrl = getSiteUrl();
-  const site = getSite();
 
-  const base = [
+  const base: any[] = [
     buildOrganizationSchema(),
     buildWebSiteSchema(),
     buildWebPageSchema({ pathname, name: item.title, description: item.description }),
     buildBreadcrumbSchema([
       { name: "Home", url: `${siteUrl}/` },
-      { name: item.kind === "pillars" ? "Start" : item.kind.charAt(0).toUpperCase() + item.kind.slice(1), url: `${siteUrl}/${item.kind === "pillars" ? "" : item.kind}` },
+      {
+        name:
+          item.kind === "pillars"
+            ? "Start"
+            : item.kind.charAt(0).toUpperCase() + item.kind.slice(1),
+        url: `${siteUrl}/${item.kind === "pillars" ? "" : item.kind}`,
+      },
       { name: item.title, url: `${siteUrl}${pathname}` },
     ]),
   ];
+
+  // FAQ schema (only if we actually have Q&A content to display)
+  const faqs = getEffectiveFaqs(item);
+  const faqSchema = buildFaqPageSchema(faqs, pathname, {
+    name: `${item.title} FAQ`,
+    description: `Frequently asked questions about ${item.title}.`,
+  });
+  if (faqSchema) base.push(faqSchema);
 
   if (item.kind !== "pillars") {
     base.push(buildArticleSchema(item, pathname));
   }
 
   if (item.video?.youtubeId) {
-    base.push(buildVideoObjectSchema(item.video, item.title, item.description, pathname));
+    base.push(buildVideoObjectSchema(item.video, item.title, item.description, pathname, item.updated || item.date));
   }
 
   return base;

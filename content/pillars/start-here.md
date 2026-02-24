@@ -1,6 +1,7 @@
 ---
 title: 'Start here: a parent-first roadmap'
-description: "A step-by-step roadmap for families considering Bali—what to decide first, what to delay, and how to reduce stress."
+description: A step-by-step roadmap for families considering Bali—what to decide first,
+  what to delay, and how to reduce stress.
 order: 1
 tags:
 - start
@@ -11,29 +12,45 @@ category: Start
 draft: false
 noindex: false
 video:
-  youtubeId: "vTds0BelBf0"
-  title: "Why Bali Became the Home of Empathy School"
-  summary: "A short founder story about why Bali became home for Empathy School — and a calm reminder that the first decisions (timeline, budget, and areas) shape everything that comes next."
-  transcriptFile: "content/transcripts/founder-story-why-bali-became-home.txt"
-  uploadDate: "2026-02-23"
-  permission: "owned"
+  youtubeId: vTds0BelBf0
+  title: Why Bali Became the Home of Empathy School
+  summary: A short founder story about why Bali became home for Empathy School — and
+    a calm reminder that the first decisions (timeline, budget, and areas) shape everything
+    that comes next.
+  transcriptFile: content/transcripts/founder-story-why-bali-became-home.txt
+  uploadDate: '2026-02-23'
+  permission: owned
   childrenVisible: false
   consentConfirmed: false
-  ctaText: "Explore schools & learning"
-  ctaHref: "/schools"
+  ctaText: Explore schools & learning
+  ctaHref: /schools
 social:
-  youtubeUrl: "https://www.youtube.com/watch?v=vTds0BelBf0"
-  instagramUrl: "https://www.instagram.com/reel/DUDKz7SkZLB/"
+  youtubeUrl: https://www.youtube.com/watch?v=vTds0BelBf0
+  instagramUrl: https://www.instagram.com/reel/DUDKz7SkZLB/
   instagram:
-    - label: "12 families: first Bali trip"
-      url: "https://www.instagram.com/reel/DUh7pLJEz-q/"
-    - label: "Empathy School in Bali"
-      url: "https://www.instagram.com/reel/DUDKz7SkZLB/"
+  - label: '12 families: first Bali trip'
+    url: https://www.instagram.com/reel/DUh7pLJEz-q/
+  - label: Empathy School in Bali
+    url: https://www.instagram.com/reel/DUDKz7SkZLB/
 faqs:
-- q: "How long should we visit before deciding to relocate?"
-  a: "If you can, plan at least 2–4 weeks. It’s enough time to feel routines (school run, errands, evenings) rather than just holiday mode."
-- q: "What should we decide first?"
-  a: "Timeline + budget + area short list. Those three decisions shape almost everything else: visas, housing, and school options."
+- q: How long should we visit before deciding to relocate?
+  a: If you can, plan at least 2–4 weeks. It’s enough time to feel routines (school
+    run, errands, evenings) rather than just holiday mode.
+- q: What should we decide first?
+  a: 'Timeline + budget + area short list. Those three decisions shape almost everything
+    else: visas, housing, and school options.'
+- q: How long should we stay in Bali before committing long-term?
+  a: If you can, plan a test stay long enough to experience normal routines (school
+    run, groceries, bedtime, rainy days). Many families find 2–6 weeks gives clearer
+    signal than a quick holiday.
+- q: Do we need to ride a motorbike as a family?
+  a: Not necessarily. Many families use a car + driver, ride-hail apps, or walkable
+    micro-areas. The right choice depends on your kids’ ages, your risk tolerance,
+    and how far your daily commute is.
+- q: What are the first 3 decisions that make the rest easier?
+  a: Pick a realistic visa pathway, choose 1–2 areas to test (based on commute + routines),
+    and set a simple monthly budget range. Those three decisions reduce most downstream
+    stress.
 updated: '2026-02-23'
 ---
 

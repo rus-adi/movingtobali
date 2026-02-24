@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Search",
   description: "Search across pillars, areas, guides, blog posts, and resources.",
   alternates: { canonical: "/search" },
+  robots: { index: false, follow: true },
 };
 
 type Props = { searchParams?: { q?: string } };

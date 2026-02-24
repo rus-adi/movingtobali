@@ -20,6 +20,7 @@ export function generateMetadata({ params }: { params: { tag: string } }): Metad
     title: `Area tag: ${tag}`,
     description: `Area guides tagged “${tag}”.`,
     alternates: { canonical: `/areas/tag/${encodeParam(tag)}` },
+    robots: { index: false, follow: true },
   };
 }
 

@@ -1,5 +1,16 @@
 import { cn } from "@/lib/cn";
 
+// Shared markdown styling for content pages.
+//
+// The intent here is to preserve the clean, consistent Batch 1 look:
+// - readable typography
+// - strong heading hierarchy
+// - unordered lists rendered as a simple checklist (✓)
+//
+// IMPORTANT:
+// - UI only (no content changes)
+// - Tailwind utilities only
+
 const base = "text-gray-600 leading-7";
 
 // Styled HTML output from markdown (dangerouslySetInnerHTML) using Tailwind utilities only.
@@ -22,7 +33,11 @@ export const richTextCls =
   " [&_th]:border-b [&_th]:border-gray-200 [&_th]:bg-gray-50 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:text-xs [&_th]:font-semibold [&_th]:uppercase [&_th]:tracking-wide [&_th]:text-gray-600" +
   " [&_td]:border-b [&_td]:border-gray-200 [&_td]:px-3 [&_td]:py-2 [&_td]:align-top" +
   " [&_hr]:my-10 [&_hr]:border-gray-200" +
-  " [&_summary]:cursor-pointer";
+  " [&_summary]:cursor-pointer" +
+  // Presentation-only wrapper for “Quick …” sections.
+  // Keep the first Quick Start heading from getting a huge top margin when it's
+  // the first block inside the content card.
+  " [&_.quick-card>h2]:mt-0";
 
 export default function RichText({ html, className }: { html: string; className?: string }) {
   return <div className={cn(richTextCls, className)} dangerouslySetInnerHTML={{ __html: html }} />;

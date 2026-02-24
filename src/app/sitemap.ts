@@ -1,9 +1,15 @@
 import type { MetadataRoute } from "next";
 import { getSiteUrl } from "@/lib/site";
-import { getAllCategories, getAllContent, getAllTags, encodeParam } from "@/lib/content";
+import { getAllContent } from "@/lib/content";
+import { getPartners } from "@/lib/partners";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = getSiteUrl().replace(/\/$/, "");
+  const env = process.env.NODE_ENV;
+
+  // NOTE:
+  // - We deliberately omit internal search + tag/category archive pages to avoid thin/duplicate URLs.
+  // - We also omit any content items explicitly marked `noindex: true`.
 
   const staticPaths = [
     "/",
@@ -21,7 +27,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/faq",
     "/official-links",
     "/partners",
-    "/search",
     "/contact",
     "/about",
     "/privacy",
@@ -31,32 +36,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticSet = new Set(staticPaths);
 
-  const entries: MetadataRoute.Sitemap = staticPaths.map((p) => ({
-    url: `${siteUrl}${p}`,
-    lastModified: new Date(),
-  }));
+  const entries: MetadataRoute.Sitemap = [];
 
+  const includePartners = () => {
+    if (env !== "production") return true;
+    // Production launch rule: if we don't have any verified/owned partners, don't surface /partners.
+    return getPartners().length > 0;
+  };
 
-// Pillars (only add if not already in staticPaths)
-getAllContent("pillars").forEach((p) => {
-  const path = `/${p.slug}`;
-  if (staticSet.has(path)) return;
-  entries.push({ url: `${siteUrl}${path}`, lastModified: new Date(p.updated || p.date || Date.now()) });
-});
+  staticPaths.forEach((p) => {
+    if (p === "/partners" && !includePartners()) return;
+    entries.push({ url: `${siteUrl}${p}`, lastModified: new Date() });
+  });
 
+  // Pillars (only add if not already in staticPaths)
+  getAllContent("pillars")
+    .filter((p) => !p.noindex)
+    .forEach((p) => {
+      const path = `/${p.slug}`;
+      if (staticSet.has(path)) return;
+      entries.push({ url: `${siteUrl}${path}`, lastModified: new Date(p.updated || p.date || Date.now()) });
+    });
 
   const addKind = (kind: "blog" | "guides" | "resources" | "areas") => {
-    getAllContent(kind).forEach((p) => {
-      entries.push({ url: `${siteUrl}/${kind}/${p.slug}`, lastModified: new Date(p.updated || p.date || Date.now()) });
-    });
-
-    getAllTags(kind).forEach((t) => {
-      entries.push({ url: `${siteUrl}/${kind}/tag/${encodeParam(t)}`, lastModified: new Date() });
-    });
-
-    getAllCategories(kind).forEach((c) => {
-      entries.push({ url: `${siteUrl}/${kind}/category/${encodeParam(c)}`, lastModified: new Date() });
-    });
+    getAllContent(kind)
+      .filter((p) => !p.noindex)
+      .forEach((p) => {
+        entries.push({ url: `${siteUrl}/${kind}/${p.slug}`, lastModified: new Date(p.updated || p.date || Date.now()) });
+      });
   };
 
   addKind("blog");

@@ -20,6 +20,7 @@ export function generateMetadata({ params }: { params: { category: string } }): 
     title: `Resource category: ${category}`,
     description: `Resources in the “${category}” category.`,
     alternates: { canonical: `/resources/category/${encodeParam(category)}` },
+    robots: { index: false, follow: true },
   };
 }
 

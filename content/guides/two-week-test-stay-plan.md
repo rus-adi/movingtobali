@@ -2,7 +2,7 @@
 title: The 2‑week test-stay plan (before you commit to Bali)
 description: "A practical test-stay plan for families—how to choose 2–3 areas, simulate routines, and avoid “holiday mode” decisions."
 date: "2026-02-22"
-updated: "2026-02-22"
+updated: "2026-02-23"
 category: Planning
 tags:
   - test-stay
@@ -63,6 +63,19 @@ A test stay is not a honeymoon. We recommend:
 Guide: [Phones and internet in Bali](/guides/phones-and-internet-in-bali)
 
 ## Step 4: Run “routine simulations”
+
+### Optional: add a kids “anchor” (camp or weekly program)
+
+If you’re doing a test stay, one simple way to avoid “holiday mode” is to give kids a predictable anchor for a few days:
+- a short holiday camp, or
+- a weekly program that runs during the week.
+
+It’s not required—but for many families it makes the visit more realistic (kids have structure, parents can do errands and calls).
+
+Start here:
+- [Camps & short-term programs](/camps)
+- [Camp questions checklist (copy/paste)](/resources/camp-questions-checklist)
+
 ### Simulation A: morning routine
 - breakfast
 - school/run timing (even if you aren’t enrolled)

@@ -2,7 +2,7 @@
 title: Groceries & meal routines in Bali (family-friendly)
 description: "A parent-first approach to feeding your family in Bali: groceries, meal planning, and how to reduce decision fatigue when you’re new."
 date: "2026-02-22"
-updated: "2026-02-22"
+updated: "2026-02-23"
 category: Family life
 tags:
   - groceries
@@ -12,6 +12,13 @@ tags:
   - planning
 draft: false
 noindex: false
+social:
+  instagramUrl: "https://www.instagram.com/empathy.school/reel/DPYiFh4kVRP/"
+  instagram:
+    - label: "Farmer’s market (reel)"
+      url: "https://www.instagram.com/empathy.school/reel/DPYiFh4kVRP/"
+    - label: "Nature cooking (reel)"
+      url: "https://www.instagram.com/empathy.school/reel/CzdBEPXvpA-/"
 faqs:
   - q: "Is it easy to find familiar groceries?"
     a: "Many families can find what they need, but availability varies by area. Expect some adaptation and keep a few “safe meals.”"
@@ -45,6 +52,30 @@ Once routine feels easy:
 - add new recipes
 - add new snacks
 
+---
+
+## Markets and the “Bali rhythm”
+
+For many families, Bali starts feeling like home when you have:
+- one reliable grocery shop,
+- one market you repeat,
+- and a few default meals.
+
+Supporting reel (optional context):
+
+<div class="mt-4 overflow-hidden rounded-2xl border border-gray-200 bg-white">
+  <iframe
+    src="https://www.instagram.com/reel/DPYiFh4kVRP/embed"
+    title="Farmer’s market (supporting reel)"
+    loading="lazy"
+    class="w-full"
+    style="min-height:520px"
+  ></iframe>
+</div>
+
+If you want a kid-friendly activity that also supports routine, cooking classes can be a nice “anchor.”
+Supporting reel: https://www.instagram.com/empathy.school/reel/CzdBEPXvpA-/
+
 ## What we learned the hard way
 When you’re new, food choices feel like constant decision-making. Routines buy you calm.
 
@@ -52,3 +83,4 @@ When you’re new, food choices feel like constant decision-making. Routines buy
 - [Family transport](/guides/family-transport-drivers-scooters-cars)
 - [Areas for families](/areas)
 - [Cost of living framework](/guides/cost-of-living-for-families-framework)
+- [Family life pillar](/family-life)
