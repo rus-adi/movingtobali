@@ -12,7 +12,7 @@ export default function Toc({ toc }: { toc: TocItem[] }) {
           <a
             key={item.id}
             href={`#${item.id}`}
-            className={`${pill} justify-start ${item.depth === 3 ? "ml-4" : ""}`}
+            className={`${pill} justify-start ${item.level === 3 ? "ml-4" : ""}`}
             data-track="toc_click"
             data-target={item.id}
           >
