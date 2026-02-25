@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
 import { getSite } from "@/lib/site";
 import { cn } from "@/lib/cn";
@@ -12,26 +12,6 @@ type NavItem = {
   label: string;
   track: string;
 };
-
-function ChevronDownIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-    >
-      <path
-        d="M5 7.5L10 12.5L15 7.5"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
 
 function MenuIcon({ className }: { className?: string }) {
   return (
@@ -56,60 +36,39 @@ export default function Navbar() {
   const site = getSite();
   const pathname = usePathname();
 
+  // Header must contain exactly 6 items in this order:
+  // Start Here, Visas, Costs, Housing, Schools, Contact (primary CTA)
   const navItems: NavItem[] = useMemo(
     () => [
-      { href: "/start-here", label: "Start here", track: "nav_start" },
+      { href: "/start-here", label: "Start Here", track: "nav_start" },
       { href: "/visas", label: "Visas", track: "nav_visas" },
+      { href: "/costs", label: "Costs", track: "nav_costs" },
       { href: "/housing", label: "Housing", track: "nav_housing" },
       { href: "/schools", label: "Schools", track: "nav_schools" },
-      { href: "/camps", label: "Camps", track: "nav_camps" },
-      { href: "/family-life", label: "Family life", track: "nav_family" },
-      { href: "/areas", label: "Areas", track: "nav_areas" },
-      { href: "/costs", label: "Costs", track: "nav_costs" },
-      { href: "/guides", label: "Guides", track: "nav_guides" },
-      { href: "/blog", label: "Blog", track: "nav_blog" },
-      { href: "/resources", label: "Resources", track: "nav_resources" },
-      { href: "/partners", label: "Partners", track: "nav_partners" },
-      { href: "/contact", label: "Contact", track: "nav_contact" },
-      { href: "/faq", label: "FAQ", track: "nav_faq" },
-      { href: "/official-links", label: "Official links", track: "nav_official" },
     ],
     []
   );
 
-  const top = navItems.slice(0, 5);
-  const other = navItems.slice(5);
+  const contactItem: NavItem = useMemo(
+    () => ({ href: "/contact", label: "Contact", track: "nav_contact" }),
+    []
+  );
 
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [otherOpen, setOtherOpen] = useState(false);
-  const otherRef = useRef<HTMLDivElement | null>(null);
 
   // Close menus on route change.
   useEffect(() => {
     setMobileOpen(false);
-    setOtherOpen(false);
   }, [pathname]);
 
-  // Close dropdown on outside click / Escape.
+  // Close mobile menu on Escape.
   useEffect(() => {
-    function onPointerDown(e: MouseEvent) {
-      if (!otherRef.current) return;
-      if (!otherRef.current.contains(e.target as Node)) setOtherOpen(false);
-    }
-
     function onKeyDown(e: KeyboardEvent) {
-      if (e.key === "Escape") {
-        setOtherOpen(false);
-        setMobileOpen(false);
-      }
+      if (e.key === "Escape") setMobileOpen(false);
     }
 
-    document.addEventListener("mousedown", onPointerDown);
     document.addEventListener("keydown", onKeyDown);
-    return () => {
-      document.removeEventListener("mousedown", onPointerDown);
-      document.removeEventListener("keydown", onKeyDown);
-    };
+    return () => document.removeEventListener("keydown", onKeyDown);
   }, []);
 
   const linkCls = (href: string) =>
@@ -122,7 +81,11 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/80 backdrop-blur">
       <div className="container">
         <div className="flex items-center justify-between gap-4 py-4">
-          <Link className="flex items-center gap-3 font-semibold tracking-tight text-gray-900" href="/" data-track="nav_home">
+          <Link
+            className="flex items-center gap-3 font-semibold tracking-tight text-gray-900"
+            href="/"
+            data-track="nav_home"
+          >
             <span
               className="h-2.5 w-2.5 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 shadow-sm"
               aria-hidden
@@ -133,72 +96,27 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             {/* Desktop navigation */}
             <nav className="hidden items-center gap-1 md:flex" aria-label="Primary navigation">
-              {top.map((item) => (
-                <Link key={item.href} href={item.href} className={linkCls(item.href)} data-track={item.track}>
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={linkCls(item.href)}
+                  data-track={item.track}
+                  aria-current={pathname === item.href ? "page" : undefined}
+                >
                   {item.label}
                 </Link>
               ))}
-
-              <div className="relative" ref={otherRef}>
-                <button
-                  type="button"
-                  className={cn(
-                    "flex items-center gap-1.5 rounded-lg px-2 py-1 text-sm font-medium text-gray-600 transition-colors duration-200 ease-out hover:bg-gray-50 hover:text-gray-900",
-                    otherOpen && "text-gray-900"
-                  )}
-                  aria-haspopup="menu"
-                  aria-expanded={otherOpen}
-                  onClick={() => setOtherOpen((v) => !v)}
-                  data-track="nav_other_toggle"
-                >
-                  Other
-                  <ChevronDownIcon
-                    className={cn(
-                      "h-4 w-4 transition-transform duration-200 ease-out",
-                      otherOpen ? "rotate-180" : "rotate-0"
-                    )}
-                  />
-                </button>
-
-                <div
-                  role="menu"
-                  aria-label="Other navigation"
-                  className={cn(
-                    "absolute right-0 mt-2 w-56 origin-top-right rounded-2xl border border-gray-100 bg-white p-2 shadow-lg transition duration-200 ease-out",
-                    otherOpen
-                      ? "pointer-events-auto scale-100 opacity-100"
-                      : "pointer-events-none scale-95 opacity-0"
-                  )}
-                >
-                  {other.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className={cn(
-                        "block rounded-xl px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-50 hover:text-gray-900",
-                        pathname === item.href && "bg-gray-50 text-gray-900"
-                      )}
-                      role="menuitem"
-                      data-track={item.track}
-                      onClick={() => setOtherOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
             </nav>
 
-            {/* Primary CTA - HIDDEN ON MOBILE */}
+            {/* Primary CTA */}
             <Link
-              href={site.ctas.empathy.href}
-              data-track="nav_empathy"
-              className={cn(
-                "!hidden md:!inline-flex items-center justify-center",
-                buttonPrimary
-              )}
+              href={contactItem.href}
+              data-track={contactItem.track}
+              aria-current={pathname === contactItem.href ? "page" : undefined}
+              className={cn("!hidden md:!inline-flex items-center justify-center", buttonPrimary)}
             >
-              Empathy School
+              {contactItem.label}
             </Link>
 
             {/* Mobile hamburger */}
@@ -232,14 +150,23 @@ export default function Navbar() {
                   pathname === item.href && "bg-gray-50 text-gray-900"
                 )}
                 data-track={item.track}
+                aria-current={pathname === item.href ? "page" : undefined}
                 onClick={() => setMobileOpen(false)}
               >
                 {item.label}
               </Link>
             ))}
-          </nav>
 
-          {/* Primary CTA intentionally hidden on mobile (per design). */}
+            <Link
+              href={contactItem.href}
+              className={cn("mt-2", buttonPrimary)}
+              data-track={contactItem.track}
+              aria-current={pathname === contactItem.href ? "page" : undefined}
+              onClick={() => setMobileOpen(false)}
+            >
+              {contactItem.label}
+            </Link>
+          </nav>
         </div>
       </div>
     </header>

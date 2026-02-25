@@ -21,7 +21,7 @@ export default function HomePage() {
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
                 A calm, comprehensive guide to moving to Bali
               </h1>
-              <p className="max-w-3xl text-base text-gray-600 sm:text-lg">
+              <p className="text-base text-gray-600 sm:text-lg">
                 Visas, housing, neighborhoods, learning, day-to-day logistics—written for parents, with checklists and lived experience.
               </p>
 

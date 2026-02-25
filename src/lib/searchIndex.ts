@@ -1,4 +1,8 @@
 import { getAllContent, type ContentKind } from "@/lib/content";
+// Prebuilt (generated at build time via `npm run build`, see `scripts/build-search-index.mjs`).
+// This avoids runtime `fs` issues on some serverless deploys.
+// eslint-disable-next-line @typescript-eslint/consistent-type-imports
+import prebuilt from "@/generated/searchIndex.json";
 
 export type SearchEntry = {
   kind: ContentKind;
@@ -28,6 +32,12 @@ export function getSearchIndex(): SearchEntry[] {
   const env = process.env.NODE_ENV;
   if (env === "production" && CACHE) return CACHE;
 
+  // Prefer the prebuilt index in production (most reliable on Vercel/serverless).
+  if (env === "production" && Array.isArray(prebuilt) && prebuilt.length) {
+    CACHE = prebuilt as unknown as SearchEntry[];
+    return CACHE;
+  }
+
   const kinds: ContentKind[] = ["pillars", "areas", "guides", "blog", "resources"];
 
   const entries: SearchEntry[] = kinds.flatMap((kind) =>
@@ -48,6 +58,12 @@ export function getSearchIndex(): SearchEntry[] {
       };
     })
   );
+
+  // If runtime `fs` can't see the content folder (common in some deployments), fall back.
+  if ((!entries || entries.length === 0) && Array.isArray(prebuilt) && prebuilt.length) {
+    CACHE = prebuilt as unknown as SearchEntry[];
+    return CACHE;
+  }
 
   if (env === "production") CACHE = entries;
   return entries;

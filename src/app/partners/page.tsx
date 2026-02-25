@@ -38,7 +38,7 @@ export default function PartnersPage() {
         <div className="container">
           <div className={badge}>Partners</div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Preferred partners & services</h1>
-          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
+          <p className="mt-4 text-base text-gray-600 sm:text-lg">
             We only show <strong>✔ VERIFIED</strong> partners publicly. If a partner is still “★ CHECK”, it stays hidden until agreements, vetting, and tracking are in place.
           </p>
         </div>
@@ -46,8 +46,6 @@ export default function PartnersPage() {
 
       <section className="py-16 md:py-24">
         <div className="container">
-          <DisclosureNotice />
-
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             <div className={cardCls}>
               <strong className="text-sm font-semibold text-gray-900">How to choose a visa agent safely</strong>
@@ -163,6 +161,11 @@ export default function PartnersPage() {
               ))}
             </div>
           )}
+
+          {/* Legal/disclosure notices should live at the bottom of the page to keep the UX action-first. */}
+          <div className="mt-10">
+            <DisclosureNotice />
+          </div>
         </div>
       </section>
     </main>

@@ -14,6 +14,17 @@ tags:
 category: Housing
 draft: false
 noindex: false
+video:
+  youtubeId: vTds0BelBf0
+  title: Why Bali Became the Home of Empathy School
+  summary: "A short founder story that helps families zoom out: choose areas and routines first, then commit to housing in stages."
+  transcriptFile: content/transcripts/founder-story-why-bali-became-home.txt
+  uploadDate: '2026-02-23'
+  permission: owned
+  childrenVisible: false
+  consentConfirmed: false
+  ctaText: Copy the lease + deposit checklist
+  ctaHref: /resources/lease-deposit-checklist
 social:
   instagram:
   - label: 'Daily life glimpse: farmer’s market'
@@ -64,6 +75,18 @@ A simple plan to structure the first visit:
 - [2‑week test stay plan](/guides/two-week-test-stay-plan)
 
 ---
+
+<div class="mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white">
+  <iframe
+    src="https://www.instagram.com/reel/DPYiFh4kVRP/embed"
+    title="Daily life glimpse: farmer’s market (Empathy School)"
+    loading="lazy"
+    class="w-full"
+    style="min-height:520px"
+  ></iframe>
+</div>
+
+
 
 ## Step 1: Pick areas by daily life (not by the prettiest listing)
 

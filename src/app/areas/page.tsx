@@ -60,7 +60,7 @@ export default function AreasIndexPage({ searchParams }: Props) {
             <div className="space-y-6">
               <div className={badge}>Areas</div>
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Bali areas for families</h1>
-              <p className="max-w-3xl text-base text-gray-600 sm:text-lg">
+              <p className="text-base text-gray-600 sm:text-lg">
                 Short, honest guides to help you choose where to live. Use these to shortlist 2–3 areas before your first visit.
               </p>
             </div>

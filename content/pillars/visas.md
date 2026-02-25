@@ -13,6 +13,17 @@ tags:
 category: Visas
 draft: false
 noindex: false
+video:
+  youtubeId: vTds0BelBf0
+  title: Why Bali Became the Home of Empathy School
+  summary: A short founder story that sets context and helps families plan calmly before diving into visa details.
+  transcriptFile: content/transcripts/founder-story-why-bali-became-home.txt
+  uploadDate: '2026-02-23'
+  permission: owned
+  childrenVisible: false
+  consentConfirmed: false
+  ctaText: Start here (roadmap)
+  ctaHref: /start-here
 social:
   instagram:
     - label: "A real family move (12 families in Bali)"
@@ -59,6 +70,18 @@ If you’re unsure about a detail, treat this as your default:
 **check the official portal → ask your agent/school → then decide.**
 
 ---
+
+<div class="mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white">
+  <iframe
+    src="https://www.instagram.com/reel/DUDKz7SkZLB/embed"
+    title="Bali vibe (Empathy School)"
+    loading="lazy"
+    class="w-full"
+    style="min-height:520px"
+  ></iframe>
+</div>
+
+
 
 ## Step 1: Decide your “first landing” plan
 

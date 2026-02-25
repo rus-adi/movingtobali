@@ -194,7 +194,7 @@ export default function AdminReviewPage() {
         <div className="container">
           <div className={badgeWarn}>Internal</div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Content review dashboard</h1>
-          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
+          <p className="mt-4 text-base text-gray-600 sm:text-lg">
             This page is <strong>noindex</strong>. It exists to help you ship cleaner content (freshness, FAQs, internal links).
           </p>
         </div>

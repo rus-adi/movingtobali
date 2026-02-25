@@ -79,16 +79,19 @@ export default function ContactPage({ searchParams }: Props) {
         <div className="container">
           <div className={badge}>Contact</div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Ask a question</h1>
-          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
+          <p className="mt-4 text-base text-gray-600 sm:text-lg">
             We keep contact simple on purpose. If you need an intro to a provider, tell us your situation and we’ll reply with next steps.
           </p>
+
+          {/* MEDIA RULE: One YouTube embed directly below H1/intro */}
+          <div className="mt-8 w-full">
+            <VideoBlock video={CONTACT_VIDEO} />
+          </div>
         </div>
       </section>
 
       <section className="py-16 md:py-24">
         <div className="container grid gap-6">
-          {showDisclosure ? <DisclosureNotice compact /> : null}
-
           <div className={cardCls}>
             <strong className="text-sm font-semibold text-gray-900">Topic</strong>
             <div className="mt-3 text-sm leading-6 text-gray-600">{topic}</div>
@@ -107,13 +110,25 @@ export default function ContactPage({ searchParams }: Props) {
             fallbackMailto={mailto}
           />
 
-          <VideoBlock video={CONTACT_VIDEO} />
+          {/* Instagram embed after early content (never at the very top) */}
+          <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white">
+            <iframe
+              src="https://www.instagram.com/reel/DPAad8bgTCI/embed"
+              title="Empathy School (Instagram)"
+              loading="lazy"
+              className="w-full"
+              style={{ minHeight: 520 }}
+            />
+          </div>
 
           <div className={cardCls}>
             <div className="text-sm leading-6 text-gray-600">
               Prefer to self-serve? Start with <a href="/start-here" className="underline underline-offset-4">Start here</a> and then follow the pillar that matches your stage.
             </div>
           </div>
+
+          {/* Legal/disclosure notices should live at the bottom of the page to keep the UX calm and action-first. */}
+          {showDisclosure ? <DisclosureNotice compact /> : null}
         </div>
       </section>
     </main>

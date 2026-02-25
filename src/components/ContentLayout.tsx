@@ -42,6 +42,50 @@ function showSafety(item: ContentItem): "visa" | "housing" | null {
   return null;
 }
 
+function hasQuickStart(body: string): boolean {
+  return /^\s*##\s+Quick\s+start\b/im.test(body || "");
+}
+
+function QuickStartCard({ kind }: { kind: ContentItem["kind"] }) {
+  // Keep this intentionally short. The goal is to reduce overwhelm, not add more content.
+  const bulletsByKind: Record<string, string[]> = {
+    areas: [
+      "Do a morning commute test (school-run hours) before you commit.",
+      "Walk the area at night once — noise + lighting matter for families.",
+      "Pick 2–3 " + "micro" + "-areas to compare, not 10.",
+    ],
+    guides: [
+      "Skim the headings first — then read the section you need right now.",
+      "Use the checklist/templates so you don’t start from scratch.",
+      "If something changes fast (visas), verify via Official links.",
+    ],
+    resources: [
+      "Copy the template/checklist and tailor it to your family.",
+      "Use it once in a test-stay, then refine.",
+    ],
+    blog: [
+      "Treat this as lived experience — confirm official details when needed.",
+      "If you’re planning, follow Start here for sequencing.",
+    ],
+    pillars: [
+      "Start with timeline + budget + a shortlist of areas.",
+      "Then decide visas and housing with fewer unknowns.",
+    ],
+  };
+
+  const bullets = bulletsByKind[kind] || bulletsByKind.guides;
+  return (
+    <div className={cardCls}>
+      <strong className="text-sm font-semibold text-gray-900">Quick start</strong>
+      <ul className="mt-3 list-disc pl-5 text-sm leading-6 text-gray-600">
+        {bullets.map((b) => (
+          <li key={b}>{b}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export default function ContentLayout({
   item,
   toc,
@@ -58,6 +102,8 @@ export default function ContentLayout({
   const site = getSite();
   const faqs = getEffectiveFaqs(item);
 
+  const needsQuickStart = !item.video?.youtubeId && !hasQuickStart(item.body);
+
   const dateLabel = item.date
     ? new Date(item.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })
     : "";
@@ -69,91 +115,95 @@ export default function ContentLayout({
     <main>
       <section className="bg-gray-50 py-16 md:py-24">
         <div className="container">
-          <div className="flex flex-wrap items-center gap-2">
-            <Link className={badge} href="/">
-              ← Home
-            </Link>
-            {item.kind !== "pillars" ? (
-              <Link className={badge} href={`/${item.kind}`}>
-                {item.kind}
+          <div>
+            <div className="flex flex-wrap items-center gap-2">
+              <Link className={badge} href="/">
+                ← Home
               </Link>
-            ) : (
-              <span className={badge}>pillar</span>
-            )}
-            {item.category ? <span className={badgeAccent}>{item.category}</span> : null}
-            {dateLabel ? <span className={badge}>{dateLabel}</span> : null}
-            {updatedLabel ? <span className={badge}>Updated: {updatedLabel}</span> : null}
-            <span className={badge}>{item.readingTimeMinutes} min read</span>
-            {item.video?.youtubeId ? <span className={badgeGood}>video</span> : null}
-          </div>
-
-          <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">{item.title}</h1>
-
-          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">{item.description}</p>
-
-          {item.kind === "areas" && item.area && Object.values(item.area).some((v) => String(v || "").trim()) ? (
-            <div className={`${cardCls} mt-6`}>
-              <strong className="text-sm font-semibold text-gray-900">At a glance</strong>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {item.area.pace ? <span className={badge}>Pace: {item.area.pace}</span> : null}
-                {item.area.traffic ? <span className={badge}>Traffic: {item.area.traffic}</span> : null}
-                {item.area.walkability ? <span className={badge}>Walkability: {item.area.walkability}</span> : null}
-                {item.area.familyFit ? <span className={badgeGood}>Family fit: {item.area.familyFit}</span> : null}
-                {item.area.beachAccess ? <span className={badge}>Beach: {item.area.beachAccess}</span> : null}
-                {item.area.natureAccess ? <span className={badge}>Nature: {item.area.natureAccess}</span> : null}
-                {item.area.costTier ? <span className={badgeAccent}>Cost: {item.area.costTier}</span> : null}
-                {item.area.noise ? <span className={badge}>Noise: {item.area.noise}</span> : null}
-              </div>
-              {item.area.note ? <p className="mt-4 text-sm leading-6 text-gray-600">{item.area.note}</p> : null}
-            </div>
-          ) : null}
-
-          {item.tags?.length ? (
-            <div className="mt-6 flex flex-wrap gap-2">
-              {item.tags.map((t) => (
-                <Link
-                  key={t}
-                  className={pill}
-                  href={item.kind === "pillars" ? `/search?q=${encodeURIComponent(t)}` : `/${item.kind}/tag/${encodeURIComponent(t)}`}
-                >
-                  #{t}
+              {item.kind !== "pillars" ? (
+                <Link className={badge} href={`/${item.kind}`}>
+                  {item.kind}
                 </Link>
-              ))}
+              ) : (
+                <span className={badge}>pillar</span>
+              )}
+              {item.category ? <span className={badgeAccent}>{item.category}</span> : null}
+              {dateLabel ? <span className={badge}>{dateLabel}</span> : null}
+              {updatedLabel ? <span className={badge}>Updated: {updatedLabel}</span> : null}
+              <span className={badge}>{item.readingTimeMinutes} min read</span>
+              {item.video?.youtubeId ? <span className={badgeGood}>video</span> : null}
             </div>
-          ) : null}
 
-          {primaryPillar ? (
-            <div className="mt-4">
-              <Link
-                className={badgeGood}
-                href={`/${primaryPillar.slug}`}
-                data-track="content_primary_pillar"
-                data-pillar={primaryPillar.slug}
-              >
-                Pillar: {primaryPillar.title}
-              </Link>
-            </div>
-          ) : null}
+            <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">{item.title}</h1>
+
+            <p className="mt-4 text-base text-gray-600 sm:text-lg">{item.description}</p>
+
+            {/* MEDIA RULE: One YouTube embed directly below H1/intro when available */}
+            {item.video ? (
+              <div className="mt-8 w-full">
+                <VideoBlock video={item.video} />
+              </div>
+            ) : null}
+
+            {item.kind === "areas" && item.area && Object.values(item.area).some((v) => String(v || "").trim()) ? (
+              <div className={`${cardCls} mt-6`}>
+                <strong className="text-sm font-semibold text-gray-900">At a glance</strong>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {item.area.pace ? <span className={badge}>Pace: {item.area.pace}</span> : null}
+                  {item.area.traffic ? <span className={badge}>Traffic: {item.area.traffic}</span> : null}
+                  {item.area.walkability ? <span className={badge}>Walkability: {item.area.walkability}</span> : null}
+                  {item.area.familyFit ? <span className={badgeGood}>Family fit: {item.area.familyFit}</span> : null}
+                  {item.area.beachAccess ? <span className={badge}>Beach: {item.area.beachAccess}</span> : null}
+                  {item.area.natureAccess ? <span className={badge}>Nature: {item.area.natureAccess}</span> : null}
+                  {item.area.costTier ? <span className={badgeAccent}>Cost: {item.area.costTier}</span> : null}
+                  {item.area.noise ? <span className={badge}>Noise: {item.area.noise}</span> : null}
+                </div>
+                {item.area.note ? <p className="mt-4 text-sm leading-6 text-gray-600">{item.area.note}</p> : null}
+              </div>
+            ) : null}
+
+            {item.tags?.length ? (
+              <div className="mt-6 flex flex-wrap gap-2">
+                {item.tags.map((t) => {
+                  const clean = String(t || "").replace(/^#/, "");
+                  return (
+                    <Link
+                      key={t}
+                      className={pill}
+                      // Always route hashtag clicks to Search so tags never land on an empty results page.
+                      href={`/search?q=${encodeURIComponent(clean)}`}
+                    >
+                      #{clean}
+                    </Link>
+                  );
+                })}
+              </div>
+            ) : null}
+
+            {primaryPillar ? (
+              <div className="mt-4">
+                <Link
+                  className={badgeGood}
+                  href={`/${primaryPillar.slug}`}
+                  data-track="content_primary_pillar"
+                  data-pillar={primaryPillar.slug}
+                >
+                  Pillar: {primaryPillar.title}
+                </Link>
+              </div>
+            ) : null}
+          </div>
         </div>
       </section>
 
       <section className="py-16 md:py-24">
         <div className="container">
-          {showSafety(item) ? (
-            <div className="mb-6">
-              <SafetyNotice kind={showSafety(item)!} />
-            </div>
-          ) : null}
-
-          {showDisclosure(item) ? (
-            <div className="mb-6">
-              <DisclosureNotice compact />
-            </div>
-          ) : null}
-
-          {item.video ? (
-            <div className="mb-6">
-              <VideoBlock video={item.video} />
+          {needsQuickStart ? (
+            <div className={`${grid2} items-start mb-6`}>
+              <div>
+                <QuickStartCard kind={item.kind} />
+              </div>
+              <div className="hidden md:block" aria-hidden="true" />
             </div>
           ) : null}
 
@@ -222,6 +272,25 @@ export default function ContentLayout({
                   </div>
                 ))}
               </div>
+            </div>
+          ) : null}
+
+          {/* Legal/disclosure notices should live at the bottom of the page to keep the UX calm and action-first. */}
+          {showSafety(item) ? (
+            <div className={`${grid2} items-start mt-10`}>
+              <div>
+                <SafetyNotice kind={showSafety(item)!} />
+              </div>
+              <div className="hidden md:block" aria-hidden="true" />
+            </div>
+          ) : null}
+
+          {showDisclosure(item) ? (
+            <div className={`${grid2} items-start mt-6`}>
+              <div>
+                <DisclosureNotice compact />
+              </div>
+              <div className="hidden md:block" aria-hidden="true" />
             </div>
           ) : null}
         </div>

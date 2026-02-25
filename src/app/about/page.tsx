@@ -45,7 +45,7 @@ export default function AboutPage() {
         <div className="container">
           <div className={badge}>About</div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">About this guide</h1>
-          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
+          <p className="mt-4 text-base text-gray-600 sm:text-lg">
             <strong>Moving to Bali with Kids</strong> is a practical, parent-first content hub—built to reduce overwhelm and help families make good decisions.
           </p>
         </div>
@@ -94,7 +94,6 @@ export default function AboutPage() {
                 <li>We write for parents and long-term families (not “digital nomad hype”).</li>
                 <li>We prefer concrete steps, trade-offs, and checklists over generic advice.</li>
                 <li>When something is time-sensitive (especially visas), we point you to official sources.</li>
-                <li>This site is not immigration, legal, medical, or tax advice.</li>
               </ul>
               <p>
                 If you spot something outdated, please <a href="/contact?topic=Correction">message us</a> and include the page URL.
@@ -115,13 +114,16 @@ export default function AboutPage() {
             </RichTextBlock>
           </div>
 
+          {/* Notes & disclosures should live at the bottom of the page. */}
           <div className={cardCls}>
-            <strong className="text-sm font-semibold text-gray-900">Partner links & intros</strong>
+            <strong className="text-sm font-semibold text-gray-900">Notes & disclosures</strong>
             <RichTextBlock className="mt-4">
-              <p>
-                Some pages include partner links (for example: visa agents, housing support, or services families often need).
-                If you contact a partner through our site, we may receive a referral fee at no extra cost to you.
-              </p>
+              <ul>
+                <li>This site is not immigration, legal, medical, or tax advice.</li>
+                <li>
+                  Some pages include partner links (for example: visa agents, housing support, or services families often need). If you contact a partner through our site, we may receive a referral fee at no extra cost to you.
+                </li>
+              </ul>
               <p>
                 Read the full policy on the <a href="/disclosure">Disclosure</a> page, or browse the public list on <a href="/partners">Partners</a>.
               </p>

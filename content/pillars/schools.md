@@ -68,6 +68,18 @@ updated: '2026-02-23'
 
 ---
 
+<div class="mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white">
+  <iframe
+    src="https://www.instagram.com/p/DUH9wf_kR0I/embed"
+    title="Everyday moments at Empathy School"
+    loading="lazy"
+    class="w-full"
+    style="min-height:520px"
+  ></iframe>
+</div>
+
+
+
 ## The school-fit framework (what matters most)
 
 ### 1) Values + learning style
@@ -144,18 +156,11 @@ If you want a copy/paste tour checklist, use:
 
 ### Optional: a standard tour video (non‑360)
 
-<div class="mt-4 overflow-hidden rounded-2xl border border-gray-200">
-  <div class="aspect-video w-full">
-    <iframe
-      src="https://www.youtube.com/embed/3QBtXVMV7yo"
-      title="Empathy School Tour"
-      loading="lazy"
-      class="h-full w-full"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
-  </div>
+<div class="mt-4 rounded-2xl border border-gray-200 bg-white p-5">
+  <strong class="text-sm font-semibold text-gray-900">Watch the standard tour on YouTube</strong>
+  <p class="mt-3 text-sm leading-6 text-gray-600">
+    https://www.youtube.com/watch?v=3QBtXVMV7yo
+  </p>
 </div>
 
 <details class="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-5">
@@ -182,33 +187,12 @@ Tip: if you want the exact transcript, open the video on YouTube and use the bui
 
 These short clips are useful for tone and fit — treat them as **supporting context**, not the only input.
 
-<div class="mt-4 grid gap-4 md:grid-cols-2">
-  <div class="overflow-hidden rounded-2xl border border-gray-200">
-    <div class="aspect-video w-full">
-      <iframe
-        src="https://www.youtube.com/embed/f8ZQr6NnTTM"
-        title="Parent voices: Japanese moms (clip 1)"
-        loading="lazy"
-        class="h-full w-full"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </div>
-  <div class="overflow-hidden rounded-2xl border border-gray-200">
-    <div class="aspect-video w-full">
-      <iframe
-        src="https://www.youtube.com/embed/otZDfCRApFQ"
-        title="Parent voices: greatest part (clip 2)"
-        loading="lazy"
-        class="h-full w-full"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </div>
+<div class="mt-4 rounded-2xl border border-gray-200 bg-white p-5">
+  <strong class="text-sm font-semibold text-gray-900">Parent voices (watch on YouTube)</strong>
+  <ul class="mt-3 list-disc pl-5 text-sm leading-6 text-gray-600">
+    <li>Clip 1: https://www.youtube.com/watch?v=f8ZQr6NnTTM</li>
+    <li>Clip 2: https://www.youtube.com/watch?v=otZDfCRApFQ</li>
+  </ul>
 </div>
 
 <details class="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-5">

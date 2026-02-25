@@ -61,6 +61,18 @@ updated: '2026-02-23'
 - Keep **official links** bookmarked for anything that changes fast (especially visas).
 - Prefer decisions that reduce stress: **short test-stays, staged commitments, clear contracts**.
 
+<div class="mt-4 overflow-hidden rounded-2xl border border-gray-200 bg-white">
+  <iframe
+    src="https://www.instagram.com/reel/DUh7pLJEz-q/embed"
+    title="A real family move (Empathy School)"
+    loading="lazy"
+    class="w-full"
+    style="min-height:520px"
+  ></iframe>
+</div>
+
+
+
 ## The calm roadmap
 
 ### Step 1: Decide your timeline

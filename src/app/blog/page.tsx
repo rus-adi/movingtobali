@@ -62,7 +62,7 @@ export default function BlogIndexPage({ searchParams }: Props) {
             <div className="space-y-6">
               <div className={badge}>Blog</div>
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Daily posts</h1>
-              <p className="max-w-3xl text-base text-gray-600 sm:text-lg">
+              <p className="text-base text-gray-600 sm:text-lg">
                 Short, practical posts that answer one question at a time. For deeper guides, see the Guides section.
               </p>
             </div>

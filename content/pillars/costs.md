@@ -15,6 +15,17 @@ tags:
 category: Costs
 draft: false
 noindex: false
+video:
+  youtubeId: RXYDRGimTBs
+  title: Education & budgets (short)
+  summary: Education is often one of the biggest budget lines for relocating families. This short clip helps you calibrate expectations before you build a budget range.
+  transcriptFile: content/transcripts/education-budgeting-short-recap.txt
+  uploadDate: '2026-02-23'
+  permission: owned
+  childrenVisible: false
+  consentConfirmed: false
+  ctaText: Copy the budget range planner
+  ctaHref: /resources/family-budget-range-planner
 social:
   youtube:
   - label: Admissions short (education is a major budget driver)
@@ -53,6 +64,18 @@ updated: '2026-02-23'
 - Include a buffer for deposits + setup (first month is rarely “average”).
 
 ---
+
+<div class="mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white">
+  <iframe
+    src="https://www.instagram.com/p/DR4GYsZEW5D/embed"
+    title="Flexible childcare (Empathy School)"
+    loading="lazy"
+    class="w-full"
+    style="min-height:520px"
+  ></iframe>
+</div>
+
+
 
 ## The 4 budget drivers that matter most
 

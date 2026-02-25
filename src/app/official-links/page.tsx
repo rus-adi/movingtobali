@@ -59,7 +59,7 @@ export default function OfficialLinksPage() {
         <div className="container">
           <div className={badge}>Reference</div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Official links we reference</h1>
-          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
+          <p className="mt-4 text-base text-gray-600 sm:text-lg">
             Visa and entry procedures can change. This page is the “bookmark list” we keep pointing families to when details shift.
           </p>
 

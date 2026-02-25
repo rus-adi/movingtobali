@@ -20,7 +20,11 @@ function routeFor(kind: string, slug: string) {
 }
 
 export default function SearchPage({ searchParams }: Props) {
-  const q = (searchParams?.q || "").trim().toLowerCase();
+  // Normalize query so hashtag clicks work even if the URL contains "#tag" or "%23tag".
+  const q = decodeURIComponent(searchParams?.q || "")
+    .trim()
+    .toLowerCase()
+    .replace(/^#/, "");
 
   const kinds = ["pillars", "areas", "guides", "blog", "resources"] as const;
 
@@ -34,6 +38,9 @@ export default function SearchPage({ searchParams }: Props) {
     kind: k,
     items: results.filter((r) => r.kind === k).slice(0, 10),
   }));
+
+  // Only render sections that actually have results.
+  const nonEmpty = grouped.filter((g) => g.items.length > 0);
 
   const schemas = [
     buildOrganizationSchema(),
@@ -49,7 +56,7 @@ export default function SearchPage({ searchParams }: Props) {
         <div className="container">
           <div className={badge}>Search</div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Search the hub</h1>
-          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
+          <p className="mt-4 text-base text-gray-600 sm:text-lg">
             Try “Ubud”, “eVOA”, “rent deposit”, “school tour”, “budgeting”, or “rainy season”.
           </p>
 
@@ -66,14 +73,14 @@ export default function SearchPage({ searchParams }: Props) {
               Type a query above to search across pillars, guides, areas, blog posts, and resources.
             </div>
           ) : (
-            <div className="grid gap-6">
-              {grouped.map((g) => (
-                <div key={g.kind} className={cardCls}>
-                  <strong className="text-sm font-semibold text-gray-900 capitalize">{g.kind}</strong>
-                  {g.items.length ? (
+            nonEmpty.length ? (
+              <div className="grid gap-6">
+                {nonEmpty.map((g) => (
+                  <div key={g.kind} className={cardCls}>
+                    <strong className="text-sm font-semibold text-gray-900 capitalize">{g.kind}</strong>
                     <div className="mt-6 grid gap-4">
                       {g.items.map((r) => (
-                        <div key={r.slug} className="grid gap-1">
+                        <div key={`${r.kind}:${r.slug}`} className="grid gap-1">
                           <Link
                             href={routeFor(r.kind, r.slug)}
                             className="font-semibold text-blue-600 underline underline-offset-4 transition-colors hover:text-blue-700"
@@ -87,12 +94,12 @@ export default function SearchPage({ searchParams }: Props) {
                         </div>
                       ))}
                     </div>
-                  ) : (
-                    <div className="mt-4 text-sm text-gray-600">No matches.</div>
-                  )}
-                </div>
-              ))}
-            </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className={cardCls}>Your search did not return any results.</div>
+            )
           )}
         </div>
       </section>

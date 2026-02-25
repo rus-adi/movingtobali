@@ -53,7 +53,7 @@ export default function GuidesIndexPage({ searchParams }: Props) {
             <div className="space-y-6">
               <div className={badge}>Guides</div>
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Evergreen guides</h1>
-              <p className="max-w-3xl text-base text-gray-600 sm:text-lg">
+              <p className="text-base text-gray-600 sm:text-lg">
                 Longer than blog posts, more structured, with copy/paste checklists you can actually use.
               </p>
             </div>

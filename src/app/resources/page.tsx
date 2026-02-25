@@ -56,7 +56,7 @@ export default function ResourcesIndexPage({ searchParams }: Props) {
             <div className="space-y-6">
               <div className={badge}>Resources</div>
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Templates & checklists</h1>
-              <p className="max-w-3xl text-base text-gray-600 sm:text-lg">
+              <p className="text-base text-gray-600 sm:text-lg">
                 Short tools you can use immediately—tour questions, decision matrices, first-week checklists, and planning prompts.
               </p>
             </div>
