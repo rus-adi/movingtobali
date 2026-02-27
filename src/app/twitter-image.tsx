@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { getSite } from "@/lib/site";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 
 export const size = {
   width: 1200,
@@ -14,12 +14,44 @@ export default function OpenGraphImage() {
   const site = getSite();
   return new ImageResponse(
     (
-      <div tw="w-full h-full flex flex-col justify-center p-[70px] bg-gradient-to-br from-[#fbf7f0] via-white to-[#eef7f1] text-[#1f2a24] font-sans">
-        <div tw="text-[60px] font-extrabold leading-[1.05]">{site.brand.name}</div>
-        <div tw="mt-4 max-w-[900px] text-[28px] opacity-90">{site.seo.defaultDescription}</div>
-        <div tw="mt-6 flex gap-3">
-          <div tw="px-4 py-2 rounded-full border border-black/10 text-[18px]">movingtobali.empathy.school</div>
-          <div tw="px-4 py-2 rounded-full border border-black/10 text-[18px]">by Empathy School</div>
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          padding: 70,
+          backgroundImage: "linear-gradient(135deg, #fbf7f0 0%, #ffffff 50%, #eef7f1 100%)",
+          color: "#1f2a24",
+          fontFamily:
+            "ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji",
+        }}
+      >
+        <div style={{ fontSize: 60, fontWeight: 800, lineHeight: 1.05 }}>{site.brand.name}</div>
+        <div style={{ marginTop: 16, maxWidth: 900, fontSize: 28, opacity: 0.9 }}>{site.seo.defaultDescription}</div>
+        <div style={{ marginTop: 24, display: "flex", alignItems: "center" }}>
+          <div
+            style={{
+              padding: "8px 16px",
+              borderRadius: 9999,
+              border: "1px solid rgba(0,0,0,0.10)",
+              fontSize: 18,
+              marginRight: 12,
+            }}
+          >
+            movingtobali.empathy.school
+          </div>
+          <div
+            style={{
+              padding: "8px 16px",
+              borderRadius: 9999,
+              border: "1px solid rgba(0,0,0,0.10)",
+              fontSize: 18,
+            }}
+          >
+            by Empathy School
+          </div>
         </div>
       </div>
     ),

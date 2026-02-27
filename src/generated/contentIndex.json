@@ -1,0 +1,2139 @@
+{
+  "pillars": [
+    {
+      "kind": "pillars",
+      "slug": "start-here",
+      "title": "Start here: a parent-first roadmap",
+      "description": "A step-by-step roadmap for families considering Bali—what to decide first, what to delay, and how to reduce stress.",
+      "updated": "2026-02-23",
+      "tags": [
+        "start",
+        "roadmap",
+        "families",
+        "planning"
+      ],
+      "category": "Start",
+      "draft": false,
+      "noindex": false,
+      "video": {
+        "youtubeId": "vTds0BelBf0",
+        "title": "Why Bali Became the Home of Empathy School",
+        "summary": "A short founder story about why Bali became home for Empathy School — and a calm reminder that the first decisions (timeline, budget, and areas) shape everything that comes next.",
+        "transcriptFile": "content/transcripts/founder-story-why-bali-became-home.txt",
+        "uploadDate": "2026-02-23",
+        "permission": "owned",
+        "childrenVisible": false,
+        "consentConfirmed": false,
+        "ctaText": "Explore schools & learning",
+        "ctaHref": "/schools"
+      },
+      "social": {
+        "youtubeUrl": "https://www.youtube.com/watch?v=vTds0BelBf0",
+        "instagramUrl": "https://www.instagram.com/reel/DUDKz7SkZLB/",
+        "instagram": [
+          {
+            "label": "12 families: first Bali trip",
+            "url": "https://www.instagram.com/reel/DUh7pLJEz-q/"
+          },
+          {
+            "label": "Empathy School in Bali",
+            "url": "https://www.instagram.com/reel/DUDKz7SkZLB/"
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "q": "How long should we visit before deciding to relocate?",
+          "a": "If you can, plan at least 2–4 weeks. It’s enough time to feel routines (school run, errands, evenings) rather than just holiday mode."
+        },
+        {
+          "q": "What should we decide first?",
+          "a": "Timeline + budget + area short list. Those three decisions shape almost everything else: visas, housing, and school options."
+        },
+        {
+          "q": "How long should we stay in Bali before committing long-term?",
+          "a": "If you can, plan a test stay long enough to experience normal routines (school run, groceries, bedtime, rainy days). Many families find 2–6 weeks gives clearer signal than a quick holiday."
+        },
+        {
+          "q": "Do we need to ride a motorbike as a family?",
+          "a": "Not necessarily. Many families use a car + driver, ride-hail apps, or walkable micro-areas. The right choice depends on your kids’ ages, your risk tolerance, and how far your daily commute is."
+        },
+        {
+          "q": "What are the first 3 decisions that make the rest easier?",
+          "a": "Pick a realistic visa pathway, choose 1–2 areas to test (based on commute + routines), and set a simple monthly budget range. Those three decisions reduce most downstream stress."
+        }
+      ],
+      "readingTimeMinutes": 2,
+      "body": "\n## Quick start\n\n- If you’re brand new to the idea, **sketch your timeline** (next 3 months vs next year).\n- Shortlist **2–3 areas** before you overthink school or housing.\n- Keep **official links** bookmarked for anything that changes fast (especially visas).\n- Prefer decisions that reduce stress: **short test-stays, staged commitments, clear contracts**.\n\n<div class=\"mt-4 overflow-hidden rounded-2xl border border-gray-200 bg-white\">\n  <iframe\n    src=\"https://www.instagram.com/reel/DUh7pLJEz-q/embed\"\n    title=\"A real family move (Empathy School)\"\n    loading=\"lazy\"\n    class=\"w-full\"\n    style=\"min-height:520px\"\n  ></iframe>\n</div>\n\n\n\n## The calm roadmap\n\n### Step 1: Decide your timeline\n\nWrite down the earliest date you could arrive—and the latest date you’d still feel good about.\n\n### Step 2: Shortlist areas\n\nUse the [Areas](/areas) hub to shortlist 2–3 places that match your family’s pace and commute tolerance.\n\n### Step 3: Plan visas from experience (not certainty)\n\nWe share what families experienced and the questions to ask. We don’t guarantee outcomes. For changing details, use [Official links](/official-links).\n\n### Step 4: Housing (staged, not rushed)\n\nIf possible: short stay → view in person → verify → sign. Rushing deposits is where families get burned.\n\n### Step 5: Learning & community\n\nA good-fit learning environment plus one parent community usually does more for “settling in” than any single logistics hack.\n\n## What we learned the hard way\n\nThe biggest stress reducer wasn’t “perfect planning”—it was **staged commitments**. Keep optionality early, then commit once you’ve seen the reality.\n\n## Next steps\n\n- [Visas](/visas)\n- [Housing](/housing)\n- [Areas](/areas)\n- [Guides](/guides)\n\n## Helpful next reads\n\n- [2‑week test stay plan](/guides/two-week-test-stay-plan)\n- [Ubud vs Sanur vs Canggu for families](/guides/ubud-vs-sanur-vs-canggu-for-families)\n- [Family budget range planner](/resources/family-budget-range-planner)\n- [Areas hub](/areas)\n"
+    },
+    {
+      "kind": "pillars",
+      "slug": "visas",
+      "title": "Visas & residency for families",
+      "description": "Experience-based visa planning for families: what tends to be smooth, what changes often, and how to protect yourself.",
+      "updated": "2026-02-23",
+      "tags": [
+        "visas",
+        "residency",
+        "evoa",
+        "agents",
+        "scams",
+        "official-links",
+        "checklist"
+      ],
+      "category": "Visas",
+      "draft": false,
+      "noindex": false,
+      "video": {
+        "youtubeId": "vTds0BelBf0",
+        "title": "Why Bali Became the Home of Empathy School",
+        "summary": "A short founder story that sets context and helps families plan calmly before diving into visa details.",
+        "transcriptFile": "content/transcripts/founder-story-why-bali-became-home.txt",
+        "uploadDate": "2026-02-23",
+        "permission": "owned",
+        "childrenVisible": false,
+        "consentConfirmed": false,
+        "ctaText": "Start here (roadmap)",
+        "ctaHref": "/start-here"
+      },
+      "social": {
+        "instagram": [
+          {
+            "label": "A real family move (12 families in Bali)",
+            "url": "https://www.instagram.com/reel/DUh7pLJEz-q/"
+          },
+          {
+            "label": "Bali vibe (what you’re moving toward)",
+            "url": "https://www.instagram.com/reel/DUDKz7SkZLB/"
+          }
+        ],
+        "youtube": [
+          {
+            "label": "Start here (why Bali became home)",
+            "url": "https://www.youtube.com/watch?v=vTds0BelBf0"
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "q": "Where do we confirm the latest requirements?",
+          "a": "Use our Official links page first. Visa and entry details change — we keep the official portals in one place so this guide stays calm and doesn’t go stale."
+        },
+        {
+          "q": "Do you guarantee approvals?",
+          "a": "No. Rules and enforcement can change, and every family’s situation is different. We share experience-based guidance and how to choose help safely."
+        },
+        {
+          "q": "Should we use an agent?",
+          "a": "Sometimes it’s worth it, especially if your situation is complex or you’re aiming for a longer stay. If you do, use a due-diligence checklist and avoid anyone promising ‘guaranteed’ results."
+        },
+        {
+          "q": "What’s the lowest-stress first step?",
+          "a": "Do a short test stay if you can, and keep your early commitments staged. The move gets easier when you don’t lock everything in before you’ve seen the reality."
+        },
+        {
+          "q": "How do visas relate to schools/camps?",
+          "a": "Some programs require specific visa types for longer enrollment. Ask each school/camp what they typically see for families — then confirm through official sources or your agent."
+        }
+      ],
+      "readingTimeMinutes": 4,
+      "body": "\n## Quick start (the fast version)\n\n- Start with **timeline + length of stay** (2 weeks, 2 months, 12 months). That choice drives everything else.\n- Bookmark **Official links** now (this is how you avoid stale advice): [Official links](/official-links).\n- If you can, do a **short test stay first**, then decide on longer-term visas once you’ve seen daily life.\n- Avoid anyone selling “**guaranteed approval**” or pressuring you to pay today.\n- Use a simple tool to compare help: [Visa agent comparison template](/resources/visa-agent-comparison-template).\n\n---\n\n## The calm way to think about visas\n\nVisa rules are one of the most **changeable** parts of Bali life — which is exactly why this hub is written from experience.\n\nWhat we aim to do here:\n- help you make the *first few decisions* without panic,\n- show you the questions that protect families,\n- and point you to official portals for anything that changes often.\n\nIf you’re unsure about a detail, treat this as your default:\n**check the official portal → ask your agent/school → then decide.**\n\n---\n\n<div class=\"mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white\">\n  <iframe\n    src=\"https://www.instagram.com/reel/DUDKz7SkZLB/embed\"\n    title=\"Bali vibe (Empathy School)\"\n    loading=\"lazy\"\n    class=\"w-full\"\n    style=\"min-height:520px\"\n  ></iframe>\n</div>\n\n\n\n## Step 1: Decide your “first landing” plan\n\nMost stress comes from trying to solve 12 months of visas before you’ve even landed.\n\nA calmer pattern we’ve seen work for families:\n\n1) **Short test stay** (to confirm area + routines)\n2) **Staged commitments** (housing + schooling + longer-stay visa)\n3) **Re-check official requirements** before you pay or submit\n\nIf you want a structured plan for the first trip:\n- [2‑week test stay plan](/guides/two-week-test-stay-plan)\n- [Bali arrival checklist (eVOA, Arrival Card, tourist levy)](/guides/bali-arrival-checklist-evoa-arrival-card-levy)\n\n---\n\n## Step 2: Use official portals for the parts that change\n\nWhen visa details change, we don’t try to outsmart the internet — we point families to the official sources.\n\nStart here:\n- [Official links](/official-links)\n\nThen use this guide as the “human layer”:\n- what questions matter,\n- what scams look like,\n- how families reduce risk.\n\n---\n\n## Step 3: When an agent is worth it\n\nAn agent can be helpful when:\n- you’re aiming for a longer stay,\n- your situation is complex (family structure, timing, documentation),\n- you want someone to handle forms/checklists while you focus on family logistics.\n\nAn agent is *not* a guarantee.\nIf someone promises certainty, treat that as a red flag.\n\nIf you decide to use help:\n- [How to choose a visa agent](/guides/how-to-choose-a-visa-agent)\n- [Visa agent comparison template](/resources/visa-agent-comparison-template)\n\n---\n\n## Step 4: The due‑diligence questions (copy/paste)\n\nThese are simple questions that protect families:\n\n- **What visa type are you recommending and why?** (Ask for reasoning, not just a price.)\n- **What documents will you need from us?** (Get the checklist in writing.)\n- **What are the total fees and what’s included?** (Avoid surprise add-ons.)\n- **What’s the timeline range (best / typical / worst case)?**\n- **What happens if something changes mid-process?**\n- **How do you communicate?** (WhatsApp is common — ask expected response times.)\n- **Do you provide receipts / proof of submission?**\n\nThen compare answers side-by-side:\n- [Visa agent comparison template](/resources/visa-agent-comparison-template)\n\n---\n\n## Step 5: Visa scam red flags (what to watch out for)\n\nWe keep this practical and non-dramatic — just patterns families can avoid:\n\n- “Guaranteed approval” or “no risk” language\n- Pressure to pay immediately (especially from overseas)\n- Vague pricing (“depends later”) without a written breakdown\n- No written checklist, no receipts, no proof of submission\n- Blaming you for asking basic questions\n\nFull guide:\n- [Visa scam red flags](/guides/visa-scam-red-flags)\n\n---\n\n## Step 6: Your paperwork system (small effort, big payoff)\n\nA simple “arrival folder” reduces stress during travel days:\n- passports + digital backups\n- booking confirmations\n- school/camp paperwork\n- emergency contacts\n\nCopy/paste checklist:\n- [Arrival folder checklist](/resources/arrival-folder-checklist)\n\n---\n\n## How visas connect to schools & camps\n\nFor some families, visas become easier once the **education plan** is clear.\n\nIf school is part of your plan:\n- [Schools & learning](/schools)\n\nIf you’re visiting short-term and want a kids “anchor”:\n- [Camps & short‑term programs](/camps)\n\n---\n\n## What we learned the hard way\n\nThe biggest stress reducer wasn’t “perfect visa knowledge.”\n\nIt was **staged commitments**:\n- commit to a short stay first,\n- confirm area + routines,\n- then choose longer-term options with more confidence.\n\n---\n\n## Deep dives (recommended)\n\n- [Bali arrival checklist (eVOA, Arrival Card, tourist levy)](/guides/bali-arrival-checklist-evoa-arrival-card-levy)\n- [How to choose a visa agent](/guides/how-to-choose-a-visa-agent)\n- [Visa scam red flags](/guides/visa-scam-red-flags)\n- [Official links](/official-links)\n"
+    },
+    {
+      "kind": "pillars",
+      "slug": "housing",
+      "title": "Housing: renting, neighborhoods, and realistic expectations",
+      "description": "How families typically find rentals, what to verify before deposits, and how to shortlist areas without over-optimizing.",
+      "updated": "2026-02-23",
+      "tags": [
+        "housing",
+        "renting",
+        "neighborhoods",
+        "deposits",
+        "lease",
+        "checklist",
+        "safety"
+      ],
+      "category": "Housing",
+      "draft": false,
+      "noindex": false,
+      "video": {
+        "youtubeId": "vTds0BelBf0",
+        "title": "Why Bali Became the Home of Empathy School",
+        "summary": "A short founder story that helps families zoom out: choose areas and routines first, then commit to housing in stages.",
+        "transcriptFile": "content/transcripts/founder-story-why-bali-became-home.txt",
+        "uploadDate": "2026-02-23",
+        "permission": "owned",
+        "childrenVisible": false,
+        "consentConfirmed": false,
+        "ctaText": "Copy the lease + deposit checklist",
+        "ctaHref": "/resources/lease-deposit-checklist"
+      },
+      "social": {
+        "instagram": [
+          {
+            "label": "Daily life glimpse: farmer’s market",
+            "url": "https://www.instagram.com/empathy.school/reel/DPYiFh4kVRP/"
+          },
+          {
+            "label": "Bali vibe (what your area choice shapes)",
+            "url": "https://www.instagram.com/reel/DUDKz7SkZLB/"
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "q": "Is it safe to pay a deposit from overseas?",
+          "a": "Sometimes, but it’s higher risk. If you can, use a staged approach: short stay first, view in person, verify owner/agent identity, then sign."
+        },
+        {
+          "q": "Should we pick an area before visas are final?",
+          "a": "Yes — at least a shortlist. Area choice affects daily life (commute, noise, walkability), and it helps you estimate budget realistically."
+        },
+        {
+          "q": "What’s the biggest housing mistake families make?",
+          "a": "Rushing a deposit before verifying basics: who owns the place, what’s included, what happens if something breaks, and what the contract actually says."
+        },
+        {
+          "q": "Do we need a long lease immediately?",
+          "a": "Not always. Many families start with a short stay, then upgrade once they know the commute and daily rhythm in their chosen area."
+        },
+        {
+          "q": "Should we rent a place before we arrive?",
+          "a": "It’s safer to do a short first stay (hotel/guesthouse/villa) and view rentals in person. Photos can hide noise, mold, traffic, or construction next door."
+        }
+      ],
+      "readingTimeMinutes": 3,
+      "body": "\n## Quick start (the fast version)\n\n- Shortlist **2–3 areas first** (pace + commute + noise matter more than the villa photos): [Areas hub](/areas).\n- If you can, do a **short stay**, view places in person, then sign.\n- Treat deposits as high-risk moments: verify identity, contract, and what’s included.\n- Copy/paste tools:\n  - [Lease + deposit checklist](/resources/lease-deposit-checklist)\n  - [Lease + deposit questions](/guides/lease-and-deposit-questions-in-bali)\n- Do commute tests at real times (morning school run + afternoon return).\n\n---\n\n## The housing approach that keeps families safe\n\nIn our experience, the safest pattern is:\n\n1) **Short stay** (2–14 days)\n2) **View in person** (at least 3–6 options)\n3) **Verify + negotiate** (clarify what’s included)\n4) **Pay deposits only after clarity**\n\nA simple plan to structure the first visit:\n- [2‑week test stay plan](/guides/two-week-test-stay-plan)\n\n---\n\n<div class=\"mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white\">\n  <iframe\n    src=\"https://www.instagram.com/reel/DPYiFh4kVRP/embed\"\n    title=\"Daily life glimpse: farmer’s market (Empathy School)\"\n    loading=\"lazy\"\n    class=\"w-full\"\n    style=\"min-height:520px\"\n  ></iframe>\n</div>\n\n\n\n## Step 1: Pick areas by daily life (not by the prettiest listing)\n\nThe “right” area isn’t a vibe — it’s daily rhythm:\n\n- **Commute tolerance:** what’s your max daily drive time?\n- **Noise:** can your kids sleep if there’s traffic or nightlife nearby?\n- **Walkability:** can you do one or two daily tasks on foot?\n- **Community:** do you have a realistic path to friends and routines?\n\nStart here:\n- [Where to live in Bali for families](/guides/where-to-live-in-bali-for-families)\n- [Ubud vs Sanur vs Canggu (family comparison)](/guides/ubud-vs-sanur-vs-canggu-for-families)\n\n---\n\n## Step 2: Where families find rentals (and how to reduce risk)\n\nCommon sources:\n\n- **Agents:** can be helpful for speed, but still verify everything.\n- **Facebook groups:** sometimes useful, sometimes risky. Assume listings are inconsistent.\n- **Word of mouth:** often the best quality, but harder when you’re new.\n- **Online platforms:** useful for a first short stay, not always great for long-term value.\n\nA helpful rule:\nIf the story changes when you ask basic questions, **walk away**.\n\n---\n\n## Step 3: What to verify before you pay anything\n\nThis is where families get burned — so we make it explicit.\n\nVerify:\n\n- **Who owns the property (or who legally represents the owner)**\n- **What’s included** (electricity, internet, cleaning, pool/garden)\n- **What happens when something breaks** (response time + who pays)\n- **Deposit terms** (when it’s returned, what it can be used for)\n- **Payment schedule** (monthly/quarterly/yearly)\n- **Receipts** (always)\n\nCopy/paste checklist:\n- [Lease + deposit checklist](/resources/lease-deposit-checklist)\n\nCopy/paste questions:\n- [Lease + deposit questions](/guides/lease-and-deposit-questions-in-bali)\n\n---\n\n## Step 4: The “family comfort” inspection (quick walkthrough)\n\nWhen you view a place, do a quick parent scan:\n\n- **Mold + airflow:** check bedrooms and bathrooms.\n- **Water pressure:** try showers and sinks.\n- **Internet reality:** do a speed test at the times you’ll need it.\n- **Noise check:** stand quietly for 60 seconds.\n- **Safety basics:** stairs, balconies, pool fencing, gates.\n\nIf a villa is beautiful but uncomfortable, it will drain you.\n\n---\n\n## Step 5: Commute is the hidden cost\n\nIn Bali, commute isn’t a minor detail. It affects:\n\n- how calm mornings feel,\n- whether kids can do after-school activities,\n- whether parents can work.\n\nIf school is part of your plan, use it as a “pin” on the map and test drive times.\n\nRelated:\n- [Family transport: drivers, scooters, cars](/guides/family-transport-drivers-scooters-cars)\n- [Family transport plan](/resources/family-transport-plan)\n\n---\n\n## What we learned the hard way\n\nThe biggest housing stress isn’t “finding something.”\n\nIt’s paying money before clarity.\n\nIf you only follow one rule, follow this:\n**Don’t let urgency override verification.**\n\n---\n\n## Deep dives (recommended)\n\n- [Renting safely in Bali](/guides/renting-safely-in-bali)\n- [Lease + deposit questions](/guides/lease-and-deposit-questions-in-bali)\n- [Lease + deposit checklist](/resources/lease-deposit-checklist)\n- [Areas hub](/areas)\n- [Bali areas for toddlers](/guides/bali-areas-for-toddlers)\n- [Bali areas for teens](/guides/bali-areas-for-teens)\n- [Quiet + nature areas in Bali](/guides/quiet-nature-areas-in-bali)\n"
+    },
+    {
+      "kind": "pillars",
+      "slug": "areas",
+      "title": "Where to live in Bali",
+      "description": "A practical way to choose areas in Bali for families—what daily life feels like, tradeoffs, and which questions matter most.",
+      "updated": "2026-02-22",
+      "tags": [
+        "areas",
+        "neighborhoods",
+        "families"
+      ],
+      "category": "Areas",
+      "draft": false,
+      "noindex": false,
+      "faqs": [
+        {
+          "q": "Which area is best for families?",
+          "a": "There isn't one best. Many families shortlist 2–3 based on pace, commute, and community, then choose after a test-stay."
+        },
+        {
+          "q": "Which area is best for families in Bali?",
+          "a": "There isn’t one universal best. Start by prioritizing your commute (school + errands), then choose the micro-area that matches your pace: calm routine vs beach energy vs city convenience."
+        },
+        {
+          "q": "How do we pick the right micro-area, not just the right ‘big’ area?",
+          "a": "Treat it like a test: stay 7–14 days, do real routines at real times, and visit the street at night. In Bali, two streets 5 minutes apart can feel completely different."
+        },
+        {
+          "q": "Should we choose beach areas or Ubud/Central areas first?",
+          "a": "Beach areas can feel convenient for restaurants and social life, while Ubud/Central can feel calmer and more nature-connected. Let your daily routine decide: school run + groceries + bedtime, not the weekend vibe."
+        },
+        {
+          "q": "How much does traffic matter when choosing where to live?",
+          "a": "A lot. A ‘perfect’ house can become stressful if the daily commute is unpredictable. Always test your key routes at peak hours before signing a lease."
+        }
+      ],
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick start\n\n- If you're brand new to the idea, **sketch your timeline** (next 3 months vs next year).\n- Shortlist **2–3 areas** before you overthink school or housing.\n- Keep **official links** bookmarked for anything that changes fast (especially visas).\n- Prefer decisions that reduce stress: **short test-stays, staged commitments, clear contracts**.\n\n## The calm roadmap\n\n### Step 1: Decide your timeline\n\nWrite down the earliest date you could arrive—and the latest date you'd still feel good about.\n\n### Step 2: Shortlist areas\n\nUse the [Areas](/areas) hub to shortlist 2–3 places that match your family's pace and commute tolerance.\n\n### Step 3: Plan visas from experience (not certainty)\n\nWe share what families experienced and the questions to ask. We don't guarantee outcomes. For changing details, use [Official links](/official-links).\n\n### Step 4: Housing (staged, not rushed)\n\nIf possible: short stay → view in person → verify → sign. Rushing deposits is where families get burned.\n\n### Step 5: Learning & community\n\nA good-fit learning environment plus one parent community usually does more for \"settling in\" than any single logistics hack.\n\n## What we learned the hard way\n\nThe biggest stress reducer wasn't \"perfect planning\"—it was **staged commitments**. Keep optionality early, then commit once you've seen the reality.\n\n## Next steps\n\n- [Visas](/visas)\n- [Housing](/housing)\n- [Areas](/areas)\n- [Guides](/guides)\n"
+    },
+    {
+      "kind": "pillars",
+      "slug": "schools",
+      "title": "Schools & learning: how to choose a fit",
+      "description": "A parent-first framework to shortlist schools in Bali, what to ask on tours, and how to judge fit: values, learning style, support, commute, and community.",
+      "updated": "2026-02-23",
+      "tags": [
+        "schools",
+        "learning",
+        "tours",
+        "checklist",
+        "empathy-school"
+      ],
+      "category": "Learning",
+      "draft": false,
+      "noindex": false,
+      "video": {
+        "youtubeId": "rlTU1S9cjEk",
+        "title": "Empathy School Tour (360°)",
+        "summary": "A 360° walk-through of Empathy School in Ubud. Use it as a visual reference while you compare learning environments: classroom feel, outdoor spaces, and the general flow of the campus.",
+        "transcriptFile": "content/transcripts/empathy-school-tour-360-recap.txt",
+        "permission": "owned",
+        "childrenVisible": false,
+        "consentConfirmed": false,
+        "ctaText": "Copy the school tour question list",
+        "ctaHref": "/resources/school-tour-question-list"
+      },
+      "social": {
+        "youtubeUrl": "https://www.youtube.com/watch?v=rlTU1S9cjEk",
+        "instagramUrl": "https://www.instagram.com/p/DI_H94pyoEJ/",
+        "youtube": [
+          {
+            "label": "Full tour (standard video)",
+            "url": "https://www.youtube.com/watch?v=3QBtXVMV7yo"
+          },
+          {
+            "label": "Early Years tour",
+            "url": "https://www.youtube.com/watch?v=BEPzspgVvJc"
+          },
+          {
+            "label": "Primary tour",
+            "url": "https://www.youtube.com/watch?v=t5E2f4L5QOE"
+          },
+          {
+            "label": "Middle School tour",
+            "url": "https://m.youtube.com/watch?v=1Dfy0jlCuM8"
+          },
+          {
+            "label": "Parent Q&A (Japanese families)",
+            "url": "https://www.youtube.com/watch?v=GHWWYHsKoxc"
+          },
+          {
+            "label": "Admissions short",
+            "url": "https://www.youtube.com/shorts/RXYDRGimTBs"
+          }
+        ],
+        "instagram": [
+          {
+            "label": "Everyday moments at school",
+            "url": "https://www.instagram.com/empathy.school/p/DUH9wf_kR0I/"
+          },
+          {
+            "label": "School tour visit (Japanese parents/educators)",
+            "url": "https://www.instagram.com/empathy.school/reel/DPAad8bgTCI/"
+          },
+          {
+            "label": "Outdoor learning (nature class)",
+            "url": "https://www.instagram.com/empathy.school/reel/CqmUUkqJTLR/"
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "q": "What matters most when choosing a school in Bali?",
+          "a": "In our experience, the big four are: learning style + values, student support, commute reality, and parent communication. If those fit, everything else gets easier."
+        },
+        {
+          "q": "How many schools should we tour?",
+          "a": "Usually 2–4 is enough. More can overwhelm you. Tour the best-fit options in your top 2–3 areas, at real commute times."
+        },
+        {
+          "q": "What should we watch for beyond the marketing?",
+          "a": "Classroom energy, how support actually works day-to-day, supervision routines, and how the school communicates with parents."
+        },
+        {
+          "q": "Should we decide school before housing?",
+          "a": "Often it’s better to shortlist areas first. Then tour schools within those areas so you’re not committing to a commute you’ll hate."
+        },
+        {
+          "q": "Do you list every school in Bali?",
+          "a": "No. We share a framework and tour questions. We’ll mention a few common options families consider, but the goal is fit—not a giant directory."
+        }
+      ],
+      "readingTimeMinutes": 4,
+      "body": "\n## Quick start (the fast version)\n\n- Start with **fit**, not reputation: values + learning style, support, commute, and communication.\n- Shortlist **2–3 areas first**, then tour schools inside those areas (so you don’t lock in a brutal daily drive).\n- Tour at real times: **morning drop-off** + **afternoon pick-up**.\n- Copy/paste this: [School tour question list](/resources/school-tour-question-list).\n- If you can, use staged commitment: **trial / short term → term → longer commitment**.\n\n---\n\n<div class=\"mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white\">\n  <iframe\n    src=\"https://www.instagram.com/p/DUH9wf_kR0I/embed\"\n    title=\"Everyday moments at Empathy School\"\n    loading=\"lazy\"\n    class=\"w-full\"\n    style=\"min-height:520px\"\n  ></iframe>\n</div>\n\n\n\n## The school-fit framework (what matters most)\n\n### 1) Values + learning style\n\nAsk yourself: does your child thrive with structure, flexibility, project-based learning, nature-based days, or more traditional academics?\n\nOn tours, ignore the glossy language and look for **real examples**:\n- What kids are making / reading / practicing\n- How teachers respond when a child is stuck\n- How independence is built (or not)\n\n### 2) Support (how help actually works)\n\nMany schools *say* they support diverse learners. The real question is how support works **day-to-day**.\n\nUseful questions:\n- What does support look like in a normal week?\n- Who provides it (class teacher, support teacher, counselor)?\n- How is progress shared with parents?\n\n### 3) Safety + supervision (clarity over vibes)\n\nYou don’t need perfection — you need **clear systems**:\n- supervision ratios,\n- pick-up / drop-off routine,\n- injury protocol,\n- who contacts you and how.\n\n### 4) Commute reality\n\nIn Bali, commute is *not* a small detail. It affects:\n- your child’s daily energy,\n- your ability to have routines,\n- whether the move feels calm or chaotic.\n\nDo a real-time commute test (or ask parents in your target area what their actual times are).\n\n### 5) Parent communication + community\n\nStrong schools communicate early and clearly:\n- expectations,\n- what happens when a child struggles,\n- how parents stay in the loop,\n- what community support exists for new families.\n\n---\n\n## A simple shortlist process (that avoids overwhelm)\n\n1) **Write your non-negotiables** (support needs, learning style, commute max, language needs).\n2) Shortlist **2–3 areas** first. (Start here: [Areas hub](/areas).)\n3) Pick **3–5 schools** across those areas.\n4) Tour **2–4** of the best fits.\n5) Use a trial period if available.\n\nIf you want a copy/paste tour checklist, use:\n- [What to ask on a school tour](/guides/what-to-ask-on-a-school-tour)\n- [School tour question list](/resources/school-tour-question-list)\n\n---\n\n## Empathy School (Ubud): tours + programs\n\n<div class=\"rounded-2xl border border-gray-200 bg-gray-50 p-6\">\n  <strong class=\"text-sm font-semibold text-gray-900\">Why we include Empathy School here</strong>\n  <p class=\"mt-3 text-sm leading-6 text-gray-600\">This hub is built by Empathy School, and we’re one of the few groups with real, public video tours. Even if you’re comparing multiple schools, using one consistent “reference tour” helps you notice what you actually care about.</p>\n  <ul class=\"mt-4 text-sm leading-6 text-gray-600\">\n    <li><strong>Ages:</strong> 1–14 (Early Years → Middle School)</li>\n    <li><strong>Location:</strong> Ubud area</li>\n    <li><strong>Best for:</strong> families who want calm routines, nature, and a community feel</li>\n  </ul>\n  <p class=\"mt-4 text-sm leading-6 text-gray-600\">If you want to see whether it’s a fit, the easiest next step is to tour (in person or video-first) and then ask specific questions about support + commute.</p>\n</div>\n\n### Optional: a standard tour video (non‑360)\n\n<div class=\"mt-4 rounded-2xl border border-gray-200 bg-white p-5\">\n  <strong class=\"text-sm font-semibold text-gray-900\">Watch the standard tour on YouTube</strong>\n  <p class=\"mt-3 text-sm leading-6 text-gray-600\">\n    https://www.youtube.com/watch?v=3QBtXVMV7yo\n  </p>\n</div>\n\n<details class=\"mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-5\">\n  <summary class=\"text-sm font-semibold text-gray-900\">How to watch this tour like a parent</summary>\n  <div class=\"mt-4 whitespace-pre-wrap text-sm leading-6 text-gray-600\">\nSuggested notes to capture when you review the video:\n- What spaces matter most to your child (quiet corners, outdoor time, project areas)\n- What you notice about classroom energy and teacher attention\n- What questions you want to ask in a live tour about support, safety, and routines\n\nTip: if you want the exact transcript, open the video on YouTube and use the built-in “Show transcript” feature.\n  </div>\n</details>\n\n### Program tours (quick links)\n\n- Early Years tour: https://www.youtube.com/watch?v=BEPzspgVvJc\n- Primary tour: https://www.youtube.com/watch?v=t5E2f4L5QOE\n- Middle School tour: https://m.youtube.com/watch?v=1Dfy0jlCuM8\n\n---\n\n## Parent voices (testimonials)\n\nThese short clips are useful for tone and fit — treat them as **supporting context**, not the only input.\n\n<div class=\"mt-4 rounded-2xl border border-gray-200 bg-white p-5\">\n  <strong class=\"text-sm font-semibold text-gray-900\">Parent voices (watch on YouTube)</strong>\n  <ul class=\"mt-3 list-disc pl-5 text-sm leading-6 text-gray-600\">\n    <li>Clip 1: https://www.youtube.com/watch?v=f8ZQr6NnTTM</li>\n    <li>Clip 2: https://www.youtube.com/watch?v=otZDfCRApFQ</li>\n  </ul>\n</div>\n\n<details class=\"mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-5\">\n  <summary class=\"text-sm font-semibold text-gray-900\">Key takeaways to listen for</summary>\n  <div class=\"mt-4 whitespace-pre-wrap text-sm leading-6 text-gray-600\">\n- What parents say about daily routines and how quickly kids settle in\n- Whether the school communicates clearly and proactively\n- What “community” looks like in practice (not just on posters)\n\nTip: if you want the exact transcript for a clip, open it on YouTube and use the built-in “Show transcript” feature.\n  </div>\n</details>\n\n---\n\n## A few schools families commonly compare (not an exhaustive list)\n\nWe’re not publishing a giant directory here. But families often ask “what else should we look at?”\n\nHere are a few *common* options to research (visit their official sites and tour in person):\n\n- Green School Bali\n- Canggu Community School\n- Bali Island School\n- Australian Independent School (AIS Bali)\n- Dyatmika School\n- Pelangi School (Ubud)\n\n---\n\n## What to watch out for (practical, not scary)\n\n- **Unclear support promises:** if you can’t get a straight answer on how support works week-to-week, assume it’s inconsistent.\n- **Commute denial:** if everyone “says it’s fine,” do the commute yourself at drop-off times.\n- **Communication gaps:** a calm move needs clear parent communication — ask to see examples.\n- **Hidden costs:** uniforms, registration, activities, transport, lunch — ask for a full list.\n\n---\n\n## Next steps\n\n- Copy the checklist: [School tour question list](/resources/school-tour-question-list)\n- Read the tour guide: [What to ask on a school tour](/guides/what-to-ask-on-a-school-tour)\n- Explore programs + camps: [Camps](/camps)\n- Ask a question: [Contact](/contact)\n"
+    },
+    {
+      "kind": "pillars",
+      "slug": "camps",
+      "title": "Camps & short-term programs",
+      "description": "How families use camps and short programs in Bali (test-stays, transitions, holidays)—plus what to ask before enrolling.",
+      "updated": "2026-02-23",
+      "tags": [
+        "camps",
+        "short-term",
+        "programs",
+        "empathy-camp",
+        "families"
+      ],
+      "category": "Camps",
+      "draft": false,
+      "noindex": false,
+      "video": {
+        "youtubeId": "YPNreiDDk84",
+        "title": "Empathy School Summer Camp (highlights)",
+        "summary": "A highlight reel from Empathy School’s summer camp. Use it to sense the rhythm (outdoor time, group energy, daily flow)—then compare what you see against the questions that actually matter: supervision, safety, refunds, and parent communication.",
+        "transcriptFile": "content/transcripts/empathy-school-summer-camp-highlights-recap.txt",
+        "permission": "owned",
+        "childrenVisible": true,
+        "consentConfirmed": true,
+        "ctaText": "Copy the camp questions checklist",
+        "ctaHref": "/resources/camp-questions-checklist"
+      },
+      "social": {
+        "youtubeUrl": "https://www.youtube.com/watch?v=YPNreiDDk84",
+        "instagramUrl": "https://www.instagram.com/empathy.school/p/DQ6G6XjkVoi/",
+        "youtube": [
+          {
+            "label": "Nature camp (what a day feels like)",
+            "url": "https://www.youtube.com/watch?v=lxwJfJxF51Y"
+          }
+        ],
+        "instagram": [
+          {
+            "label": "Winter camp snapshot (post)",
+            "url": "https://www.instagram.com/empathy.school/p/DQ6G6XjkVoi/"
+          },
+          {
+            "label": "Winter camp vibe (post)",
+            "url": "https://www.instagram.com/empathy.school/p/DTKdXFTgeg9/"
+          },
+          {
+            "label": "Winter camp countdown (reel)",
+            "url": "https://www.instagram.com/empathy.school/reel/DRQ8ZF7kesd/"
+          },
+          {
+            "label": "Other seasonal options (reel)",
+            "url": "https://www.instagram.com/empathy.school/reel/DS1F4lGD3UM/"
+          },
+          {
+            "label": "Weekly Nature Scholar Program",
+            "url": "https://www.instagram.com/empathy.school/p/DPc6tnVER8Z/"
+          },
+          {
+            "label": "Flexible 1–2 day options",
+            "url": "https://www.instagram.com/empathy.school/p/DR4GYsZEW5D/"
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "q": "Are camps worth it if we’re only visiting Bali for 2–4 weeks?",
+          "a": "Often, yes. A short camp or weekly program can give kids structure and friends quickly—while you handle housing, errands, and the realities of daily life."
+        },
+        {
+          "q": "What’s the difference between a holiday camp and a weekly program?",
+          "a": "Holiday camps are short, seasonal bursts (winter/summer breaks). Weekly programs usually run during school terms and can work well for families staying 1–3 months or longer."
+        },
+        {
+          "q": "What should we ask before we pay a deposit?",
+          "a": "Supervision ratios, safety policies, refund terms, allergy/medical handling, drop-off/pick-up security, and how staff communicate with parents."
+        },
+        {
+          "q": "How do we avoid ‘camp hype’ when choosing?",
+          "a": "Choose clarity over vibes: written policies, clear schedules, and straightforward communication beat glossy marketing every time."
+        },
+        {
+          "q": "Do camps work for short-stay families or visitors?",
+          "a": "Often yes, especially during school holidays. The key is to confirm age range, daily schedule, what to bring, and whether you can book by day or by week."
+        }
+      ],
+      "readingTimeMinutes": 4,
+      "body": "\n## Quick start (the fast version)\n\n- If you’re planning a **test-stay**, camps can help you avoid “holiday mode” by giving kids structure fast.\n- Aim for **staged commitment**: try a short program first, then decide.\n- Before you pay anything, copy/paste this: [Camp questions checklist](/resources/camp-questions-checklist).\n- Choose **clarity over hype**: written policies, clear pick-up/drop-off, and simple communication.\n\n---\n\n## How camps fit into a Bali move (3 common patterns)\n\n### Pattern 1: “We’re visiting to see if Bali is right.”\n\nA 1–2 week camp or weekly program can give your child:\n- routines,\n- friends,\n- a sense of “normal life,”\n\n…while you test commutes, groceries, clinics, and daily logistics.\n\n### Pattern 2: “We’re in-between: visas / housing / settling in.”\n\nCamps can work as a **transition buffer**, especially in the first weeks when:\n- your routines aren’t stable yet,\n- you’re still viewing housing,\n- you’re doing a lot of admin.\n\n### Pattern 3: “We live here, but we need coverage during breaks.”\n\nSeasonal camps can be a practical way to cover:\n- holiday blocks,\n- visiting family seasons,\n- periods when your work ramps up.\n\n---\n\n## Empathy Camp (our programs)\n\nThis hub is published by Empathy School, so we’ll always be transparent when we share our own camps.\n\n<div class=\"mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-6\">\n  <strong class=\"text-sm font-semibold text-gray-900\">A quick snapshot</strong>\n  <ul class=\"mt-4 text-sm leading-6 text-gray-600\">\n    <li><strong>Location:</strong> Ubud area</li>\n    <li><strong>Style:</strong> nature-first, hands-on days with calm routines</li>\n    <li><strong>Best for:</strong> families who want kids outdoors, moving, building confidence—and making friends fast</li>\n  </ul>\n  <p class=\"mt-4 text-sm leading-6 text-gray-600\">\n    Dates change seasonally. The fastest way to get current options is to <a href=\"/contact\">ask us</a> and tell us your child’s age + your travel dates.\n  </p>\n</div>\n\n---\n\n## What to ask before you enroll (copy/paste)\n\nUse the full template here: [Camp questions checklist](/resources/camp-questions-checklist).\n\nA short version (the questions that prevent most problems):\n\n- **Supervision:** What’s the adult-to-child ratio, and how is it handled during transitions (bathroom, snack, arrival)?\n- **Safety:** What happens for injuries? Who calls parents? Where is first aid kept?\n- **Drop-off / pick-up:** How do you ensure the right adult is collecting the child?\n- **Allergies / medical:** How are allergies managed? Can you accommodate medication plans?\n- **Refunds:** What are the terms if a child gets sick or plans change?\n- **Communication:** How will you update parents—daily notes, WhatsApp, email?\n\n---\n\n## Video: Nature camp (what a day can feel like)\n\n<div class=\"mt-4 overflow-hidden rounded-2xl border border-gray-200\">\n  <div class=\"aspect-video w-full\">\n    <iframe\n      src=\"https://www.youtube.com/embed/lxwJfJxF51Y\"\n      title=\"Empathy School Nature Camp\"\n      loading=\"lazy\"\n      class=\"h-full w-full\"\n      allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"\n      referrerpolicy=\"strict-origin-when-cross-origin\"\n      allowfullscreen\n    ></iframe>\n  </div>\n</div>\n\n<details class=\"mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-5\">\n  <summary class=\"text-sm font-semibold text-gray-900\">How to watch this like a parent (not a tourist)</summary>\n  <div class=\"mt-4 whitespace-pre-wrap text-sm leading-6 text-gray-600\">\nWhile you watch, try to answer:\n- Do you see consistent adult presence (supervision you can feel)?\n- Does the day look over-scheduled, chaotic, or calm?\n- Would your child thrive with this amount of outdoor time and group energy?\n\nThen follow up with the checklist questions—because the “boring details” are what make camps feel safe.\n  </div>\n</details>\n\n---\n\n## Seasonal camps (winter / summer / mid-term holidays)\n\nSeasonal camps are great for:\n- families visiting from overseas during school breaks,\n- families living in Bali who want structured blocks during holidays.\n\nBecause dates change, we treat seasonal content as **examples + social proof**, not the source-of-truth schedule.\n\n<div class=\"mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-6\">\n  <strong class=\"text-sm font-semibold text-gray-900\">Seasonal snapshots (supporting posts)</strong>\n  <p class=\"mt-3 text-sm leading-6 text-gray-600\">If you want current dates, use the contact form and we’ll share what’s available.</p>\n  <ul class=\"mt-4 text-sm leading-6 text-gray-600\">\n    <li>Winter camp snapshot: https://www.instagram.com/empathy.school/p/DQ6G6XjkVoi/</li>\n    <li>Winter camp vibe: https://www.instagram.com/empathy.school/p/DTKdXFTgeg9/</li>\n    <li>Winter camp countdown (reel): https://www.instagram.com/empathy.school/reel/DRQ8ZF7kesd/</li>\n    <li>Other seasonal options (reel): https://www.instagram.com/empathy.school/reel/DS1F4lGD3UM/</li>\n  </ul>\n</div>\n\n---\n\n## Weekly programs (great for 3–12 month stays)\n\nIf your family is staying for a season (or you’re easing into life here), weekly programs can be a strong middle ground:\n- more stable routine than a one-off holiday camp,\n- lower “commitment risk” than full enrollment,\n- easier to adjust if your area/housing changes.\n\nUseful references:\n- Weekly Nature Scholar Program: https://www.instagram.com/empathy.school/p/DPc6tnVER8Z/\n- Flexible 1–2 day options: https://www.instagram.com/empathy.school/p/DR4GYsZEW5D/\n\n---\n\n## What we learned the hard way\n\nThe biggest stress reducer wasn’t “finding the perfect camp.” It was choosing camps with **clear systems**:\n- clear supervision,\n- clear policies,\n- clear refund terms,\n- clear communication.\n\nA great vibe without clarity often becomes stressful by day two.\n\n---\n\n## What to watch out for (practical red flags)\n\n- No written supervision/safety policy (or they dodge simple questions).\n- Vague drop-off / pick-up process (especially for younger kids).\n- Pressure to pay a deposit before you’ve seen a schedule or terms.\n- No allergy/medical plan.\n- Communication is chaotic (slow, inconsistent, or unclear).\n\nIf you’re unsure, start with a shorter commitment and reassess.\n\n---\n\n## Next steps\n\n- Want a calm plan first? [Start here](/start-here)\n- If you’re choosing where to base yourselves: [Areas hub](/areas)\n- If school is your priority: [Schools & learning](/schools)\n- If you’re planning daily life and routines: [Family life](/family-life)\n- If you’re budgeting and planning logistics: [Costs & logistics](/costs)\n- Want current camp options? [Contact](/contact)\n\n## Helpful next reads\n\n- [The 2‑week test-stay plan](/guides/two-week-test-stay-plan)\n- [Packing list for Bali with kids](/guides/packing-list-for-bali-with-kids)\n- [Safety basics for families](/guides/bali-safety-basics-for-families)\n- [Arrival folder checklist](/resources/arrival-folder-checklist)\n"
+    },
+    {
+      "kind": "pillars",
+      "slug": "family-life",
+      "title": "Family life in Bali with kids: routines, community, culture",
+      "description": "The day-to-day reality: routines, community, culture, markets, and the small decisions that make Bali feel calm (not chaotic).",
+      "updated": "2026-02-23",
+      "tags": [
+        "family-life",
+        "routines",
+        "community",
+        "culture"
+      ],
+      "category": "Family life",
+      "draft": false,
+      "noindex": false,
+      "video": {
+        "youtubeId": "pRVxOKw1yDQ",
+        "title": "Volunteering & community (a glimpse of family life)",
+        "summary": "A short glimpse of community volunteering at Empathy School. Use it to imagine one of the simplest ways families build routine: show up in the same place, see the same people, and let kids make friends through shared activity.",
+        "transcriptFile": "content/transcripts/volunteering-community-glimpse-recap.txt",
+        "permission": "owned",
+        "childrenVisible": true,
+        "consentConfirmed": true,
+        "ctaText": "Copy the first-month setup checklist",
+        "ctaHref": "/resources/first-month-setup-checklist"
+      },
+      "social": {
+        "youtubeUrl": "https://www.youtube.com/shorts/pRVxOKw1yDQ",
+        "instagramUrl": "https://www.instagram.com/empathy.school/reel/DQjCq30kR-O/",
+        "youtube": [
+          {
+            "label": "CICAK CICAK (music video)",
+            "url": "https://www.youtube.com/watch?v=9p3YKTJ1FXs"
+          }
+        ],
+        "instagram": [
+          {
+            "label": "Parents after school (reel)",
+            "url": "https://www.instagram.com/empathy.school/reel/DQjCq30kR-O/"
+          },
+          {
+            "label": "Community garden intern (post)",
+            "url": "https://www.instagram.com/empathy.school/p/DPEKyqxD-KC/"
+          },
+          {
+            "label": "Penjor (culture post)",
+            "url": "https://www.instagram.com/empathy.school/p/DRLQ9vGE3Hp/"
+          },
+          {
+            "label": "Melukat (reel)",
+            "url": "https://www.instagram.com/empathy.school/reel/DQdzsASEftg/"
+          },
+          {
+            "label": "Farmer’s market (reel)",
+            "url": "https://www.instagram.com/empathy.school/reel/DPYiFh4kVRP/"
+          },
+          {
+            "label": "Kids selling crafts (post)",
+            "url": "https://www.instagram.com/empathy.school/p/DPBUd4TEQCa/"
+          },
+          {
+            "label": "Nature cooking (reel)",
+            "url": "https://www.instagram.com/empathy.school/reel/CzdBEPXvpA-/"
+          },
+          {
+            "label": "Community holiday moment (post)",
+            "url": "https://www.instagram.com/empathy.school/p/DSqu2PNgaNf/"
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "q": "What makes life easier in the first month?",
+          "a": "A simple routine, a realistic commute, and one ‘anchor community’ (school, camp, sport, or parent group)."
+        },
+        {
+          "q": "How do families make friends in Bali?",
+          "a": "In our experience, it’s less about ‘networking’ and more about consistency: school pick-up, a weekly class/camp, and one parent-friendly routine (market, playground, co-working)."
+        },
+        {
+          "q": "How do we approach Balinese culture respectfully with kids?",
+          "a": "Ask locals, follow guidance, dress modestly for ceremonies, and avoid treating rituals as performances. We share lived experience and checklists—confirm details with your community."
+        },
+        {
+          "q": "What should we focus on first if everything feels overwhelming?",
+          "a": "Shrink the problem: pick one area, one transport plan, one grocery loop, and one weekly anchor for your child. Then improve from there."
+        },
+        {
+          "q": "Is Bali safe for kids?",
+          "a": "Many families feel Bali is safe, but road safety is the biggest day-to-day risk. Choose your micro-area carefully, use car seats when possible, and build routines that reduce road exposure."
+        }
+      ],
+      "readingTimeMinutes": 3,
+      "body": "\n## Quick start (the fast version)\n\n- If you’re brand new to the idea, **sketch your timeline** (next 3 months vs next year).\n- Shortlist **2–3 areas** before you overthink school or housing.\n- Pick a “calm baseline” routine: **transport plan + grocery loop + one weekly child anchor**.\n- Keep **official links** bookmarked for anything that changes fast (especially visas).\n- Prefer decisions that reduce stress: **short test-stays, staged commitments, clear contracts**.\n\nIf you want a copy/paste checklist for your first month, use: [First month setup checklist](/resources/first-month-setup-checklist).\n\n---\n\n## What family life usually feels like (once you’re past holiday mode)\n\nMany families arrive in “holiday mode”—and then reality hits:\n- commutes take longer than expected,\n- groceries and routines take effort,\n- kids need friends and structure.\n\nThe move starts feeling calm when you have:\n- one predictable weekly rhythm,\n- one community anchor,\n- and a realistic commute.\n\n## The calm roadmap\n\n### Step 1: Decide your timeline\n\nWrite down the earliest date you could arrive—and the latest date you’d still feel good about.\n\n### Step 2: Shortlist areas\n\nUse the [Areas](/areas) hub to shortlist 2–3 places that match your family’s pace and commute tolerance.\n\n### Step 3: Plan visas from experience (not certainty)\n\nWe share what families experienced and the questions to ask. We don’t guarantee outcomes. For changing details, use [Official links](/official-links).\n\n### Step 4: Housing (staged, not rushed)\n\nIf possible: short stay → view in person → verify → sign. Rushing deposits is where families get burned.\n\n### Step 5: Learning & community\n\nA good-fit learning environment plus one parent community usually does more for “settling in” than any single logistics hack.\n\nIf you want the “community” piece to be easier, build it deliberately:\n- choose one routine where you see the same parents repeatedly,\n- show up consistently,\n- and let relationships form over time.\n\n---\n\n## Community: how families actually meet people\n\nMost families don’t “find community” by hunting for the perfect WhatsApp group.\n\nIn practice, community usually happens through:\n- **school pick-up** (or camp pick-up),\n- one weekly class/sport,\n- a consistent market/cafe routine,\n- volunteering (when it fits).\n\nIf you want a deeper guide: [Finding community in Bali with kids](/guides/finding-community-in-bali-with-kids).\n\n### A small visual glimpse (supporting reel)\n\n<div class=\"mt-4 overflow-hidden rounded-2xl border border-gray-200 bg-white\">\n  <iframe\n    src=\"https://www.instagram.com/reel/DQjCq30kR-O/embed\"\n    title=\"Parents after school (Empathy School)\"\n    loading=\"lazy\"\n    class=\"w-full\"\n    style=\"min-height:520px\"\n  ></iframe>\n</div>\n\n<details class=\"mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-5\">\n  <summary class=\"text-sm font-semibold text-gray-900\">Key takeaways (how to apply this)</summary>\n  <div class=\"mt-4 whitespace-pre-wrap text-sm leading-6 text-gray-600\">\n- Don’t optimize too early. Your first goal is repetition: same places, same people.\n- Kids often settle faster than parents when they have predictable “friend time.”\n- The calm version of Bali usually appears after week 2–4, not day 2.\n  </div>\n</details>\n\n---\n\n## Culture with kids (respectful ways to join)\n\nCulture is one of the best parts of living in Bali—especially for children.\n\nOur stance is simple:\n- participate respectfully,\n- ask locals what’s appropriate,\n- don’t treat ceremonies as performances.\n\nStart here:\n- [Culture in Bali with kids](/guides/culture-in-bali-with-kids)\n- [Culture with kids: quick checklist](/resources/culture-with-kids-quick-checklist)\n\n### A small cultural touchpoint (video)\n\n- CICAK CICAK (music video): https://www.youtube.com/watch?v=9p3YKTJ1FXs\n\n(We embed this on the culture guide so you can watch without leaving the page.)\n\n---\n\n## Markets, food, and the daily rhythm\n\nFor many families, the “Bali rhythm” becomes real when you have:\n- one reliable grocery loop,\n- a few safe meals,\n- and one market/cafe routine.\n\nDeep dive: [Groceries & meal routines in Bali](/guides/groceries-meals-routines-in-bali).\n\n---\n\n## Holidays, seasons, and the emotional weather\n\nTwo patterns we see repeatedly:\n- **Rainy season** is fine when you plan for it (shoes, indoor play defaults, flexible expectations).\n- Holidays can feel surprisingly “normal” when you have community.\n\nUseful reads:\n- [Rainy season with kids](/blog/rainy-season-with-kids)\n- [Bali safety basics for families](/guides/bali-safety-basics-for-families)\n\n---\n\n## Kids’ independence (the small wins)\n\nSome families notice their kids become more independent here because daily life includes real-world practice:\n- navigating local routines,\n- building confidence with community,\n- creating and sharing small projects.\n\nSupporting example (post): https://www.instagram.com/empathy.school/p/DPBUd4TEQCa/\n\n## What we learned the hard way\n\nThe biggest stress reducer wasn’t “perfect planning”—it was **staged commitments**. Keep optionality early, then commit once you’ve seen the reality.\n\n## Next steps\n\n- [Visas](/visas)\n- [Housing](/housing)\n- [Areas](/areas)\n- [Guides](/guides)\n\n## Deep dives (recommended)\n\n- [Finding community in Bali with kids](/guides/finding-community-in-bali-with-kids)\n- [Culture in Bali with kids](/guides/culture-in-bali-with-kids)\n- [Family transport in Bali](/guides/family-transport-drivers-scooters-cars)\n- [Bali safety basics for families](/guides/bali-safety-basics-for-families)\n- [Groceries & meal routines](/guides/groceries-meals-routines-in-bali)\n- [Healthcare in Bali for families](/guides/healthcare-in-bali-for-families)\n- [Rainy season with kids](/blog/rainy-season-with-kids)\n"
+    },
+    {
+      "kind": "pillars",
+      "slug": "costs",
+      "title": "Costs & budgeting for a Bali move",
+      "description": "A budgeting framework for families: what drives costs up or down, and how to compare options without guessing.",
+      "updated": "2026-02-23",
+      "tags": [
+        "costs",
+        "budget",
+        "planning",
+        "housing",
+        "schools",
+        "transport",
+        "healthcare",
+        "checklist"
+      ],
+      "category": "Costs",
+      "draft": false,
+      "noindex": false,
+      "video": {
+        "youtubeId": "RXYDRGimTBs",
+        "title": "Education & budgets (short)",
+        "summary": "Education is often one of the biggest budget lines for relocating families. This short clip helps you calibrate expectations before you build a budget range.",
+        "transcriptFile": "content/transcripts/education-budgeting-short-recap.txt",
+        "uploadDate": "2026-02-23",
+        "permission": "owned",
+        "childrenVisible": false,
+        "consentConfirmed": false,
+        "ctaText": "Copy the budget range planner",
+        "ctaHref": "/resources/family-budget-range-planner"
+      },
+      "social": {
+        "youtube": [
+          {
+            "label": "Admissions short (education is a major budget driver)",
+            "url": "https://www.youtube.com/shorts/RXYDRGimTBs"
+          }
+        ],
+        "instagram": [
+          {
+            "label": "Flexible childcare (1–2 day options)",
+            "url": "https://www.instagram.com/empathy.school/p/DR4GYsZEW5D/"
+          },
+          {
+            "label": "Weekly Nature Scholar Program (structured weekly option)",
+            "url": "https://www.instagram.com/empathy.school/p/DPc6tnVER8Z/"
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "q": "Why do people’s Bali budgets vary so much?",
+          "a": "Housing expectations, transport choices, lifestyle (restaurants vs home), and school/camp costs are the main drivers."
+        },
+        {
+          "q": "What’s the biggest ‘hidden cost’ families miss?",
+          "a": "Deposits + setup costs (transport, SIM/internet, first month supplies), plus the time cost of long commutes."
+        },
+        {
+          "q": "Should we try to find exact numbers before we arrive?",
+          "a": "It’s better to plan ranges. Pricing varies a lot and changes often. A strong range-based plan keeps you calm and flexible."
+        },
+        {
+          "q": "What’s the fastest way to reduce cost stress?",
+          "a": "Shortlist areas first, do a short test stay, and stage your commitments (housing + school) so you’re not locked in too early."
+        },
+        {
+          "q": "Is Bali cheaper than our home country for families?",
+          "a": "Sometimes, but it depends on your lifestyle. Housing, school fees, and convenience spending (delivery, drivers, imported food) can push costs up fast—even if basics feel cheaper."
+        }
+      ],
+      "readingTimeMinutes": 2,
+      "body": "\n## Quick start (the fast version)\n\n- Build **ranges**, not perfect spreadsheets. Bali pricing varies.\n- The biggest budget drivers are usually **housing + education + transport**.\n- Decide your family’s “tradeoffs”: space vs location, driver vs scooters, eating out vs cooking.\n- Use this copy/paste tool to estimate calmly: [Family budget range planner](/resources/family-budget-range-planner).\n- Include a buffer for deposits + setup (first month is rarely “average”).\n\n---\n\n<div class=\"mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white\">\n  <iframe\n    src=\"https://www.instagram.com/p/DR4GYsZEW5D/embed\"\n    title=\"Flexible childcare (Empathy School)\"\n    loading=\"lazy\"\n    class=\"w-full\"\n    style=\"min-height:520px\"\n  ></iframe>\n</div>\n\n\n\n## The 4 budget drivers that matter most\n\n### 1) Housing (and deposit terms)\nHousing cost isn’t just rent — it’s also:\n- deposit size and return terms,\n- what’s included (electricity/internet/cleaning),\n- how often things need maintenance.\n\nUseful tools:\n- [Lease + deposit checklist](/resources/lease-deposit-checklist)\n- [Renting safely in Bali](/guides/renting-safely-in-bali)\n\n### 2) Education (school, camps, short-term programs)\nEducation can be a major budget line — and also the main reason families choose Bali.\n\nStart here:\n- [Schools & learning](/schools)\n- [Camps & short‑term programs](/camps)\n\n### 3) Transport (drivers vs scooters vs car)\nTransport choices affect your daily stress and your budget.\n\nStart here:\n- [Family transport: drivers, scooters, cars](/guides/family-transport-drivers-scooters-cars)\n- [Family transport plan](/resources/family-transport-plan)\n\n### 4) Lifestyle (restaurants vs home routines)\nIf you’re eating out for every meal, budgets rise quickly.\nIf you cook more and build routines, budgets stabilize.\n\nRelated:\n- [Groceries, meals & routines](/guides/groceries-meals-routines-in-bali)\n\n---\n\n## Build a realistic budget range in 30 minutes\n\nThis is the method we recommend because it works even when prices fluctuate.\n\n1) Choose your **two target areas** (so you’re not guessing wildly)\n- [Areas hub](/areas)\n- [Where to live in Bali for families](/guides/where-to-live-in-bali-for-families)\n\n2) Pick a housing “style” you’re aiming for\n- compact + close to routines\n- more space + longer commute\n\n3) Decide your transport default\n- driver most days\n- scooter(s) + occasional driver\n- car (less common, but some families do it)\n\n4) Decide education plan\n- school term\n- camp/weekly program as an anchor\n- a mix (short-term first, then longer)\n\n5) Add healthcare/insurance as a real line item\n- [Health insurance in Bali (how to choose)](/guides/health-insurance-in-bali-for-families)\n\nThen fill in ranges:\n- [Family budget range planner](/resources/family-budget-range-planner)\n\n---\n\n## Hidden costs families commonly miss\n\n- **Deposits + upfront payments** (housing, utilities, sometimes school fees)\n- **Setup week spending** (SIMs, transport, household basics)\n- **Commute time** (it’s not money, but it becomes stress)\n- **Visa/entry costs** (these can change — confirm via official links)\n\nOfficial sources:\n- [Official links](/official-links)\n\n---\n\n## What we learned the hard way\n\nTrying to “solve the budget” before you’ve chosen areas usually creates false precision.\n\nA calmer path:\n- shortlist areas,\n- do a short stay,\n- then lock in housing/school once you’ve seen your daily rhythm.\n\n---\n\n## Deep dives (recommended)\n\n- [Cost of living for families (framework)](/guides/cost-of-living-for-families-framework)\n- [Family budget range planner](/resources/family-budget-range-planner)\n- [Banking & payments in Bali](/guides/banking-payments-in-bali)\n- [Health insurance in Bali (how to choose)](/guides/health-insurance-in-bali-for-families)\n- [Housing](/housing)\n- [Visas](/visas)\n"
+    }
+  ],
+  "areas": [
+    {
+      "kind": "areas",
+      "slug": "amed",
+      "title": "Amed for families",
+      "description": "A quiet coastal stretch in East Bali—beautiful and slow, but better for families who are happy with fewer services and more intentional routines.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "amed",
+        "quiet",
+        "coastal",
+        "families",
+        "slower",
+        "areas",
+        "neighborhoods"
+      ],
+      "category": "East Bali",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nAmed is a **quiet coastal option** that some families love for the slower pace. It tends to suit families who don’t need constant activities and services nearby.\n\n## Who this area fits\n\n- Families who want a calmer, nature-focused lifestyle\n- Parents who enjoy simple routines and quieter days\n\n## Tradeoffs\n\n- Longer trips for some services and activities\n- Transport planning matters (especially with younger kids)\n\n## What to test\n- Grocery and essentials route\n- Clinic access and what you’d do in an emergency (plan, not panic)\n- Internet reliability if you work remotely\n\nGuide: [Healthcare planning](/guides/healthcare-in-bali-for-families)\n\n## Next steps\n- [Areas hub](/areas)\n- [Start here](/start-here)\n"
+    },
+    {
+      "kind": "areas",
+      "slug": "berawa",
+      "title": "Berawa for families",
+      "description": "A popular pocket near Canggu with many family services—convenient, but traffic can be intense at peak times.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "berawa",
+        "busy",
+        "community",
+        "families",
+        "areas",
+        "neighborhoods"
+      ],
+      "category": "Canggu region",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nA popular pocket near Canggu with many family services—convenient, but traffic can be intense at peak times.\n\n## Who this area fits\n\n- Families who value **community + convenience**\n- Parents who can accept the tradeoffs (listed below)\n\n## What daily life feels like\n\n- Mornings: school runs, errands, coffee, and routines\n- Afternoons: heat/rain rhythms, activities, and kid energy\n- Evenings: where it’s calm vs where it stays busy\n\n## Tradeoffs (be honest)\n\n- Commute: some routes are fine until peak times\n- Noise: depends heavily on the exact street\n- “Pretty” vs “practical”: don’t choose only from photos\n\n## A simple way to test\n\nIf you can, do a 7–14 day stay and act like you live there:\ngroceries, commute at real times, bedtime routines.\n\n## Next steps\n\n- [Areas hub](/areas)\n- [Housing](/housing)\n- [Start here](/start-here)\n\n"
+    },
+    {
+      "kind": "areas",
+      "slug": "canggu",
+      "title": "Canggu for families",
+      "description": "International energy, lots of activities and cafes—also busier roads and more stimulation than many parents expect.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "canggu",
+        "busy",
+        "community",
+        "families",
+        "areas",
+        "neighborhoods"
+      ],
+      "category": "Canggu region",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nInternational energy, lots of activities and cafes—also busier roads and more stimulation than many parents expect.\n\n## Who this area fits\n\n- Families who value **community + convenience**\n- Parents who can accept the tradeoffs (listed below)\n\n## What daily life feels like\n\n- Mornings: school runs, errands, coffee, and routines\n- Afternoons: heat/rain rhythms, activities, and kid energy\n- Evenings: where it’s calm vs where it stays busy\n\n## Tradeoffs (be honest)\n\n- Commute: some routes are fine until peak times\n- Noise: depends heavily on the exact street\n- “Pretty” vs “practical”: don’t choose only from photos\n\n## A simple way to test\n\nIf you can, do a 7–14 day stay and act like you live there:\ngroceries, commute at real times, bedtime routines.\n\n## Next steps\n\n- [Areas hub](/areas)\n- [Housing](/housing)\n- [Start here](/start-here)\n\n"
+    },
+    {
+      "kind": "areas",
+      "slug": "denpasar",
+      "title": "Denpasar for families",
+      "description": "Practical city life: services, shopping, and admin tasks are easier—best for families who want convenience over “tropical village” vibes.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "denpasar",
+        "practical",
+        "city",
+        "families",
+        "services",
+        "areas",
+        "neighborhoods"
+      ],
+      "category": "Denpasar",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nDenpasar is often the **practical choice**: more of a city rhythm, easier admin tasks, and lots of services. It’s not the “holiday postcard,” but it can make daily logistics simpler.\n\n## Who this area fits\n\n- Families who want convenience and services nearby\n- Parents who prefer a more local, city-based routine\n\n## Tradeoffs\n\n- Less “resort vibe”\n- Busier roads and city noise in some pockets\n\n## What daily life feels like\n\n- errands can be easier\n- you may spend less time commuting for basics\n- it can feel less “expat bubble” (which many families like)\n\n## Nearby areas\n- [Renon](/areas/renon) (often a calmer-feeling pocket)\n- [Sanur](/areas/sanur) (beach-city base)\n\n## Next steps\n- [First week setup checklist](/guides/first-week-in-bali-setup-checklist)\n- [Areas hub](/areas)\n"
+    },
+    {
+      "kind": "areas",
+      "slug": "jimbaran",
+      "title": "Jimbaran for families",
+      "description": "A more residential feel with beaches and access—often a practical compromise for families who want less hype.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "jimbaran",
+        "mixed",
+        "residential",
+        "families",
+        "areas",
+        "neighborhoods"
+      ],
+      "category": "Bukit Peninsula",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nA more residential feel with beaches and access—often a practical compromise for families who want less hype.\n\n## Who this area fits\n\n- Families who value **a balance of pace and access**\n- Parents who can accept the tradeoffs (listed below)\n\n## What daily life feels like\n\n- Mornings: school runs, errands, coffee, and routines\n- Afternoons: heat/rain rhythms, activities, and kid energy\n- Evenings: where it’s calm vs where it stays busy\n\n## Tradeoffs (be honest)\n\n- Commute: some routes are fine until peak times\n- Noise: depends heavily on the exact street\n- “Pretty” vs “practical”: don’t choose only from photos\n\n## A simple way to test\n\nIf you can, do a 7–14 day stay and act like you live there:\ngroceries, commute at real times, bedtime routines.\n\n## Next steps\n\n- [Areas hub](/areas)\n- [Housing](/housing)\n- [Start here](/start-here)\n\n"
+    },
+    {
+      "kind": "areas",
+      "slug": "kerobokan",
+      "title": "Kerobokan for families",
+      "description": "More residential in parts, often better value than the busiest beach pockets—good for families who want a practical base near the action.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "kerobokan",
+        "residential",
+        "value",
+        "families",
+        "commute",
+        "areas",
+        "neighborhoods"
+      ],
+      "category": "Seminyak & surrounds",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nKerobokan can feel **more residential** than the beach hotspots and is sometimes chosen for **value + practicality**—but your daily experience depends on exactly where you are and where you need to commute.\n\n## Who this area fits\n\n- Families who want to be near Seminyak / Canggu region without being on the busiest streets\n- Parents who want a home base that supports routines (sleep, groceries, quiet evenings)\n\n## Tradeoffs\n\n- Some routes can still be slow at peak times\n- “Nice on a map” isn’t the same as “easy day-to-day” — test your commute\n\nGuide: [Family transport options](/guides/family-transport-drivers-scooters-cars)\n\n## Housing notes\n\nBefore paying anything, use:\n- [Lease + deposit checklist](/resources/lease-deposit-checklist)\n- [Renting safely in Bali](/guides/renting-safely-in-bali)\n\n## Nearby areas\n- [Umalas](/areas/umalas)\n- [Seminyak](/areas/seminyak)\n- [Canggu](/areas/canggu)\n\n## Next steps\n- [Areas hub](/areas)\n- [Housing pillar](/housing)\n"
+    },
+    {
+      "kind": "areas",
+      "slug": "nusa-dua",
+      "title": "Nusa Dua for families",
+      "description": "Resort-style calm and wide roads—sometimes feels less “local daily life”, but can be very easy for routines.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "nusa-dua",
+        "calm",
+        "resort",
+        "families",
+        "areas",
+        "neighborhoods"
+      ],
+      "category": "Bukit Peninsula",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nResort-style calm and wide roads—sometimes feels less “local daily life”, but can be very easy for routines.\n\n## Who this area fits\n\n- Families who value **quiet routines**\n- Parents who can accept the tradeoffs (listed below)\n\n## What daily life feels like\n\n- Mornings: school runs, errands, coffee, and routines\n- Afternoons: heat/rain rhythms, activities, and kid energy\n- Evenings: where it’s calm vs where it stays busy\n\n## Tradeoffs (be honest)\n\n- Commute: some routes are fine until peak times\n- Noise: depends heavily on the exact street\n- “Pretty” vs “practical”: don’t choose only from photos\n\n## A simple way to test\n\nIf you can, do a 7–14 day stay and act like you live there:\ngroceries, commute at real times, bedtime routines.\n\n## Next steps\n\n- [Areas hub](/areas)\n- [Housing](/housing)\n- [Start here](/start-here)\n\n"
+    },
+    {
+      "kind": "areas",
+      "slug": "pererenan",
+      "title": "Pererenan for families",
+      "description": "Often calmer than central Canggu, with a growing international community and slightly more breathing room.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "pererenan",
+        "mixed",
+        "community",
+        "families",
+        "areas",
+        "neighborhoods"
+      ],
+      "category": "Canggu region",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nOften calmer than central Canggu, with a growing international community and slightly more breathing room.\n\n## Who this area fits\n\n- Families who value **a balance of pace and access**\n- Parents who can accept the tradeoffs (listed below)\n\n## What daily life feels like\n\n- Mornings: school runs, errands, coffee, and routines\n- Afternoons: heat/rain rhythms, activities, and kid energy\n- Evenings: where it’s calm vs where it stays busy\n\n## Tradeoffs (be honest)\n\n- Commute: some routes are fine until peak times\n- Noise: depends heavily on the exact street\n- “Pretty” vs “practical”: don’t choose only from photos\n\n## A simple way to test\n\nIf you can, do a 7–14 day stay and act like you live there:\ngroceries, commute at real times, bedtime routines.\n\n## Next steps\n\n- [Areas hub](/areas)\n- [Housing](/housing)\n- [Start here](/start-here)\n\n"
+    },
+    {
+      "kind": "areas",
+      "slug": "renon",
+      "title": "Renon for families",
+      "description": "A calmer-feeling Denpasar pocket with parks and a more local, routine-friendly vibe—good for families who want city convenience with breathing room.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "renon",
+        "denpasar",
+        "calmer",
+        "families",
+        "routines",
+        "areas",
+        "neighborhoods"
+      ],
+      "category": "Denpasar",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nRenon is often described as a **more breathable** part of Denpasar—useful for families who want city convenience but don’t want to feel stuck in constant hustle.\n\n## Who this area fits\n\n- Families who want practical city access\n- Parents who value parks and routine-friendly living\n\n## Tradeoffs\n\n- Not a “beach village” feel\n- You may still drive to specific beaches/activities\n\n## What to test\n- Your errands loop (grocery, pharmacy, activities)\n- Morning commute timing\n- Evening noise on your street\n\n## Nearby areas\n- [Denpasar](/areas/denpasar)\n- [Sanur](/areas/sanur)\n\n## Next steps\n- [Areas hub](/areas)\n- [Family life pillar](/family-life)\n"
+    },
+    {
+      "kind": "areas",
+      "slug": "sanur",
+      "title": "Sanur for families",
+      "description": "Calmer beach-town routines, walkability in pockets, and an easier day-to-day feel for many families.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "sanur",
+        "calm",
+        "beach",
+        "families",
+        "walkable",
+        "areas",
+        "neighborhoods"
+      ],
+      "category": "Sanur & East Denpasar",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nCalmer beach-town routines, walkability in pockets, and an easier day-to-day feel for many families.\n\n## Who this area fits\n\n- Families who value **quiet routines**\n- Parents who can accept the tradeoffs (listed below)\n\n## What daily life feels like\n\n- Mornings: school runs, errands, coffee, and routines\n- Afternoons: heat/rain rhythms, activities, and kid energy\n- Evenings: where it’s calm vs where it stays busy\n\n## Tradeoffs (be honest)\n\n- Commute: some routes are fine until peak times\n- Noise: depends heavily on the exact street\n- “Pretty” vs “practical”: don’t choose only from photos\n\n## A simple way to test\n\nIf you can, do a 7–14 day stay and act like you live there:\ngroceries, commute at real times, bedtime routines.\n\n## Next steps\n\n- [Areas hub](/areas)\n- [Housing](/housing)\n- [Start here](/start-here)\n\n"
+    },
+    {
+      "kind": "areas",
+      "slug": "seminyak",
+      "title": "Seminyak for families",
+      "description": "Walkable pockets, many services, and easy access to the south—best for families who want convenience and don’t mind busier streets.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "seminyak",
+        "walkable",
+        "convenience",
+        "families",
+        "busy",
+        "areas",
+        "neighborhoods"
+      ],
+      "category": "Seminyak & surrounds",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nSeminyak can be a practical “base” for families who want **services and convenience**—but it’s also **busy**, and the best experience depends heavily on your exact street.\n\n## Who this area fits\n\n- Families who like **walkable errands** and lots of options\n- Parents who prefer being near established services (and don’t need a “quiet village” vibe)\n\n## What daily life feels like\n\n- Mornings: errands + coffee culture + school run timing (depending on where you’re going)\n- Afternoons: hotter hours, indoor activities, quick meals, naps\n- Evenings: lots of dinner options, but some roads stay busy\n\n## Tradeoffs (be honest)\n\n- Traffic: can be slow at peak hours\n- Noise: varies by street; visit at night before committing\n- “Holiday mode”: it can feel like you’re always around visitors—some families love it, some don’t\n\n## Housing notes\n\n- Location matters more than photos.\n- Ask specifically about: noise, flooding in heavy rain, and internet reliability.\n\nGuide: [Renting safely in Bali](/guides/renting-safely-in-bali) · [Lease + deposit questions](/guides/lease-and-deposit-questions-in-bali)\n\n## A simple way to test\n\nIf you can, do a 7–14 day stay and act like you live there:\n- groceries\n- commute at real times\n- bedtime routine\n- one rainy day plan\n\nGuide: [2‑week test stay plan](/guides/two-week-test-stay-plan)\n\n## Nearby areas to consider\n- [Umalas](/areas/umalas) (often a calmer-feeling pocket)\n- [Kerobokan](/areas/kerobokan) (more residential in parts)\n- [Canggu](/areas/canggu) (more international energy, often busier)\n\n## Next steps\n- [Areas hub](/areas)\n- [Housing & neighborhoods pillar](/housing)\n"
+    },
+    {
+      "kind": "areas",
+      "slug": "seseh",
+      "title": "Seseh for families",
+      "description": "A quieter coastal pocket near the Canggu region—often chosen by families who want less stimulation but still want access to community.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "seseh",
+        "calmer",
+        "coastal",
+        "families",
+        "canggu-region",
+        "areas",
+        "neighborhoods"
+      ],
+      "category": "Canggu region",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nSeseh can feel **quieter** than the busiest parts of Canggu while still being close enough to access the wider area’s services. It’s often a good fit for families who want **more calm at home**.\n\n## Who this area fits\n\n- Families who want a calmer base near the Canggu region\n- Parents who don’t mind a bit more driving for specific errands or activities\n\n## Tradeoffs\n\n- Depending on where you need to go daily, commute time can add up\n- Coastal areas can bring humidity and weather considerations\n\n## What to test\n- Morning commute timing into the areas you’ll use most\n- Your evening routine (noise, sleep, mosquitoes)\n- Grocery route\n\nGuide: [2‑week test stay plan](/guides/two-week-test-stay-plan)\n\n## Nearby areas\n- [Pererenan](/areas/pererenan)\n- [Canggu](/areas/canggu)\n- [Berawa](/areas/berawa)\n\n## Next steps\n- [Areas hub](/areas)\n- [Ubud vs Sanur vs Canggu comparison](/guides/ubud-vs-sanur-vs-canggu-for-families)\n"
+    },
+    {
+      "kind": "areas",
+      "slug": "sidemen",
+      "title": "Sidemen for families",
+      "description": "Quiet, green, and slower-paced—best for families who want nature and calm, and who are comfortable with fewer “instant convenience” services.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "sidemen",
+        "quiet",
+        "nature",
+        "families",
+        "slower",
+        "areas",
+        "neighborhoods"
+      ],
+      "category": "East Bali",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nSidemen is often chosen for **quiet + nature + slower living**. It’s less about convenience and more about lifestyle. Great for some families — too remote for others.\n\n## Who this area fits\n\n- Families who want calm, green space, and a slower rhythm\n- Parents who are comfortable planning errands and travel more intentionally\n\n## Tradeoffs\n\n- Fewer services right nearby (depending on where you stay)\n- Transport planning matters a lot\n\nGuide: [Family transport options](/guides/family-transport-drivers-scooters-cars)\n\n## What to test during a stay\n- How you’ll do groceries and essentials\n- How the location feels at night (quiet vs isolated)\n- Internet reliability if you work remotely\n\n## Nearby areas to consider\nIf you want “more services,” consider a base like [Sanur](/areas/sanur) and do Sidemen as a shorter stay.\n\n## Next steps\n- [2‑week test stay plan](/guides/two-week-test-stay-plan)\n- [Areas hub](/areas)\n"
+    },
+    {
+      "kind": "areas",
+      "slug": "ubud",
+      "title": "Ubud for families",
+      "description": "Nature, slower pace, and a strong family community—plus the tradeoffs (traffic pockets, humidity, and distance to beaches).",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "ubud",
+        "calm",
+        "nature",
+        "families",
+        "areas",
+        "neighborhoods"
+      ],
+      "category": "Ubud & Central",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nNature, slower pace, and a strong family community—plus the tradeoffs (traffic pockets, humidity, and distance to beaches).\n\n## Who this area fits\n\n- Families who value **quiet routines**\n- Parents who can accept the tradeoffs (listed below)\n\n## What daily life feels like\n\n- Mornings: school runs, errands, coffee, and routines\n- Afternoons: heat/rain rhythms, activities, and kid energy\n- Evenings: where it’s calm vs where it stays busy\n\n## Tradeoffs (be honest)\n\n- Commute: some routes are fine until peak times\n- Noise: depends heavily on the exact street\n- “Pretty” vs “practical”: don’t choose only from photos\n\n## A simple way to test\n\nIf you can, do a 7–14 day stay and act like you live there:\ngroceries, commute at real times, bedtime routines.\n\n## Next steps\n\n- [Areas hub](/areas)\n- [Housing](/housing)\n- [Start here](/start-here)\n\n"
+    },
+    {
+      "kind": "areas",
+      "slug": "uluwatu",
+      "title": "Uluwatu for families",
+      "description": "Beautiful coastline and space, but more driving and fewer “walkable daily life” pockets than many families want.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "uluwatu",
+        "space",
+        "driving",
+        "families",
+        "areas",
+        "neighborhoods"
+      ],
+      "category": "Bukit Peninsula",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nBeautiful coastline and space, but more driving and fewer “walkable daily life” pockets than many families want.\n\n## Who this area fits\n\n- Families who value **a balance of pace and access**\n- Parents who can accept the tradeoffs (listed below)\n\n## What daily life feels like\n\n- Mornings: school runs, errands, coffee, and routines\n- Afternoons: heat/rain rhythms, activities, and kid energy\n- Evenings: where it’s calm vs where it stays busy\n\n## Tradeoffs (be honest)\n\n- Commute: some routes are fine until peak times\n- Noise: depends heavily on the exact street\n- “Pretty” vs “practical”: don’t choose only from photos\n\n## A simple way to test\n\nIf you can, do a 7–14 day stay and act like you live there:\ngroceries, commute at real times, bedtime routines.\n\n## Next steps\n\n- [Areas hub](/areas)\n- [Housing](/housing)\n- [Start here](/start-here)\n\n"
+    },
+    {
+      "kind": "areas",
+      "slug": "umalas",
+      "title": "Umalas for families",
+      "description": "A quieter-feeling residential pocket between Seminyak and the Canggu region—often a good compromise for families.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "umalas",
+        "residential",
+        "calmer",
+        "families",
+        "convenience",
+        "areas",
+        "neighborhoods"
+      ],
+      "category": "Seminyak & surrounds",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nUmalas is often a **compromise area**: close enough to Seminyak and the Canggu region to access services, but it can feel **more residential** (depending on your street).\n\n## Who this area fits\n\n- Families who want a calmer home base while staying close to activities\n- Parents who prioritize “daily life practicality” over hype\n\n## Tradeoffs\n\n- You may still be driving for specific activities, depending on your routines\n- Some pockets feel quiet; others are closer to busier corridors\n\n## What to test during a stay\n\n- Morning commute timing\n- Grocery route and errands\n- Evening noise on your street\n\nGuide: [2‑week test stay plan](/guides/two-week-test-stay-plan)\n\n## Nearby areas\n- [Seminyak](/areas/seminyak)\n- [Kerobokan](/areas/kerobokan)\n- [Berawa](/areas/berawa)\n\n## Next steps\n- [Areas hub](/areas)\n- [Where to live in Bali (guide)](/guides/where-to-live-in-bali-for-families)\n"
+    }
+  ],
+  "guides": [
+    {
+      "kind": "guides",
+      "slug": "culture-in-bali-with-kids",
+      "title": "Culture in Bali with kids (a respectful, calm approach)",
+      "description": "How families join cultural moments respectfully—what helped, what to ask locals, and what to watch out for.",
+      "date": "2026-02-23",
+      "updated": "2026-02-23",
+      "tags": [
+        "culture",
+        "ceremonies",
+        "family-life",
+        "kids",
+        "respect"
+      ],
+      "category": "Family life",
+      "draft": false,
+      "noindex": false,
+      "video": {
+        "youtubeId": "9p3YKTJ1FXs",
+        "title": "CICAK CICAK (music video)",
+        "summary": "A gentle cultural touchpoint for kids: a simple song in video form. Use it as a bridge—something children can enjoy—while you learn how culture shows up in daily life (and how to join respectfully).",
+        "transcriptFile": "content/transcripts/cicak-cicak-music-video-recap.txt",
+        "permission": "owned",
+        "childrenVisible": true,
+        "consentConfirmed": true,
+        "ctaText": "Copy the culture checklist",
+        "ctaHref": "/resources/culture-with-kids-quick-checklist"
+      },
+      "social": {
+        "youtubeUrl": "https://www.youtube.com/watch?v=9p3YKTJ1FXs",
+        "instagramUrl": "https://www.instagram.com/empathy.school/reel/DQdzsASEftg/",
+        "instagram": [
+          {
+            "label": "Penjor (culture post)",
+            "url": "https://www.instagram.com/empathy.school/p/DRLQ9vGE3Hp/"
+          },
+          {
+            "label": "Melukat (reel)",
+            "url": "https://www.instagram.com/empathy.school/reel/DQdzsASEftg/"
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "q": "Is this official advice?",
+          "a": "No. It’s experience-based guidance. When in doubt, ask locals or your community guide and follow their lead."
+        },
+        {
+          "q": "Do we need to understand everything to participate respectfully?",
+          "a": "Not at all. Start small: observe, ask, follow the flow, and prioritize respect over comprehension."
+        },
+        {
+          "q": "Should we film ceremonies for memories?",
+          "a": "Ask first, keep filming minimal, and avoid close-ups of people. When in doubt, don’t film."
+        }
+      ],
+      "readingTimeMinutes": 2,
+      "body": "\n## A calm principle (so you don’t overthink it)\n\nWe’ve found the safest approach is:\n\n- **be a respectful guest**,\n- **ask locals what’s appropriate**,\n- and **avoid turning culture into a performance**.\n\nThis guide is not a rulebook. Culture differs by village and context.\n\nIf you want a copy/paste version: [Culture with kids: quick checklist](/resources/culture-with-kids-quick-checklist).\n\n---\n\n## Quick start\n\n- Start with **one** cultural touchpoint that’s easy for kids (song, language, small ritual).\n- When invited to ceremonies, **ask first**: “Is it okay if we join/watch? Where should we stand?”\n- Keep it short for children (snacks + water + exit plan).\n\n---\n\n## What “respectful participation” looks like in practice\n\n### 1) Ask first (and accept “no” gracefully)\n\nSimple scripts that work:\n- “Is it okay for us to join?”\n- “Where should we stand?”\n- “Is it okay to take a photo?”\n\nWhen you ask, you’re signaling you understand you’re a guest.\n\n### 2) Dress and behavior\n\nFamilies do best when they default to:\n- modest clothing,\n- calm, quiet voices,\n- following the flow instead of improvising.\n\nIf you’re unsure about what’s expected, copy the checklist: [Culture with kids: quick checklist](/resources/culture-with-kids-quick-checklist).\n\n### 3) Phones and filming\n\nWe’ve found the “lowest-risk” rule is:\n- **ask first**,\n- film less than you think,\n- avoid close-ups of people,\n- and put the phone away quickly.\n\n### 4) Make it kid-friendly\n\nEven culturally beautiful moments can be overwhelming for kids.\n\nWhat helps:\n- short duration,\n- clear boundaries (“we’re watching quietly for 10 minutes”),\n- a quiet exit plan,\n- a gentle debrief after.\n\n---\n\n## Supporting social context (optional)\n\nIf you’d like a small example of culture/wellness moments families sometimes join, this reel is supporting context:\n\n- Melukat reel: https://www.instagram.com/empathy.school/reel/DQdzsASEftg/\n\n(Reminder: social is supporting context. The written guide is the primary answer.)\n\n---\n\n## What we learned the hard way\n\nThe mistake isn’t “not knowing enough.”\n\nThe mistake is **acting too confident**.\n\nHumility works here. Asking works. Following works.\n\n---\n\n## A gentle next step\n\nIf your family is planning a move and wants the broader context:\n\n- [Family life pillar](/family-life)\n- [Start here (roadmap)](/start-here)\n- [Schools & learning](/schools)\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "finding-community-in-bali-with-kids",
+      "title": "Finding community in Bali with kids (without forcing it)",
+      "description": "A parent-first way to help kids make friends and help adults feel less isolated—using repetition, routines, and low-pressure anchors.",
+      "date": "2026-02-23",
+      "updated": "2026-02-23",
+      "tags": [
+        "community",
+        "friends",
+        "routines",
+        "family-life",
+        "settling-in"
+      ],
+      "category": "Family life",
+      "draft": false,
+      "noindex": false,
+      "video": {
+        "youtubeId": "pRVxOKw1yDQ",
+        "title": "Volunteering & community (a glimpse)",
+        "summary": "A short glimpse of community volunteering at Empathy School. It’s not ‘the’ answer—just a reminder that community usually comes from repetition: same places, same faces, over a few weeks.",
+        "transcriptFile": "content/transcripts/volunteering-community-glimpse-recap.txt",
+        "permission": "owned",
+        "childrenVisible": true,
+        "consentConfirmed": true,
+        "ctaText": "Explore camps & short-term programs",
+        "ctaHref": "/camps"
+      },
+      "social": {
+        "youtubeUrl": "https://www.youtube.com/shorts/pRVxOKw1yDQ",
+        "instagramUrl": "https://www.instagram.com/empathy.school/reel/DQjCq30kR-O/",
+        "instagram": [
+          {
+            "label": "Parents after school (reel)",
+            "url": "https://www.instagram.com/empathy.school/reel/DQjCq30kR-O/"
+          },
+          {
+            "label": "Community garden intern (post)",
+            "url": "https://www.instagram.com/empathy.school/p/DPEKyqxD-KC/"
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "q": "How long does it take to feel settled?",
+          "a": "For many families, the shift happens around week 2–6—once kids have one routine and parents have seen the same people repeatedly."
+        },
+        {
+          "q": "Do we need to join a lot of groups?",
+          "a": "Usually no. One or two consistent anchors beats five scattered attempts."
+        },
+        {
+          "q": "What’s the fastest ‘anchor’ for kids?",
+          "a": "Often school pick-up, a short camp/weekly program, or a weekly class—anything with repeated contact and friendly adults."
+        }
+      ],
+      "readingTimeMinutes": 2,
+      "body": "\n## The principle (so you don’t overthink it)\n\nCommunity in Bali is rarely a single discovery.\n\nIt’s usually built from **repetition**:\n\n- same places,\n- same times,\n- same people,\n\n…for long enough that everyone stops feeling like strangers.\n\n---\n\n## Quick start (week 1–2)\n\nIf you want your move to feel calmer quickly:\n\n1) Pick **one child anchor** (school/camp/class) that happens weekly.\n2) Pick **one parent anchor** (market/cafe/playground/co-working) you’ll repeat.\n3) Keep it small for 2 weeks—then expand.\n\nUseful companion:\n- [First month setup checklist](/resources/first-month-setup-checklist)\n\n---\n\n## The 4 “community anchors” that work for most families\n\n### 1) School pick-up (or camp pick-up)\n\nPick-up is community without pressure.\nYou’ll see the same parents, and conversations start naturally.\n\nIf you’re visiting first, camps can create the same effect:\n- [Camps & short-term programs](/camps)\n\n### 2) A weekly class/sport\n\nKids connect faster when there’s a shared activity.\nParents connect because you’re all waiting together.\n\n### 3) A consistent “food routine”\n\nOne market or cafe you repeat becomes social faster than you expect.\n\nDeep dive:\n- [Groceries & meal routines](/guides/groceries-meals-routines-in-bali)\n\n### 4) Volunteering (only if it fits your season)\n\nVolunteering is optional.\nBut when it fits, it can accelerate belonging because you’re contributing, not consuming.\n\n---\n\n## Simple scripts that reduce awkwardness\n\nThese are low-pressure and usually welcomed:\n\n- “Hi, we’re new—what area are you based in?”\n- “Do you know any kid-friendly activities around here?”\n- “We’re here for a few weeks—any tips for rainy afternoons?”\n\nYou don’t need to be extroverted. You just need to repeat the environment.\n\n---\n\n## What to watch out for (practical safety)\n\nMost groups are lovely, but for family safety:\n\n- Don’t overshare personal details early (address, school details, schedules).\n- Prefer meeting in public spaces first.\n- For services (nannies, drivers, rentals), use checklists and verify basics.\n\nIf your family is still deciding where to base yourselves, start here:\n- [Where to live in Bali for families](/guides/where-to-live-in-bali-for-families)\n\n---\n\n## What we learned the hard way\n\nThe trap is trying a new thing every day.\n\nNovelty feels productive, but it slows community.\n\nRepetition feels boring—but it’s what creates belonging.\n\n---\n\n## Next steps\n\n- [Family life pillar](/family-life)\n- [Start here (roadmap)](/start-here)\n- [Schools & learning](/schools)\n- [Camps & short-term programs](/camps)\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "bali-areas-for-teens",
+      "title": "Bali areas for teens: how to choose",
+      "description": "How to shortlist Bali areas that support teens—connection, activities, independence, and a home base that can recharge.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "areas",
+        "housing",
+        "teens",
+        "families",
+        "activities",
+        "test-stay"
+      ],
+      "category": "Housing & neighborhoods",
+      "draft": false,
+      "noindex": false,
+      "faqs": [
+        {
+          "q": "Do teens get bored in quieter areas?",
+          "a": "Some do, some don’t. It depends on whether they can plug into an activity community (sport, art, volunteering) quickly. If you choose a quieter base, plan the activity loop."
+        },
+        {
+          "q": "Is Canggu always best for teens?",
+          "a": "Not always. Canggu offers a lot, but the busy feel and traffic can be a tradeoff. Some families prefer a calmer base and travel for activities."
+        },
+        {
+          "q": "How can we support independence safely?",
+          "a": "Start with a transport plan (driver, trusted routes, clear check-ins), then expand freedom gradually once routines and relationships are in place."
+        },
+        {
+          "q": "What’s a good test-stay length for teens?",
+          "a": "Two weeks is ideal if you can schedule a few activities and see what a “normal week” feels like."
+        },
+        {
+          "q": "Should we choose location based on school?",
+          "a": "School commutes matter a lot. If a school is part of your plan, treat commute time as a first-class decision factor."
+        }
+      ],
+      "readingTimeMinutes": 2,
+      "body": "\n## Quick take\n\nWith teens, the “best” area is usually the one that supports:\n\n- independence (safe places to go)\n- social connection (community + activities)\n- reliable routines (school/learning, sports, clubs)\n- family sanity (commutes and traffic are still real)\n\nThis guide gives you a way to shortlist 2–3 areas for a test stay and tours — without pretending there’s one perfect answer.\n\n## What matters most for teens\n\n### 1) Connection (they need “their people”)\nTeens do better when they can quickly find:\n- a sport or club\n- a creative community\n- a group they can join consistently\n\nAsk: **“Where will my teen make friends within 2–4 weeks?”**\n\n### 2) Safe independence\nIndependence in Bali looks different. For many families it means:\n- being able to go to a class or café with supervision nearby\n- being able to move around with a driver or trusted transport plan\n- walking short distances safely (depends heavily on the street)\n\n### 3) Activity density\nTeens need options. Areas with more:\n- gyms, surf, art, music\n- community spaces\n- after-school programs\n…often reduce “I’m bored” friction.\n\n### 4) Home environment (noise + recovery)\nTeens need quiet to decompress too. The right area balances:\n- social opportunities\n- a home base that can be calm enough to recharge\n\n## Areas that often fit teens (with tradeoffs)\n\n### Canggu / Berawa / Pererenan\nHigh activity density and a lot of teen-relevant options.\nTradeoffs: traffic and the “busy” feel can drain some families.\nExplore: [/areas/canggu](/areas/canggu), [/areas/berawa](/areas/berawa), [/areas/pererenan](/areas/pererenan)\n\n### Seminyak / Kerobokan\nStrong “services + activity” base.\nTradeoffs: can feel more adult-oriented and busier in parts.\nExplore: [/areas/seminyak](/areas/seminyak), [/areas/kerobokan](/areas/kerobokan)\n\n### Sanur (routine + sport)\nOften calmer but still has activity options and a stable routine vibe.\nTradeoffs: less “buzz” than Canggu; your teen may want more variety.\nExplore: [/areas/sanur](/areas/sanur)\n\n### Ubud (creative + nature)\nGreat for creative teens, nature-loving families, and deeper community.\nTradeoffs: rainy season routines, and some teens miss the beach buzz.\nExplore: [/areas/ubud](/areas/ubud)\n\n## Checklist: teen test-stay questions\n\n- Where will they go 3 times a week? (sport, art, club, volunteering)\n- What’s the transport plan that feels safe for us?\n- Where can they hang out in a healthy way?\n- Is the home base calm enough to recharge?\n- Are we okay with the activity level of the area long-term?\n\n## Next steps\n\n- If you’re deciding where to live: [/areas](/areas)\n- If you want a “family logistics” plan: [/guides/family-transport-drivers-scooters-cars](/guides/family-transport-drivers-scooters-cars)\n- If you’re just starting: [/start-here](/start-here)\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "bali-areas-for-toddlers",
+      "title": "Bali areas for toddlers: how to choose",
+      "description": "A parent-first way to shortlist Bali areas that work well with toddler routines—commutes, naps, heat, and daily life.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "areas",
+        "housing",
+        "toddlers",
+        "families",
+        "routines",
+        "test-stay"
+      ],
+      "category": "Housing & neighborhoods",
+      "draft": false,
+      "noindex": false,
+      "faqs": [
+        {
+          "q": "Do we need to be close to the beach for toddlers?",
+          "a": "Not necessarily. Many toddler routines work best with shade, predictable errands, and a few repeatable activities. Beach access is a bonus if it fits your daily loop."
+        },
+        {
+          "q": "Is Ubud too far from services?",
+          "a": "Ubud has plenty of day-to-day services, but travel time can still surprise you depending on exactly where you live. Choose a location that keeps your routine easy, and test-stay first."
+        },
+        {
+          "q": "What’s the biggest mistake families make with toddlers?",
+          "a": "Choosing an area for the “Instagram vibe” and then realizing daily errands are too slow or stressful. Your routine is the product—optimize for that."
+        },
+        {
+          "q": "How long should our test stay be?",
+          "a": "10–14 days is usually enough to see traffic patterns, groceries, nap timing, and how the area feels on weekdays vs weekends."
+        },
+        {
+          "q": "Should we hire a driver right away?",
+          "a": "Many families do, at least during the first month, to reduce stress while you learn routes and routines. It can also help you explore different areas safely."
+        }
+      ],
+      "readingTimeMinutes": 3,
+      "body": "\n## Quick take\n\nWith toddlers, the “best” area is usually the one that makes **daily life predictable**:\n\n- Short trips (nap windows + traffic don’t mix)\n- Easy access to basics (groceries, a clinic, a quiet café/park, a kids activity)\n- A home that stays cool enough for naps\n- A routine you can repeat even when you’re new\n\nThis guide helps you shortlist 2–3 areas for a **test stay** — not “pick the perfect forever neighborhood.”\n\n## What matters most for toddlers\n\n### 1) Commute and nap math\nIf a typical errand turns into a 45–60 minute ride, it affects everything:\n- nap timing\n- snack timing\n- parent patience\n- the ability to say “yes” to small outings\n\n**Rule of thumb:** choose an area where your daily loop (home → groceries → activity → home) is realistically doable.\n\n### 2) Shade, heat, and walkability\nYou don’t need a “walkable city,” but you do want:\n- shaded paths where possible\n- places you can pop into with a stroller\n- safe, short “outdoor resets” (even 15 minutes matters)\n\n### 3) Medical access and “backup plans”\nMost toddler stress comes from “what if” moments:\n- fever at night\n- falls and bumps\n- stomach bugs\n- rash / allergy surprises\n\nChoose an area where you can answer: **“What’s our plan if we need help today?”**\n\n### 4) Community + routines\nToddlers thrive when parents have support:\n- other families nearby\n- playgroups or simple activities\n- predictable food + groceries\n\n## A simple shortlist method (10 minutes)\n\nPick 2–3 areas where you can say “yes” to all three:\n\n1) **We can keep our routine.** (sleep / meals / calm time)  \n2) **We can get help quickly.** (clinic + basic services)  \n3) **We can leave the house easily.** (short outings without “traffic dread”)\n\nThen do a **test stay** for 10–14 days before you commit to longer-term housing.\n\n## Areas that often fit toddlers (with tradeoffs)\n\nThese are *common* toddler-friendly fits. Your exact street matters a lot.\n\n### Sanur\n- Often feels calmer and more routine-friendly\n- Easier “family loop” day-to-day\n- Tradeoff: nightlife is quieter; some families find it “too calm” after a few months  \nExplore: [/areas/sanur](/areas/sanur)\n\n### Ubud\n- Nature, slower pace, lots of kid-friendly classes and community\n- Tradeoff: humidity, rain patterns, and some roads can be slower than you expect  \nExplore: [/areas/ubud](/areas/ubud)\n\n### Renon / Denpasar (family base option)\n- More “city practical” for appointments and services\n- Tradeoff: not a beach/nature vibe; you’ll drive for weekend scenery  \nExplore: [/areas/renon](/areas/renon) and [/areas/denpasar](/areas/denpasar)\n\n### Jimbaran / Nusa Dua (resort-adjacent routine)\n- Often predictable, quieter, and easier for beach days\n- Tradeoff: it can feel “spread out” and car-dependent  \nExplore: [/areas/jimbaran](/areas/jimbaran) and [/areas/nusa-dua](/areas/nusa-dua)\n\n## Areas to approach carefully (not “bad,” just plan for reality)\n\n### Canggu / Berawa / Pererenan\nThese can work beautifully — but traffic and noise can be real.\n\nIf you’re considering them, do a test stay and ask:\n- “Can we do groceries and one activity without losing the whole day?”\n- “Are we okay with scooters around our daily route?”\nExplore: [/areas/canggu](/areas/canggu), [/areas/berawa](/areas/berawa), [/areas/pererenan](/areas/pererenan)\n\n### Seminyak / Kerobokan\nGreat access to restaurants and services, but can feel busy.\nExplore: [/areas/seminyak](/areas/seminyak), [/areas/kerobokan](/areas/kerobokan)\n\n## Checklist: toddler test-stay questions\n\nCopy/paste this into your notes:\n\n- Where is the closest clinic we’d actually use?\n- How long is groceries → home at 5pm?\n- Where do we go for a 30-minute “reset” outside?\n- Is our home cool enough for naps?\n- Can we find familiar foods quickly?\n- What’s our rainy-day activity plan?\n\n## Next steps\n\n- If you haven’t yet: start with the family roadmap: [/start-here](/start-here)\n- Compare a few areas quickly: [/areas](/areas)\n- Then plan a test stay: [/guides/two-week-test-stay-plan](/guides/two-week-test-stay-plan)\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "bali-arrival-checklist-evoa-arrival-card-levy",
+      "title": "Bali arrival checklist (eVOA, Arrival Card, tourist levy)",
+      "description": "A parent-friendly checklist for landing days—what to do before you fly, what to do at the airport, and what to double-check using official sources.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "visas",
+        "entry",
+        "evoa",
+        "arrival-card",
+        "tourist-levy",
+        "checklist"
+      ],
+      "category": "Visas & entry",
+      "draft": false,
+      "noindex": false,
+      "faqs": [
+        {
+          "q": "Do we need to do anything online before we fly?",
+          "a": "Often yes. The safest approach is to check the official portals (eVisa/e‑VOA, arrival card, levy) and your airline requirements right before travel, because steps and fees can change."
+        },
+        {
+          "q": "Should we pay the tourist levy in advance?",
+          "a": "If you choose to, use the official levy site. If you don’t, keep a note to do it shortly after arrival and save your proof of payment."
+        },
+        {
+          "q": "Where can we confirm the current steps?",
+          "a": "Use the official links list and confirm with your airline or a trusted agent for your exact passport situation."
+        }
+      ],
+      "readingTimeMinutes": 2,
+      "body": "\n## Quick start (the calm version)\n\n1. Bookmark **Official links**: [/official-links](/official-links)  \n2. Prepare a **single “arrival folder”** (digital + printed): passports, return/onward, accommodation, insurance, kids’ documents.  \n3. Decide your airport plan: **stroller**, **snacks**, **bathroom strategy**, **SIM plan**, **cash plan**.  \n4. After landing: go slow, hydrate, and keep everything in one bag until you’re through.\n\n> Safety note: we share experience and checklists — not legal or immigration advice. Rules change.\n\n## Before you fly (24–72 hours)\n\n### 1) Confirm the current entry steps\n- Open: [/official-links](/official-links)\n- Check:\n  - eVisa / e‑VOA portal\n  - Arrival Card portal\n  - Bali tourist levy portal\n- If anything looks different than you expected, **pause** and verify (airline + official portal + your agent if you’re using one).\n\n### 2) Build a family “arrival folder”\nWe keep one folder with:\n- Passports (and copies)\n- Any visa/approval documents (if applicable)\n- Proof of accommodation\n- Return/onward booking proof (if applicable)\n- Travel/health insurance info (if applicable)\n- Kids’ documents (birth certificate scans, school letters if relevant)\n- Emergency contacts\n\n### 3) Plan for first-night energy levels\nA good landing plan assumes:\n- kids are hungry at the wrong time\n- everyone needs bathrooms at the same time\n- one bag will get searched (so don’t bury essentials)\n\n## Landing day (airport checklist)\n\n### Step 1: Get through the airport calmly\n- Keep passports + essential documents in **one pouch**\n- Use a simple queue rule: “one adult holds documents, one adult manages kids”\n- If you’re traveling with multiple children, decide *ahead of time* who stays with bags\n\n### Step 2: SIM / connectivity plan\nChoose one:\n- Get a SIM/eSIM before travel (less stress at the airport)\n- Get connected after you arrive (fine, but plan for a short “offline window”)\n\nRelated guide: [Phones and internet in Bali](/guides/phones-and-internet-in-bali)\n\n### Step 3: Cash + payments\nHave at least a small amount of IDR for:\n- snacks/water\n- small fees\n- taxis (if needed)\n\nRelated guide: [Banking & payments in Bali](/guides/banking-payments-in-bali)\n\n### Step 4: Your first transport decision\nFor a family arrival, we usually plan one of these:\n- pre-arranged driver pickup (lowest stress)\n- reputable taxi / ride-hail (good backup)\n\nRelated guide: [Family transport in Bali: drivers, scooters, cars](/guides/family-transport-drivers-scooters-cars)\n\n## After you arrive (first 48 hours)\n\n### A) Do a “settle” day\nBefore you start admin tasks:\n- rest\n- hydrate\n- groceries\n- simple meal\n- early bedtime\n\n### B) Do the minimum setup tasks\nUse this checklist: [First week setup checklist](/guides/first-week-in-bali-setup-checklist)\n\n## What we learned the hard way\nWhen you’re tired, you’re vulnerable to mistakes. The best arrival plan is the one that **assumes you’re not thinking clearly** and keeps decisions simple.\n\n## Next good reads\n- [Start here: parent-first roadmap](/start-here)\n- [Visa scam red flags](/guides/visa-scam-red-flags)\n- [Renting safely in Bali](/guides/renting-safely-in-bali)\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "bali-safety-basics-for-families",
+      "title": "Bali safety basics for families (practical, not scary)",
+      "description": "A parent-first safety checklist: traffic, water, sun, mosquitoes, and “small habits” that reduce risk without turning life into fear.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "safety",
+        "families",
+        "kids",
+        "health",
+        "traffic",
+        "dengue"
+      ],
+      "category": "Safety",
+      "draft": false,
+      "noindex": false,
+      "faqs": [
+        {
+          "q": "Is Bali safe for kids?",
+          "a": "Many families live here happily, but safety comes from habits: traffic awareness, sun protection, and good water/food practices."
+        },
+        {
+          "q": "What’s the biggest day-to-day risk for families?",
+          "a": "For many families it’s road safety. The “small risk” tasks add up: crossings, scooters, night driving, and fatigue."
+        },
+        {
+          "q": "How do we avoid overthinking safety?",
+          "a": "Pick a few high-impact habits (helmets, hydration, mosquito plan, safe swimming rules) and stick to them consistently."
+        }
+      ],
+      "readingTimeMinutes": 2,
+      "body": "\n## Quick start (high-impact habits)\n- Treat **road safety** as the main daily risk.\n- Make a **mosquito plan** (especially at dusk).\n- Build a **sun + hydration** routine.\n- Choose safe swimming spots and follow “two adult eyes” rules for young kids.\n\n## 1) Road safety (the big one)\n- Assume traffic is unpredictable.\n- Avoid late-night driving when you’re tired.\n- If you use scooters, treat helmets as non‑negotiable.\n- For school tours and early weeks, many families use drivers.\n\nGuide: [Family transport options](/guides/family-transport-drivers-scooters-cars)\n\n## 2) Water and food (simple rules)\nWe don’t try to be perfect — we aim for consistency:\n- drink safe water (ask your accommodation what they provide)\n- wash hands before meals (especially after playgrounds)\n- keep snacks on hand so kids don’t “crash” into street food choices\n\n## 3) Sun and heat\n- hats + sunscreen becomes part of leaving the house\n- plan “midday quiet time” when possible\n- keep electrolytes on hand for active days\n\n## 4) Mosquitoes (especially evenings)\nA practical routine:\n- long sleeves at dusk when possible\n- repellant where appropriate\n- reduce standing water around your home\n- if you’re worried, ask a local clinic for the most current guidance\n\nGuide: [Healthcare in Bali for families](/guides/healthcare-in-bali-for-families)\n\n## 5) Swimming and ocean\n- Choose beaches with safer conditions for kids (ask locals)\n- When in doubt: pool day > risky surf day\n- “Two adult eyes” for young kids\n\n## What we learned the hard way\nThe goal isn’t “zero risk.” It’s building a calm set of habits that reduce risk without taking joy away.\n\n## Next steps\n- [Start here](/start-here)\n- [Healthcare + emergencies](/guides/healthcare-in-bali-for-families)\n- [Areas that feel calmer for families](/areas)\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "banking-payments-in-bali",
+      "title": "Banking & payments in Bali (cards, cash, and the calm approach)",
+      "description": "A practical money setup for families: what to decide before you arrive, how to reduce fees, and how to avoid “we can’t pay” moments.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "money",
+        "banking",
+        "payments",
+        "budget",
+        "logistics"
+      ],
+      "category": "Costs & money",
+      "draft": false,
+      "noindex": false,
+      "faqs": [
+        {
+          "q": "Do we need to carry cash in Bali?",
+          "a": "Often yes for small purchases and in some locations. Many families use a mix of cards and cash depending on the area."
+        },
+        {
+          "q": "How do we avoid fees?",
+          "a": "Fee structures vary by bank and card. The simplest strategy is to compare your bank’s fees ahead of time and keep a backup card."
+        },
+        {
+          "q": "What’s the easiest “first week” plan?",
+          "a": "Arrive with a small amount of cash, have at least two ways to pay (two cards or card + backup), then refine once you know your routines."
+        }
+      ],
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick start\n- Have **two ways to pay** (backup card).\n- Keep a small amount of cash for small purchases.\n- Don’t optimize everything on day one.\n\nRelated: [Cost of living framework](/guides/cost-of-living-for-families-framework)\n\n## Step 1: Decide your “family money system”\nA simple system many families use:\n- one “daily spending” card\n- one backup card kept separate\n- a small cash stash for simple purchases\n\n## Step 2: Build a “first week” cash plan\n- airport day cash for basics\n- groceries and transport buffer\n- avoid carrying large amounts until you’re comfortable\n\n## Step 3: Budget clarity beats perfect numbers\nIf you haven’t already, start with a range-based approach:\n- [Family budget range planner](/resources/family-budget-range-planner)\n- [Cost of living framework](/guides/cost-of-living-for-families-framework)\n\n## What we learned the hard way\nThe stressful moments aren’t “we paid a small fee.” They’re “we can’t pay right now.” Backups reduce stress.\n\n## Next steps\n- [Start here](/start-here)\n- [Ask a question](/contact?topic=costs)\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "cost-of-living-for-families-framework",
+      "title": "Cost of living in Bali for families: a decision framework",
+      "description": "A budgeting framework that explains why costs vary—and how to compare options without guessing.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "costs",
+        "budget",
+        "planning",
+        "families"
+      ],
+      "category": "Costs",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nTwo families can live in the “same Bali” and spend wildly different amounts.\nCosts mostly come from: **housing expectations, transport style, and school/camp choices**.\n\n## A useful budgeting framework\n\n### Step 1: Write your non-negotiables\n\nExamples:\n- Walkable mornings\n- Quiet at night\n- A kitchen that makes home meals easy\n\n### Step 2: Choose your “big three” cost drivers\n\nFor most families:\n- Housing\n- School / learning\n- Lifestyle (restaurants, activities, travel)\n\n### Step 3: Build a range (not a single number)\n\nUse a low / mid / high range so you can adapt.\n\n## Next steps\n\n- Pillar: [Costs](/costs)\n- Pillar: [Areas](/areas)\n\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "family-transport-drivers-scooters-cars",
+      "title": "Family transport in Bali (drivers, scooters, cars)",
+      "description": "A calm, safety-first way to think about transport with kids: when scooters make sense, when they don’t, and how many families use drivers or cars.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "transport",
+        "safety",
+        "drivers",
+        "scooters",
+        "cars",
+        "families"
+      ],
+      "category": "Family life",
+      "draft": false,
+      "noindex": false,
+      "faqs": [
+        {
+          "q": "Do families use scooters in Bali?",
+          "a": "Some do, especially with older kids, but many families avoid scooters early on until they understand the roads and their own risk tolerance."
+        },
+        {
+          "q": "Is hiring a driver common?",
+          "a": "Yes. Many families use a driver for airport trips, school runs, and long distances, especially when they’re new."
+        },
+        {
+          "q": "What’s the lowest-stress option for the first month?",
+          "a": "Often a mix: walk where you can, use a driver for longer trips, and only add scooters once you feel confident and have the right gear."
+        }
+      ],
+      "readingTimeMinutes": 2,
+      "body": "\n## Quick start\n- For your first month, prioritize **low-stress, low-risk** transport.\n- Treat scooters as a *choice*, not a default.\n- If you’re arriving soon: [Bali arrival checklist](/guides/bali-arrival-checklist-evoa-arrival-card-levy)\n\n## Option 1: Walkable living (the best “transport hack”)\nIf you can choose an area where:\n- groceries are close\n- kids’ activities are close\n- you can do “small life” without commuting\n\n…your transport stress drops dramatically.\n\nStart with: [Bali areas for families](/areas)\n\n## Option 2: Driver (especially for new families)\nA driver can help you:\n- get from airport to accommodation calmly\n- do housing viewings without chaos\n- manage school runs (even short-term tours)\n\n### What to ask a driver\n- Are you available at school-run times?\n- What’s your preferred communication method?\n- What’s your policy if plans change?\n- How do you handle car seats (if needed)?\n\n> We avoid listing prices here because they change. Ask a few drivers or agencies and compare reliability and communication first.\n\n## Option 3: Car (control + comfort, higher admin)\nA car can be great for:\n- multiple kids\n- sports gear\n- rainy season\n…but it adds:\n- parking stress in some areas\n- maintenance/admin\n\n## Option 4: Scooters (high freedom, higher risk)\nScooters can be practical when:\n- you’re confident riding\n- you understand local traffic patterns\n- you’re strict about helmets and safe habits\n\nScooters are *not* for everyone, especially in the first weeks. It’s okay to decide “not for us.”\n\n## What we learned the hard way\nTransport choices quietly shape your whole Bali experience. If commuting feels stressful, even a perfect villa can stop feeling perfect.\n\n## Related reads\n- [Safety basics for families](/guides/bali-safety-basics-for-families)\n- [Rainy season with kids](/blog/rainy-season-with-kids)\n- [Where to live in Bali](/guides/where-to-live-in-bali-for-families)\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "groceries-meals-routines-in-bali",
+      "title": "Groceries & meal routines in Bali (family-friendly)",
+      "description": "A parent-first approach to feeding your family in Bali: groceries, meal planning, and how to reduce decision fatigue when you’re new.",
+      "date": "2026-02-22",
+      "updated": "2026-02-23",
+      "tags": [
+        "groceries",
+        "routines",
+        "food",
+        "families",
+        "planning"
+      ],
+      "category": "Family life",
+      "draft": false,
+      "noindex": false,
+      "social": {
+        "instagramUrl": "https://www.instagram.com/empathy.school/reel/DPYiFh4kVRP/",
+        "instagram": [
+          {
+            "label": "Farmer’s market (reel)",
+            "url": "https://www.instagram.com/empathy.school/reel/DPYiFh4kVRP/"
+          },
+          {
+            "label": "Nature cooking (reel)",
+            "url": "https://www.instagram.com/empathy.school/reel/CzdBEPXvpA-/"
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "q": "Is it easy to find familiar groceries?",
+          "a": "Many families can find what they need, but availability varies by area. Expect some adaptation and keep a few “safe meals.”"
+        },
+        {
+          "q": "What’s the simplest routine for the first week?",
+          "a": "Pick 3–5 repeat meals, keep easy snacks, and avoid trying every new option at once."
+        },
+        {
+          "q": "How do we avoid spending too much on food?",
+          "a": "A routine helps. Eating out constantly can creep up quickly. Mix home meals with a few reliable places."
+        }
+      ],
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick start (reduce decision fatigue)\n- Choose **3 repeat breakfasts** and **3 repeat dinners** for your first week.\n- Keep a “safe snack bag” for outings.\n- Build one reliable grocery shop route in your area.\n\n## Step 1: Decide your family food baseline\nWrite down:\n- your kids’ “safe meals”\n- any allergies / sensitivities\n- your weekly rhythm (busy nights vs calm nights)\n\n## Step 2: Do one “baseline shop”\nBuy:\n- breakfast basics\n- snack basics\n- simple proteins\n- easy veggies/fruits\n\n## Step 3: Add variety slowly\nOnce routine feels easy:\n- add new cafes or markets\n- add new recipes\n- add new snacks\n\n---\n\n## Markets and the “Bali rhythm”\n\nFor many families, Bali starts feeling like home when you have:\n- one reliable grocery shop,\n- one market you repeat,\n- and a few default meals.\n\nSupporting reel (optional context):\n\n<div class=\"mt-4 overflow-hidden rounded-2xl border border-gray-200 bg-white\">\n  <iframe\n    src=\"https://www.instagram.com/reel/DPYiFh4kVRP/embed\"\n    title=\"Farmer’s market (supporting reel)\"\n    loading=\"lazy\"\n    class=\"w-full\"\n    style=\"min-height:520px\"\n  ></iframe>\n</div>\n\nIf you want a kid-friendly activity that also supports routine, cooking classes can be a nice “anchor.”\nSupporting reel: https://www.instagram.com/empathy.school/reel/CzdBEPXvpA-/\n\n## What we learned the hard way\nWhen you’re new, food choices feel like constant decision-making. Routines buy you calm.\n\n## Related reads\n- [Family transport](/guides/family-transport-drivers-scooters-cars)\n- [Areas for families](/areas)\n- [Cost of living framework](/guides/cost-of-living-for-families-framework)\n- [Family life pillar](/family-life)\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "health-insurance-in-bali-for-families",
+      "title": "Health insurance in Bali for families (how to choose coverage)",
+      "description": "A practical framework for families: what questions to ask, what to confirm in writing, and how to avoid buying the wrong thing for your reality.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "insurance",
+        "healthcare",
+        "families",
+        "emergencies",
+        "planning"
+      ],
+      "category": "Healthcare",
+      "draft": false,
+      "noindex": false,
+      "faqs": [
+        {
+          "q": "Do we need insurance to live in Bali?",
+          "a": "Needs vary by visa type, budget, and risk tolerance. Many families choose coverage for peace of mind and to reduce “what if” stress."
+        },
+        {
+          "q": "What should we confirm before buying a policy?",
+          "a": "Confirm what counts as an emergency, which hospitals/clinics are included, and how claims work (direct billing vs reimbursement)."
+        },
+        {
+          "q": "Where should we get medical guidance?",
+          "a": "Use trusted clinics/hospitals for medical decisions. This page is a planning framework, not medical advice."
+        }
+      ],
+      "readingTimeMinutes": 2,
+      "body": "\n## Quick start\n- Decide your “comfort goal”: *catastrophic coverage*, *routine coverage*, or *full-service peace of mind*.\n- Confirm in writing:\n  - what’s covered\n  - how claims work\n  - where you can go for care\n- Don’t buy coverage you don’t understand.\n\nRelated: [Healthcare in Bali for families](/guides/healthcare-in-bali-for-families)\n\n## Step 1: Choose the type of coverage you actually want\n### A) Catastrophic-only\nGood if:\n- you can self-fund routine visits\n- you mainly want protection from big surprises\n\n### B) Routine + emergency\nGood if:\n- you expect regular clinic visits with kids\n- you want predictable costs\n\n### C) Premium peace of mind\nGood if:\n- you want direct billing options\n- you want broader support (and accept higher cost)\n\n## Step 2: Ask these questions (copy/paste)\n1. What is the deductible and how does it apply?\n2. Is dental included? Vision?\n3. What counts as an emergency?\n4. Do you reimburse or direct bill (and where)?\n5. How do you handle pre-existing conditions?\n6. What’s excluded in writing?\n\n## Step 3: Pair insurance with a clinic plan\nEven with insurance, it helps to decide:\n- which clinic you’ll use for routine care\n- where you’d go in an emergency\n\nGuide: [Healthcare in Bali for families](/guides/healthcare-in-bali-for-families)\n\n## What we learned the hard way\nThe right policy is the one that matches your real behavior. If you won’t file reimbursements, don’t buy a plan that relies on reimbursements.\n\n## Next steps\n- [Costs & logistics pillar](/costs)\n- [Safety basics](/guides/bali-safety-basics-for-families)\n- [Ask a question](/contact?topic=health)\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "healthcare-in-bali-for-families",
+      "title": "Healthcare in Bali for families: mindset + practical planning",
+      "description": "How families typically think about clinics, emergencies, and insurance—without pretending to be medical authorities.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "health",
+        "clinics",
+        "insurance",
+        "families"
+      ],
+      "category": "Health",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nWe’re not doctors. But families usually do better when they decide their “healthcare mindset” early:\nwhere you go for minor issues, where you go for emergencies, and what insurance choices make sense for your risk tolerance.\n\n## Practical planning\n\n- Choose one clinic you trust for minor issues\n- Know your emergency plan (location + transport)\n- Keep a small “family medical summary” note in your phone\n- Ask other parents what they do (patterns matter)\n\n## Next steps\n\n- Pillar: [Family life](/family-life)\n- Pillar: [Costs](/costs)\n\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "how-to-choose-a-visa-agent",
+      "title": "How to choose a visa agent in Bali (family checklist)",
+      "description": "A practical checklist for choosing a visa agent safely—what to ask, what to verify, and what red flags look like.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "visas",
+        "agents",
+        "safety",
+        "checklist"
+      ],
+      "category": "Visas",
+      "draft": false,
+      "noindex": false,
+      "faqs": [
+        {
+          "q": "Should we only use the cheapest agent?",
+          "a": "Price matters, but clarity matters more. Look for transparent fees, clear timelines, and consistent communication."
+        },
+        {
+          "q": "Do you recommend a single agent?",
+          "a": "We may introduce families to partners we’ve vetted, but you should still use this checklist and compare options."
+        }
+      ],
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nMost families don’t need the “perfect” visa agent. They need someone who is **clear**, **consistent**, and **honest about uncertainty**.\n\nIf an agent communicates well, gives you a checklist, and explains what could go wrong (without drama), that’s usually a better sign than flashy marketing.\n\n## The family checklist\n\n### Ask these questions\n\n- What visa pathway are you recommending, and **why** for our situation?\n- What documents do you need from us **before** you start?\n- What’s the full fee breakdown (agent fee + government fees + extras)?\n- What is the **realistic** timeline—and what commonly causes delays?\n- How will you communicate updates (WhatsApp, email) and how often?\n\n### Verify these things\n\n- Their business presence is consistent (same name, same details across channels).\n- They use official portals for the parts that require them.\n- They provide a written summary (even a simple message) of fees + timeline.\n\n### Prefer agents who say…\n\n- “In our experience…”\n- “Rules change—here’s the official link…”\n- “We can’t guarantee outcomes, but here’s what we’ll do if it gets stuck.”\n\n## What to avoid\n\n- “Guaranteed approval.”\n- Pressure to pay immediately without a written scope.\n- Vague fees (“depends” without ranges or examples).\n\n## Official sources\n\nKeep these bookmarked so you’re never relying on memory: see [Official links](/official-links).\n\n## Next steps\n\n- Read [Visa scam red flags](/guides/visa-scam-red-flags)\n- Go back to the overview: [Visas](/visas)\n\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "lease-and-deposit-questions-in-bali",
+      "title": "Lease and deposit questions to ask in Bali (before you pay)",
+      "description": "A practical checklist for families: what to confirm in writing before paying a deposit or signing a lease, and which details cause the most stress later.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "housing",
+        "renting",
+        "lease",
+        "deposit",
+        "contracts",
+        "families"
+      ],
+      "category": "Housing",
+      "draft": false,
+      "noindex": false,
+      "faqs": [
+        {
+          "q": "Is it normal to pay a deposit?",
+          "a": "Deposits are common, but the key is clarity: what it covers, when it’s returned, and what counts as “damage.”"
+        },
+        {
+          "q": "What should we insist on in writing?",
+          "a": "Payment schedule, what’s included, maintenance responsibilities, and the exact conditions for returning the deposit."
+        },
+        {
+          "q": "Should we pay before seeing the property?",
+          "a": "Be very cautious with payments before a viewing or a verified agreement. If something feels rushed, slow it down and verify."
+        }
+      ],
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick start (copy/paste checklist)\nBefore you pay:\n- Confirm who the legal signer is (owner/authorized agent)\n- Confirm the payment schedule and currency\n- Confirm what utilities are included\n- Confirm maintenance responsibilities\n- Confirm deposit return conditions\n- Confirm how disputes are handled (in writing)\n\nRelated pillar: [Housing & neighborhoods](/housing)\n\n## The questions that save you stress later\n\n### 1) “What exactly is included?”\nAsk about:\n- electricity\n- water\n- internet\n- pool/garden maintenance\n- cleaning (if any)\n\n### 2) “What happens if something breaks?”\n- Who pays for repairs?\n- What’s the typical response time?\n- How do you report issues?\n\n### 3) “How does the deposit get returned?”\nAsk:\n- what counts as damage\n- what counts as normal wear\n- what deductions are allowed\n- timeline for return\n\n### 4) “What’s the cancellation or early-exit policy?”\nEven if you don’t plan to leave early, clarity reduces risk.\n\n## What we learned the hard way\nContracts feel boring until something goes wrong. A calm checklist before paying is a form of self‑care.\n\n## Next steps\n- [Renting safely in Bali](/guides/renting-safely-in-bali)\n- [2‑week test stay plan](/guides/two-week-test-stay-plan)\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "packing-list-for-bali-with-kids",
+      "title": "Packing list for Bali with kids (what we’d bring again)",
+      "description": "A practical packing guide for families relocating or test-staying in Bali—what’s easy to buy locally and what’s worth bringing.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "packing",
+        "kids",
+        "logistics",
+        "moving",
+        "planning"
+      ],
+      "category": "Logistics",
+      "draft": false,
+      "noindex": false,
+      "faqs": [
+        {
+          "q": "Can we buy most things in Bali?",
+          "a": "Many basics are available, but specific brands or specialty items may be harder to find depending on the area. For a test stay, pack for comfort and simplicity."
+        },
+        {
+          "q": "What’s the biggest packing mistake?",
+          "a": "Packing for “every scenario.” Prioritize what reduces stress in your first month: sleep, sun/heat, and routines."
+        },
+        {
+          "q": "Should we bring school supplies?",
+          "a": "Some families bring a small starter set, then buy locally once they know what their school expects."
+        }
+      ],
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick start\n- Pack for the **first 2–4 weeks**, not forever.\n- Prioritize sleep + sun + routines.\n- Leave space for what you’ll buy once you understand your life here.\n\n## Essentials (the non-negotiables)\n- passports + documents (and copies)\n- basic meds you rely on (with appropriate documentation where needed)\n- kid comfort items (sleep toys, a familiar blanket)\n- sun hats + swim basics\n- a small “carry-on survival kit” for landing day\n\n## Family routine helpers\n- water bottles\n- lunch/snack containers\n- basic tech adapters and chargers\n- a small first-aid kit\n\n## What we learned the hard way\nThe best packing list is the one that supports routines. Comfort matters when you’re building a new life.\n\n## Next steps\n- [Bali arrival checklist](/guides/bali-arrival-checklist-evoa-arrival-card-levy)\n- [First week setup checklist](/guides/first-week-in-bali-setup-checklist)\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "phones-and-internet-in-bali",
+      "title": "Phones and internet in Bali (a family setup guide)",
+      "description": "A simple connectivity plan for families: how to avoid landing-day stress, what to set up first, and what to test before you rely on it.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "internet",
+        "phone",
+        "sim",
+        "esim",
+        "logistics"
+      ],
+      "category": "Logistics",
+      "draft": false,
+      "noindex": false,
+      "faqs": [
+        {
+          "q": "Should we get an eSIM before we arrive?",
+          "a": "If you want less stress on landing day, yes. If you’re comfortable being offline for a few hours, you can do it after arrival."
+        },
+        {
+          "q": "What’s the first thing to test in a new accommodation?",
+          "a": "Internet reliability. Test speed and stability at the times you’ll actually use it (morning work blocks and evening streaming)."
+        },
+        {
+          "q": "Do we need a local phone number?",
+          "a": "Many families find it helpful for deliveries, appointments, and day-to-day coordination."
+        }
+      ],
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick start\n- Decide your “arrival plan”: eSIM before you fly vs get a SIM after you land.\n- Test internet in your accommodation **before** you commit to routines that depend on it.\n- Keep a backup: a second SIM, hotspot plan, or “plan B café”.\n\nRelated: [Bali arrival checklist](/guides/bali-arrival-checklist-evoa-arrival-card-levy)\n\n## Step 1: Choose your arrival setup\n### Option A: eSIM before you fly\nPros: less stress, you land connected  \nCons: you need to set it up calmly before travel\n\n### Option B: SIM after arrival\nPros: flexible  \nCons: landing day becomes more complicated\n\n## Step 2: Internet reliability checklist (copy/paste)\n- speed test at morning + evening\n- video call stability test\n- router location (does it reach bedrooms?)\n- power backup (what happens if power drops?)\n\n## Step 3: Family “coordination” setup\n- one shared WhatsApp group for your family\n- a simple note with your address pinned\n- emergency contacts saved offline\n\n## What we learned the hard way\nConnectivity feels like a small thing — until it fails during an important call or a tired-kid moment. Set it up early and remove stress.\n\n## Next steps\n- [First week setup checklist](/guides/first-week-in-bali-setup-checklist)\n- [Banking & payments](/guides/banking-payments-in-bali)\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "quiet-nature-areas-in-bali",
+      "title": "Quiet + nature areas in Bali: how to choose",
+      "description": "A calm, realistic guide to choosing a quiet base in Bali—without accidentally isolating your family from services and community.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "areas",
+        "housing",
+        "quiet",
+        "nature",
+        "families",
+        "test-stay"
+      ],
+      "category": "Housing & neighborhoods",
+      "draft": false,
+      "noindex": false,
+      "faqs": [
+        {
+          "q": "Is Ubud always quiet?",
+          "a": "Ubud varies by micro-area. Some streets are calm and green; others are busy. A short test stay helps you feel the difference."
+        },
+        {
+          "q": "Will we feel isolated in a quiet area?",
+          "a": "It depends on whether you build a weekly rhythm and community touchpoints. Quiet works best with intentional connection."
+        },
+        {
+          "q": "Do we need a car in quieter areas?",
+          "a": "Often yes, or at least a driver plan. The quieter the area, the more you’ll likely plan transport for errands and activities."
+        },
+        {
+          "q": "What’s the best quiet beach area?",
+          "a": "It depends on your definition of quiet and how close you want services. Some families like calmer coastal pockets while still staying within reach of larger hubs."
+        },
+        {
+          "q": "How do we avoid choosing ‘too quiet’?",
+          "a": "Decide what services you want within 10–15 minutes, then shortlist areas that can realistically support that. Quiet shouldn’t mean constant inconvenience."
+        }
+      ],
+      "readingTimeMinutes": 2,
+      "body": "\n## Quick take\n\nIf your family wants **quiet + nature** (and you’re okay with fewer “city conveniences”), Bali can be amazing.\n\nBut “quiet” is not a single place — it’s a set of tradeoffs:\n- less noise, fewer crowds\n- more intentional routines\n- sometimes longer trips for services\n\nThis guide helps you choose a quiet base without accidentally isolating yourself.\n\n## Define what “quiet” means for your family\n\nQuiet can mean:\n- less traffic and fewer scooters\n- a home base with green views\n- fewer nightlife distractions\n- cooler evenings (depends on elevation and breeze)\n\nWrite down your top two:\n1) ______________  \n2) ______________\n\n## Areas that often suit quiet + nature (with tradeoffs)\n\n### Sidemen\nDeep nature, slower pace, and a “reset” feeling.\nTradeoff: fewer services; you’ll plan errands more intentionally.\nExplore: [/areas/sidemen](/areas/sidemen)\n\n### Ubud (choose your micro-area carefully)\nUbud can be calm and green — but some parts are busy.\nTradeoff: rainy season routines and tourist density in certain pockets.\nExplore: [/areas/ubud](/areas/ubud)\n\n### Amed\nCoastal quiet, simple life, and space to breathe.\nTradeoff: distance to some services; best for families who truly want slow.\nExplore: [/areas/amed](/areas/amed)\n\n### Seseh (calmer coastal feel)\nOften calmer than central Canggu areas while still being “not too far.”\nTradeoff: you’ll still have traffic moments depending on your route.\nExplore: [/areas/seseh](/areas/seseh)\n\n## Checklist: “quiet base” reality checks\n\n- What are we willing to drive for weekly?\n- How often do we need bigger services (medical, shopping)?\n- Do we want beach, jungle, or “green views”?\n- What’s our rainy-day routine plan?\n- Who is our community (people we’ll see weekly)?\n\n## A quiet-life plan that works\n\nThe quietest families tend to do two things well:\n\n1) **Build a weekly rhythm** (market day, activity day, “big errands” day)  \n2) **Stay connected** (a consistent class, group, or community touchpoint)\n\n## Next steps\n\n- Compare areas quickly: [/areas](/areas)\n- Plan a test stay: [/guides/two-week-test-stay-plan](/guides/two-week-test-stay-plan)\n- If you’re balancing budget too: [/costs](/costs)\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "renting-safely-in-bali",
+      "title": "Renting safely in Bali (questions to ask before deposits)",
+      "description": "A parent-first renting guide: verification steps, contract questions, and a staged approach that reduces risk.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "housing",
+        "renting",
+        "safety",
+        "checklist"
+      ],
+      "category": "Housing",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nRenting can be straightforward—until it isn’t. The biggest risk isn’t “Bali”; it’s **rushed decisions**.\n\nIf you can: do a short stay first, view in person, verify identity, then sign.\n\n## A staged approach (lower stress)\n\n1. **Short stay (7–21 days)** in your shortlisted area(s)\n2. View 5–10 places quickly\n3. Verify: owner/agent identity, deposit terms, maintenance expectations\n4. Sign a clear agreement\n5. Move in, then optimize (don’t optimize first)\n\n## Questions to ask before deposits\n\n- Who is the legal owner / manager?\n- What’s the exact deposit amount and refund policy?\n- What happens if utilities fail (water, electricity, internet)?\n- Who pays for repairs, and what’s the response time?\n\n## What we learned the hard way\n\n“Perfect” listings disappear. But families who know their top 3 priorities can decide quickly without panic.\n\n## Next steps\n\n- Overview: [Housing](/housing)\n- Choosing an area: [Where to live](/guides/where-to-live-in-bali-for-families)\n\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "two-week-test-stay-plan",
+      "title": "The 2‑week test-stay plan (before you commit to Bali)",
+      "description": "A practical test-stay plan for families—how to choose 2–3 areas, simulate routines, and avoid “holiday mode” decisions.",
+      "date": "2026-02-22",
+      "updated": "2026-02-23",
+      "tags": [
+        "test-stay",
+        "planning",
+        "areas",
+        "routines",
+        "families"
+      ],
+      "category": "Planning",
+      "draft": false,
+      "noindex": false,
+      "faqs": [
+        {
+          "q": "Is two weeks enough to decide?",
+          "a": "Two weeks is often enough to learn what daily life feels like (school run, errands, evenings). Many families still do a longer second trip before signing a lease."
+        },
+        {
+          "q": "How many areas should we try in one visit?",
+          "a": "Usually 2–3 areas. More than that turns into constant packing and moving, and you never get a routine."
+        },
+        {
+          "q": "What should we avoid during a test stay?",
+          "a": "Avoid signing long contracts, making school decisions on day one, and booking an accommodation that is too “vacation-perfect” to represent daily life."
+        }
+      ],
+      "readingTimeMinutes": 2,
+      "body": "\n## Quick start\n- Pick **2–3 areas** using this: [Area shortlist scorecard](/resources/area-shortlist-scorecard)\n- For each area, schedule:\n  - one “work morning”\n  - one “errands afternoon”\n  - one “quiet evening”\n- Do at least **one rainy day plan** (even if it’s dry season)\n\nRelated: [Bali areas for families](/areas) · [Where to live in Bali (guide)](/guides/where-to-live-in-bali-for-families)\n\n## Step 1: Decide what “good” means for your family\nWrite down your top 3:\n- calm mornings\n- walkable errands\n- community\n- green space\n- kid activities\n- commute simplicity\n- budget control\n\nThen pick your “non-negotiable”:\n- *We can’t do daily heavy traffic*, or\n- *We need walkable basics*, or\n- *We need quiet sleep.*\n\n## Step 2: Choose 2–3 areas (not 6)\nShortlists that work:\n- **Ubud + Sanur** (nature + calmer beach city)\n- **Canggu region + Sanur** (international energy + calmer backup)\n- **Ubud + Canggu region** (two very different lifestyles)\n\nComparison guide: [Ubud vs Sanur vs Canggu for families](/guides/ubud-vs-sanur-vs-canggu-for-families)\n\n## Step 3: Book accommodation that matches real life\nA test stay is not a honeymoon. We recommend:\n- a place with a kitchen (or easy food options nearby)\n- a location that allows you to do “school run timing”\n- reliable internet (if you’re working)\n\nGuide: [Phones and internet in Bali](/guides/phones-and-internet-in-bali)\n\n## Step 4: Run “routine simulations”\n\n### Optional: add a kids “anchor” (camp or weekly program)\n\nIf you’re doing a test stay, one simple way to avoid “holiday mode” is to give kids a predictable anchor for a few days:\n- a short holiday camp, or\n- a weekly program that runs during the week.\n\nIt’s not required—but for many families it makes the visit more realistic (kids have structure, parents can do errands and calls).\n\nStart here:\n- [Camps & short-term programs](/camps)\n- [Camp questions checklist (copy/paste)](/resources/camp-questions-checklist)\n\n### Simulation A: morning routine\n- breakfast\n- school/run timing (even if you aren’t enrolled)\n- commute test (10–20 minutes driving)\n\n### Simulation B: errands + groceries\n- grocery shop\n- pharmacy\n- quick meal plan\n- see how long it takes and how it feels\n\nGuide: [Groceries and routines in Bali](/guides/groceries-meals-routines-in-bali)\n\n### Simulation C: evening + sleep\n- dinner\n- bedtime\n- noise check\n- mosquito plan check\n\nSafety guide: [Safety basics for families](/guides/bali-safety-basics-for-families)\n\n## Step 5: Write your notes the same day\nUse three prompts:\n1. What felt easy today?\n2. What felt stressful today?\n3. If we did this for 6 months, what would break?\n\n## What we learned the hard way\nFamilies often decide from a “perfect day.” The best decisions come from an ordinary day.\n\n## Next steps\n- If you haven’t, read: [Start here](/start-here)\n- If you’re getting serious about housing: [Renting safely in Bali](/guides/renting-safely-in-bali)\n- If you’re comparing neighborhoods: [Bali area guides](/areas)\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "ubud-vs-sanur-vs-canggu-for-families",
+      "title": "Ubud vs Sanur vs Canggu for families (how to choose)",
+      "description": "A calm comparison: pace, routines, community, commute, and “what it feels like” day-to-day—so you can shortlist areas without overthinking.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "areas",
+        "ubud",
+        "sanur",
+        "canggu",
+        "comparison",
+        "families"
+      ],
+      "category": "Areas",
+      "draft": false,
+      "noindex": false,
+      "faqs": [
+        {
+          "q": "Which area is best for families?",
+          "a": "There isn’t one best. It depends on your family’s pace, commute tolerance, and what you want daily life to feel like."
+        },
+        {
+          "q": "Is Canggu too busy for kids?",
+          "a": "Some families love the energy and community; others find it overstimulating. A short test stay is the easiest way to know."
+        },
+        {
+          "q": "Is Ubud better for calmer routines?",
+          "a": "Many families find it calmer and greener, but it depends on your exact location and your daily needs (activities, services, community)."
+        }
+      ],
+      "readingTimeMinutes": 2,
+      "body": "\n## Quick comparison (the vibe)\n- **Ubud:** green, slower, more “inward,” great for families who want calmer routines\n- **Sanur:** beach city energy, easier errands, often a calmer “base”\n- **Canggu region:** international, busy, lots happening, more traffic and stimulation\n\nIf you haven’t yet, start here: [Area guides](/areas)\n\n## How to decide (the only 3 questions that matter)\n### 1) What pace makes your family calm?\n- Do you love “always something on”?\n- Or do you want quiet evenings and nature?\n\n### 2) What commute stress can you tolerate?\nSome families are fine with driving. Others find it drains energy fast.\n\n### 3) What does “community” mean for you?\n- international community and events?\n- quieter neighbor friendships?\n- school community as your main anchor?\n\n## Ubud (family notes)\nGood fit if:\n- you want green space and calmer routines\n- you like slower mornings\nWatch-outs:\n- some locations feel isolated without a good transport plan\n\nArea guide: [Ubud for families](/areas/ubud)\n\n## Sanur (family notes)\nGood fit if:\n- you want an easier “base”\n- you like walkable errands and a more established vibe\nArea guide: [Sanur for families](/areas/sanur)\n\n## Canggu region (family notes)\nGood fit if:\n- you want a lot happening and a big community\n- you like activities and cafes\nWatch-outs:\n- traffic and stimulation can be real\n\nArea guides:\n- [Canggu](/areas/canggu)\n- [Berawa](/areas/berawa)\n- [Pererenan](/areas/pererenan)\n\n## What we learned the hard way\nFamilies often fall in love with an area on a perfect day. Try to include at least one ordinary day: errands, tired kids, and bedtime.\n\n## Next steps\n- [2‑week test stay plan](/guides/two-week-test-stay-plan)\n- [Renting safely in Bali](/guides/renting-safely-in-bali)\n- [Start here](/start-here)\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "visa-scam-red-flags",
+      "title": "Visa scam red flags (and how families protect themselves)",
+      "description": "Anonymous, practical red flags that help families avoid scams without naming or accusing specific people.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "visas",
+        "scams",
+        "safety",
+        "parents"
+      ],
+      "category": "Visas",
+      "draft": false,
+      "noindex": false,
+      "faqs": [
+        {
+          "q": "What if an agent says “guaranteed approval”?",
+          "a": "Treat it as a red flag. Rules change and outcomes depend on circumstances. Look for an agent who speaks in probabilities and verification."
+        }
+      ],
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nVisa content attracts scammers because families are stressed and timelines feel urgent.\nThe goal here isn’t fear—it’s a calm pattern-recognition checklist.\n\nWe keep this anonymous on purpose: **no names, no accusations**—just red flags and what families do instead.\n\n## Red flags families watch for\n\n### Communication red flags\n\n- Answers that stay vague after you ask the same question twice\n- “Don’t worry about it” when you ask for a receipt or a written breakdown\n- Constant urgency without clarity\n\n### Money red flags\n\n- A large deposit requested before you receive a written scope\n- “Special discounts today only”\n- Fees that change every time you ask\n\n### Authority red flags\n\n- “We have a special connection”\n- “Guaranteed approval”\n- Refusal to reference official portals\n\n## What families do instead\n\n- They compare **2–3 agents** (even if they pick one).\n- They ask for a simple written breakdown of fees + timeline.\n- They confirm changing details via [Official links](/official-links).\n\n## Next steps\n\n- Use [How to choose a visa agent](/guides/how-to-choose-a-visa-agent)\n- Back to the overview: [Visas](/visas)\n\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "what-to-ask-on-a-school-tour",
+      "title": "What to ask on a school tour (copy/paste checklist)",
+      "description": "A copy/paste list of questions for school tours—learning support, safety, communication, community, and commute reality.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "schools",
+        "tours",
+        "checklist",
+        "parents"
+      ],
+      "category": "Learning",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nA tour is more than questions—it’s **watching the classroom feel** and mapping the commute in real time.\n\nCopy/paste the checklist below into your notes app.\n\n## Copy/paste checklist\n\n### Learning & support\n\n- How do you support kids who are ahead / behind?\n- What does “support” look like day-to-day (not just on paper)?\n- How do teachers communicate progress?\n\n### Safety & supervision\n\n- What supervision ratios do you aim for?\n- What’s the protocol for injuries?\n- How do you handle pick-up and drop-off?\n\n### Community & fit\n\n- What kind of family tends to thrive here?\n- What’s the parent community like?\n- What do new families find hard in the first month?\n\n### Commute reality\n\n- What time do most families arrive?\n- Where do they live?\n- What does traffic look like during rainy season?\n\n## Next steps\n\n- Overview: [Schools](/schools)\n- Start with priorities: [Start here](/start-here)\n\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "where-to-live-in-bali-for-families",
+      "title": "Where to live in Bali for families: how to shortlist areas",
+      "description": "A calm approach to choosing where to live: pace, noise, walkability, commute, and your family’s real priorities.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "areas",
+        "neighborhoods",
+        "families",
+        "planning"
+      ],
+      "category": "Areas",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nMost stress comes from commute + noise + mismatched expectations.\nA good shortlist is usually 2–3 areas.\n\n## The shortlist method\n\n1. Pick your family pace: calm / mixed / busy\n2. Decide commute tolerance (in minutes, not feelings)\n3. Choose “daily-life priorities” (walkability, cafes, nature, community)\n4. Test-stay in two areas if you can\n\n## Recommended starting points\n\nBrowse the area guides: [Areas hub](/areas)\n\nIf you want a simple shortlist:\n- Try **Sanur** for calmer family routines\n- Try **Ubud** for nature + slower pace (some tradeoffs)\n- Try **Berawa/Pererenan** if you want more international community (and accept more busy)\n\n## Next steps\n\n- Pillar: [Areas](/areas)\n- Pillar: [Housing](/housing)\n\n"
+    },
+    {
+      "kind": "guides",
+      "slug": "first-week-in-bali-setup-checklist",
+      "title": "Your first week in Bali: setup checklist for families",
+      "description": "A practical first-week checklist: SIM, transport, routines, groceries, healthcare plan, and what to postpone.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "logistics",
+        "checklist",
+        "families"
+      ],
+      "category": "Logistics",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Quick take\n\nYour first week is not for “optimizing”. It’s for getting a calm baseline.\n\n## First-week checklist\n\n- SIM/eSIM + a stable data plan\n- A transport plan (driver, scooter, car—whatever fits your family)\n- Grocery routine (one “default shop”)\n- A basic healthcare plan (where you go for minor issues)\n- A simple schedule for kids (sleep, food, outside time)\n\n## What to postpone\n\n- Perfect housing\n- Perfect school schedule\n- Perfect budget tracking\n\n## Next steps\n\n- [Start here](/start-here)\n- [Housing](/housing)\n- [Areas](/areas)\n\n"
+    }
+  ],
+  "blog": [
+    {
+      "kind": "blog",
+      "slug": "45000-rupiah-miracle",
+      "title": "The 45,000‑Rupiah Miracle",
+      "description": "How Bali quietly makes family life feel easy",
+      "date": "2026-02-26",
+      "updated": "2026-02-26",
+      "tags": [
+        "family-life",
+        "daily-life",
+        "routines",
+        "costs",
+        "ubud"
+      ],
+      "category": "Family life",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 5,
+      "body": "\nBy Eric\n\nSome mornings in Bali start with a soundtrack you didn’t know you needed.\n\nA rooster somewhere in the distance. The soft clink of temple bells. A scooter humming past slowly—less “rush hour,” more “someone’s going to buy fruit.” Incense drifting in from a tiny offering placed neatly on the edge of a driveway. My kids outside, barefoot, already inventing a game out of sticks and leaves and whatever the jungle decides to contribute that day.\n\nIt’s the kind of scene people fly across the world to witness for a week.\n\nAnd yet the thing that still surprises me most isn’t the beauty. It’s the convenience.\n\nBecause in the background of all that calm—rice fields flowing like green water, the jungle breathing, the space to actually hear yourself think—Bali has quietly built something that makes daily family life feel… manageable. Even comfortable. Sometimes weirdly effortless.\n\nThe number that captures it best is 45,000 rupiah.\n\nThat’s the delivery fee I pay for groceries when I don’t want to turn the day into a traffic mission. Less than $3 for someone to bring what my family needs right to our door.\n\nIt sounds like a small detail. It’s not.\n\nThe best Bali days don’t begin in a car\n\nWhen families imagine moving to Bali, they picture the big things first:\n\nNature\n\nCommunity\n\nA slower pace\n\nA healthier rhythm for their kids\n\nAll true.\n\nBut the part you only learn by living here is that your day-to-day happiness often depends on the small things: How easy is it to get what you need? How often do errands hijack your schedule? How much time do you spend stuck in transit instead of actually living?\n\nThat’s where Bali has been a joyful surprise for me.\n\nIf I need something—anything from household essentials to random “we ran out of that and my kids will absolutely notice” items—I open Tokopedia or Shopee, search, tap, and it’s handled. What still amazes me is how often it’s more affordable than America, and how reliably it just works.\n\nIt’s not flashy. It’s just… supportive.\n\nAnd for a family, support is everything.\n\n“Western groceries” without the weekly expedition\n\nI still like going to big grocery stores sometimes. There’s something satisfying about it—choosing, browsing, finding a new snack you didn’t know existed.\n\nBut I don’t want that to be my default rhythm. I don’t want “getting groceries” to be a project that consumes half a day and all my patience.\n\nSo for many of our staples—especially the “Western products” my family likes—I use online grocery services like Delta online.\n\nAnd then that number shows up again:\n\nRp 45,000.\n\nNot just a fee—more like a quiet life upgrade.\n\nBecause what that buys isn’t only delivery. It buys time. It buys energy. It buys the kind of afternoon where you’re not recovering from errands—you’re actually present for your kids.\n\nFresh vegetables that don’t require a plan\n\nThen there’s the produce side of life, where Bali shines in its own way.\n\nFor vegetables, I use Bali Jiva.\n\nThere’s something deeply satisfying about waking up in a place with temples and rice fields and sunlight pouring in—then having crisp greens show up without you needing to navigate the day around it.\n\nIt’s one of those “pinch me” moments: you can live near nature without feeling cut off from the modern world.\n\n(If we add links later for families, I can share what I use—but the main point is the system, not the hyperlink.)\n\nUbud: incredible… and optional\n\nUbud is special. There are truly great restaurants there. The kind of place you go for a meal that feels like a celebration—without needing a special occasion.\n\nBut here’s the honest part: the traffic can be intense.\n\nAnd what I’ve learned is that you don’t have to build your life around the busiest places to enjoy them. You can treat Ubud like a destination you visit when you want that experience—then come back to the version of Bali that feels like it was designed for families.\n\nFor us, that’s the area in and around Empathy School.\n\nThis is the Bali I didn’t just want to visit. This is the Bali I wanted my kids to grow inside of:\n\nFlowing rice fields that change color with the season\n\nJungle edges that feel alive, not manicured\n\nSpace—real space—for kids to play\n\nA sense of safety and peace that settles into your body\n\nWhen you live somewhere like this, convenience isn’t about luxury. It’s about preserving the calm you came here for.\n\nThe real “Bali hack” for families\n\nPeople sometimes ask what makes day-to-day life work here as a parent.\n\nMy answer is simple: don’t fight the island. Let it carry you.\n\nHere’s what that looks like in our life:\n\nUse Tokopedia + Shopee when you need “stuff” quickly and easily.\n\nUse Delta online when you want groceries without a long outing.\n\nUse Bali Jiva to keep vegetables fresh and effortless.\n\nGo to Ubud for the magic—without making it your weekly commute.\n\nBuild your everyday life around nature, space, and calm—then let delivery handle the logistics.\n\nThis is how you get the best of both worlds: the Bali people dream about, plus the Bali that actually functions when you have kids and routines and real-life needs.\n\nWhy this feels so good\n\nThere’s a particular kind of joy that happens when you move somewhere beautiful and realize you don’t have to sacrifice practicality to enjoy it.\n\nIt’s not just that the kids are happier (though they are). It’s not just that the surroundings are stunning (they are).\n\nIt’s that your days stop being dominated by “life admin.”\n\nInstead of spending your best hours in traffic, you spend them listening to the temple sounds drift through the morning. Watching your kids build something imaginative out of nothing. Walking near rice fields that look like they’ve been painted fresh overnight.\n\nAnd somewhere in the middle of all that, a delivery arrives.\n\nGroceries. Vegetables. The little things.\n\nHandled.\n\nThat’s the 45,000‑rupiah miracle.\n"
+    },
+    {
+      "kind": "blog",
+      "slug": "why-i-feel-so-safe-raising-kids-in-bali",
+      "title": "Why I Feel So Safe Raising Kids in Bali",
+      "description": "When families talk to me about moving to Bali, “Is it safe?” is usually the first real question.",
+      "date": "2026-02-26",
+      "updated": "2026-02-26",
+      "tags": [
+        "safety",
+        "family-life",
+        "kids",
+        "routines",
+        "areas"
+      ],
+      "category": "Family life",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 5,
+      "body": "\nWhen families talk to me about moving to Bali, “Is it safe?” is usually the first real question.\n\nI understand it. Safety isn’t a headline. It’s a daily feeling. It’s whether you can relax while your kids grow up. It’s whether ordinary life stays ordinary.\n\nSo instead of trying to convince you with big statements, I’ll just share what safety looks like in our family’s day-to-day life here—simple routines, small rules, and a community that makes it easy to exhale.\n\nThe Best Safety Upgrade We Made Was… Geography\n\nOur house is near Empathy School.\n\nThat one detail changes everything.\n\nIt means my kids can walk to school. It means mornings don’t start with traffic and rushing and stress. It means the school isn’t a distant destination—it’s part of the neighborhood.\n\nMost mornings, my two boys walk together. Sometimes I’m with them. Sometimes their mom is with them. Sometimes it’s just the two of them, heading down the lane with their backpacks and their own little conversations.\n\nIt’s one of those scenes that still makes me smile every time. It’s calm. It’s sweet. And for me, it’s a huge part of why Bali feels so safe: the place is built for real life, not constant guarding and managing.\n\nThe 6:00 PM Rule That Makes Everyone’s Life Easier\n\nMy older son is 12, which is the age where independence starts to arrive in steady waves.\n\nHe’ll often tell me he’s going to a friend’s house. My rule is straightforward:\n\nYou can go.\n\nTell me in advance.\n\nBe home by 6:00 PM.\n\nSometimes he forgets to tell me ahead of time. He’s 12. It happens. But most of the time, he remembers.\n\nAnd the 6:00 PM boundary works for a few practical reasons: the daylight fades quickly, it’s dinner time, and I don’t want another family to feel like they’re responsible for feeding my kid every night.\n\nWhat I love most is how little “management” this requires. I don’t need a long explanation of where he’ll be every minute. I don’t need a detailed plan. He’s with friends. Sometimes he brings friends to our house, sometimes he’s at theirs.\n\nIt’s easy. It feels normal.\n\nThat’s the kind of safety parents are really looking for.\n\nA Road That’s Not Built for Speed Helps More Than You’d Think\n\nThere’s a small detail between our home and the school that makes a big difference: the road isn’t especially friendly to fast cars.\n\nIt naturally slows things down. It’s more human-scale. That’s a big deal when you have kids walking around.\n\nIn many places, a parent’s worry is shaped by traffic more than anything else. Here, the environment itself encourages slower movement and more awareness. For walking children, that matters every single day.\n\nThe Dogs Are Part of the Neighborhood\n\nYes, there are dogs around. That’s common in Bali.\n\nIn our area, they’re not strangers. My kids know the dogs. I know the dogs. They feel like part of the neighborhood, not a threat.\n\nThere are also periodic vaccination drives in the community, which helps everyone feel more comfortable. And if something ever feels off, there’s usually a direct, human solution: talk to the neighbor who looks after that dog.\n\nOne of the most comforting things about Bali is that people are receptive. If you bring a concern respectfully, you’re usually met with respect in return.\n\nCommunity Is a Kind of Security System\n\nThe Balinese community around us is warm and open. We get invited to temples and ceremonies and shared experiences. There’s a feeling of being included, not kept at arm’s length.\n\nAnd that’s not just “nice.” It’s protective.\n\nWhen you know your neighbors—and they know you—kids are more visible. People notice. People help. It’s not formal. It’s just how daily life works.\n\nSafety is often created by relationship.\n\nA Quick Story About the Police: Calm, Capable, and Close By\n\nA while back, we donated money to help the local police build a radio tower so they could communicate more easily with one another. The school also has a channel on that network.\n\nWe’ve never needed to use it. But it’s there.\n\nThat matters to me—not because I expect emergencies, but because it’s reassuring to know the local systems are real and reachable.\n\nWhen I visited the police station, I asked—mostly out of curiosity—if I could see the jail area. They showed me, and it was… dusty. Cobwebs and all.\n\nI asked when they last used it.\n\nTheir answer was almost charming: the last “situation” was a very drunk farmer they couldn’t get home safely, so they let him sleep there for the night.\n\nThat was it.\n\nNot dramatic. Not scary. Just a community handling a small human problem in a practical way.\n\nEven the School Has Been Treated With Respect\n\nOne of the things I’m most grateful for is this: over the years, we haven’t experienced vandalism on campus. We haven’t had people breaking in and damaging the school.\n\nThat doesn’t mean nothing ever happens anywhere. It just reflects what we’ve lived: a strong baseline of respect for shared spaces, for children, and for the community.\n\nWhat Safety Looks Like for Us, in Simple Terms\n\nIf I had to summarize the habits and conditions that make Bali feel so safe for our family, it would be these:\n\nWe live close enough to walk, so kids aren’t dependent on cars and long commutes.\n\nWe keep rules simple, like “tell us first” and “home by 6.”\n\nThe neighborhood moves at a slower pace, especially on the smaller roads.\n\nThere’s a sense of community presence, not isolation.\n\nLocal support is accessible, and people are responsive when you talk to them.\n\nAnd maybe most importantly: the feeling of safety here isn’t something I have to work hard to create. It’s something the environment supports.\n\nIf You’re Considering Bali\n\nIf you’re thinking about moving your family here, I won’t tell you to ignore your questions. Ask them. Visit. Walk around the neighborhoods you might live in. Notice how your body feels during an ordinary morning.\n\nIn our life here—raising a 12-year-old and a five-year-old—Bali has felt peaceful, welcoming, and deeply safe.\n\nAnd I don’t take that for granted.\n\n—Eric (Founder, Empathy School)\n"
+    },
+    {
+      "kind": "blog",
+      "slug": "rainy-season-with-kids",
+      "title": "Rainy season with kids: what changes (and what doesn’t)",
+      "description": "Practical rainy season planning for families: routines, transport, and keeping kids regulated when the weather shifts.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "family-life",
+        "routines",
+        "weather"
+      ],
+      "category": "Family life",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## What changes\n\n- Travel time (rain slows everything)\n- Kids’ regulation (less outside time can show up fast)\n- Plans (you learn to keep “indoor defaults” ready)\n\n## What doesn’t\n\n- The importance of routines\n- The value of a calm commute\n- The need for one anchor community\n\n## Practical rainy-season defaults\n\n- One indoor activity you can do daily\n- A simple “wet day” transport plan\n- Earlier afternoons (kids get tired)\n\n## Related\n\n- [Family life](/family-life)\n- [First week checklist](/guides/first-week-in-bali-setup-checklist)\n\n"
+    },
+    {
+      "kind": "blog",
+      "slug": "two-area-shortlist-before-everything",
+      "title": "Why we shortlist 2–3 areas before anything else",
+      "description": "Area choice shapes budget, routines, and school options. Here’s a simple way parents shortlist without overthinking.",
+      "date": "2026-02-21",
+      "updated": "2026-02-21",
+      "tags": [
+        "areas",
+        "planning",
+        "families"
+      ],
+      "category": "Areas",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## The short version\n\nArea is a multiplier. It changes:\n- daily calm (noise + commute),\n- budget (rent + lifestyle),\n- and which learning communities are realistically accessible.\n\n## The shortlist method (2–3 areas)\n\n1. Choose your pace: calm / mixed / busy\n2. Decide commute tolerance (minutes)\n3. Pick 3 daily-life priorities (walkability, nature, community, etc.)\n4. Test-stay if you can\n\n## Related\n\n- [Where to live guide](/guides/where-to-live-in-bali-for-families)\n- [Areas hub](/areas)\n\n"
+    },
+    {
+      "kind": "blog",
+      "slug": "moving-to-bali-with-kids-the-calm-decision",
+      "title": "The calm decision that reduces Bali relocation stress",
+      "description": "Before visas, before house hunting: the one decision that makes everything else easier for families.",
+      "date": "2026-02-20",
+      "updated": "2026-02-20",
+      "tags": [
+        "planning",
+        "families",
+        "stress"
+      ],
+      "category": "Planning",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Written answer (always first)\n\nThe calm decision is: **choose your timeline and your “test-stay plan”** before you try to optimize everything else.\n\nFamilies who decide “we’ll do 2–4 weeks first, then decide” tend to:\n- make fewer rushed deposits,\n- choose areas based on real routines,\n- and feel less pressure to get the “perfect” visa path on day one.\n\n## A simple test-stay plan\n\n- Pick 2–3 areas to test\n- Book short stays (7–10 days each)\n- Act like you live there: groceries, commute, bedtime, errands\n\n## Next steps\n\n- [Start here](/start-here)\n- [Areas](/areas)\n- [Housing](/housing)\n\n"
+    },
+    {
+      "kind": "blog",
+      "slug": "budgeting-mistakes-families-make",
+      "title": "3 budgeting mistakes families make when planning Bali",
+      "description": "A few common mistakes—and a calmer way to plan ranges instead of one fragile number.",
+      "date": "2026-02-19",
+      "updated": "2026-02-19",
+      "tags": [
+        "costs",
+        "budget",
+        "planning"
+      ],
+      "category": "Costs",
+      "draft": false,
+      "noindex": false,
+      "readingTimeMinutes": 1,
+      "body": "\n## Mistake #1: Planning a single number\n\nA single number makes families anxious because reality moves. Use a **range**.\n\n## Mistake #2: Forgetting the big drivers\n\nHousing expectations + learning costs + lifestyle are the main multipliers.\n\n## Mistake #3: Underestimating “setup month”\n\nThe first month often includes extra costs (transport, short stays, deposits, small fixes).\n\n## A calmer approach\n\nUse the [budget range planner](/resources/family-budget-range-planner).\n\n## Related\n\n- [Costs](/costs)\n- [Cost of living framework](/guides/cost-of-living-for-families-framework)\n\n"
+    },
+    {
+      "kind": "blog",
+      "slug": "video-how-we-run-a-school-tour",
+      "title": "Video: How we run a school tour (what to look for)",
+      "description": "A video walkthrough of what to pay attention to during a school visit: classroom feel, support, and commute reality.",
+      "date": "2026-02-18",
+      "updated": "2026-02-18",
+      "tags": [
+        "video",
+        "schools",
+        "tours",
+        "parents"
+      ],
+      "category": "Video",
+      "draft": false,
+      "noindex": true,
+      "readingTimeMinutes": 1,
+      "body": "\n## Written answer (always comes first)\n\nThis page demonstrates the **Video Block** standard:\n- The written answer is on-page (SEO + accessibility)\n- The video is supporting context\n- We include a transcript (or a detailed recap)\n- A clear, gentle next-step CTA lives under the video\n\n## What to look for on a tour\n\n- Classroom energy and teacher attention\n- Support systems (how help happens day-to-day)\n- Supervision and safety routines\n- Parent communication\n- Commute reality at real times\n\n## Related\n\n- [Tour checklist resource](/resources/school-tour-question-list)\n- [School tour guide](/guides/what-to-ask-on-a-school-tour)\n\n"
+    }
+  ],
+  "resources": [
+    {
+      "kind": "resources",
+      "slug": "camp-questions-checklist",
+      "title": "Camp questions checklist (copy/paste)",
+      "description": "A parent-first checklist for choosing camps and short-term programs in Bali—supervision, safety, refunds, communication, and fit.",
+      "date": "2026-02-23",
+      "updated": "2026-02-23",
+      "tags": [
+        "camps",
+        "checklist",
+        "template",
+        "families"
+      ],
+      "category": "Template",
+      "draft": false,
+      "noindex": false,
+      "resourceType": "Template",
+      "readingTimeMinutes": 2,
+      "body": "\n## Copy/paste questions\n\n### Supervision (the most important section)\n\n- What’s the **adult-to-child ratio** for my child’s age group?\n- How do you handle supervision during **transitions** (arrival, bathroom, snack, moving between activities)?\n- Who is the “home base” adult my child can return to if they’re overwhelmed?\n\n### Safety + health\n\n- What’s your protocol for **injuries**? (first aid, escalation, when parents are contacted)\n- What’s the plan for **illness** (fever, vomiting, etc.)?\n- Do you have staff trained in first aid?\n- How do you manage **water safety** (if relevant)?\n\n### Allergies + medical needs\n\n- Can you accommodate allergies? What’s the procedure to prevent cross-contact?\n- Can you support medication plans (if needed)?\n- Who should we inform if a child has sensory needs, anxiety, or support requirements?\n\n### Drop-off / pick-up (security)\n\n- How do you confirm the correct adult is collecting a child?\n- What happens if a parent is late?\n- Is there a secure handover point (especially for younger kids)?\n\n### Schedule + environment\n\n- What does a typical day look like? (start/end time, indoor/outdoor balance, breaks)\n- What do kids do during hot/rainy periods?\n- How do you keep kids hydrated and protected from sun?\n\n### Staff quality\n\n- Who are the adults on the ground each day? (teachers, facilitators, assistants)\n- How long have they worked with children?\n- Who is the point of contact for parents?\n\n### Communication\n\n- How do you communicate with parents (WhatsApp, email, daily notes)?\n- Will we get photos or updates—and how often?\n- Who do we contact if something feels off?\n\n### Refunds + cancellations\n\n- What is the refund policy if:\n  - my child gets sick,\n  - we need to change dates,\n  - the camp is cancelled,\n  - weather disrupts the schedule?\n- What exactly is included in the fee (meals, activities, transport)?\n\n### Photos + privacy\n\n- Do you post children publicly on social media?\n- How do parents give (or decline) consent?\n\n---\n\n## A calm decision rule\n\nIf a camp can’t answer the questions above clearly, it’s usually a sign to:\n- choose a shorter commitment, or\n- choose a different program.\n\nClarity beats hype.\n\n## Related\n\n- [Camps & short-term programs](/camps)\n- [The 2‑week test-stay plan](/guides/two-week-test-stay-plan)\n- [Safety basics for families](/guides/bali-safety-basics-for-families)\n- [Packing list for Bali with kids](/guides/packing-list-for-bali-with-kids)\n"
+    },
+    {
+      "kind": "resources",
+      "slug": "culture-with-kids-quick-checklist",
+      "title": "Culture with kids: quick checklist (Bali)",
+      "description": "A parent-friendly checklist for joining cultural moments respectfully—without turning them into a performance.",
+      "date": "2026-02-23",
+      "updated": "2026-02-23",
+      "tags": [
+        "culture",
+        "families",
+        "checklist",
+        "family-life"
+      ],
+      "category": "Checklist",
+      "draft": false,
+      "noindex": false,
+      "resourceType": "Checklist",
+      "faqs": [
+        {
+          "q": "Is this a rulebook?",
+          "a": "No. It’s a starting point. When in doubt, ask locals or your community guide and follow their lead."
+        }
+      ],
+      "readingTimeMinutes": 1,
+      "body": "\n## Culture with kids (a calm, respectful approach)\n\nThis is **experience-based guidance**, not an official authority.\nCulture differs by village and context. When in doubt: **ask**, follow local guidance, and stay humble.\n\n### Before you go\n\n- **Ask first:** “Is it okay for us to join/watch?”\n- **Dress modestly** (especially for temples/ceremonies): covered shoulders, respectful clothing, and follow local expectations.\n- **Keep it simple for kids:** short duration, clear boundaries, snacks/water.\n- **Bring a small offering/donation** if your local community suggests it.\n\n### During cultural moments\n\n- **Follow the flow:** stand where others stand, wait when others wait.\n- **Don’t treat it like a show:** avoid loud commentary, avoid directing kids like you’re filming.\n- **Photos/video:** ask if it’s okay, and avoid filming people closely.\n- **Kids first:** if your child is overwhelmed, step out quietly and return later.\n\n### After\n\n- **Debrief gently:** ask kids what they noticed, what felt different, what they liked.\n- **Keep it relational:** the goal isn’t “understanding everything,” it’s learning how to be respectful guests.\n\n## Related\n\n- [Family life](/family-life)\n- [Culture in Bali with kids](/guides/culture-in-bali-with-kids)\n"
+    },
+    {
+      "kind": "resources",
+      "slug": "area-shortlist-scorecard",
+      "title": "Area shortlist scorecard (2–3 areas)",
+      "description": "A scorecard to shortlist areas based on your family’s real priorities: pace, commute, walkability, and community.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "areas",
+        "neighborhoods",
+        "planning"
+      ],
+      "category": "Planning",
+      "draft": false,
+      "noindex": false,
+      "resourceType": "Worksheet",
+      "readingTimeMinutes": 1,
+      "body": "\n## Scorecard\n\nRate each area 1–5.\n\n- Pace / calm\n- Commute tolerance\n- Walkability\n- Kid-friendly activities\n- Parent community fit\n- Noise (street-level, not “area-level”)\n\n## Tip\n\nDon’t over-optimize before you arrive. Pick 2–3, then test-stay.\n\n## Related\n\n- [Areas hub](/areas)\n- [Where to live guide](/guides/where-to-live-in-bali-for-families)\n\n"
+    },
+    {
+      "kind": "resources",
+      "slug": "arrival-folder-checklist",
+      "title": "Arrival folder checklist (digital + printed)",
+      "description": "A copy/paste checklist for your Bali arrival folder—documents and screenshots that reduce stress when you’re tired.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "arrival",
+        "checklist",
+        "visas",
+        "planning",
+        "families"
+      ],
+      "category": "Checklist",
+      "draft": false,
+      "noindex": false,
+      "resourceType": "Checklist",
+      "faqs": [
+        {
+          "q": "Should we print everything?",
+          "a": "You don’t need to print everything, but having a few key pages printed can help if your phone dies or you lose connectivity."
+        },
+        {
+          "q": "What’s the one thing families forget?",
+          "a": "A simple offline note with addresses and emergency contacts."
+        },
+        {
+          "q": "Where should we confirm the latest entry steps?",
+          "a": "Use the official portals and your airline requirements right before travel."
+        }
+      ],
+      "readingTimeMinutes": 1,
+      "body": "\n## Copy/paste list\n\n### Identity + travel\n- Passports (all travelers)\n- Passport photo pages (scans)\n- Flight details (screenshots)\n- Accommodation confirmation (screenshots)\n- Return/onward proof (if needed)\n\n### Visas / entry (as applicable)\n- Any approvals / receipts\n- Links to official portals: [/official-links](/official-links)\n\n### Kids + family\n- Birth certificate scans (optional but helpful)\n- Any school letters (if relevant)\n- Medical notes (if relevant)\n\n### Money + comms\n- Backup card details (stored securely)\n- Emergency contact list (offline)\n- Address pinned in notes\n\n## How we use it\nWe keep:\n- one cloud folder\n- one offline folder on a phone\n- one small printed set (minimum pages)\n\nRelated guide: [Bali arrival checklist](/guides/bali-arrival-checklist-evoa-arrival-card-levy)\n"
+    },
+    {
+      "kind": "resources",
+      "slug": "family-budget-range-planner",
+      "title": "Family budget range planner (low / mid / high)",
+      "description": "A simple framework to plan a Bali budget range instead of one fragile number.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "costs",
+        "budget",
+        "planning"
+      ],
+      "category": "Planning",
+      "draft": false,
+      "noindex": false,
+      "resourceType": "Worksheet",
+      "readingTimeMinutes": 1,
+      "body": "\n## The range planner\n\nInstead of one number, plan **low / mid / high**.\n\n### Step 1: Choose your baseline lifestyle\n\n- Home meals most days?\n- Eating out most days?\n- Travel every month?\n\n### Step 2: Budget the big drivers\n\n- Housing\n- Learning (school/camps)\n- Transport\n- Healthcare/insurance buffer\n\n### Step 3: Create your “stress test”\n\nAsk: *If costs jump 20% for one month, are we okay?*\n\n## Related\n\n- [Cost of living framework](/guides/cost-of-living-for-families-framework)\n- [Costs](/costs)\n\n"
+    },
+    {
+      "kind": "resources",
+      "slug": "family-transport-plan",
+      "title": "Family transport plan (first month in Bali)",
+      "description": "A simple worksheet to decide how your family will move around in the first month—walkability, driver use, car needs, and scooter boundaries.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "transport",
+        "planning",
+        "safety",
+        "families"
+      ],
+      "category": "Worksheet",
+      "draft": false,
+      "noindex": false,
+      "resourceType": "Worksheet",
+      "faqs": [
+        {
+          "q": "Why plan transport early?",
+          "a": "Because transport choices shape your daily stress level more than most families expect."
+        },
+        {
+          "q": "Do we need scooters?",
+          "a": "Not necessarily. Many families build a great Bali life without scooters."
+        },
+        {
+          "q": "What’s the calm default?",
+          "a": "Walk where possible + driver for longer trips, then reassess once you know your routines."
+        }
+      ],
+      "readingTimeMinutes": 1,
+      "body": "\n## Step 1: Write your “stress rule”\nExample:\n- “We avoid heavy traffic with tired kids.”\n- “We avoid night driving when possible.”\n\nYour rule:\n- …\n\n## Step 2: Choose your first-month default\nPick one:\n- Walk + Driver\n- Car + Walk\n- Mixed (Walk + Driver + occasional scooter)\n\n## Step 3: Scooter boundaries (if relevant)\n- Who rides?\n- When (daytime only / not in rain / not with tired kids)?\n- Safety gear rule:\n\n## Step 4: School/activities plan (even if you’re not enrolled yet)\n- How far are you willing to commute daily?\n- What’s your backup plan if traffic is heavy?\n\nRelated guide: [Family transport in Bali](/guides/family-transport-drivers-scooters-cars)\n"
+    },
+    {
+      "kind": "resources",
+      "slug": "first-month-setup-checklist",
+      "title": "First month in Bali: calm setup checklist",
+      "description": "A month-one checklist that focuses on calm routines before optimization.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "logistics",
+        "checklist",
+        "families"
+      ],
+      "category": "Checklist",
+      "draft": false,
+      "noindex": false,
+      "resourceType": "Checklist",
+      "readingTimeMinutes": 1,
+      "body": "\n## The calm month-one checklist\n\n### Week 1: Basics\n\n- SIM/eSIM + stable data\n- Transport plan\n- Grocery routine\n- A basic clinic plan\n\n### Week 2: Routines\n\n- Sleep + food rhythm\n- One daily outside activity\n- One parent “anchor community”\n\n### Week 3–4: Small upgrades\n\n- Adjust commute\n- Improve food defaults\n- Add one extracurricular\n\n## Related\n\n- [First week setup checklist](/guides/first-week-in-bali-setup-checklist)\n- [Family life](/family-life)\n\n"
+    },
+    {
+      "kind": "resources",
+      "slug": "lease-deposit-checklist",
+      "title": "Lease + deposit checklist (copy/paste questions)",
+      "description": "Use this checklist before paying a deposit or signing a lease in Bali—clarity now prevents stress later.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "housing",
+        "renting",
+        "lease",
+        "deposit",
+        "checklist"
+      ],
+      "category": "Checklist",
+      "draft": false,
+      "noindex": false,
+      "resourceType": "Checklist",
+      "faqs": [
+        {
+          "q": "Is this legal advice?",
+          "a": "No. It’s a practical checklist to help you ask better questions and get clarity in writing."
+        },
+        {
+          "q": "Should we use an agent?",
+          "a": "Some families do. Whether you do or not, always verify details and avoid rushing payments."
+        },
+        {
+          "q": "What matters most?",
+          "a": "Payment schedule, what’s included, and how deposits are returned."
+        }
+      ],
+      "readingTimeMinutes": 1,
+      "body": "\n## Copy/paste questions\n\n### People + authority\n- Who is the owner / authorized signer?\n- Can you show proof of authority to rent this property?\n\n### Money\n- Total rent amount and currency\n- Payment schedule (monthly / quarterly / yearly)\n- Deposit amount and what it covers\n- How deposit return is calculated and when it’s returned\n\n### What’s included\n- Electricity included? If not, how is it billed?\n- Water included?\n- Internet included and what speed/provider?\n- Pool/garden maintenance included?\n- Cleaning included?\n\n### Maintenance\n- Who fixes what?\n- Typical response time?\n- What happens if internet/power is unreliable?\n\n### Exit + disputes\n- Early exit policy\n- What happens if there’s a dispute?\n- Who is the contact person?\n\nRelated guide: [Lease + deposit questions (guide)](/guides/lease-and-deposit-questions-in-bali)\n"
+    },
+    {
+      "kind": "resources",
+      "slug": "school-tour-question-list",
+      "title": "School tour question list (copy/paste)",
+      "description": "A copy/paste question list for school tours: learning support, supervision, communication, and commute reality.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "schools",
+        "tours",
+        "template",
+        "parents"
+      ],
+      "category": "Template",
+      "draft": false,
+      "noindex": false,
+      "resourceType": "Template",
+      "readingTimeMinutes": 1,
+      "body": "\n## Copy/paste questions\n\n### Learning & support\n\n- How do you support kids who are ahead / behind?\n- How do you communicate progress to parents?\n- What does support look like day-to-day?\n\n### Safety & supervision\n\n- What supervision ratios do you aim for?\n- What’s the protocol for injuries?\n- How do you handle pick-up and drop-off?\n\n### Community & fit\n\n- What kind of child thrives here?\n- What do new families find hard in the first month?\n- How do you help kids make friends?\n\n### Commute reality\n\n- Where do most families live?\n- What does traffic look like during rainy season?\n\n## Related\n\n- [What to ask on a school tour](/guides/what-to-ask-on-a-school-tour)\n- [Schools & learning](/schools)\n\n"
+    },
+    {
+      "kind": "resources",
+      "slug": "visa-agent-comparison-template",
+      "title": "Visa agent comparison template (copy/paste)",
+      "description": "A copy/paste template to compare 2–3 visa agents on clarity, fees, timelines, and trust signals.",
+      "date": "2026-02-22",
+      "updated": "2026-02-22",
+      "tags": [
+        "visas",
+        "agents",
+        "template",
+        "checklist"
+      ],
+      "category": "Template",
+      "draft": false,
+      "noindex": false,
+      "resourceType": "Template",
+      "readingTimeMinutes": 1,
+      "body": "\n## Copy/paste table\n\nPaste this into a doc or spreadsheet.\n\n| Category | Agent A | Agent B | Agent C |\n|---|---|---|---|\n| Recommended pathway (and why) |  |  |  |\n| Fee breakdown (agent + government + extras) |  |  |  |\n| Timeline (best / typical / worst) |  |  |  |\n| Communication channel + response time |  |  |  |\n| Red flags noticed |  |  |  |\n| Trust signals (clarity, receipts, official links) |  |  |  |\n| Our gut feel after 2 calls |  |  |  |\n\n## What to watch for\n\n- Clarity beats confidence.\n- If “guaranteed approval” appears, treat it as a red flag.\n\n## Related guides\n\n- [How to choose a visa agent](/guides/how-to-choose-a-visa-agent)\n- [Official links](/official-links)\n\n"
+    }
+  ]
+}

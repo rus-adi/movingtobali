@@ -2,6 +2,10 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { estimateReadingTimeMinutes } from "@/lib/markdown";
+// Prebuilt (generated at build time via `npm run build`, see `scripts/build-content-index.mjs`).
+// This avoids runtime `fs` issues on some serverless deploys.
+// eslint-disable-next-line @typescript-eslint/consistent-type-imports
+import prebuilt from "@/generated/contentIndex.json";
 
 export type VideoBlock = {
   youtubeId: string;
@@ -139,9 +143,27 @@ function parseFile(kind: ContentKind, filePath: string): ContentItem {
 // Production cache (helps when you have lots of daily posts).
 const CACHE: Partial<Record<ContentKind, ContentItem[]>> = {};
 
+type PrebuiltIndex = Partial<Record<ContentKind, ContentItem[]>>;
+
+function fromPrebuilt(kind: ContentKind): ContentItem[] | null {
+  const idx = prebuilt as unknown as PrebuiltIndex;
+  const arr = (idx as any)?.[kind];
+  if (!Array.isArray(arr) || arr.length === 0) return null;
+  return arr as ContentItem[];
+}
+
 export function getAllContent(kind: ContentKind): ContentItem[] {
   const env = process.env.NODE_ENV;
   if (env === "production" && CACHE[kind]) return CACHE[kind]!;
+
+  // Prefer prebuilt index in production (most reliable on Vercel/serverless).
+  if (env === "production") {
+    const pre = fromPrebuilt(kind);
+    if (pre && pre.length) {
+      CACHE[kind] = pre;
+      return pre;
+    }
+  }
 
   const dir = path.join(getRoot(), DIRS[kind]);
   const files = listMarkdownFiles(dir);
@@ -176,12 +198,21 @@ export function getAllContent(kind: ContentKind): ContentItem[] {
 }
 
 export function getContentBySlug(kind: ContentKind, slug: string): ContentItem | null {
+  const env = process.env.NODE_ENV;
+
+  // Prefer prebuilt index in production.
+  if (env === "production") {
+    const pre = fromPrebuilt(kind);
+    const found = pre?.find((i) => i.slug === slug) || null;
+    if (!found) return null;
+    if (found.draft) return null;
+    return found;
+  }
+
   const dir = path.join(getRoot(), DIRS[kind]);
   const fp = path.join(dir, `${slug}.md`);
   if (!fs.existsSync(fp)) return null;
   const item = parseFile(kind, fp);
-  const env = process.env.NODE_ENV;
-  if (env === "production" && item.draft) return null;
   return item;
 }
 
