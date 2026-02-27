@@ -82,7 +82,7 @@ There’s something deeply satisfying about waking up in a place with temples an
 
 It’s one of those “pinch me” moments: you can live near nature without feeling cut off from the modern world.
 
-(If we add links later for families, I can share what I use—but the main point is the system, not the hyperlink.)
+(The main idea is the system: let delivery handle errands so your days stay calm.)
 
 Ubud: incredible… and optional
 

@@ -17,11 +17,6 @@ social:
 
 ## Written answer (always comes first)
 
-This page demonstrates the **Video Block** standard:
-- The written answer is on-page (SEO + accessibility)
-- The video is supporting context
-- We include a transcript (or a detailed recap)
-- A clear, gentle next-step CTA lives under the video
 
 ## What to look for on a tour
 

@@ -59,12 +59,7 @@ updated: '2026-02-23'
 
 ## The calm way to think about visas
 
-Visa rules are one of the most **changeable** parts of Bali life — which is exactly why this hub is written from experience.
-
-What we aim to do here:
-- help you make the *first few decisions* without panic,
-- show you the questions that protect families,
-- and point you to official portals for anything that changes often.
+Visa rules change. This page helps you choose a simple plan for your timeline, know what to verify, and avoid common mistakes.
 
 If you’re unsure about a detail, treat this as your default:
 **check the official portal → ask your agent/school → then decide.**

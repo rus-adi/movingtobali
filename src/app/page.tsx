@@ -36,8 +36,7 @@ export default function HomePage() {
             <div className={cardCls}>
               <strong className="text-sm font-semibold text-gray-900">What this site is</strong>
               <p className="mt-4 text-sm leading-6 text-gray-600">
-                A content hub that answers the questions families actually type into Google when they’re considering Bali.
-                It’s designed to be useful on its own, while naturally guiding the right families toward Empathy School.
+                A calm, practical guide for families considering Bali—visas, housing, costs, and where to live. If you’re exploring Empathy School, you’ll find tours and next steps here too.
               </p>
             </div>
           </div>

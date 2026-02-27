@@ -19,11 +19,11 @@ type Props = { searchParams?: { topic?: string; from?: string; partner?: string 
 
 const CONTACT_VIDEO: VideoBlockType = {
   youtubeId: "VvBVtTIXdbU",
-  title: "Why this hub exists (short)",
+  title: "If you’re stuck, here’s the next step",
   summary:
-    "If you’re unsure where to begin, this short clip explains the purpose of the hub: reduce overwhelm with a calm roadmap and practical next steps.",
+    "If you’re stuck, tell us your timeline and your biggest question. We’ll reply with the next calm step.",
   transcript:
-    "Detailed recap (not verbatim)\n\n- This hub exists to make the early phase of planning less stressful for families.\n- Start with sequencing: timeline → budget range → shortlist areas → then visas/housing/schools.\n- If you’re stuck, send a message with your kids’ ages, timeline, and what you’ve already tried.\n",
+    "Detailed recap (not verbatim)\n\n- Tell us your timeline and your biggest question.\n- Include kids’ ages and what you’re trying to decide.\n- We’ll reply with the next calm step (and an intro if you requested one).\n",
   uploadDate: "2026-02-23",
   permission: "owned",
   childrenVisible: false,

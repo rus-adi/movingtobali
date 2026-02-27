@@ -79,7 +79,7 @@ export default function VideoBlock({ video }: { video: VideoBlockType }) {
         </div>
       ) : (
         <div className="mt-6 text-sm leading-6 text-gray-600">
-          <em>No transcript added yet.</em> To follow the site standard, add either <code>video.transcript</code> or <code>video.transcriptFile</code>.
+          Transcript: coming soon. You can still watch the video above.
         </div>
       )}
 
