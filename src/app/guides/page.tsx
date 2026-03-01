@@ -47,7 +47,14 @@ export default function GuidesIndexPage({ searchParams }: Props) {
     <main>
       <JsonLd data={schemas} />
 
-      <section className="bg-gray-50 py-16 md:py-24">
+      <section className="relative w-full overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-white to-emerald-50" />
+      <div className="absolute inset-0 opacity-20">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/images/hero-bali.webp" alt="" className="h-full w-full object-cover" />
+      </div>
+      <div className="relative py-16 md:py-24">
+
         <div className="container">
           <div className="grid items-start gap-12 md:grid-cols-2">
             <div className="space-y-6">
@@ -80,7 +87,9 @@ export default function GuidesIndexPage({ searchParams }: Props) {
             </div>
           </div>
         </div>
-      </section>
+      
+      </div>
+    </section>
 
       <section className="py-16 md:py-24">
         <div className="container">

@@ -113,8 +113,15 @@ export default function ContentLayout({
 
   return (
     <main>
-      <section className="bg-gray-50 py-16 md:py-24">
-        <div className="container">
+      <section className="relative w-full overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-white to-emerald-50" />
+        <div className="absolute inset-0 opacity-35">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/hero-bali.webp" alt="" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-black/20" aria-hidden="true" />
+        </div>
+        <div className="relative py-16 md:py-24">
+          <div className="container">
           <div>
             <div className="flex flex-wrap items-center gap-2">
               <Link className={badge} href="/">
@@ -134,9 +141,9 @@ export default function ContentLayout({
               {item.video?.youtubeId ? <span className={badgeGood}>video</span> : null}
             </div>
 
-            <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">{item.title}</h1>
+            <h1 className="mt-6 drop-shadow-sm  text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">{item.title}</h1>
 
-            <p className="mt-4 text-base text-gray-600 sm:text-lg">{item.description}</p>
+            <p className="mt-4 drop-shadow-sm  text-base text-gray-600 sm:text-lg">{item.description}</p>
 
             {/* MEDIA RULE: One YouTube embed directly below H1/intro when available */}
             {item.video ? (
@@ -148,7 +155,7 @@ export default function ContentLayout({
             {item.kind === "areas" && item.area && Object.values(item.area).some((v) => String(v || "").trim()) ? (
               <div className={`${cardCls} mt-6`}>
                 <strong className="text-sm font-semibold text-gray-900">At a glance</strong>
-                <div className="mt-4 flex flex-wrap gap-2">
+                <div className="mt-4 drop-shadow-sm  flex flex-wrap gap-2">
                   {item.area.pace ? <span className={badge}>Pace: {item.area.pace}</span> : null}
                   {item.area.traffic ? <span className={badge}>Traffic: {item.area.traffic}</span> : null}
                   {item.area.walkability ? <span className={badge}>Walkability: {item.area.walkability}</span> : null}
@@ -158,12 +165,12 @@ export default function ContentLayout({
                   {item.area.costTier ? <span className={badgeAccent}>Cost: {item.area.costTier}</span> : null}
                   {item.area.noise ? <span className={badge}>Noise: {item.area.noise}</span> : null}
                 </div>
-                {item.area.note ? <p className="mt-4 text-sm leading-6 text-gray-600">{item.area.note}</p> : null}
+                {item.area.note ? <p className="mt-4 drop-shadow-sm  text-sm leading-6 text-gray-600">{item.area.note}</p> : null}
               </div>
             ) : null}
 
             {item.tags?.length ? (
-              <div className="mt-6 flex flex-wrap gap-2">
+              <div className="mt-6 drop-shadow-sm  flex flex-wrap gap-2">
                 {item.tags.map((t) => {
                   const clean = String(t || "").replace(/^#/, "");
                   return (
@@ -181,7 +188,7 @@ export default function ContentLayout({
             ) : null}
 
             {primaryPillar ? (
-              <div className="mt-4">
+              <div className="mt-4 drop-shadow-sm ">
                 <Link
                   className={badgeGood}
                   href={`/${primaryPillar.slug}`}
@@ -193,6 +200,7 @@ export default function ContentLayout({
               </div>
             ) : null}
           </div>
+        </div>
         </div>
       </section>
 
@@ -256,7 +264,7 @@ export default function ContentLayout({
                       <span className={badge}>{r.kind}</span>
                       {r.category ? <span className={badgeAccent}>{r.category}</span> : null}
                     </div>
-                    <h3 className="mt-4 text-xl font-semibold tracking-tight text-gray-900">{r.title}</h3>
+                    <h3 className="mt-4 drop-shadow-sm  text-xl font-semibold tracking-tight text-gray-900">{r.title}</h3>
                     <p className="mt-2 text-sm leading-6 text-gray-600">{r.description}</p>
                     <div className={btnRow}>
                       <Link

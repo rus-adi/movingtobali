@@ -14,6 +14,8 @@ tags:
 - neighborhoods
 draft: false
 noindex: false
+coverImage: /images/areas/kerobokan.webp
+
 area:
 ---
 

@@ -13,6 +13,8 @@ tags:
 - neighborhoods
 draft: false
 noindex: false
+coverImage: /images/areas/jimbaran.webp
+
 area:
 pace: Moderate
 traffic: Medium

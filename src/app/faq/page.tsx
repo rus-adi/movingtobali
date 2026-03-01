@@ -87,7 +87,14 @@ export default function FaqPage({ searchParams }: Props) {
     <main>
       <JsonLd data={schemas} />
 
-      <section className="bg-gray-50 py-16 md:py-24">
+      <section className="relative w-full overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-white to-emerald-50" />
+      <div className="absolute inset-0 opacity-20">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/images/hero-bali.webp" alt="" className="h-full w-full object-cover" />
+      </div>
+      <div className="relative py-16 md:py-24">
+
         <div className="container">
           <div className={badge}>FAQ</div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Questions parents ask</h1>
@@ -109,7 +116,9 @@ export default function FaqPage({ searchParams }: Props) {
             <Link className={buttonSecondary} href="/official-links">Official links</Link>
           </div>
         </div>
-      </section>
+      
+      </div>
+    </section>
 
       <section className="py-16 md:py-24">
         <div className="container">

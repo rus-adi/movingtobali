@@ -15,20 +15,14 @@ type NavItem = {
 
 function MenuIcon({ className }: { className?: string }) {
   return (
-    <svg
-      className={className}
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+    <span
+      className={`relative inline-flex h-6 w-6 items-center justify-center ${className || ""}`}
       aria-hidden="true"
     >
-      <path
-        d="M4 7H20M4 12H20M4 17H20"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-      />
-    </svg>
+      <span className="absolute h-0.5 w-5 rounded-full bg-current" style={{ transform: "translateY(-6px)" }} />
+      <span className="absolute h-0.5 w-5 rounded-full bg-current" />
+      <span className="absolute h-0.5 w-5 rounded-full bg-current" style={{ transform: "translateY(6px)" }} />
+    </span>
   );
 }
 

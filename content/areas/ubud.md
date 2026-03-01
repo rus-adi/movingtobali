@@ -13,6 +13,8 @@ tags:
 - neighborhoods
 draft: false
 noindex: false
+coverImage: /images/areas/ubud.webp
+
 area:
 pace: Moderate-Slow
 traffic: Medium

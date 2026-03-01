@@ -13,6 +13,8 @@ tags:
 - neighborhoods
 draft: false
 noindex: false
+coverImage: /images/areas/uluwatu.webp
+
 area:
 pace: Moderate
 traffic: Medium

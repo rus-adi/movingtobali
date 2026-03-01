@@ -13,6 +13,8 @@ tags:
 - neighborhoods
 draft: false
 noindex: false
+coverImage: /images/areas/canggu.webp
+
 area:
 pace: Fast
 traffic: High

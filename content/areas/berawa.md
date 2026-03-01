@@ -13,6 +13,8 @@ tags:
 - neighborhoods
 draft: false
 noindex: false
+coverImage: /images/areas/berawa.webp
+
 area:
 pace: Fast
 traffic: High

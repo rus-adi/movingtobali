@@ -18,7 +18,11 @@ export default function Section({
     >
       <div className="container">
         <div className="max-w-3xl space-y-6">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900">{title}</h2>
+          <div className="flex items-center gap-4">
+            <div className="h-px flex-1 bg-gray-200" />
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900">{title}</h2>
+            <div className="h-px flex-1 bg-gray-200" />
+          </div>
           {lead ? <p className="text-base text-gray-600 sm:text-lg">{lead}</p> : null}
         </div>
         <div className="mt-10">{children}</div>
