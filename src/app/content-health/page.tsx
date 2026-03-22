@@ -3,9 +3,16 @@ import Link from "next/link";
 import ContentHealthTable from "@/components/ContentHealthTable";
 import Section from "@/components/Section";
 import governanceReport from "@/generated/governanceReport.json";
+import type { GovernanceRow } from "@/lib/governance";
 import { badgeAccent, buttonPrimary, buttonSecondary, cardCls, grid2, grid3 } from "@/components/ui/styles";
 
-type GovernanceRow = (typeof governanceReport.rows)[number];
+type GovernanceReport = {
+  generatedAt: string;
+  summary: typeof governanceReport.summary;
+  rows: GovernanceRow[];
+};
+
+const report = governanceReport as GovernanceReport;
 
 export const metadata: Metadata = {
   title: "Content health",
@@ -13,11 +20,11 @@ export const metadata: Metadata = {
 };
 
 function topRows(predicate: (row: GovernanceRow) => boolean, limit = 10) {
-  return governanceReport.rows.filter(predicate).slice(0, limit);
+  return report.rows.filter(predicate).slice(0, limit);
 }
 
 export default function ContentHealthPage() {
-  const summary = governanceReport.summary;
+  const summary = report.summary;
   const watchRows = topRows((row) => row.freshness === "watch" || row.freshness === "stale", 12);
   const tighterCadenceRows = topRows((row) => row.tighterCadence, 12);
   const noindexRows = topRows((row) => row.noindex, 8);

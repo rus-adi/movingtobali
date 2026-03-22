@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState, type FormEvent } from "react";
+import { Suspense, useEffect, useMemo, useState, type FormEvent } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { buttonSecondary, inputBase, pill } from "@/components/ui/styles";
 
@@ -21,7 +21,7 @@ type Props = {
   basePath?: string;
 };
 
-export default function SearchBoxUrl({
+function SearchBoxUrlInner({
   paramName = "q",
   placeholder = "Search…",
   className,
@@ -101,5 +101,14 @@ export default function SearchBoxUrl({
         </div>
       ) : null}
     </div>
+  );
+}
+
+
+export default function SearchBoxUrl(props: Props) {
+  return (
+    <Suspense fallback={null}>
+      <SearchBoxUrlInner {...props} />
+    </Suspense>
   );
 }
