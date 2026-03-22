@@ -294,15 +294,15 @@ export default function FirstMonthPlanner() {
           </div>
 
           {[
-            ["Week 1", weeklyFocus.weekOne],
-            ["Week 2", weeklyFocus.weekTwo],
-            ["Week 3", weeklyFocus.weekThree],
-            ["Week 4", weeklyFocus.weekFour],
-          ].map(([label, bullets]) => (
+            { label: "Week 1", bullets: weeklyFocus.weekOne },
+            { label: "Week 2", bullets: weeklyFocus.weekTwo },
+            { label: "Week 3", bullets: weeklyFocus.weekThree },
+            { label: "Week 4", bullets: weeklyFocus.weekFour },
+          ].map(({ label, bullets }) => (
             <div key={label} className="mt-4 rounded-2xl border border-gray-200 bg-white p-4">
               <div className="text-sm font-semibold text-gray-900">{label}</div>
               <ul className="mt-3 grid gap-2 text-sm leading-6 text-gray-600">
-                {(bullets as string[]).map((b) => (
+                {bullets.map((b) => (
                   <li key={b}>• {b}</li>
                 ))}
               </ul>
