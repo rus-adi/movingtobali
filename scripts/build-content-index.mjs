@@ -91,6 +91,7 @@ function parse(kind, fp) {
     noindex: Boolean(data.noindex),
     coverImage: data.coverImage ? String(data.coverImage) : undefined,
     resourceType: data.resourceType ? String(data.resourceType) : undefined,
+    governance: data.governance ? data.governance : undefined,
     area: data.area ? data.area : undefined,
     video: data.video ? data.video : undefined,
     social: data.social ? data.social : undefined,

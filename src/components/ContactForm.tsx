@@ -15,10 +15,24 @@ type Props = {
   from?: string;
   partnerSlug?: string;
   partnerName?: string;
+  routeId?: string;
+  routeLabel?: string;
   fallbackMailto: string;
+  messagePlaceholder?: string;
+  timelinePlaceholder?: string;
 };
 
-export default function ContactForm({ topic, from, partnerSlug, partnerName, fallbackMailto }: Props) {
+export default function ContactForm({
+  topic,
+  from,
+  partnerSlug,
+  partnerName,
+  routeId,
+  routeLabel,
+  fallbackMailto,
+  messagePlaceholder,
+  timelinePlaceholder,
+}: Props) {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [mailto, setMailto] = useState(fallbackMailto);
   const [errorMsg, setErrorMsg] = useState<string>("");
@@ -36,8 +50,9 @@ export default function ContactForm({ topic, from, partnerSlug, partnerName, fal
   const title = useMemo(() => {
     if (partnerName) return `Intro request: ${partnerName}`;
     if (partnerSlug) return `Intro request`;
+    if (routeLabel) return routeLabel;
     return `Contact`;
-  }, [partnerName, partnerSlug]);
+  }, [partnerName, partnerSlug, routeLabel]);
 
   function track(eventName: string, props: Record<string, any>) {
     try {
@@ -53,12 +68,12 @@ export default function ContactForm({ topic, from, partnerSlug, partnerName, fal
     if (!email.trim() || !message.trim()) {
       setStatus("error");
       setErrorMsg("Please include at least your email and a short message.");
-      track("contact_submit_error", { topic, partner: partnerSlug || "", reason: "missing_fields" });
+      track("contact_submit_error", { topic, partner: partnerSlug || "", route: routeId || "", from: from || "", reason: "missing_fields" });
       return;
     }
 
     setStatus("submitting");
-    track("contact_submit_attempt", { topic, partner: partnerSlug || "" });
+    track("contact_submit_attempt", { topic, partner: partnerSlug || "", route: routeId || "", from: from || "" });
 
     try {
       const res = await fetch("/api/contact", {
@@ -68,6 +83,7 @@ export default function ContactForm({ topic, from, partnerSlug, partnerName, fal
           topic,
           from,
           partnerSlug,
+          routeId,
           name,
           email,
           whatsapp,
@@ -85,16 +101,16 @@ export default function ContactForm({ topic, from, partnerSlug, partnerName, fal
         if (data?.fallbackMailto) setMailto(data.fallbackMailto);
         setStatus("error");
         setErrorMsg(msg);
-        track("contact_submit_error", { topic, partner: partnerSlug || "", reason: data?.code || "unknown" });
+        track("contact_submit_error", { topic, partner: partnerSlug || "", route: routeId || "", from: from || "", reason: data?.code || "unknown" });
         return;
       }
 
       setStatus("success");
-      track("contact_submit_success", { topic, partner: partnerSlug || "", mode: data?.mode || "unknown" });
+      track("contact_submit_success", { topic, partner: partnerSlug || "", route: routeId || "", from: from || "", mode: data?.mode || "unknown" });
     } catch (err: any) {
       setStatus("error");
       setErrorMsg("Network error. Please email us instead.");
-      track("contact_submit_error", { topic, partner: partnerSlug || "", reason: "network" });
+      track("contact_submit_error", { topic, partner: partnerSlug || "", route: routeId || "", from: from || "", reason: "network" });
     }
   }
 
@@ -104,6 +120,12 @@ export default function ContactForm({ topic, from, partnerSlug, partnerName, fal
       <p className="mt-3 text-sm leading-6 text-gray-600">
         Share a few details and we’ll reply with next steps. If you’re requesting an intro, we’ll ask the partner if they can take new families.
       </p>
+      {from ? (
+        <div className="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-600">
+          <strong className="text-gray-900">Source page</strong>
+          <p className="mt-1">{from}</p>
+        </div>
+      ) : null}
 
       <form onSubmit={onSubmit} className="mt-6 grid gap-5" aria-label="Contact form">
         <div className="grid gap-2">
@@ -129,13 +151,13 @@ export default function ContactForm({ topic, from, partnerSlug, partnerName, fal
 
           <div className="grid gap-2">
             <label htmlFor="timeline" className="text-xs font-medium text-gray-600">Timeline (optional)</label>
-            <input id="timeline" name="timeline" value={timeline} onChange={(e) => setTimeline(e.target.value)} placeholder="e.g., moving in June, staying 6 months" className={inputBase} />
+            <input id="timeline" name="timeline" value={timeline} onChange={(e) => setTimeline(e.target.value)} placeholder={timelinePlaceholder || "e.g., moving in June, staying 6 months"} className={inputBase} />
           </div>
         </div>
 
         <div className="grid gap-2">
           <label htmlFor="message" className="text-xs font-medium text-gray-600">Message (required)</label>
-          <textarea id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} rows={6} className={inputBase} />
+          <textarea id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} rows={6} placeholder={messagePlaceholder} className={inputBase} />
         </div>
 
         {/* Honeypot field */}
@@ -145,11 +167,11 @@ export default function ContactForm({ topic, from, partnerSlug, partnerName, fal
         </div>
 
         <div className={btnRow}>
-          <button className={buttonPrimary} type="submit" disabled={status === "submitting"} data-track="contact_submit_click" data-topic={topic}>
+          <button className={buttonPrimary} type="submit" disabled={status === "submitting"} data-track="contact_submit_click" data-topic={topic} data-route={routeId || ""}>
             {status === "submitting" ? "Sending…" : "Send message"}
           </button>
 
-          <a className={buttonSecondary} href={mailto} data-track="contact_fallback_mailto" data-topic={topic}>
+          <a className={buttonSecondary} href={mailto} data-track="contact_fallback_mailto" data-topic={topic} data-route={routeId || ""}>
             Email instead
           </a>
         </div>

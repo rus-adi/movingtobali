@@ -159,6 +159,28 @@ if (isPlaceholder(content)) err(`${rel}: content looks like placeholder`);
       checkUrl("social.youtubeUrl", data.social.youtubeUrl, rel);
     }
 
+    if (data.governance) {
+      const gov = data.governance;
+      if (gov.owner !== undefined && typeof gov.owner !== "string") err(`${rel}: governance.owner must be a string`);
+      if (gov.lastReviewed) {
+        const ts = new Date(String(gov.lastReviewed)).getTime();
+        if (!Number.isFinite(ts)) err(`${rel}: governance.lastReviewed must be a valid date`);
+      }
+      if (gov.reviewCadenceDays !== undefined) {
+        const cadence = Number(gov.reviewCadenceDays);
+        if (!Number.isFinite(cadence) || cadence <= 0) err(`${rel}: governance.reviewCadenceDays must be a positive number`);
+      }
+      if (gov.reviewPriority && !["high", "medium", "low"].includes(String(gov.reviewPriority))) {
+        err(`${rel}: governance.reviewPriority must be high | medium | low`);
+      }
+      if (gov.evidenceLevel && !["experience-based", "reviewed", "official-links"].includes(String(gov.evidenceLevel))) {
+        err(`${rel}: governance.evidenceLevel must be experience-based | reviewed | official-links`);
+      }
+      if (gov.contentState && !["core", "monitor", "experimental"].includes(String(gov.contentState))) {
+        err(`${rel}: governance.contentState must be core | monitor | experimental`);
+      }
+    }
+
     // Video policy checks
     const isPublished = !data.draft && !data.noindex;
     checkVideo(data.video, rel, isPublished);

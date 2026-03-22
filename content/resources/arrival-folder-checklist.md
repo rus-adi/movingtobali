@@ -2,7 +2,7 @@
 title: Arrival folder checklist (digital + printed)
 description: "A copy/paste checklist for your Bali arrival folder—documents and screenshots that reduce stress when you’re tired."
 date: "2026-02-22"
-updated: "2026-02-22"
+updated: '2026-03-22'
 category: Checklist
 resourceType: Checklist
 tags:
@@ -22,33 +22,31 @@ faqs:
     a: "Use the official portals and your airline requirements right before travel."
 ---
 
-## Copy/paste list
+## What belongs in the arrival folder
 
-### Identity + travel
-- Passports (all travelers)
-- Passport photo pages (scans)
-- Flight details (screenshots)
-- Accommodation confirmation (screenshots)
-- Return/onward proof (if needed)
+Keep digital and easy-to-reach copies of:
 
-### Visas / entry (as applicable)
-- Any approvals / receipts
-- Links to official portals: [/official-links](/official-links)
+- passports,
+- entry / visa records,
+- insurance information,
+- school notes,
+- housing contacts and agreements,
+- payment confirmations,
+- driver or transport contacts,
+- important addresses.
 
-### Kids + family
-- Birth certificate scans (optional but helpful)
-- Any school letters (if relevant)
-- Medical notes (if relevant)
+## Why this matters
 
-### Money + comms
-- Backup card details (stored securely)
-- Emergency contact list (offline)
-- Address pinned in notes
+The folder is not only for emergencies. It reduces friction in ordinary moments when you are tired and someone asks for one detail you do not want to hunt for.
 
-## How we use it
-We keep:
-- one cloud folder
-- one offline folder on a phone
-- one small printed set (minimum pages)
+## Best practice
 
-Related guide: [Bali arrival checklist](/guides/bali-arrival-checklist-evoa-arrival-card-levy)
+- One shared digital folder.
+- One note with the most-needed numbers and addresses.
+- One adult should not be the only person who knows where everything lives.
+
+## Pair this with
+
+- [First week in Bali setup checklist](/guides/first-week-in-bali-setup-checklist)
+- [First-week arrival checklist](/resources/first-week-arrival-checklist)
+- [Settling in](/settling-in)

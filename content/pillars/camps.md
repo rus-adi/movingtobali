@@ -12,6 +12,13 @@ tags:
 category: Camps
 draft: false
 noindex: false
+governance:
+  owner: "Empathy School admissions"
+  lastReviewed: '2026-03-22'
+  reviewCadenceDays: 60
+  reviewPriority: high
+  evidenceLevel: reviewed
+  contentState: core
 video:
   youtubeId: YPNreiDDk84
   title: Empathy School Summer Camp (highlights)
@@ -69,6 +76,17 @@ updated: '2026-02-23'
 - Aim for **staged commitment**: try a short program first, then decide.
 - Before you pay anything, copy/paste this: [Camp questions checklist](/resources/camp-questions-checklist).
 - Choose **clarity over hype**: written policies, clear pick-up/drop-off, and simple communication.
+
+---
+
+
+## Video recap library
+
+If you want to use camp videos as decision tools instead of just highlight reels, start here:
+
+- [Empathy School summer camp highlights recap](/blog/empathy-school-summer-camp-highlights-recap)
+- [Empathy School nature camp day recap](/blog/empathy-school-nature-camp-day-recap)
+- [Video recaps hub](/video-recaps)
 
 ---
 
@@ -225,7 +243,7 @@ If you’re unsure, start with a shorter commitment and reassess.
 - Want a calm plan first? [Start here](/start-here)
 - If you’re choosing where to base yourselves: [Areas hub](/areas)
 - If school is your priority: [Schools & learning](/schools)
-- If you’re planning daily life and routines: [Family life](/family-life)
+- If you’re planning daily life and routines: [Daily life](/daily-life)
 - If you’re budgeting and planning logistics: [Costs & logistics](/costs)
 - Want current camp options? [Contact](/contact)
 

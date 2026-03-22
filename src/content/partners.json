@@ -1,26 +1,47 @@
 {
   "partners": [
     {
-      "slug": "example-visa-agent",
-      "name": "Example Visa Agent Bali",
-      "category": "Visas",
-      "status": "check",
-      "url": "https://example.com",
-      "bestFor": "Families who want fast communication and clear checklists.",
-      "languages": [
-        "English",
-        "Bahasa Indonesia"
-      ],
+      "slug": "gaia-group-bali",
+      "name": "Gaia Group Bali",
+      "category": "Housing",
+      "status": "verified",
+      "bestFor": "Families who want a calmer start, practical rental guidance, and support close to the Empathy School side of Bali.",
       "areas": [
-        "Online",
-        "Bali"
+        "Tampaksiring",
+        "Ubud side",
+        "Gianyar"
       ],
       "services": [
-        "eVOA help",
-        "KITAS consultation",
-        "Document checklist"
+        "Family housing support",
+        "Villa viewings",
+        "Lease coordination",
+        "Arrival setup guidance"
       ],
-      "note": "Placeholder partner. Mark as verified when agreements/tracking are in place."
+      "contactName": "Pali",
+      "note": "Preferred housing partner for family relocations. Request an introduction through the site so we can match the timing and needs of your move.",
+      "image": "/images/partners/pali-gaia-standin.svg",
+      "trustPoints": [
+        "We keep the intro warm and specific instead of pointing families into a giant partner directory.",
+        "Gaia Group is most useful once your timing, area direction, and family needs are real enough to shape a shortlist.",
+        "Their support is strongest for families drawn to the Empathy School / Ubud-side rhythm of Bali.",
+        "We still expect families to verify properties, contracts, and payment flow themselves before committing."
+      ],
+      "process": [
+        "You share your likely dates, bedroom needs, budget band, and the areas you are seriously considering.",
+        "We confirm whether Gaia Group is the right fit and whether they have capacity for your timing.",
+        "Pali helps shape a calmer shortlist or viewing plan instead of flooding you with mismatched options.",
+        "You verify the property, terms, inclusions, and payment flow before any money changes hands."
+      ],
+      "goodFit": [
+        "Families doing a test stay before a bigger decision.",
+        "Families who want fewer but more relevant housing options.",
+        "Families using Empathy School as one of the anchors in the move."
+      ],
+      "notFor": [
+        "Families looking for a giant self-serve listings portal.",
+        "Families who want to pay before they have verified the property and contract.",
+        "Families who have not narrowed their budget or area direction at all yet."
+      ]
     }
   ]
 }

@@ -16,8 +16,39 @@ function coverFor(item: ContentItem): string {
     return `/images/covers/${key}.webp`;
   }
 
-  // simple defaults per type (can be replaced later with real photos)
   return `/images/covers/default.webp`;
+}
+
+function primaryLabelFor(item: ContentItem): string {
+  switch (item.kind) {
+    case "pillars":
+      return "Open pillar";
+    case "areas":
+      return "Open area guide";
+    case "guides":
+      return "Open guide";
+    case "resources":
+      return "Open resource";
+    case "blog":
+      return "Open post";
+    default:
+      return "Open";
+  }
+}
+
+function indexLabelFor(item: ContentItem): string {
+  switch (item.kind) {
+    case "areas":
+      return "All areas";
+    case "guides":
+      return "All guides";
+    case "resources":
+      return "All resources";
+    case "blog":
+      return "All posts";
+    default:
+      return "View all";
+  }
 }
 
 export default function PostCard({ item }: { item: ContentItem }) {
@@ -52,11 +83,11 @@ export default function PostCard({ item }: { item: ContentItem }) {
 
       <div className={btnRow}>
         <Link className={buttonPrimary} href={href} data-track="card_open" data-kind={item.kind} data-slug={item.slug}>
-          Read
+          {primaryLabelFor(item)}
         </Link>
         {item.kind !== "pillars" ? (
           <Link className={buttonSecondary} href={`/${item.kind}`} data-track="card_back_to_index" data-kind={item.kind}>
-            View all
+            {indexLabelFor(item)}
           </Link>
         ) : null}
       </div>

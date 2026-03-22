@@ -2,7 +2,7 @@
 title: Renting safely in Bali (questions to ask before deposits)
 description: "A parent-first renting guide: verification steps, contract questions, and a staged approach that reduces risk."
 date: '2026-02-22'
-updated: '2026-02-22'
+updated: '2026-03-22'
 category: Housing
 tags:
 - housing
@@ -16,31 +16,36 @@ faqs: []
 
 ## Quick take
 
-Renting can be straightforward—until it isn’t. The biggest risk isn’t “Bali”; it’s **rushed decisions**.
+Safe renting is mostly about slowing the process down enough that identity, money, and expectations can all be verified before pressure takes over.
 
-If you can: do a short stay first, view in person, verify identity, then sign.
+## The non-negotiables
 
-## A staged approach (lower stress)
+### Verify who you are dealing with
+Know who is representing the property and how that relationship is established.
 
-1. **Short stay (7–21 days)** in your shortlisted area(s)
-2. View 5–10 places quickly
-3. Verify: owner/agent identity, deposit terms, maintenance expectations
-4. Sign a clear agreement
-5. Move in, then optimize (don’t optimize first)
+### Verify how payment works
+Get clarity on what is due, when, to whom, and under what written conditions.
 
-## Questions to ask before deposits
+### Verify what the agreement actually includes
+Furniture, utilities, maintenance, internet, staff, cleaning, repairs, notice, and deposit terms should not live only in chat messages.
 
-- Who is the legal owner / manager?
-- What’s the exact deposit amount and refund policy?
-- What happens if utilities fail (water, electricity, internet)?
-- Who pays for repairs, and what’s the response time?
+## Family-specific watchouts
 
-## What we learned the hard way
+- a house that is beautiful but creates a punishing week,
+- poor communication around maintenance,
+- vague deposit language,
+- pressure to commit before you have tested the area honestly.
 
-“Perfect” listings disappear. But families who know their top 3 priorities can decide quickly without panic.
+## A safer family sequence
 
-## Next steps
+1. Shortlist the area.  
+2. Build the brief.  
+3. View or verify.  
+4. Read the terms slowly.  
+5. Only then move money.
 
-- Overview: [Housing](/housing)
-- Choosing an area: [Where to live](/guides/where-to-live-in-bali-for-families)
+## Best companion pages
 
+- [Housing intro readiness](/housing-intro-readiness)
+- [Housing brief builder](/housing-brief-builder)
+- [Lease and deposit questions](/guides/lease-and-deposit-questions-in-bali)

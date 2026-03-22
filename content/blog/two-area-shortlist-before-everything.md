@@ -2,7 +2,7 @@
 title: Why we shortlist 2–3 areas before anything else
 description: "Area choice shapes budget, routines, and school options. Here’s a simple way parents shortlist without overthinking."
 date: '2026-02-21'
-updated: '2026-02-21'
+updated: '2026-03-22'
 category: Areas
 tags:
 - areas
@@ -12,22 +12,33 @@ draft: false
 noindex: false
 ---
 
-## The short version
+## Why two areas is often enough
 
-Area is a multiplier. It changes:
-- daily calm (noise + commute),
-- budget (rent + lifestyle),
-- and which learning communities are realistically accessible.
+A wider shortlist can feel productive, but it often keeps the move abstract for too long.
 
-## The shortlist method (2–3 areas)
+Two areas is enough to reveal:
 
-1. Choose your pace: calm / mixed / busy
-2. Decide commute tolerance (minutes)
-3. Pick 3 daily-life priorities (walkability, nature, community, etc.)
-4. Test-stay if you can
+- what kind of family radius you actually prefer,
+- whether convenience or calm matters more,
+- and how much commute friction changes the mood of the week.
 
-## Related
+## A useful pairing
 
-- [Where to live guide](/guides/where-to-live-in-bali-for-families)
-- [Areas hub](/areas)
+Try one area that feels **calmer** and one that feels **easier**.
 
+That contrast teaches more than comparing three versions of the same lifestyle.
+
+## What to compare
+
+- the school-shaped week,
+- food and errand defaults,
+- how adults feel by evening,
+- whether children look more settled or more stimulated,
+- and whether the home base creates more exhale or more admin.
+
+## Best next step
+
+Use:
+- [Area Match](/area-match)
+- [Compare Areas](/compare-areas)
+- [Area shortlist scorecard](/resources/area-shortlist-scorecard)

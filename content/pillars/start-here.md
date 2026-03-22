@@ -1,7 +1,7 @@
 ---
+
 title: 'Start here: a parent-first roadmap'
-description: A step-by-step roadmap for families considering Bali—what to decide first,
-  what to delay, and how to reduce stress.
+description: "A step-by-step roadmap for families considering Bali—what to decide first, what to delay, and how to reduce stress."
 order: 1
 tags:
 - start
@@ -11,18 +11,23 @@ tags:
 category: Start
 draft: false
 noindex: false
+governance:
+  owner: "Move to Bali editorial"
+  lastReviewed: '2026-03-22'
+  reviewCadenceDays: 90
+  reviewPriority: medium
+  evidenceLevel: reviewed
+  contentState: core
 video:
   youtubeId: vTds0BelBf0
-  title: Why Bali Became the Home of Empathy School
-  summary: A short founder story about why Bali became home for Empathy School — and
-    a calm reminder that the first decisions (timeline, budget, and areas) shape everything
-    that comes next.
+  title: "Why Bali Became the Home of Empathy School"
+  summary: "A short founder story about why Bali became home for Empathy School — and a calm reminder that the first decisions shape everything that comes next."
   transcriptFile: content/transcripts/founder-story-why-bali-became-home.txt
   uploadDate: '2026-02-23'
   permission: owned
   childrenVisible: false
   consentConfirmed: false
-  ctaText: Explore schools & learning
+  ctaText: Explore Empathy School
   ctaHref: /schools
 social:
   youtubeUrl: https://www.youtube.com/watch?v=vTds0BelBf0
@@ -34,32 +39,27 @@ social:
     url: https://www.instagram.com/reel/DUDKz7SkZLB/
 faqs:
 - q: How long should we visit before deciding to relocate?
-  a: If you can, plan at least 2–4 weeks. It’s enough time to feel routines (school
-    run, errands, evenings) rather than just holiday mode.
+  a: "If you can, plan at least 2–4 weeks. It’s enough time to feel routines rather than just holiday mode."
 - q: What should we decide first?
-  a: 'Timeline + budget + area short list. Those three decisions shape almost everything
-    else: visas, housing, and school options.'
+  a: 'Timeline + budget + area shortlist. Those three decisions shape almost everything else: visas, housing, and learning plans.'
 - q: How long should we stay in Bali before committing long-term?
-  a: If you can, plan a test stay long enough to experience normal routines (school
-    run, groceries, bedtime, rainy days). Many families find 2–6 weeks gives clearer
-    signal than a quick holiday.
+  a: "If you can, plan a test stay long enough to experience normal routines. Many families find 2–6 weeks gives clearer signal than a quick holiday."
 - q: Do we need to ride a motorbike as a family?
-  a: Not necessarily. Many families use a car + driver, ride-hail apps, or walkable
-    micro-areas. The right choice depends on your kids’ ages, your risk tolerance,
-    and how far your daily commute is.
+  a: "Not necessarily. Many families use a car + driver, ride-hail apps, or walkable micro-areas."
 - q: What are the first 3 decisions that make the rest easier?
-  a: Pick a realistic visa pathway, choose 1–2 areas to test (based on commute + routines),
-    and set a simple monthly budget range. Those three decisions reduce most downstream
-    stress.
-updated: '2026-02-23'
+  a: "Pick a realistic visa pathway, choose 1–2 areas to test, and set a simple monthly budget range."
+updated: '2026-03-15'
 ---
 
 ## Quick start
 
-- If you’re brand new to the idea, **sketch your timeline** (next 3 months vs next year).
-- Shortlist **2–3 areas** before you overthink school or housing.
-- Keep **official links** bookmarked for anything that changes fast (especially visas).
-- Prefer decisions that reduce stress: **short test-stays, staged commitments, clear contracts**.
+- If you’re brand new to the idea, sketch your **timeline**.
+- Shortlist **2–3 areas** before you overthink housing.
+- Use [Compare areas](/compare-areas) once the shortlist is down to two realistic options.
+- Decide whether you need a **test stay** before you make bigger commitments.
+- If you want the advice that matches your children’s stage, open [Family paths](/family-paths).
+- Keep **official links** bookmarked for anything that changes fast.
+- Prefer decisions that reduce stress: staged commitments, clear contracts, smaller first moves.
 
 <div class="mt-4 overflow-hidden rounded-2xl border border-gray-200 bg-white">
   <iframe
@@ -71,44 +71,58 @@ updated: '2026-02-23'
   ></iframe>
 </div>
 
-
-
 ## The calm roadmap
 
 ### Step 1: Decide your timeline
 
-Write down the earliest date you could arrive—and the latest date you’d still feel good about.
+Write down the earliest date you could arrive and the latest date that would still feel good.
 
-### Step 2: Shortlist areas
+### Step 2: Plan a test stay
 
-Use the [Areas](/areas) hub to shortlist 2–3 places that match your family’s pace and commute tolerance.
+A test stay often answers more than ten hours of online research.
+Start here:
+- [Test stay](/test-stay)
 
-### Step 3: Plan visas from experience (not certainty)
+### Step 3: Shortlist areas
 
-We share what families experienced and the questions to ask. We don’t guarantee outcomes. For changing details, use [Official links](/official-links).
+Use the [Areas](/areas) hub to shortlist 2–3 places that match your family’s pace and commute tolerance. Then use [Compare areas](/compare-areas) or [Commute reality](/commute-reality) before you treat one option like a winner.
 
-### Step 4: Housing (staged, not rushed)
+### Step 4: Plan visas from experience, not certainty
 
-If possible: short stay → view in person → verify → sign. Rushing deposits is where families get burned.
+We share what families experienced and the questions to ask. For changing details, use [Official links](/official-links).
 
-### Step 5: Learning & community
+### Step 5: Handle housing in stages
 
-A good-fit learning environment plus one parent community usually does more for “settling in” than any single logistics hack.
+If possible: short stay → view in person → verify → sign.
+
+### Step 6: Decide whether Empathy School is part of the move
+
+A school visit can make the rest of the move feel much more real.
+Start here:
+- [Empathy School](/schools)
 
 ## What we learned the hard way
 
-The biggest stress reducer wasn’t “perfect planning”—it was **staged commitments**. Keep optionality early, then commit once you’ve seen the reality.
+The biggest stress reducer wasn’t perfect planning.
+
+It was keeping optionality early, then committing once reality felt clearer.
 
 ## Next steps
 
-- [Visas](/visas)
-- [Housing](/housing)
+- [Test stay](/test-stay)
+- [Family paths](/family-paths)
 - [Areas](/areas)
-- [Guides](/guides)
+- [Housing](/housing)
+- [Visas](/visas)
+- [Budget calculator](/budget-calculator)
 
 ## Helpful next reads
 
 - [2‑week test stay plan](/guides/two-week-test-stay-plan)
+- [Moving to Bali with toddlers](/guides/moving-to-bali-with-toddlers)
+- [Moving to Bali with primary-age kids](/guides/moving-to-bali-with-primary-age-kids)
+- [Moving to Bali with pre-teens and teens](/guides/moving-to-bali-with-pre-teens-and-teens)
 - [Ubud vs Sanur vs Canggu for families](/guides/ubud-vs-sanur-vs-canggu-for-families)
+- [How to compare two Bali areas with kids](/guides/how-to-compare-two-bali-areas-with-kids)
 - [Family budget range planner](/resources/family-budget-range-planner)
-- [Areas hub](/areas)
+- [Empathy School](/schools)

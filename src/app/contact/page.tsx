@@ -7,7 +7,9 @@ import { getSite } from "@/lib/site";
 import { getPartnerBySlug } from "@/lib/partners";
 import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
 import type { VideoBlock as VideoBlockType } from "@/lib/content";
-import { badge, cardCls } from "@/components/ui/styles";
+import { CONTACT_TOPIC_PRESETS, buildContactHref, getContactPreset, getContactPresetById } from "@/lib/contact";
+import { buildConversationContactHref, getConversationRouteDetail, getSourceConversationContext } from "@/lib/conversion";
+import { badge, badgeAccent, buttonSecondary, cardCls, grid2 } from "@/components/ui/styles";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -15,7 +17,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
 };
 
-type Props = { searchParams?: { topic?: string; from?: string; partner?: string } };
+type Props = { searchParams?: { topic?: string; from?: string; partner?: string; route?: string } };
 
 const CONTACT_VIDEO: VideoBlockType = {
   youtubeId: "VvBVtTIXdbU",
@@ -34,9 +36,22 @@ const CONTACT_VIDEO: VideoBlockType = {
 
 export default function ContactPage({ searchParams }: Props) {
   const site = getSite();
-  const topic = (searchParams?.topic || "General question").trim();
+  const requestedTopic = (searchParams?.topic || "").trim();
   const from = (searchParams?.from || "").trim();
   const partnerSlug = (searchParams?.partner || "").trim();
+  const requestedRouteId = (searchParams?.route || "").trim();
+
+  const sourceContext = from ? getSourceConversationContext(from) : null;
+  const preset = requestedRouteId
+    ? getContactPresetById(requestedRouteId)
+    : requestedTopic
+      ? getContactPreset(requestedTopic, partnerSlug)
+      : sourceContext
+        ? getContactPresetById(sourceContext.recommendedRouteId)
+        : getContactPreset(undefined, partnerSlug);
+
+  const routeDetail = getConversationRouteDetail(preset.id);
+  const topic = requestedTopic || preset.topic;
 
   const partner = partnerSlug ? getPartnerBySlug(partnerSlug) : null;
   const partnerName = partner?.name || "";
@@ -46,6 +61,7 @@ export default function ContactPage({ searchParams }: Props) {
     `Hi Empathy School team,`,
     ``,
     `I have a question about: ${topic}`,
+    `Conversation route: ${preset.label}`,
     partnerSlug ? `Partner intro requested: ${partnerName || partnerSlug}` : "",
     from ? `Source page: ${from}` : "",
     ``,
@@ -70,73 +86,171 @@ export default function ContactPage({ searchParams }: Props) {
   ];
 
   const showDisclosure = topic.toLowerCase().includes("intro") || Boolean(partnerSlug);
+  const usefulLinks = (sourceContext?.prepLinks || routeDetail.prepLinks).slice(0, 6);
+  const alternatives = (sourceContext?.alternativeRouteIds || []).slice(0, 2).map((id) => ({
+    id,
+    detail: getConversationRouteDetail(id),
+  }));
 
   return (
     <main>
       <JsonLd data={schemas} />
 
       <section className="relative w-full overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-white to-emerald-50" />
-      <div className="absolute inset-0 opacity-20">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/hero-bali.webp" alt="" className="h-full w-full object-cover" />
-      </div>
-      <div className="relative py-16 md:py-24">
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-white to-emerald-50" />
+        <div className="absolute inset-0 opacity-20">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/hero-bali.webp" alt="" className="h-full w-full object-cover" />
+        </div>
+        <div className="relative py-16 md:py-24">
+          <div className="container">
+            <div className={badge}>Contact</div>
+            <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Choose the right conversation without writing a novel</h1>
+            <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
+              This page works best when the topic matches the real decision your family is trying to solve now. Pick the route that sounds closest, then keep the message short and specific.
+            </p>
 
-        <div className="container">
-          <div className={badge}>Contact</div>
-          <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Ask a question</h1>
-          <p className="mt-4 text-base text-gray-600 sm:text-lg">
-            We keep contact simple on purpose. If you need an intro to a provider, tell us your situation and we’ll reply with next steps.
-          </p>
-
-          {/* MEDIA RULE: One YouTube embed directly below H1/intro */}
-          <div className="mt-8 w-full">
-            <VideoBlock video={CONTACT_VIDEO} />
+            <div className="mt-8 w-full">
+              <VideoBlock video={CONTACT_VIDEO} />
+            </div>
           </div>
         </div>
-      
-      </div>
-    </section>
+      </section>
 
       <section className="py-16 md:py-24">
-        <div className="container grid gap-6">
+        <div className="container grid gap-8">
           <div className={cardCls}>
-            <strong className="text-sm font-semibold text-gray-900">Topic</strong>
-            <div className="mt-3 text-sm leading-6 text-gray-600">{topic}</div>
-            {partnerSlug ? (
-              <div className="mt-3 text-sm leading-6 text-gray-600">
-                <strong className="font-semibold text-gray-900">Partner:</strong> {partnerName || partnerSlug}
-              </div>
-            ) : null}
-          </div>
-
-          <ContactForm
-            topic={topic}
-            from={from}
-            partnerSlug={partnerSlug || undefined}
-            partnerName={partnerName || undefined}
-            fallbackMailto={mailto}
-          />
-
-          {/* Instagram embed after early content (never at the very top) */}
-          <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white">
-            <iframe
-              src="https://www.instagram.com/reel/DPAad8bgTCI/embed"
-              title="Empathy School (Instagram)"
-              loading="lazy"
-              className="w-full"
-              style={{ minHeight: 520 }}
-            />
-          </div>
-
-          <div className={cardCls}>
-            <div className="text-sm leading-6 text-gray-600">
-              Prefer to self-serve? Start with <a href="/start-here" className="underline underline-offset-4">Start here</a> and then follow the pillar that matches your stage.
+            <div className="flex flex-wrap items-center gap-2">
+              <span className={badgeAccent}>Choose a route</span>
+              {from ? <span className={badge}>From: {from}</span> : null}
+              {partnerSlug ? <span className={badge}>Partner intro</span> : null}
+            </div>
+            <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+              {CONTACT_TOPIC_PRESETS.map((item) => {
+                const selected = item.id === preset.id;
+                return (
+                  <a
+                    key={item.id}
+                    href={buildContactHref(item.topic, { from, partner: item.partnerSlug || undefined, routeId: item.id })}
+                    data-track="contact_topic_pick"
+                    data-topic={item.topic}
+                    data-route={item.id}
+                    className={`rounded-2xl border p-5 transition ${
+                      selected
+                        ? "border-blue-300 bg-blue-50 shadow-sm"
+                        : "border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50"
+                    }`}
+                  >
+                    <div className="text-sm font-semibold text-gray-900">{item.label}</div>
+                    <p className="mt-2 text-sm leading-6 text-gray-600">{item.description}</p>
+                  </a>
+                );
+              })}
             </div>
           </div>
 
-          {/* Legal/disclosure notices should live at the bottom of the page to keep the UX calm and action-first. */}
+          {sourceContext ? (
+            <div className={cardCls}>
+              <div className="flex flex-wrap items-center gap-2">
+                <span className={badgeAccent}>Best route from here</span>
+                <span className={badge}>{preset.label}</span>
+              </div>
+              <p className="mt-4 text-sm leading-6 text-gray-600">{sourceContext.reason}</p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                <span className={badge}>Source: {sourceContext.sourceLabel}</span>
+                <span className={badgeAccent}>Route: {routeDetail.label}</span>
+              </div>
+            </div>
+          ) : null}
+
+          <div className={grid2}>
+            <div className="grid gap-6">
+              <div className={cardCls}>
+                <strong className="text-sm font-semibold text-gray-900">Current route</strong>
+                <div className="mt-4 flex flex-wrap items-center gap-2">
+                  <span className={badgeAccent}>{preset.label}</span>
+                  <span className={badge}>{topic}</span>
+                  {partnerSlug ? <span className={badge}>Partner: {partnerName || partnerSlug}</span> : null}
+                  {from ? <span className={badge}>From: {from}</span> : null}
+                </div>
+                <p className="mt-4 text-sm leading-6 text-gray-600">{routeDetail.summary}</p>
+                <div className="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-600">
+                  <strong className="text-gray-900">Best when</strong>
+                  <p className="mt-1">{routeDetail.bestWhen}</p>
+                </div>
+              </div>
+
+              <ContactForm
+                topic={topic}
+                from={from}
+                partnerSlug={partnerSlug || preset.partnerSlug || undefined}
+                partnerName={partnerName || undefined}
+                routeId={preset.id}
+                routeLabel={preset.label}
+                fallbackMailto={mailto}
+                messagePlaceholder={preset.messagePlaceholder}
+                timelinePlaceholder={preset.timelinePlaceholder}
+              />
+            </div>
+
+            <div className="grid gap-6">
+              <div className={cardCls}>
+                <strong className="text-sm font-semibold text-gray-900">What to include</strong>
+                <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+                  {preset.bullets.map((bullet) => (
+                    <li key={bullet}>{bullet}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className={cardCls}>
+                <strong className="text-sm font-semibold text-gray-900">Useful before you hit send</strong>
+                <div className="mt-4 grid gap-3">
+                  {usefulLinks.map((link) => (
+                    <a key={link.href} className="rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm font-semibold text-gray-900 transition hover:bg-white" href={link.href}>
+                      {link.label}
+                    </a>
+                  ))}
+                  <a className="rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm font-semibold text-gray-900 transition hover:bg-white" href="/conversation-paths" data-track="contact_compare_routes">
+                    Compare all conversation paths
+                  </a>
+                </div>
+              </div>
+
+              {alternatives.length ? (
+                <div className={cardCls}>
+                  <strong className="text-sm font-semibold text-gray-900">If this still feels too early</strong>
+                  <p className="mt-3 text-sm leading-6 text-gray-600">
+                    That usually means another route would serve the family better first. Use one of these alternatives instead of forcing the wrong conversation.
+                  </p>
+                  <div className="mt-4 grid gap-3">
+                    {alternatives.map(({ id, detail }) => (
+                      <a
+                        key={id}
+                        className={buttonSecondary}
+                        href={buildConversationContactHref(id, { from })}
+                        data-track="contact_alternative_route"
+                        data-route={detail.analyticsKey}
+                      >
+                        {detail.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+
+              <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white">
+                <iframe
+                  src="https://www.instagram.com/reel/DPAad8bgTCI/embed"
+                  title="Empathy School (Instagram)"
+                  loading="lazy"
+                  className="w-full"
+                  style={{ minHeight: 520 }}
+                />
+              </div>
+            </div>
+          </div>
+
           {showDisclosure ? <DisclosureNotice compact /> : null}
         </div>
       </section>

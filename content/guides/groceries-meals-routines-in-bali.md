@@ -83,4 +83,4 @@ When you’re new, food choices feel like constant decision-making. Routines buy
 - [Family transport](/guides/family-transport-drivers-scooters-cars)
 - [Areas for families](/areas)
 - [Cost of living framework](/guides/cost-of-living-for-families-framework)
-- [Family life pillar](/family-life)
+- [Daily life](/daily-life)

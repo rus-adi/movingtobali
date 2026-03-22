@@ -6,6 +6,7 @@ type Payload = {
   topic?: string;
   from?: string;
   partnerSlug?: string;
+  routeId?: string;
   name?: string;
   email?: string;
   whatsapp?: string;
@@ -122,6 +123,7 @@ export async function POST(req: Request) {
   const topic = clamp(body.topic, 120) || "General question";
   const from = clamp(body.from, 200);
   const partnerSlug = clamp(body.partnerSlug, 80);
+  const routeId = clamp(body.routeId, 80);
 
   const name = clamp(body.name, 120);
   const email = clamp(body.email, 180);
@@ -145,6 +147,7 @@ export async function POST(req: Request) {
     `New message from movingtobali.empathy.school`,
     ``,
     `Topic: ${topic}`,
+    routeId ? `Route: ${routeId}` : "",
     partnerSlug ? `Partner: ${partnerSlug}` : "",
     from ? `Source page: ${from}` : "",
     ``,
@@ -176,6 +179,7 @@ export async function POST(req: Request) {
         topic,
         from,
         partnerSlug,
+        routeId,
         name,
         email,
         whatsapp,

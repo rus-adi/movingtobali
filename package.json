@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/build-search-index.mjs && node scripts/build-content-index.mjs",
+    "prebuild": "node scripts/build-search-index.mjs && node scripts/build-content-index.mjs && node scripts/build-governance-report.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -21,7 +21,8 @@
     "suggest:links": "node scripts/suggest-links.mjs",
     "check:links": "node scripts/check-links.mjs --all",
     "check:official-links": "node scripts/check-links.mjs --official",
-    "check:official-links:write": "node scripts/check-links.mjs --official --write"
+    "check:official-links:write": "node scripts/check-links.mjs --official --write",
+    "audit:governance": "node scripts/build-governance-report.mjs"
   },
   "dependencies": {
     "github-slugger": "^2.0.0",

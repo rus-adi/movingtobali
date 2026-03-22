@@ -8,7 +8,7 @@ import AreasCompareTable from "@/components/AreasCompareTable";
 import { getAllCategories, getAllContent, getAllTags, encodeParam } from "@/lib/content";
 import { asInt, paginate } from "@/lib/pagination";
 import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
-import { badge, btnRow, buttonSecondary, cardCls, grid2, pill } from "@/components/ui/styles";
+import { badge, btnRow, buttonPrimary, buttonSecondary, cardCls, grid2, pill } from "@/components/ui/styles";
 
 export function generateMetadata(): Metadata {
   return {
@@ -74,6 +74,17 @@ export default function AreasIndexPage({ searchParams }: Props) {
 
             <div className={cardCls}>
               <SearchBoxUrl placeholder="Search areas… (e.g., Ubud, Canggu, calm, walkable)" />
+              <div className={btnRow}>
+                <Link className={buttonPrimary} href="/area-match">
+                  Use Area Match
+                </Link>
+                <Link className={buttonSecondary} href="/compare-areas">
+                  Compare two areas
+                </Link>
+                <Link className={buttonSecondary} href="/resources/area-shortlist-scorecard">
+                  Area scorecard
+                </Link>
+              </div>
 
               <div className="mt-6 flex flex-wrap gap-2">
                 {categories.map((c) => (
@@ -116,9 +127,10 @@ export default function AreasIndexPage({ searchParams }: Props) {
                 </div>
               </div>
               <div className="flex flex-wrap gap-3">
+                <Link className={buttonPrimary} href="/area-match">Area Match</Link>
+                <Link className={buttonSecondary} href="/compare-areas">Compare two areas</Link>
+                <Link className={buttonSecondary} href="/commute-reality">Commute reality</Link>
                 <Link className={buttonSecondary} href="/guides/bali-areas-for-toddlers">Toddlers</Link>
-                <Link className={buttonSecondary} href="/guides/bali-areas-for-teens">Teens</Link>
-                <Link className={buttonSecondary} href="/guides/quiet-nature-areas-in-bali">Quiet + nature</Link>
               </div>
             </div>
             <div className="mt-6">

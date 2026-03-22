@@ -1,7 +1,6 @@
 ---
 title: Where to live in Bali
-description: A practical way to choose areas in Bali for families—what daily life
-  feels like, tradeoffs, and which questions matter most.
+description: A practical way to choose areas in Bali for families—what daily life feels like, tradeoffs, and which questions matter most.
 order: 4
 tags:
 - areas
@@ -10,64 +9,122 @@ tags:
 category: Areas
 draft: false
 noindex: false
+governance:
+  owner: "Move to Bali editorial"
+  lastReviewed: '2026-03-22'
+  reviewCadenceDays: 120
+  reviewPriority: medium
+  evidenceLevel: reviewed
+  contentState: core
 faqs:
 - q: Which area is best for families?
-  a: There isn't one best. Many families shortlist 2–3 based on pace, commute, and
-    community, then choose after a test-stay.
-- q: Which area is best for families in Bali?
-  a: 'There isn’t one universal best. Start by prioritizing your commute (school +
-    errands), then choose the micro-area that matches your pace: calm routine vs beach
-    energy vs city convenience.'
-- q: How do we pick the right micro-area, not just the right ‘big’ area?
-  a: 'Treat it like a test: stay 7–14 days, do real routines at real times, and visit
-    the street at night. In Bali, two streets 5 minutes apart can feel completely
-    different.'
-- q: Should we choose beach areas or Ubud/Central areas first?
-  a: 'Beach areas can feel convenient for restaurants and social life, while Ubud/Central
-    can feel calmer and more nature-connected. Let your daily routine decide: school
-    run + groceries + bedtime, not the weekend vibe.'
+  a: There is no universal best. Most families do better when they shortlist two or three based on pace, commute, and the shape of the week they want.
+- q: How do we pick the right micro-area, not just the right big area?
+  a: Start with the area, then test the street. Two streets five minutes apart can feel completely different in Bali.
+- q: Should Empathy School shape where we live?
+  a: If school is likely, yes. Even one realistic school day can change which areas still make sense.
+- q: Should we choose areas before housing?
+  a: Usually yes. A shortlist makes the housing conversation sharper and helps you avoid falling for random listings.
 - q: How much does traffic matter when choosing where to live?
-  a: A lot. A ‘perfect’ house can become stressful if the daily commute is unpredictable.
-    Always test your key routes at peak hours before signing a lease.
-updated: '2026-02-22'
+  a: A lot. A beautiful house becomes expensive very quickly if the family pays for it in time, stress, and weekday energy.
+updated: '2026-03-16'
 ---
 
 ## Quick start
 
-- If you're brand new to the idea, **sketch your timeline** (next 3 months vs next year).
-- Shortlist **2–3 areas** before you overthink school or housing.
-- Keep **official links** bookmarked for anything that changes fast (especially visas).
-- Prefer decisions that reduce stress: **short test-stays, staged commitments, clear contracts**.
+- Use [Area Match](/area-match) to get down to **2–3 real options**.
+- Use [Compare areas](/compare-areas) when the shortlist is already small but the answer still feels fuzzy.
+- If Empathy School is part of the move, test it with [Commute reality](/commute-reality) early.
+- Shortlist areas before you overthink housing.
+- Test the street, not just the area label.
 
-## The calm roadmap
+---
 
-### Step 1: Decide your timeline
+## What this page is really for
 
-Write down the earliest date you could arrive—and the latest date you'd still feel good about.
+This page is not here to crown one perfect family area.
 
-### Step 2: Shortlist areas
+It is here to help you choose a **useful shortlist**.
 
-Use the [Areas](/areas) hub to shortlist 2–3 places that match your family's pace and commute tolerance.
+A useful shortlist does three things:
+- makes the test stay more focused,
+- makes the budget more honest,
+- and makes housing support from Gaia Group far more useful.
 
-### Step 3: Plan visas from experience (not certainty)
+---
 
-We share what families experienced and the questions to ask. We don't guarantee outcomes. For changing details, use [Official links](/official-links).
+## The calmer order of decisions
 
-### Step 4: Housing (staged, not rushed)
+### 1) Decide the kind of week you want
 
-If possible: short stay → view in person → verify → sign. Rushing deposits is where families get burned.
+Usually families are really choosing between:
+- calmer,
+- easier,
+- more practical,
+- or more social / convenient.
 
-### Step 5: Learning & community
+That comes before the area name.
 
-A good-fit learning environment plus one parent community usually does more for "settling in" than any single logistics hack.
+### 2) Narrow down to 2–3 areas
 
-## What we learned the hard way
+Use the [Areas](/areas) hub, [Area Match](/area-match), and [Compare areas](/compare-areas) together.
 
-The biggest stress reducer wasn't "perfect planning"—it was **staged commitments**. Keep optionality early, then commit once you've seen the reality.
+One helps you browse.
+One helps you narrow.
+One helps you choose between the last two good options.
 
-## Next steps
+### 3) Test the areas like a parent
 
-- [Visas](/visas)
-- [Housing](/housing)
+Do not just visit when you are in a good mood.
+
+Test:
+- morning routes,
+- groceries,
+- meal rhythm,
+- late-afternoon energy,
+- and the street after dark.
+
+### 4) Let Empathy School influence the shortlist if relevant
+
+If Empathy School is likely, do not leave it until the end.
+
+A single school-tour day can change:
+- which side of Bali feels workable,
+- what commute feels acceptable,
+- and what kind of housing is even worth considering.
+
+### 5) Only then move fully into housing mode
+
+Once timing + shortlist + budget feel real, housing conversations get sharper.
+That is when a Gaia Group intro becomes much more useful.
+
+---
+
+## What families learn the hard way
+
+The wrong area rarely fails all at once.
+
+It fails quietly.
+
+It shows up as:
+- a school route everyone dreads,
+- errands that take too much energy,
+- evenings that never settle,
+- or a house that looked perfect online but supports the wrong version of life.
+
+That is why this part of the move deserves more structure than people think.
+
+---
+
+## The pages to use next
+
+- [Area Match](/area-match)
+- [Compare areas](/compare-areas)
+- [Commute reality](/commute-reality)
 - [Areas](/areas)
-- [Guides](/guides)
+- [How to shortlist Bali areas with kids](/guides/how-to-shortlist-bali-areas-with-kids)
+- [How to compare two Bali areas with kids](/guides/how-to-compare-two-bali-areas-with-kids)
+- [Use Empathy School to test area fit](/guides/how-to-use-empathy-school-to-test-area-fit)
+- [Area shortlist scorecard](/resources/area-shortlist-scorecard)
+- [Area visit notes sheet](/resources/area-visit-notes-sheet)
+- [Housing](/housing)

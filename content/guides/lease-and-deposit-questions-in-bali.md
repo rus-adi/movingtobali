@@ -2,7 +2,7 @@
 title: Lease and deposit questions to ask in Bali (before you pay)
 description: "A practical checklist for families: what to confirm in writing before paying a deposit or signing a lease, and which details cause the most stress later."
 date: "2026-02-22"
-updated: "2026-02-22"
+updated: '2026-03-22'
 category: Housing
 tags:
   - housing
@@ -22,45 +22,33 @@ faqs:
     a: "Be very cautious with payments before a viewing or a verified agreement. If something feels rushed, slow it down and verify."
 ---
 
-## Quick start (copy/paste checklist)
-Before you pay:
-- Confirm who the legal signer is (owner/authorized agent)
-- Confirm the payment schedule and currency
-- Confirm what utilities are included
-- Confirm maintenance responsibilities
-- Confirm deposit return conditions
-- Confirm how disputes are handled (in writing)
+## Quick take
 
-Related pillar: [Housing & neighborhoods](/housing)
+Deposit stress is rarely about the money alone. It is about whether the terms, condition, and expectations were ever made clear enough in the first place.
 
-## The questions that save you stress later
+## Questions worth asking before money moves
 
-### 1) “What exactly is included?”
-Ask about:
-- electricity
-- water
-- internet
-- pool/garden maintenance
-- cleaning (if any)
+### What exactly is the deposit for?
+Clarify what it covers, what could reduce it, and what happens if a plan changes.
 
-### 2) “What happens if something breaks?”
-- Who pays for repairs?
-- What’s the typical response time?
-- How do you report issues?
+### What condition is the home expected to be returned in?
+Take photos, note existing issues, and keep a shared record.
 
-### 3) “How does the deposit get returned?”
-Ask:
-- what counts as damage
-- what counts as normal wear
-- what deductions are allowed
-- timeline for return
+### What sits inside maintenance and what does not?
+Small repairs, equipment issues, internet problems, and appliance questions should not be left vague.
 
-### 4) “What’s the cancellation or early-exit policy?”
-Even if you don’t plan to leave early, clarity reduces risk.
+### What happens around notice, extension, or early exit?
+Even if you do not expect changes, the terms matter more once family plans shift.
 
-## What we learned the hard way
-Contracts feel boring until something goes wrong. A calm checklist before paying is a form of self‑care.
+## A calmer way to handle it
 
-## Next steps
+- Keep the written terms together.
+- Photograph the move-in state.
+- Repeat your understanding back in writing.
+- Slow down if the answers stay fuzzy.
+
+## Pair this with
+
 - [Renting safely in Bali](/guides/renting-safely-in-bali)
-- [2‑week test stay plan](/guides/two-week-test-stay-plan)
+- [Lease deposit checklist](/resources/lease-deposit-checklist)
+- [Housing viewing scorecard](/resources/housing-viewing-scorecard)

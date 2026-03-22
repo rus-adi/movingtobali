@@ -114,6 +114,7 @@ export default function FaqPage({ searchParams }: Props) {
             <Link className={buttonSecondary} href="/start-here">Start here</Link>
             <Link className={buttonSecondary} href="/guides">Browse guides</Link>
             <Link className={buttonSecondary} href="/official-links">Official links</Link>
+            <Link className={buttonSecondary} href="/what-families-notice">What families notice</Link>
           </div>
         </div>
       

@@ -44,6 +44,9 @@ export default function AreasCompareTable({ areas }: { areas: ContentItem[] }) {
             <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
               Nature
             </th>
+            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+              Cost
+            </th>
             <th className="sticky top-0 w-[22%] border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
               Note
             </th>
@@ -64,6 +67,7 @@ export default function AreasCompareTable({ areas }: { areas: ContentItem[] }) {
               <td className="px-3 py-3 align-top">{v(a.area?.familyFit)}</td>
               <td className="px-3 py-3 align-top">{v(a.area?.beachAccess)}</td>
               <td className="px-3 py-3 align-top">{v(a.area?.natureAccess)}</td>
+              <td className="px-3 py-3 align-top">{v(a.area?.costTier)}</td>
               <td className="px-3 py-3 align-top text-gray-600">{v(a.area?.note)}</td>
             </tr>
           ))}

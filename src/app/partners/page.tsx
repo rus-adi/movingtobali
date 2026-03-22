@@ -2,15 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import DisclosureNotice from "@/components/DisclosureNotice";
+import TrustMetaStrip from "@/components/TrustMetaStrip";
 import PartnerBadge from "@/components/PartnerBadge";
 import RichTextBlock from "@/components/RichTextBlock";
 import { getPartners } from "@/lib/partners";
 import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
-import { badge, badgeAccent, btnRow, buttonPrimary, buttonSecondary, cardCls, grid2 } from "@/components/ui/styles";
+import { buildContactHref } from "@/lib/contact";
+import { badge, badgeAccent, btnRow, buttonPrimary, buttonSecondary, cardCls, grid2, grid3 } from "@/components/ui/styles";
 
 export function generateMetadata(): Metadata {
   const items = getPartners();
-  // If we don’t have any verified/owned partners yet, keep this page out of search until it’s useful.
   const noindex = process.env.NODE_ENV === "production" && items.length === 0;
 
   return {
@@ -23,6 +24,7 @@ export function generateMetadata(): Metadata {
 
 export default function PartnersPage() {
   const items = getPartners();
+  const featured = items[0] || null;
 
   const schemas = [
     buildOrganizationSchema(),
@@ -38,15 +40,174 @@ export default function PartnersPage() {
         <div className="container">
           <div className={badge}>Partners</div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Preferred partners & services</h1>
-          <p className="mt-4 text-base text-gray-600 sm:text-lg">
-            We only show <strong>✔ VERIFIED</strong> partners publicly. If a partner is still “★ CHECK”, it stays hidden until agreements, vetting, and tracking are in place.
+          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
+            We keep the public partner list intentionally narrow. Right now the featured public partner is Gaia Group for housing support.
           </p>
+
+          {featured ? (
+            <div className={`${cardCls} mt-8`}>
+              <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+                <div>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <PartnerBadge status={featured.status} />
+                    <span className={badgeAccent}>{featured.category}</span>
+                    {featured.contactName ? <span className={badge}>Contact: {featured.contactName}</span> : null}
+                  </div>
+
+                  <h2 className="mt-5 text-3xl font-semibold tracking-tight text-gray-900">{featured.name}</h2>
+                  <p className="mt-4 max-w-3xl text-sm leading-6 text-gray-600">{featured.bestFor}</p>
+
+                  {featured.services?.length ? (
+                    <div className="mt-5 text-sm leading-6 text-gray-600">
+                      <strong className="font-semibold text-gray-900">Services:</strong> {featured.services.join(", ")}
+                    </div>
+                  ) : null}
+
+                  {featured.areas?.length ? (
+                    <div className="mt-3 text-sm leading-6 text-gray-600">
+                      <strong className="font-semibold text-gray-900">Areas:</strong> {featured.areas.join(", ")}
+                    </div>
+                  ) : null}
+
+                  <div className={btnRow}>
+                    <a
+                      className={buttonPrimary}
+                      href={buildContactHref("Housing intro", { from: "/partners", partner: featured.slug })}
+                      data-track="partners_featured_intro"
+                    >
+                      Request a housing intro
+                    </a>
+                    <Link className={buttonSecondary} href="/gaia-group" data-track="partners_featured_profile">
+                      Open Gaia Group page
+                    </Link>
+                    <Link className={buttonSecondary} href="/guides/how-gaia-group-housing-support-works" data-track="partners_featured_process">
+                      How the process works
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-5">
+                  {featured.image ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={featured.image}
+                      alt={featured.contactName ? `${featured.contactName} from ${featured.name}` : featured.name}
+                      className="h-64 w-full rounded-2xl border border-gray-200 bg-white object-cover"
+                    />
+                  ) : null}
+
+                  <div className="rounded-2xl border border-gray-200 bg-gray-50 p-5 text-sm leading-6 text-gray-600">
+                    <strong className="font-semibold text-gray-900">What this is for</strong>
+                    <p className="mt-3">
+                      A calmer housing start. Not a giant directory, not pressure to commit fast, and not a replacement for your own due diligence.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : null}
         </div>
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="container">
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <div className="container grid gap-10">
+
+          <TrustMetaStrip
+            updated="2026-03-22"
+            title="Why the public partner list stays intentionally narrow"
+            body="This page is designed to build trust, not volume. Right now the site publicly features Gaia Group for housing because we would rather keep the partner layer selective and usable than let it become a vague directory."
+            links={[
+              { href: "/disclosure", label: "Disclosure" },
+              { href: "/gaia-group", label: "Open Gaia Group" },
+            ]}
+          />
+
+          {featured ? (
+            <>
+              <div className={grid3}>
+                <div className={cardCls}>
+                  <strong className="text-sm font-semibold text-gray-900">Why families use Gaia Group</strong>
+                  <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+                    {(featured.trustPoints || []).map((point) => (
+                      <li key={point}>{point}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className={cardCls}>
+                  <strong className="text-sm font-semibold text-gray-900">Good fit</strong>
+                  <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+                    {(featured.goodFit || []).map((point) => (
+                      <li key={point}>{point}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className={cardCls}>
+                  <strong className="text-sm font-semibold text-gray-900">Probably not the right fit</strong>
+                  <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+                    {(featured.notFor || []).map((point) => (
+                      <li key={point}>{point}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              <div className={grid2}>
+                <Link className={cardCls} href="/housing-intro-readiness" data-track="partners_readiness_tool">
+                  <h3 className="text-xl font-semibold tracking-tight text-gray-900">Housing intro readiness</h3>
+                  <p className="mt-3 text-sm leading-6 text-gray-600">Use the filter before you request an intro so Gaia Group starts with a real shortlist instead of a wide-open wish list.</p>
+                  <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
+                </Link>
+                <Link className={cardCls} href="/housing-brief-builder" data-track="partners_brief_tool">
+                  <h3 className="text-xl font-semibold tracking-tight text-gray-900">Housing brief builder</h3>
+                  <p className="mt-3 text-sm leading-6 text-gray-600">Create the first housing message around budget band, bedrooms, shortlist, commute, and dealbreakers.</p>
+                  <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
+                </Link>
+              </div>
+
+              <div className={cardCls}>
+                <strong className="text-sm font-semibold text-gray-900">How the intro usually works</strong>
+                <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+                  {(featured.process || []).map((step, index) => (
+                    <div key={step} className="rounded-2xl border border-gray-200 bg-gray-50 p-5">
+                      <div className={badgeAccent}>Step {index + 1}</div>
+                      <p className="mt-4 text-sm leading-6 text-gray-600">{step}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className={btnRow}>
+                  <Link className={buttonSecondary} href="/housing-brief-builder" data-track="partners_housing_brief_builder">
+                    Open the housing brief builder
+                  </Link>
+                  <a
+                    className={buttonPrimary}
+                    href={buildContactHref("Housing intro", { from: "/partners", partner: featured.slug })}
+                    data-track="partners_housing_intro_process"
+                  >
+                    Send the intro request
+                  </a>
+                </div>
+              </div>
+            </>
+          ) : (
+            <div className={cardCls}>
+              <strong className="text-sm font-semibold text-gray-900">Partners directory is being built</strong>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                We’re intentionally slow here. For visas and housing especially, we only publish partners once vetting and tracking are in place.
+              </p>
+              <div className={btnRow}>
+                <a className={buttonPrimary} href={buildContactHref("General move planning", { from: "/partners" })} data-track="partners_request_intro_empty">
+                  Ask a question
+                </a>
+                <Link className={buttonSecondary} href="/disclosure" data-track="partners_disclosure">
+                  Disclosure
+                </Link>
+              </div>
+            </div>
+          )}
+
+          <div className="grid gap-6 md:grid-cols-2">
             <div className={cardCls}>
               <strong className="text-sm font-semibold text-gray-900">How to choose a visa agent safely</strong>
               <RichTextBlock className="mt-4">
@@ -88,82 +249,7 @@ export default function PartnersPage() {
             </div>
           </div>
 
-          {items.length === 0 ? (
-            <div className={`${cardCls} mt-10`}>
-              <strong className="text-sm font-semibold text-gray-900">Partners directory is being built</strong>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
-                We’re intentionally slow here. For visas and housing especially, we only publish partners once vetting and tracking are in place.
-                If you need help now, request an introduction and we’ll point you to the best option we know for your situation.
-              </p>
-              <div className={btnRow}>
-                <a
-                  className={buttonPrimary}
-                  href={`/contact?topic=${encodeURIComponent("Partner intro")}&from=${encodeURIComponent("/partners")}`}
-                  data-track="partners_request_intro_empty"
-                >
-                  Request an intro
-                </a>
-                <Link className={buttonSecondary} href="/disclosure" data-track="partners_disclosure">
-                  Disclosure
-                </Link>
-              </div>
-            </div>
-          ) : (
-            <div className={`${grid2} mt-10`}>
-              {items.map((p) => (
-                <div key={p.slug} className={cardCls}>
-                  <div className="flex flex-wrap items-center gap-2">
-                    <PartnerBadge status={p.status} />
-                    <span className={badgeAccent}>{p.category}</span>
-                  </div>
-
-                  <h3 className="mt-4 text-xl font-semibold tracking-tight text-gray-900">{p.name}</h3>
-
-                  {p.bestFor ? (
-                    <p className="mt-2 text-sm leading-6 text-gray-600">
-                      <strong className="font-semibold text-gray-900">Best for:</strong> {p.bestFor}
-                    </p>
-                  ) : null}
-
-                  {p.services?.length ? (
-                    <div className="mt-3 text-sm leading-6 text-gray-600">
-                      <strong className="font-semibold text-gray-900">Services:</strong> {p.services.join(", ")}
-                    </div>
-                  ) : null}
-
-                  {p.languages?.length ? (
-                    <div className="mt-3 text-sm leading-6 text-gray-600">
-                      <strong className="font-semibold text-gray-900">Languages:</strong> {p.languages.join(", ")}
-                    </div>
-                  ) : null}
-
-                  <div className={btnRow}>
-                    <a
-                      className={buttonPrimary}
-                      href={`/go/${p.slug}?from=${encodeURIComponent("/partners")}`}
-                      data-track="partner_go"
-                      data-partner={p.slug}
-                    >
-                      Visit (tracked)
-                    </a>
-                    <a
-                      className={buttonSecondary}
-                      href={`/contact?topic=${encodeURIComponent(p.category)}%20intro&partner=${encodeURIComponent(p.slug)}&from=${encodeURIComponent("/partners")}`}
-                      data-track="partner_intro"
-                      data-partner={p.slug}
-                    >
-                      Request intro
-                    </a>
-                  </div>
-
-                  {p.note ? <div className="mt-4 text-xs leading-5 text-gray-600">{p.note}</div> : null}
-                </div>
-              ))}
-            </div>
-          )}
-
-          {/* Legal/disclosure notices should live at the bottom of the page to keep the UX action-first. */}
-          <div className="mt-10">
+          <div className="mt-2">
             <DisclosureNotice />
           </div>
         </div>

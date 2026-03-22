@@ -43,5 +43,5 @@ Culture differs by village and context. When in doubt: **ask**, follow local gui
 
 ## Related
 
-- [Family life](/family-life)
+- [Daily life](/daily-life)
 - [Culture in Bali with kids](/guides/culture-in-bali-with-kids)

@@ -1,20 +1,28 @@
 ---
-title: 'Schools & learning: how to choose a fit'
-description: "A parent-first framework to shortlist schools in Bali, what to ask on tours, and how to judge fit: values, learning style, support, commute, and community."
+
+title: 'Empathy School: what families want to know before moving to Bali'
+description: "A practical guide to using Empathy School as part of a Bali move: fit, age groups, routines, tours, commute reality, and how to tell if it feels right."
 order: 5
 tags:
   - schools
-  - learning
-  - tours
-  - checklist
   - empathy-school
+  - tours
+  - ubud
+  - learning
 category: Learning
 draft: false
 noindex: false
+governance:
+  owner: "Empathy School admissions"
+  lastReviewed: '2026-03-22'
+  reviewCadenceDays: 60
+  reviewPriority: high
+  evidenceLevel: reviewed
+  contentState: core
 video:
   youtubeId: "rlTU1S9cjEk"
   title: "Empathy School Tour (360°)"
-  summary: "A 360° walk-through of Empathy School in Ubud. Use it as a visual reference while you compare learning environments: classroom feel, outdoor spaces, and the general flow of the campus."
+  summary: "A 360° walk-through of Empathy School in Ubud. Use it to notice campus flow, outdoor space, classroom feel, and the general rhythm of a school day."
   transcriptFile: "content/transcripts/empathy-school-tour-360-recap.txt"
   permission: "owned"
   childrenVisible: false
@@ -25,7 +33,7 @@ social:
   youtubeUrl: "https://www.youtube.com/watch?v=rlTU1S9cjEk"
   instagramUrl: "https://www.instagram.com/p/DI_H94pyoEJ/"
   youtube:
-    - label: "Full tour (standard video)"
+    - label: "Full tour"
       url: "https://www.youtube.com/watch?v=3QBtXVMV7yo"
     - label: "Early Years tour"
       url: "https://www.youtube.com/watch?v=BEPzspgVvJc"
@@ -33,38 +41,64 @@ social:
       url: "https://www.youtube.com/watch?v=t5E2f4L5QOE"
     - label: "Middle School tour"
       url: "https://m.youtube.com/watch?v=1Dfy0jlCuM8"
-    - label: "Parent Q&A (Japanese families)"
-      url: "https://www.youtube.com/watch?v=GHWWYHsKoxc"
-    - label: "Admissions short"
-      url: "https://www.youtube.com/shorts/RXYDRGimTBs"
   instagram:
     - label: "Everyday moments at school"
       url: "https://www.instagram.com/empathy.school/p/DUH9wf_kR0I/"
-    - label: "School tour visit (Japanese parents/educators)"
-      url: "https://www.instagram.com/empathy.school/reel/DPAad8bgTCI/"
-    - label: "Outdoor learning (nature class)"
+    - label: "Outdoor learning"
       url: "https://www.instagram.com/empathy.school/reel/CqmUUkqJTLR/"
 faqs:
-  - q: "What matters most when choosing a school in Bali?"
-    a: "In our experience, the big four are: learning style + values, student support, commute reality, and parent communication. If those fit, everything else gets easier."
-  - q: "How many schools should we tour?"
-    a: "Usually 2–4 is enough. More can overwhelm you. Tour the best-fit options in your top 2–3 areas, at real commute times."
-  - q: "What should we watch for beyond the marketing?"
-    a: "Classroom energy, how support actually works day-to-day, supervision routines, and how the school communicates with parents."
-  - q: "Should we decide school before housing?"
-    a: "Often it’s better to shortlist areas first. Then tour schools within those areas so you’re not committing to a commute you’ll hate."
-  - q: "Do you list every school in Bali?"
-    a: "No. We share a framework and tour questions. We’ll mention a few common options families consider, but the goal is fit—not a giant directory."
-updated: '2026-02-23'
+  - q: "Who is Empathy School usually a good fit for?"
+    a: "Families who want a calm, community-led learning environment and who feel good about the Ubud-side rhythm often connect with Empathy School quickly."
+  - q: "Should we tour Empathy School before choosing housing?"
+    a: "Usually yes. Even one tour helps you judge commute reality, campus feel, and whether the school should anchor your area shortlist."
+  - q: "Do we need to commit before we arrive in Bali?"
+    a: "Not always. Many families start with a tour or a test stay first, then make bigger decisions once daily life feels more real."
+  - q: "What ages does Empathy School support?"
+    a: "The public materials on this site currently position Empathy School from Early Years through Middle School."
+  - q: "What should we pay attention to on a tour?"
+    a: "Watch classroom energy, outdoor flow, how adults support children, and how the school would change your family's daily routine."
+updated: '2026-03-22'
 ---
 
-## Quick start (the fast version)
+## Quick start
 
-- Start with **fit**, not reputation: values + learning style, support, commute, and communication.
-- Shortlist **2–3 areas first**, then tour schools inside those areas (so you don’t lock in a brutal daily drive).
-- Tour at real times: **morning drop-off** + **afternoon pick-up**.
-- Copy/paste this: [School tour question list](/resources/school-tour-question-list).
-- If you can, use staged commitment: **trial / short term → term → longer commitment**.
+- If Empathy School is part of your move, decide first whether it should be a real anchor or just a question in the background: [Empathy School fit](/empathy-school-fit).
+- If the family will tour, protect the day around the visit: [Empathy School tour prep](/empathy-school-tour-prep).
+- Watch the campus with a parent brain, not just a visitor brain: how does it feel, how would the commute work, and what kind of child seems to thrive here?
+- Use this before or after the visit: [School tour question list](/resources/school-tour-question-list).
+- If you want to test the whole week, not just the campus, use the [Empathy School commute + routine test sheet](/resources/empathy-school-commute-routine-test-sheet).
+- If area choice still feels fuzzy, use [Commute reality](/commute-reality) and the [Empathy School commute decision grid](/resources/empathy-school-commute-decision-grid).
+- If you are still deciding whether Bali works at all, pair the tour with a [test stay](/test-stay).
+- If you are not ready for a full commitment, start with a conversation, a visit, or a shorter-term program path.
+
+---
+
+
+## Video recap library
+
+If you want to use the school videos as part of the move decision, start here:
+
+- [How we run an Empathy School tour](/blog/video-how-we-run-a-school-tour)
+- [Empathy School Early Years tour recap](/blog/empathy-school-early-years-tour-recap)
+- [Empathy School Primary tour recap](/blog/empathy-school-primary-tour-recap)
+- [Empathy School Middle School tour recap](/blog/empathy-school-middle-school-tour-recap)
+- [Video recaps hub](/video-recaps)
+
+---
+
+## Why families use Empathy School as an anchor
+
+For some families, school is not just one more decision.
+
+It is the decision that makes the rest of the move easier to judge.
+
+Once you know whether Empathy School feels right, other choices get clearer:
+- which side of Bali to target,
+- what commute you can tolerate,
+- what kind of housing makes sense,
+- whether the move feels calm enough to be worth doing.
+
+That is why we treat this page as an anchor page, not a generic school directory.
 
 ---
 
@@ -78,163 +112,109 @@ updated: '2026-02-23'
   ></iframe>
 </div>
 
+## What to look for when you tour
 
+### 1) Campus flow
 
-## The school-fit framework (what matters most)
+Does the space feel rushed or grounded?
 
-### 1) Values + learning style
+Notice:
+- where children move between activities,
+- whether there are places to regulate and reset,
+- how indoor and outdoor time connect.
 
-Ask yourself: does your child thrive with structure, flexibility, project-based learning, nature-based days, or more traditional academics?
+### 2) Adult presence
 
-On tours, ignore the glossy language and look for **real examples**:
-- What kids are making / reading / practicing
-- How teachers respond when a child is stuck
-- How independence is built (or not)
+Pay attention to how adults are with children.
+Not the polished answer in the meeting. The actual energy.
 
-### 2) Support (how help actually works)
+### 3) Daily rhythm
 
-Many schools *say* they support diverse learners. The real question is how support works **day-to-day**.
+Imagine your real family here:
+- the morning leave-the-house moment,
+- the drop-off,
+- the drive back,
+- the afternoon pickup when everyone is a little tired.
 
-Useful questions:
-- What does support look like in a normal week?
-- Who provides it (class teacher, support teacher, counselor)?
-- How is progress shared with parents?
+This is where a good fit becomes obvious or not.
 
-### 3) Safety + supervision (clarity over vibes)
+### 4) Your child’s style
 
-You don’t need perfection — you need **clear systems**:
-- supervision ratios,
-- pick-up / drop-off routine,
-- injury protocol,
-- who contacts you and how.
+Some children respond quickly to calm, nature, and community.
+Others need more time, more structure, or a different pace.
 
-### 4) Commute reality
-
-In Bali, commute is *not* a small detail. It affects:
-- your child’s daily energy,
-- your ability to have routines,
-- whether the move feels calm or chaotic.
-
-Do a real-time commute test (or ask parents in your target area what their actual times are).
-
-### 5) Parent communication + community
-
-Strong schools communicate early and clearly:
-- expectations,
-- what happens when a child struggles,
-- how parents stay in the loop,
-- what community support exists for new families.
+Try to leave the tour with one honest sentence:
+**“I can picture my child here,”** or **“I still can’t.”**
 
 ---
 
-## A simple shortlist process (that avoids overwhelm)
+## Program snapshots
 
-1) **Write your non-negotiables** (support needs, learning style, commute max, language needs).
-2) Shortlist **2–3 areas** first. (Start here: [Areas hub](/areas).)
-3) Pick **3–5 schools** across those areas.
-4) Tour **2–4** of the best fits.
-5) Use a trial period if available.
+At the time this hub was assembled, the public tour materials linked here position Empathy School across:
+- Early Years
+- Primary
+- Middle School
 
-If you want a copy/paste tour checklist, use:
-- [What to ask on a school tour](/guides/what-to-ask-on-a-school-tour)
-- [School tour question list](/resources/school-tour-question-list)
-
----
-
-## Empathy School (Ubud): tours + programs
-
-<div class="rounded-2xl border border-gray-200 bg-gray-50 p-6">
-  <strong class="text-sm font-semibold text-gray-900">Why we include Empathy School here</strong>
-  <p class="mt-3 text-sm leading-6 text-gray-600">This hub is built by Empathy School, and we’re one of the few groups with real, public video tours. Even if you’re comparing multiple schools, using one consistent “reference tour” helps you notice what you actually care about.</p>
-  <ul class="mt-4 text-sm leading-6 text-gray-600">
-    <li><strong>Ages:</strong> 1–14 (Early Years → Middle School)</li>
-    <li><strong>Location:</strong> Ubud area</li>
-    <li><strong>Best for:</strong> families who want calm routines, nature, and a community feel</li>
-  </ul>
-  <p class="mt-4 text-sm leading-6 text-gray-600">If you want to see whether it’s a fit, the easiest next step is to tour (in person or video-first) and then ask specific questions about support + commute.</p>
-</div>
-
-### Optional: a standard tour video (non‑360)
-
-<div class="mt-4 rounded-2xl border border-gray-200 bg-white p-5">
-  <strong class="text-sm font-semibold text-gray-900">Watch the standard tour on YouTube</strong>
-  <p class="mt-3 text-sm leading-6 text-gray-600">
-    https://www.youtube.com/watch?v=3QBtXVMV7yo
-  </p>
-</div>
-
-<details class="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-5">
-  <summary class="text-sm font-semibold text-gray-900">How to watch this tour like a parent</summary>
-  <div class="mt-4 whitespace-pre-wrap text-sm leading-6 text-gray-600">
-Suggested notes to capture when you review the video:
-- What spaces matter most to your child (quiet corners, outdoor time, project areas)
-- What you notice about classroom energy and teacher attention
-- What questions you want to ask in a live tour about support, safety, and routines
-
-Tip: if you want the exact transcript, open the video on YouTube and use the built-in “Show transcript” feature.
-  </div>
-</details>
-
-### Program tours (quick links)
-
+Quick links:
 - Early Years tour: https://www.youtube.com/watch?v=BEPzspgVvJc
 - Primary tour: https://www.youtube.com/watch?v=t5E2f4L5QOE
 - Middle School tour: https://m.youtube.com/watch?v=1Dfy0jlCuM8
 
 ---
 
-## Parent voices (testimonials)
+## How Empathy School changes your area shortlist
 
-These short clips are useful for tone and fit — treat them as **supporting context**, not the only input.
+This is one of the most practical questions on the site.
 
-<div class="mt-4 rounded-2xl border border-gray-200 bg-white p-5">
-  <strong class="text-sm font-semibold text-gray-900">Parent voices (watch on YouTube)</strong>
-  <ul class="mt-3 list-disc pl-5 text-sm leading-6 text-gray-600">
-    <li>Clip 1: https://www.youtube.com/watch?v=f8ZQr6NnTTM</li>
-    <li>Clip 2: https://www.youtube.com/watch?v=otZDfCRApFQ</li>
-  </ul>
-</div>
+If you think Empathy School is likely, you should shortlist areas based on the commute to it.
 
-<details class="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-5">
-  <summary class="text-sm font-semibold text-gray-900">Key takeaways to listen for</summary>
-  <div class="mt-4 whitespace-pre-wrap text-sm leading-6 text-gray-600">
-- What parents say about daily routines and how quickly kids settle in
-- Whether the school communicates clearly and proactively
-- What “community” looks like in practice (not just on posters)
+That does not mean over-optimising around one pin on a map.
+It means respecting the fact that school-run energy shapes the week.
 
-Tip: if you want the exact transcript for a clip, open it on YouTube and use the built-in “Show transcript” feature.
-  </div>
-</details>
+Related:
+- [Areas](/areas)
+- [Housing](/housing)
+- [Test stay](/test-stay)
 
 ---
 
-## A few schools families commonly compare (not an exhaustive list)
+## If you are not ready to commit yet
 
-We’re not publishing a giant directory here. But families often ask “what else should we look at?”
+That is normal.
 
-Here are a few *common* options to research (visit their official sites and tour in person):
+A calmer order is often:
+1. explore the idea,
+2. do a test stay,
+3. tour Empathy School,
+4. narrow areas,
+5. make housing decisions with better information.
 
-- Green School Bali
-- Canggu Community School
-- Bali Island School
-- Australian Independent School (AIS Bali)
-- Dyatmika School
-- Pelangi School (Ubud)
-
----
-
-## What to watch out for (practical, not scary)
-
-- **Unclear support promises:** if you can’t get a straight answer on how support works week-to-week, assume it’s inconsistent.
-- **Commute denial:** if everyone “says it’s fine,” do the commute yourself at drop-off times.
-- **Communication gaps:** a calm move needs clear parent communication — ask to see examples.
-- **Hidden costs:** uniforms, registration, activities, transport, lunch — ask for a full list.
+You do not need to force certainty before you have seen the rhythm.
 
 ---
 
-## Next steps
+## What we learned the hard way
 
-- Copy the checklist: [School tour question list](/resources/school-tour-question-list)
-- Read the tour guide: [What to ask on a school tour](/guides/what-to-ask-on-a-school-tour)
-- Explore programs + camps: [Camps](/camps)
-- Ask a question: [Contact](/contact)
+Families often try to judge a school as an isolated product.
+
+In reality, you are judging a school plus a commute plus a family routine.
+
+That is why a tour feels much more useful when it is connected to the move as a whole.
+
+---
+
+## Deep dives (recommended)
+
+- [Empathy School fit](/empathy-school-fit)
+- [Empathy School tour prep](/empathy-school-tour-prep)
+- [How to know if Empathy School should anchor your move](/guides/how-to-know-if-empathy-school-should-anchor-your-move)
+- [What kind of family tends to thrive at Empathy School](/guides/what-kind-of-family-thrives-at-empathy-school)
+- [How to plan an Empathy School tour during a test stay](/guides/how-to-plan-an-empathy-school-tour-during-a-test-stay)
+- [How to use an Empathy School tour to test your week](/guides/how-to-use-an-empathy-school-tour-to-test-your-week)
+- [School tour question list](/resources/school-tour-question-list)
+- [Empathy School fit notes sheet](/resources/empathy-school-fit-notes-sheet)
+- [Empathy School commute + routine test sheet](/resources/empathy-school-commute-routine-test-sheet)
+- [Empathy School commute decision grid](/resources/empathy-school-commute-decision-grid)
+- [Commute reality](/commute-reality)
+- [Compare areas](/compare-areas)
+- [Housing](/housing)

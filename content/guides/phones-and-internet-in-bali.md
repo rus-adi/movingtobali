@@ -2,7 +2,7 @@
 title: Phones and internet in Bali (a family setup guide)
 description: "A simple connectivity plan for families: how to avoid landing-day stress, what to set up first, and what to test before you rely on it."
 date: "2026-02-22"
-updated: "2026-02-22"
+updated: '2026-03-22'
 category: Logistics
 tags:
   - internet
@@ -21,36 +21,34 @@ faqs:
     a: "Many families find it helpful for deliveries, appointments, and day-to-day coordination."
 ---
 
-## Quick start
-- Decide your “arrival plan”: eSIM before you fly vs get a SIM after you land.
-- Test internet in your accommodation **before** you commit to routines that depend on it.
-- Keep a backup: a second SIM, hotspot plan, or “plan B café”.
+## Quick take
 
-Related: [Bali arrival checklist](/guides/bali-arrival-checklist-evoa-arrival-card-levy)
+Sort connectivity early. It quietly affects transport, payments, school communication, work calls, food delivery, maps, and how calm the adults stay.
 
-## Step 1: Choose your arrival setup
-### Option A: eSIM before you fly
-Pros: less stress, you land connected  
-Cons: you need to set it up calmly before travel
+## The three layers to protect
 
-### Option B: SIM after arrival
-Pros: flexible  
-Cons: landing day becomes more complicated
+### Arrival connection
+Have a way to get online as soon as possible after landing so the first hours are not guesswork.
 
-## Step 2: Internet reliability checklist (copy/paste)
-- speed test at morning + evening
-- video call stability test
-- router location (does it reach bedrooms?)
-- power backup (what happens if power drops?)
+### Daily phone reliability
+Make sure the adults can message, navigate, pay, and coordinate child-related logistics without dependence on one fragile setup.
 
-## Step 3: Family “coordination” setup
-- one shared WhatsApp group for your family
-- a simple note with your address pinned
-- emergency contacts saved offline
+### Home or work-grade backup
+If remote work matters, treat home internet and a backup option as part of your housing and area decision, not an afterthought.
 
-## What we learned the hard way
-Connectivity feels like a small thing — until it fails during an important call or a tired-kid moment. Set it up early and remove stress.
+## Best first moves
+
+- confirm how both adults will stay reachable,
+- test maps and messaging before the first heavy day,
+- keep key addresses, drivers, and school contacts easy to access,
+- do not rely on “we’ll figure it out if the internet drops” if work or school makes that risky.
+
+## What families underestimate
+
+Connectivity is not only about work. It is also about how fast a tired, hot, lost, or sick day escalates when one phone plan fails.
 
 ## Next steps
-- [First week setup checklist](/guides/first-week-in-bali-setup-checklist)
-- [Banking & payments](/guides/banking-payments-in-bali)
+
+- [Weekday Reality](/weekday-reality)
+- [Housing](/housing)
+- [Arrival folder checklist](/resources/arrival-folder-checklist)

@@ -7,8 +7,15 @@ import Toc from "@/components/Toc";
 import RichText from "@/components/RichText";
 import FaqBlock from "@/components/FaqBlock";
 import DisclosureNotice from "@/components/DisclosureNotice";
+import SourceConversationPanel from "@/components/SourceConversationPanel";
 import SafetyNotice from "@/components/SafetyNotice";
-import { getSite } from "@/lib/site";
+import GovernanceMetaStrip from "@/components/GovernanceMetaStrip";
+import ParentVoiceStrip from "@/components/ParentVoiceStrip";
+import LearnedHardWay from "@/components/LearnedHardWay";
+import PageIntentStrip from "@/components/PageIntentStrip";
+import SmartNextSteps from "@/components/SmartNextSteps";
+import { getHardLessons, getScenarioVoices, inferProofTheme } from "@/lib/proof";
+import { buildContactHref } from "@/lib/contact";
 import { getEffectiveFaqs } from "@/lib/faqs";
 import {
   badge,
@@ -44,6 +51,170 @@ function showSafety(item: ContentItem): "visa" | "housing" | null {
 
 function hasQuickStart(body: string): boolean {
   return /^\s*##\s+Quick\s+start\b/im.test(body || "");
+}
+
+
+function getTrustLinks(item: ContentItem): { href: string; label: string }[] {
+  const links = [{ href: "/disclosure", label: "Disclosure" }];
+  if (showSafety(item) === "visa") links.unshift({ href: "/official-links", label: "Official links" });
+  if (showSafety(item) === "housing") links.unshift({ href: "/partners", label: "Partners" });
+  return links;
+}
+
+function getTrustNote(item: ContentItem): string {
+  if (showSafety(item) === "visa") {
+    return "Visa rules and fees can change. Treat this page as experience-based guidance, then verify changing details against official sources before you act.";
+  }
+  if (showSafety(item) === "housing") {
+    return "Housing pages are here to slow the process down, not push you into a fast yes. Verify identity, contracts, inclusions, and payment terms before you send money.";
+  }
+  if (item.slug.includes("school") || item.slug.includes("empathy")) {
+    return "School-fit pages are meant to help families self-qualify honestly. The goal is a better next decision, not a forced decision.";
+  }
+  return "This page is part of a larger planning system built by Empathy School. It should help you reduce uncertainty, not create artificial urgency.";
+}
+
+type ActionLink = { label: string; href: string; variant: "primary" | "secondary"; external?: boolean };
+type SidebarActionCard = { title: string; body: string; actions: ActionLink[] };
+
+function getSidebarActionCard(item: ContentItem): SidebarActionCard {
+  const path = item.kind === "pillars" ? `/${item.slug}` : `/${item.kind}/${item.slug}`;
+
+  if (item.kind === "pillars" && item.slug === "start-here") {
+    return {
+      title: "Need help sequencing the move?",
+      body: "Tell us your kids' ages, rough timeline, and the part that feels most unclear. We’ll point you to the next calm step.",
+      actions: [
+        { label: "Ask a planning question", href: buildContactHref("General move planning", { from: path }), variant: "primary" },
+        { label: "Browse family paths", href: "/family-paths", variant: "secondary" },
+      ],
+    };
+  }
+
+  if (item.kind === "pillars" && item.slug === "test-stay") {
+    return {
+      title: "Turn the trip into a real decision",
+      body: "If you already know your likely dates, ask us what to focus on so the stay answers the biggest questions, not just the easiest ones.",
+      actions: [
+        { label: "Ask about a test stay", href: buildContactHref("Test stay plan", { from: path }), variant: "primary" },
+        { label: "Use the decision scorecard", href: "/resources/test-stay-decision-scorecard", variant: "secondary" },
+      ],
+    };
+  }
+
+  if (item.kind === "pillars" && item.slug === "housing") {
+    return {
+      title: "Want housing help without rushing the process?",
+      body: "Request a Gaia Group intro once your timing, area shortlist, and budget band are real enough to make the conversation useful.",
+      actions: [
+        { label: "Check intro readiness", href: "/housing-intro-readiness", variant: "primary" },
+        { label: "Build the housing brief", href: "/housing-brief-builder", variant: "secondary" },
+      ],
+    };
+  }
+
+  if (item.kind === "pillars" && item.slug === "schools") {
+    return {
+      title: "Use Empathy School as a real-world anchor",
+      body: "If a tour is part of your planning, test the commute, the drop-off rhythm, and whether the school changes your area shortlist.",
+      actions: [
+        { label: "Ask about Empathy School fit", href: buildContactHref("Empathy School fit", { from: path }), variant: "primary" },
+        { label: "Use the commute test sheet", href: "/resources/empathy-school-commute-routine-test-sheet", variant: "secondary" },
+      ],
+    };
+  }
+
+  if (item.kind === "pillars" && item.slug === "costs") {
+    return {
+      title: "Get the numbers closer to real",
+      body: "A budget only gets useful once it is connected to a likely area, housing style, and whether Empathy School is part of the week.",
+      actions: [
+        { label: "Ask an area + budget question", href: buildContactHref("Area + budget question", { from: path }), variant: "primary" },
+        { label: "Open budget calculator", href: "/budget-calculator", variant: "secondary" },
+      ],
+    };
+  }
+
+  if (item.kind === "pillars" && item.slug === "areas") {
+    return {
+      title: "Shortlist areas before you overcommit",
+      body: "If you are torn between a few areas, use the Area Match tool first so the shortlist reflects your real week, not just Bali mood.",
+      actions: [
+        { label: "Use Area Match", href: "/area-match", variant: "primary" },
+        { label: "Ask about areas + budget", href: buildContactHref("Area + budget question", { from: path }), variant: "secondary" },
+      ],
+    };
+  }
+
+  if (item.kind === "pillars" && item.slug === "family-paths") {
+    return {
+      title: "Match the move to your real family setup",
+      body: "Use one primary path and one secondary lens so the next decisions reflect your child stage, your adult reality, and the pace that feels sustainable.",
+      actions: [
+        { label: "Use Family Path Match", href: "/family-path-match", variant: "primary" },
+        { label: "Ask a planning question", href: buildContactHref("General move planning", { from: path }), variant: "secondary" },
+      ],
+    };
+  }
+
+  if (item.kind === "guides" && item.slug === "how-gaia-group-housing-support-works") {
+    return {
+      title: "Ready to request the intro?",
+      body: "Send your likely dates, top areas, bedroom needs, and budget band so the first housing conversation starts with something real.",
+      actions: [
+        { label: "Check intro readiness", href: "/housing-intro-readiness", variant: "primary" },
+        { label: "Build the housing brief", href: "/housing-brief-builder", variant: "secondary" },
+      ],
+    };
+  }
+
+  if (item.kind === "guides" && item.slug === "how-to-use-an-empathy-school-tour-to-test-your-week") {
+    return {
+      title: "Test the school as part of the whole week",
+      body: "The useful question is not just whether you like the tour. It is whether the commute and routine still feel workable after pickup.",
+      actions: [
+        { label: "Ask about Empathy School fit", href: buildContactHref("Empathy School fit", { from: path }), variant: "primary" },
+        { label: "Use the commute test sheet", href: "/resources/empathy-school-commute-routine-test-sheet", variant: "secondary" },
+      ],
+    };
+  }
+
+  return {
+    title: "Need a calmer next step?",
+    body: "If you’re new to the idea, follow the roadmap. If you’re already committed, tell us what part feels stuck and we’ll point you to the next page or decision.",
+    actions: [
+      { label: "Ask a question", href: buildContactHref("General move planning", { from: path }), variant: "primary" },
+      { label: "Start here", href: "/start-here", variant: "secondary" },
+      { label: "Explore Empathy School", href: "/schools", variant: "secondary" },
+    ],
+  };
+}
+
+function pathForItem(item: ContentItem): string {
+  if (item.kind === "pillars") return `/${item.slug}`;
+  return `/${item.kind}/${item.slug}`;
+}
+
+function kindLabel(kind: ContentItem["kind"]): string {
+  return kind === "pillars" ? "Pillars" : kind.charAt(0).toUpperCase() + kind.slice(1);
+}
+
+function getBreadcrumbs(item: ContentItem, primaryPillar?: ContentItem | null) {
+  const crumbs: { href?: string; label: string }[] = [{ href: "/", label: "Home" }];
+
+  if (item.kind === "pillars") {
+    crumbs.push({ label: item.title });
+    return crumbs;
+  }
+
+  crumbs.push({ href: `/${item.kind}`, label: kindLabel(item.kind) });
+
+  if (primaryPillar && primaryPillar.kind === "pillars") {
+    crumbs.push({ href: `/${primaryPillar.slug}`, label: primaryPillar.title });
+  }
+
+  crumbs.push({ label: item.title });
+  return crumbs;
 }
 
 function QuickStartCard({ kind }: { kind: ContentItem["kind"] }) {
@@ -99,10 +270,10 @@ export default function ContentLayout({
   related: ContentItem[];
   primaryPillar?: ContentItem | null;
 }) {
-  const site = getSite();
   const faqs = getEffectiveFaqs(item);
 
   const needsQuickStart = !item.video?.youtubeId && !hasQuickStart(item.body);
+  const sidebarActionCard = getSidebarActionCard(item);
 
   const dateLabel = item.date
     ? new Date(item.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })
@@ -110,6 +281,10 @@ export default function ContentLayout({
   const updatedLabel = item.updated
     ? new Date(item.updated).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })
     : "";
+  const proofTheme = inferProofTheme(item);
+  const proofVoices = item.kind === "resources" ? [] : getScenarioVoices(proofTheme);
+  const proofLessons = item.kind === "resources" ? [] : getHardLessons(proofTheme);
+  const breadcrumbs = getBreadcrumbs(item, primaryPillar);
 
   return (
     <main>
@@ -123,22 +298,27 @@ export default function ContentLayout({
         <div className="relative py-16 md:py-24">
           <div className="container">
           <div>
-            <div className="flex flex-wrap items-center gap-2">
-              <Link className={badge} href="/">
-                ← Home
-              </Link>
-              {item.kind !== "pillars" ? (
-                <Link className={badge} href={`/${item.kind}`}>
-                  {item.kind}
-                </Link>
-              ) : (
-                <span className={badge}>pillar</span>
-              )}
+            <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 text-sm text-gray-600">
+              {breadcrumbs.map((crumb, index) => (
+                <span key={`${crumb.label}-${index}`} className="inline-flex items-center gap-2">
+                  {crumb.href ? (
+                    <Link href={crumb.href} className="transition hover:text-gray-900">
+                      {crumb.label}
+                    </Link>
+                  ) : (
+                    <span className="text-gray-900">{crumb.label}</span>
+                  )}
+                  {index < breadcrumbs.length - 1 ? <span className="text-stone-300">/</span> : null}
+                </span>
+              ))}
+            </nav>
+            <div className="mt-4 flex flex-wrap items-center gap-2">
+              <span className={badge}>{item.kind === "pillars" ? "Pillar" : kindLabel(item.kind)}</span>
               {item.category ? <span className={badgeAccent}>{item.category}</span> : null}
               {dateLabel ? <span className={badge}>{dateLabel}</span> : null}
               {updatedLabel ? <span className={badge}>Updated: {updatedLabel}</span> : null}
               <span className={badge}>{item.readingTimeMinutes} min read</span>
-              {item.video?.youtubeId ? <span className={badgeGood}>video</span> : null}
+              {item.video?.youtubeId ? <span className={badgeGood}>Video</span> : null}
             </div>
 
             <h1 className="mt-6 drop-shadow-sm  text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">{item.title}</h1>
@@ -206,14 +386,18 @@ export default function ContentLayout({
 
       <section className="py-16 md:py-24">
         <div className="container">
-          {needsQuickStart ? (
-            <div className={`${grid2} items-start mb-6`}>
-              <div>
-                <QuickStartCard kind={item.kind} />
+          <div className="mb-6 grid gap-6">
+            {needsQuickStart ? (
+              <div className={`${grid2} items-start`}>
+                <div>
+                  <QuickStartCard kind={item.kind} />
+                </div>
+                <div className="hidden md:block" aria-hidden="true" />
               </div>
-              <div className="hidden md:block" aria-hidden="true" />
-            </div>
-          ) : null}
+            ) : null}
+
+            <PageIntentStrip item={item} />
+          </div>
 
           <div className={`${grid2} items-start`}>
             <div className="grid gap-6">
@@ -221,34 +405,78 @@ export default function ContentLayout({
                 <RichText html={html} />
               </div>
 
+              <SmartNextSteps item={item} />
+
+              {proofVoices.length ? (
+                <ParentVoiceStrip
+                  title="What families tend to notice here"
+                  lead="These composite family scenarios are based on recurring patterns and questions around the hub. They are meant to make the decision more concrete without pretending to be direct testimonials."
+                  voices={proofVoices}
+                  ctaHref="/what-families-notice"
+                  ctaLabel="Browse the story hub"
+                />
+              ) : null}
+
+              {proofLessons.length ? (
+                <LearnedHardWay
+                  title="What we learned the hard way"
+                  lead="These are the patterns that keep repeating once families move from good intentions into an actual week."
+                  items={proofLessons}
+                />
+              ) : null}
+
               <FaqBlock faqs={faqs} />
             </div>
 
-            <div className="grid gap-6">
+            <div className="grid gap-6 md:sticky md:top-28">
               <Toc toc={toc} />
               <SocialLinks social={item.social} />
 
               <div className={cardCls}>
-                <strong className="text-sm font-semibold text-gray-900">Next steps</strong>
-                <p className="mt-3 text-sm leading-6 text-gray-600">
-                  If you’re new to the idea, follow the roadmap. If you’re already committed, jump into visas, housing, and areas.
-                </p>
+                <strong className="text-sm font-semibold text-gray-900">{sidebarActionCard.title}</strong>
+                <p className="mt-3 text-sm leading-6 text-gray-600">{sidebarActionCard.body}</p>
                 <div className={btnRow}>
-                  <a className={buttonPrimary} href={site.ctas.primary.href} data-track="content_next_start">
-                    {site.ctas.primary.text}
-                  </a>
-                  <a className={buttonSecondary} href={site.ctas.secondary.href} data-track="content_next_contact">
-                    {site.ctas.secondary.text}
-                  </a>
-                  <a
-                    className={buttonSecondary}
-                    href={site.ctas.empathy.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    data-track="content_next_empathy"
-                  >
-                    {site.ctas.empathy.text}
-                  </a>
+                  {sidebarActionCard.actions.map((action) => {
+                    const className = action.variant === "primary" ? buttonPrimary : buttonSecondary;
+                    return (
+                      <a
+                        key={`${action.label}-${action.href}`}
+                        className={className}
+                        href={action.href}
+                        target={action.external ? "_blank" : undefined}
+                        rel={action.external ? "noreferrer" : undefined}
+                        data-track="content_next_action"
+                        data-label={action.label}
+                        data-slug={item.slug}
+                      >
+                        {action.label}
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <SourceConversationPanel sourcePath={pathForItem(item)} compact />
+
+              <GovernanceMetaStrip item={item} compact />
+
+              <div className={cardCls}>
+                <strong className="text-sm font-semibold text-gray-900">Trust links</strong>
+                <p className="mt-3 text-sm leading-6 text-gray-600">{getTrustNote(item)}</p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {updatedLabel ? <span className={badgeAccent}>Updated {updatedLabel}</span> : null}
+                  {dateLabel ? <span className={badge}>Published {dateLabel}</span> : null}
+                  <span className={badge}>By Empathy School</span>
+                </div>
+                <div className={btnRow}>
+                  {getTrustLinks(item).map((link) => (
+                    <Link key={link.href} className={buttonSecondary} href={link.href} data-track="content_trust_link">
+                      {link.label}
+                    </Link>
+                  ))}
+                  <Link className={buttonSecondary} href="/editorial-standards" data-track="content_editorial_standards">
+                    Editorial standards
+                  </Link>
                 </div>
               </div>
             </div>

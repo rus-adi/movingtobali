@@ -2,7 +2,7 @@
 title: What to ask on a school tour (copy/paste checklist)
 description: "A copy/paste list of questions for school tours—learning support, safety, communication, community, and commute reality."
 date: '2026-02-22'
-updated: '2026-02-22'
+updated: '2026-03-22'
 category: Learning
 tags:
 - schools
@@ -16,38 +16,42 @@ faqs: []
 
 ## Quick take
 
-A tour is more than questions—it’s **watching the classroom feel** and mapping the commute in real time.
+A good school tour is not mainly for collecting answers. It is for noticing whether the day around Empathy School feels more possible or less.
 
-Copy/paste the checklist below into your notes app.
+## The five things parents should actually look for
 
-## Copy/paste checklist
+### 1. Emotional temperature
+Does the campus feel settled, rushed, performative, or genuinely lived in?
 
-### Learning & support
+### 2. Adult presence
+Do adults feel relational and observant, especially in transitions — not just polished during the formal talking points?
 
-- How do you support kids who are ahead / behind?
-- What does “support” look like day-to-day (not just on paper)?
-- How do teachers communicate progress?
+### 3. Child fit
+Would your child soften here, resist here, need more time here, or need something fundamentally different?
 
-### Safety & supervision
+### 4. Transition support
+How are arrival, movement between spaces, and the wobblier moments of the day handled?
 
-- What supervision ratios do you aim for?
-- What’s the protocol for injuries?
-- How do you handle pick-up and drop-off?
+### 5. Weekly effect
+What would this school do to your mornings, area choice, pickup energy, and after-school rhythm?
 
-### Community & fit
+## Questions worth asking
 
-- What kind of family tends to thrive here?
-- What’s the parent community like?
-- What do new families find hard in the first month?
+- What tends to help children settle well here?
+- What usually makes the first weeks harder?
+- How do families use a tour or a test stay to judge fit realistically?
+- What should we notice about the commute, not just the campus?
 
-### Commute reality
+## Best practice after the tour
 
-- What time do most families arrive?
-- Where do they live?
-- What does traffic look like during rainy season?
+Leave with notes on three things only:
 
-## Next steps
+- what felt like a strong fit,
+- what still feels unclear,
+- what the school would change about where and how you live in Bali.
 
-- Overview: [Schools](/schools)
-- Start with priorities: [Start here](/start-here)
+## Pair this with
 
+- [Empathy School fit](/empathy-school-fit)
+- [Empathy School tour prep](/empathy-school-tour-prep)
+- [School tour question list](/resources/school-tour-question-list)

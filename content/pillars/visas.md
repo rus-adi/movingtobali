@@ -13,6 +13,13 @@ tags:
 category: Visas
 draft: false
 noindex: false
+governance:
+  owner: "Empathy School editorial"
+  lastReviewed: '2026-03-22'
+  reviewCadenceDays: 30
+  reviewPriority: high
+  evidenceLevel: official-links
+  contentState: core
 video:
   youtubeId: vTds0BelBf0
   title: Why Bali Became the Home of Empathy School

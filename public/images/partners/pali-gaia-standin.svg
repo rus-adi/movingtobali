@@ -1,0 +1,28 @@
+<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Pali from Gaia Group</title>
+  <desc id="desc">Stand-in profile illustration used until the final Gaia Group headshot is supplied.</desc>
+  <defs>
+    <linearGradient id="bg" x1="96" y1="84" x2="624" y2="636" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F0E5"/>
+      <stop offset="1" stop-color="#E8F1EA"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="236" y1="200" x2="486" y2="496" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAC58A"/>
+      <stop offset="1" stop-color="#D0A05E"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="720" rx="48" fill="url(#bg)"/>
+  <rect x="48" y="48" width="624" height="624" rx="40" fill="#FFFFFF" fill-opacity="0.64"/>
+  <circle cx="360" cy="248" r="124" fill="url(#sun)"/>
+  <path d="M292 236C292 196.235 324.235 164 364 164C403.765 164 436 196.235 436 236V272H292V236Z" fill="#3F5F4A"/>
+  <path d="M230 470C230 388.291 296.291 322 378 322H390C471.709 322 538 388.291 538 470V516H230V470Z" fill="#6F8E77"/>
+  <circle cx="364" cy="254" r="78" fill="#F5D8B4"/>
+  <path d="M317 240C329 213.333 349.667 200 379 200C408.333 200 428 213.333 438 240" stroke="#3F5F4A" stroke-width="18" stroke-linecap="round"/>
+  <path d="M333 272C346.333 283.333 363.667 289 385 289C406.333 289 423 283.333 435 272" stroke="#C58853" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="338" cy="250" r="7" fill="#4A3A2A"/>
+  <circle cx="392" cy="250" r="7" fill="#4A3A2A"/>
+  <path d="M355 280C360.333 283.333 366.333 285 373 285C379.667 285 385.667 283.333 391 280" stroke="#A56B46" stroke-width="8" stroke-linecap="round"/>
+  <path d="M112 556H608" stroke="#D6E2D6" stroke-width="2"/>
+  <text x="112" y="608" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">Pali</text>
+  <text x="112" y="650" fill="#4B5563" font-family="Arial, Helvetica, sans-serif" font-size="24">Gaia Group · housing introductions via Empathy School</text>
+</svg>

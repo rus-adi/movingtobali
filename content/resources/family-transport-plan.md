@@ -2,7 +2,7 @@
 title: Family transport plan (first month in Bali)
 description: "A simple worksheet to decide how your family will move around in the first month—walkability, driver use, car needs, and scooter boundaries."
 date: "2026-02-22"
-updated: "2026-02-22"
+updated: '2026-03-22'
 category: Worksheet
 resourceType: Worksheet
 tags:
@@ -21,27 +21,32 @@ faqs:
     a: "Walk where possible + driver for longer trips, then reassess once you know your routines."
 ---
 
-## Step 1: Write your “stress rule”
-Example:
-- “We avoid heavy traffic with tired kids.”
-- “We avoid night driving when possible.”
+## What this planner should answer
 
-Your rule:
-- …
+By the end of the page you should know:
 
-## Step 2: Choose your first-month default
-Pick one:
-- Walk + Driver
-- Car + Walk
-- Mixed (Walk + Driver + occasional scooter)
+- how the family handles mornings,
+- what happens when one adult is unavailable,
+- what your backup is in rain or traffic,
+- and whether the current area still makes sense once transport is real.
 
-## Step 3: Scooter boundaries (if relevant)
-- Who rides?
-- When (daytime only / not in rain / not with tired kids)?
-- Safety gear rule:
+## Build the plan in layers
 
-## Step 4: School/activities plan (even if you’re not enrolled yet)
-- How far are you willing to commute daily?
-- What’s your backup plan if traffic is heavy?
+### Primary plan
+Who takes the main school / activity route and how?
 
-Related guide: [Family transport in Bali](/guides/family-transport-drivers-scooters-cars)
+### Backup plan
+What happens when work runs late, a child is sick, or weather changes the route?
+
+### Tired-day plan
+What is the easiest version of the day when nobody has much bandwidth?
+
+## Use transport as a decision signal
+
+If your transport plan keeps getting complicated, the issue may be the area or the housing choice, not your logistics skills.
+
+## Pair this with
+
+- [Commute Reality](/commute-reality)
+- [Compare Areas](/compare-areas)
+- [Weekday Reality](/weekday-reality)

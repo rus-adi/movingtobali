@@ -81,6 +81,7 @@ const staticPaths = new Set([
   "/camps",
   "/family-life",
   "/costs",
+  "/budget-calculator",
   "/areas",
   "/guides",
   "/blog",

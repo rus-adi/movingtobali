@@ -125,6 +125,6 @@ Humility works here. Asking works. Following works.
 
 If your family is planning a move and wants the broader context:
 
-- [Family life pillar](/family-life)
+- [Daily life](/daily-life)
 - [Start here (roadmap)](/start-here)
 - [Schools & learning](/schools)

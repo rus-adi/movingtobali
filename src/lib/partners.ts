@@ -7,19 +7,24 @@ export type Partner = {
   name: string;
   category: string;
   status: PartnerStatus;
-  url: string;
+  url?: string;
   bestFor?: string;
   languages?: string[];
   areas?: string[];
   services?: string[];
   note?: string;
+  contactName?: string;
+  image?: string;
+  trustPoints?: string[];
+  process?: string[];
+  goodFit?: string[];
+  notFor?: string[];
 };
 
 export function getPartners(): Partner[] {
   const all = (partners as any).partners as Partner[];
   const env = process.env.NODE_ENV;
 
-  // Launch rule: public site should only show verified/owned.
   const allowed = env === "production" ? ["owned", "verified"] : ["owned", "verified", "check"];
 
   return (all || [])

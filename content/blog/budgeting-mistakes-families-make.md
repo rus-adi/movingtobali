@@ -2,7 +2,7 @@
 title: 3 budgeting mistakes families make when planning Bali
 description: "A few common mistakes—and a calmer way to plan ranges instead of one fragile number."
 date: '2026-02-19'
-updated: '2026-02-19'
+updated: '2026-03-22'
 category: Costs
 tags:
 - costs
@@ -12,24 +12,40 @@ draft: false
 noindex: false
 ---
 
-## Mistake #1: Planning a single number
+## Mistake #1: Treating Bali like one number
 
-A single number makes families anxious because reality moves. Use a **range**.
+A single number sounds neat, but it hides the real question: **which version of the week are you pricing?**
 
-## Mistake #2: Forgetting the big drivers
+A Bali budget changes a lot once area, transport, and whether Empathy School shapes the move become real.
 
-Housing expectations + learning costs + lifestyle are the main multipliers.
+## Mistake #2: Looking at rent before looking at radius
 
-## Mistake #3: Underestimating “setup month”
+A lower rent can still create a heavier month if it means:
 
-The first month often includes extra costs (transport, short stays, deposits, small fixes).
+- longer drives,
+- more driver use,
+- more meals out because the day runs late,
+- and less tolerance for the home by the middle of the week.
+
+## Mistake #3: Underestimating setup month
+
+The first month often includes:
+
+- deposits,
+- short stays,
+- transport experiments,
+- extra purchases,
+- and the cost of not yet knowing your easy defaults.
+
+## Mistake #4: Forgetting that learning changes the whole plan
+
+On this hub, the school question means Empathy School, tours, camps, or a school-shaped week. Once learning enters the move, budget assumptions often change quickly.
 
 ## A calmer approach
 
-Use the [budget range planner](/resources/family-budget-range-planner).
+Build a **low / mid / high** range, then test it against two realistic areas and one likely housing style.
 
-## Related
-
+Use:
+- [Budget calculator](/budget-calculator)
+- [Family budget range planner](/resources/family-budget-range-planner)
 - [Costs](/costs)
-- [Cost of living framework](/guides/cost-of-living-for-families-framework)
-

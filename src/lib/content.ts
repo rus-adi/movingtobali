@@ -52,6 +52,17 @@ export type AreaMeta = {
 };
 
 
+
+
+export type GovernanceMeta = {
+  owner?: string;
+  lastReviewed?: string;
+  reviewCadenceDays?: number;
+  reviewPriority?: "high" | "medium" | "low";
+  evidenceLevel?: "experience-based" | "reviewed" | "official-links";
+  contentState?: "core" | "monitor" | "experimental";
+};
+
 export type ContentKind = "pillars" | "guides" | "areas" | "blog" | "resources";
 
 export type ContentItem = {
@@ -68,6 +79,7 @@ export type ContentItem = {
   noindex?: boolean;
   coverImage?: string;
   resourceType?: string;
+  governance?: GovernanceMeta;
 
   // Area-specific metadata (only used for kind === "areas")
   area?: AreaMeta;
@@ -125,6 +137,7 @@ function parseFile(kind: ContentKind, filePath: string): ContentItem {
     noindex: Boolean(data.noindex),
     coverImage: data.coverImage ? String(data.coverImage) : undefined,
     resourceType: data.resourceType ? String(data.resourceType) : undefined,
+    governance: data.governance ? (data.governance as any) : undefined,
     area: data.area ? (data.area as any) : undefined,
     video: data.video ? (data.video as any) : undefined,
     social: data.social ? (data.social as any) : undefined,

@@ -35,6 +35,12 @@ export default function ClickTracker() {
         props[k] = v;
       });
 
+      props.currentPath = window.location.pathname;
+      const href = (el as HTMLAnchorElement).href || el.getAttribute("href") || undefined;
+      if (href) props.targetHref = href;
+      const textLabel = (el.textContent || "").replace(/\s+/g, " ").trim();
+      if (textLabel) props.labelText = textLabel.slice(0, 140);
+
       // GA4
       if (typeof window.gtag === "function") {
         window.gtag("event", eventName, props);

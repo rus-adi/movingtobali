@@ -1,7 +1,7 @@
 {
   "brand": {
     "name": "Moving to Bali with Kids",
-    "tagline": "A calm, comprehensive guide for families relocating to Bali.",
+    "tagline": "A calm, practical relocation guide from Empathy School.",
     "siteUrl": "https://movingtobali.empathy.school",
     "publisherName": "Empathy School",
     "publisherUrl": "https://empathy.school",
@@ -13,7 +13,7 @@
   },
   "seo": {
     "defaultTitle": "Moving to Bali with Kids (by Empathy School)",
-    "defaultDescription": "A practical, family-first guide to relocating to Bali: visas, housing, neighborhoods, learning, daily logistics, and what to do first.",
+    "defaultDescription": "A practical, family-first guide to relocating to Bali: test stays, visas, housing, daily logistics, and how Empathy School fits into a calmer move.",
     "keywords": [
       "move to bali with kids",
       "moving to bali",
@@ -21,7 +21,8 @@
       "where to live in bali",
       "bali with children",
       "bali cost of living",
-      "family life in bali"
+      "family life in bali",
+      "empathy school bali"
     ],
     "googleSiteVerification": ""
   },
@@ -35,8 +36,8 @@
       "href": "/contact"
     },
     "empathy": {
-      "text": "Learn about Empathy School",
-      "href": "https://empathy.school"
+      "text": "Explore Empathy School",
+      "href": "/schools"
     }
   }
 }

@@ -132,7 +132,7 @@ Repetition feels boring—but it’s what creates belonging.
 
 ## Next steps
 
-- [Family life pillar](/family-life)
+- [Daily life](/daily-life)
 - [Start here (roadmap)](/start-here)
 - [Schools & learning](/schools)
 - [Camps & short-term programs](/camps)

@@ -2,7 +2,7 @@
 title: 'Rainy season with kids: what changes (and what doesn’t)'
 description: "Practical rainy season planning for families: routines, transport, and keeping kids regulated when the weather shifts."
 date: '2026-02-22'
-updated: '2026-02-22'
+updated: '2026-03-22'
 category: Family life
 tags:
 - family-life
@@ -12,26 +12,32 @@ draft: false
 noindex: false
 ---
 
-## What changes
+## The mistake is treating rain like an interruption
 
-- Travel time (rain slows everything)
-- Kids’ regulation (less outside time can show up fast)
-- Plans (you learn to keep “indoor defaults” ready)
+Families usually get calmer when they stop seeing rain as the day going wrong and start treating it like a design constraint.
 
-## What doesn’t
+## What rainy weeks are really testing
 
-- The importance of routines
-- The value of a calm commute
-- The need for one anchor community
+Rain exposes whether you have:
 
-## Practical rainy-season defaults
+- an indoor backup,
+- a food plan,
+- a calmer after-school routine,
+- and enough margin that one soggy afternoon does not collapse the whole mood.
 
-- One indoor activity you can do daily
-- A simple “wet day” transport plan
-- Earlier afternoons (kids get tired)
+## What tends to help
+
+- two or three indoor defaults the children already know,
+- less ambitious afternoon planning,
+- spare clothes and shoes where you actually need them,
+- a lower bar for what counts as a successful day.
+
+## The bigger move lesson
+
+Rainy season is not only about weather. It is about whether the family week is sturdy enough to absorb inconvenience without becoming emotional chaos.
 
 ## Related
 
-- [Family life](/family-life)
-- [First week checklist](/guides/first-week-in-bali-setup-checklist)
-
+- [Rainy-season routines in Bali with kids](/guides/rainy-season-routines-in-bali-with-kids)
+- [Rainy-day defaults list](/resources/rainy-day-defaults-list)
+- [Weekday Reality](/weekday-reality)
