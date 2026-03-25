@@ -48,8 +48,8 @@ export default function GuidesIndexPage({ searchParams }: Props) {
       <JsonLd data={schemas} />
 
       <section className="relative w-full overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-white to-emerald-50" />
-      <div className="absolute inset-0 opacity-20">
+      <div className="absolute inset-0 bg-gradient-to-br from-amber-100/70 via-stone-100/40 to-emerald-100/65" />
+      <div className="absolute inset-0 opacity-50">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/images/hero-bali.webp" alt="" className="h-full w-full object-cover" />
       </div>

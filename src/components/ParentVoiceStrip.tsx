@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { badge, badgeAccent, buttonSecondary, cardCls, grid3 } from "@/components/ui/styles";
+import { badge, badgeAccent, buttonSecondary, cardCls } from "@/components/ui/styles";
 import type { ScenarioVoice } from "@/lib/proof";
 
 export default function ParentVoiceStrip({
@@ -33,7 +33,7 @@ export default function ParentVoiceStrip({
         ) : null}
       </div>
 
-      <div className={grid3}>
+      <div className="grid gap-4">
         {voices.map((voice) => (
           <div key={`${voice.familyType}-${voice.title}`} className={cardCls}>
             <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">{voice.familyType}</div>
