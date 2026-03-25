@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ContentItem } from "@/lib/content";
-import { buttonPrimary, buttonSecondary, cardCls, grid3, badgeAccent, badge } from "@/components/ui/styles";
+import { buttonPrimary, buttonSecondary, cardCls, badgeAccent, badge } from "@/components/ui/styles";
 import { getSmartActionGroup } from "@/lib/nextCtas";
 
 export default function SmartNextSteps({ item }: { item: ContentItem }) {
@@ -17,7 +17,7 @@ export default function SmartNextSteps({ item }: { item: ContentItem }) {
         <p className="mt-3 max-w-3xl text-sm leading-6 text-gray-600">{group.lead}</p>
       </div>
 
-      <div className={grid3}>
+      <div className="grid gap-4">
         {group.actions.map((action) => {
           const className = action.variant === "primary" ? buttonPrimary : buttonSecondary;
           return (
