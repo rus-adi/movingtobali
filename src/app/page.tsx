@@ -214,28 +214,28 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className={cardCls + " border-white/25 bg-black/35 backdrop-blur"}>
-                <strong className="text-sm font-semibold text-white">Start with the order of decisions</strong>
-                <p className="mt-4 text-sm leading-6 text-white/95">
+              <div className={cardCls + " border-white/70 bg-white/95 backdrop-blur"}>
+                <strong className="text-sm font-semibold text-gray-900">Start with the order of decisions</strong>
+                <p className="mt-4 text-sm leading-6 text-gray-700">
                   Families usually do better when they decide the shape of the move first, shortlist areas second, build a budget range third, then use Empathy School and housing support in a more grounded way.
                 </p>
                 <div className="mt-6 grid gap-3 sm:grid-cols-2">
                   <a
-                    className="group rounded-2xl border border-white/25 bg-white/15 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/20"
+                    className="group rounded-2xl border border-stone-300 bg-white px-4 py-3 text-sm font-semibold text-gray-900 transition hover:border-emerald-300 hover:bg-emerald-50"
                     href="/move-timeline"
                     data-track="home_hero_card_timeline"
                   >
                     Build the move timeline <span className="ml-1 inline-block transition group-hover:translate-x-0.5">→</span>
                   </a>
                   <a
-                    className="group rounded-2xl border border-white/25 bg-white/15 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/20"
+                    className="group rounded-2xl border border-stone-300 bg-white px-4 py-3 text-sm font-semibold text-gray-900 transition hover:border-emerald-300 hover:bg-emerald-50"
                     href="/decision-checklists"
                     data-track="home_hero_card_checklists"
                   >
                     Open decision checklists <span className="ml-1 inline-block transition group-hover:translate-x-0.5">→</span>
                   </a>
                 </div>
-                <div className="mt-6 rounded-2xl border border-white/25 bg-black/25 p-4 text-sm leading-6 text-white/95">
+                <div className="mt-6 rounded-2xl border border-stone-200 bg-stone-50 p-4 text-sm leading-6 text-gray-700">
                   Housing support stays intentionally narrow. The public housing route points toward Gaia Group once timing,
                   area direction, and family needs are real enough to shape a useful shortlist.
                 </div>
