@@ -1,6 +1,15 @@
 @import "tailwindcss";
 @config "../../tailwind.config.js";
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 7rem;
+}
+
 /*
   Subtle page-load section reveal (fade + slide up) with stagger.
   Minimal CSS only for keyframes + stagger; all other styling uses Tailwind utilities.
@@ -57,6 +66,10 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   main > section {
     opacity: 1;
     transform: none;

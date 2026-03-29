@@ -151,17 +151,7 @@ export default function HomePage() {
   ];
 
 
-  const homeSectionLinks = [
-    ["#starting-points", "Start here"],
-    ["#move-system", "Tools"],
-    ["#family-setups", "Family setups"],
-    ["#daily-life", "Daily life"],
-    ["#comparison-tools", "Compare"],
-    ["#watch-before-you-decide", "Video recaps"],
-    ["#proof", "Proof"],
-    ["#areas", "Areas"],
-    ["#guides", "Guides"],
-  ] as const;
+
 
   const trustCards: CardItem[] = [
     {
@@ -281,18 +271,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-stone-200 bg-white py-6">
-        <div className="container">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className={badgeAccent}>Jump to</span>
-            {homeSectionLinks.map(([href, label]) => (
-              <a key={href} href={href} className="inline-flex items-center justify-center rounded-full border border-stone-200 bg-white px-3 py-1.5 text-sm font-medium text-stone-700 shadow-sm transition hover:border-emerald-200 hover:bg-emerald-50">
-                {label}
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <Section
         id="hub-scale"
