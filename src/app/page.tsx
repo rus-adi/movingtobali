@@ -45,6 +45,7 @@ export default function HomePage() {
     { title: "Move Shape Compare", href: "/test-stay-vs-full-move", track: "home_quick_move_shape_compare", code: "MS" },
     { title: "Video Recaps", href: "/video-recaps", track: "home_quick_video_recaps", code: "VR" },
   ];
+  const featuredQuick = quick.slice(0, 5);
 
   const startingPoints: CardItem[] = [
     {
@@ -151,17 +152,7 @@ export default function HomePage() {
   ];
 
 
-  const homeSectionLinks = [
-    ["#starting-points", "Start here"],
-    ["#move-system", "Tools"],
-    ["#family-setups", "Family setups"],
-    ["#daily-life", "Daily life"],
-    ["#comparison-tools", "Compare"],
-    ["#watch-before-you-decide", "Video recaps"],
-    ["#proof", "Proof"],
-    ["#areas", "Areas"],
-    ["#guides", "Guides"],
-  ] as const;
+
 
   const trustCards: CardItem[] = [
     {
@@ -194,105 +185,89 @@ export default function HomePage() {
     <main>
       <section className="relative w-full overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/hero-bali.webp" alt="" fill className="object-cover" priority />
+          <Image src="/images/hero-bali.webp" alt="A calm Bali landscape representing family relocation planning." fill className="object-cover" priority />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/50 to-black/25" />
 
-        <div className="relative py-16 md:py-24">
+        <div className="relative py-16 md:py-20">
           <div className="container">
-            <div className="grid items-start gap-10 md:grid-cols-2 md:gap-12">
-              <div className="space-y-6">
-                <div className={badgeAccent}>Move to Bali with Kids — by Empathy School</div>
-                <h1 className="text-4xl font-semibold tracking-tight text-white drop-shadow-sm sm:text-5xl lg:text-6xl">
-                  A calmer way to move to Bali with kids.
+            <div className="mx-auto max-w-4xl space-y-8">
+              <div className="space-y-5 text-center md:text-left">
+                <div className={badgeAccent}>A practical relocation hub by Empathy School</div>
+                <h1 className="text-4xl font-semibold tracking-tight text-white drop-shadow-sm sm:text-5xl">
+                  Plan your Bali move with clarity, not chaos.
                 </h1>
-                <p className="max-w-2xl text-base leading-relaxed text-white/90 sm:text-lg">
-                  This is a practical relocation hub for families: planning tools, area choices, budgets, housing strategy,
-                  first-month routines, and how Empathy School fits into a move that still feels human.
+                <p className="mx-auto max-w-2xl text-base leading-relaxed text-white/90 md:mx-0">
+                  Get step-by-step tools for decisions, budgeting, areas, and school fit so your family can move with confidence.
                 </p>
-                <div className={btnRow}>
+                <div className="flex flex-wrap items-center justify-center gap-3 md:justify-start">
                   <a className={buttonPrimary} href="/plan-your-move" data-track="home_cta_plan">
                     Plan your move
                   </a>
                   <a className={buttonSecondary} href="/schools" data-track="home_cta_empathy">
                     Explore Empathy School
                   </a>
-                  <a
-                    className="inline-flex w-full items-center justify-center gap-2 whitespace-nowrap rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-white/15 sm:w-auto"
-                    href="/search"
-                    data-track="home_cta_search"
-                  >
-                    Search the hub
-                  </a>
                 </div>
               </div>
 
-              <div className={cardCls + " bg-white/10 border-white/15 backdrop-blur"}>
-                <strong className="text-sm font-semibold text-white">Start with the order of decisions</strong>
-                <p className="mt-4 text-sm leading-6 text-white/85">
-                  Families usually do better when they decide the shape of the move first, shortlist areas second, build a budget range third, then use Empathy School and housing support in a more grounded way.
+              <div className={cardCls + " border-white/20 bg-white/10 backdrop-blur"}>
+                <strong className="text-sm font-semibold text-white">Get started</strong>
+                <p className="mt-3 text-sm leading-6 text-white/85">
+                  Start with a small set of high-impact pages, then expand when you need more detail.
                 </p>
-                <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                  {featuredQuick.map((q) => (
+                    <a
+                      key={q.href}
+                      href={q.href}
+                      data-track={q.track}
+                      className="group flex items-center gap-3 rounded-2xl border border-white/20 bg-white/10 p-4 text-white shadow-sm transition hover:bg-white/15"
+                    >
+                      <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/15 text-xs font-semibold text-white" aria-hidden>
+                        {q.code}
+                      </span>
+                      <span className="text-sm font-semibold">{q.title}</span>
+                    </a>
+                  ))}
+                </div>
+                <div className="mt-5">
                   <a
-                    className="group rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
-                    href="/move-timeline"
-                    data-track="home_hero_card_timeline"
+                    href="#all-resources"
+                    className="inline-flex items-center rounded-full border border-white/25 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/15"
+                    data-track="home_see_all_resources"
                   >
-                    Build the move timeline <span className="ml-1 inline-block transition group-hover:translate-x-0.5">→</span>
-                  </a>
-                  <a
-                    className="group rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
-                    href="/decision-checklists"
-                    data-track="home_hero_card_checklists"
-                  >
-                    Open decision checklists <span className="ml-1 inline-block transition group-hover:translate-x-0.5">→</span>
+                    See all 18 resources
                   </a>
                 </div>
-                <div className="mt-6 rounded-2xl border border-white/20 bg-white/10 p-4 text-sm leading-6 text-white/85">
-                  Housing support stays intentionally narrow. The public housing route points toward Gaia Group once timing,
-                  area direction, and family needs are real enough to shape a useful shortlist.
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-12">
-              <div className="flex items-center gap-4">
-                <div className="h-px flex-1 bg-white/20" />
-                <h2 className="text-xl font-semibold tracking-tight text-white">Quick start</h2>
-                <div className="h-px flex-1 bg-white/20" />
-              </div>
-              <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6 xl:grid-cols-7">
-                {quick.map((q) => (
-                  <a
-                    key={q.href}
-                    href={q.href}
-                    data-track={q.track}
-                    className="group flex items-center gap-3 rounded-2xl border border-white/20 bg-white/10 p-4 text-white shadow-sm backdrop-blur transition hover:bg-white/15 hover:shadow-md"
-                  >
-                    <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/15 text-xs font-semibold text-white" aria-hidden>
-                      {q.code}
-                    </span>
-                    <span className="text-sm font-semibold">{q.title}</span>
-                  </a>
-                ))}
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="border-y border-stone-200 bg-white py-6">
-        <div className="container">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className={badgeAccent}>Jump to</span>
-            {homeSectionLinks.map(([href, label]) => (
-              <a key={href} href={href} className="inline-flex items-center justify-center rounded-full border border-stone-200 bg-white px-3 py-1.5 text-sm font-medium text-stone-700 shadow-sm transition hover:border-emerald-200 hover:bg-emerald-50">
-                {label}
-              </a>
-            ))}
-          </div>
+      <Section
+        id="all-resources"
+        title="All 18 planning resources"
+        lead="Use the complete list when you are ready to explore every planning path."
+        tone="muted"
+      >
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+          {quick.map((q) => (
+            <a
+              key={q.href}
+              href={q.href}
+              data-track={q.track}
+              className={cardCls + " flex items-center gap-3 p-4"}
+            >
+              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-stone-100 text-xs font-semibold text-stone-700" aria-hidden>
+                {q.code}
+              </span>
+              <span className="text-sm font-semibold text-gray-900">{q.title}</span>
+            </a>
+          ))}
         </div>
-      </section>
+      </Section>
+
 
       <Section
         id="hub-scale"
