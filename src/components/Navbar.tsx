@@ -11,6 +11,13 @@ type NavItem = {
   href: string;
   label: string;
   track: string;
+  match?: (path: string) => boolean;
+};
+
+type NavGroup = {
+  label: string;
+  track: string;
+  items: NavItem[];
 };
 
 function MenuIcon({ className }: { className?: string }) {
@@ -30,18 +37,60 @@ export default function Navbar() {
   const site = getSite();
   const pathname = usePathname();
 
-  const navItems: NavItem[] = useMemo(
+  const topLevelItems: NavItem[] = useMemo(
     () => [
+      { href: "/", label: "Home", track: "nav_home_top" },
       { href: "/start-here", label: "Start Here", track: "nav_start" },
-      { href: "/plan-your-move", label: "Plan Your Move", track: "nav_plan" },
-      { href: "/areas", label: "Areas", track: "nav_areas" },
-      { href: "/housing", label: "Housing", track: "nav_housing" },
-      { href: "/daily-life", label: "Daily Life", track: "nav_daily_life" },
-      { href: "/costs", label: "Costs", track: "nav_costs" },
-      { href: "/schools", label: "Empathy School", track: "nav_empathy_school" },
-      { href: "/partners", label: "Partners", track: "nav_partners" },
     ],
-    []
+    [],
+  );
+
+  const groupedItems: NavGroup[] = useMemo(
+    () => [
+      {
+        label: "Plan",
+        track: "nav_group_plan",
+        items: [
+          { href: "/plan-your-move", label: "Plan Your Move", track: "nav_plan" },
+          { href: "/move-timeline", label: "Move Timeline", track: "nav_timeline" },
+          { href: "/decision-checklists", label: "Decision Checklists", track: "nav_checklists" },
+          { href: "/family-path-match", label: "Family Path Match", track: "nav_family_path_match" },
+          { href: "/budget-calculator", label: "Budget Calculator", track: "nav_budget" },
+        ],
+      },
+      {
+        label: "Explore",
+        track: "nav_group_explore",
+        items: [
+          { href: "/areas", label: "Areas", track: "nav_areas", match: (path) => path === "/areas" || path.startsWith("/areas/") || path === "/area-match" || path === "/compare-areas" || path === "/commute-reality" },
+          { href: "/daily-life", label: "Daily Life", track: "nav_daily_life", match: (path) => path === "/daily-life" || path === "/weekday-reality" || path === "/settling-in" },
+          { href: "/guides", label: "Guides", track: "nav_guides", match: (path) => path === "/guides" || path.startsWith("/guides/") },
+          { href: "/resources", label: "Resources", track: "nav_resources", match: (path) => path === "/resources" || path.startsWith("/resources/") },
+          { href: "/blog", label: "Blog", track: "nav_blog", match: (path) => path === "/blog" || path.startsWith("/blog/") },
+        ],
+      },
+      {
+        label: "School & Housing",
+        track: "nav_group_school_housing",
+        items: [
+          { href: "/schools", label: "Empathy School", track: "nav_empathy_school", match: (path) => path === "/schools" || path === "/empathy-school-fit" || path === "/empathy-school-tour-prep" },
+          { href: "/housing", label: "Housing", track: "nav_housing", match: (path) => path === "/housing" || path === "/gaia-group" || path === "/housing-intro-readiness" || path === "/housing-brief-builder" },
+          { href: "/partners", label: "Partners", track: "nav_partners" },
+        ],
+      },
+      {
+        label: "Home sections",
+        track: "nav_group_home_sections",
+        items: [
+          { href: "/#starting-points", label: "Starting points", track: "nav_home_starting_points" },
+          { href: "/#move-system", label: "Tools", track: "nav_home_tools" },
+          { href: "/#family-setups", label: "Family setups", track: "nav_home_family_setups" },
+          { href: "/#comparison-tools", label: "Comparison tools", track: "nav_home_comparison" },
+          { href: "/#watch-before-you-decide", label: "Video recaps", track: "nav_home_video_recaps" },
+        ],
+      },
+    ],
+    [],
   );
 
   const contactItem: NavItem = useMemo(
@@ -55,9 +104,12 @@ export default function Navbar() {
   );
 
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [desktopOpenGroup, setDesktopOpenGroup] = useState<string | null>(null);
+  const [mobileOpenGroups, setMobileOpenGroups] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     setMobileOpen(false);
+    setDesktopOpenGroup(null);
   }, [pathname]);
 
   useEffect(() => {
@@ -69,29 +121,17 @@ export default function Navbar() {
     return () => document.removeEventListener("keydown", onKeyDown);
   }, []);
 
-  const isActive = (href: string) => {
-    if (href === "/plan-your-move") {
-      return pathname === "/plan-your-move" || pathname === "/move-timeline" || pathname === "/decision-checklists" || pathname === "/family-path-match" || pathname === "/test-stay-vs-full-move" || pathname === "/housing-style-compare" || pathname === "/video-recaps" || pathname === "/conversation-paths" || pathname === "/how-this-hub-works";
-    }
-    if (href === "/areas") {
-      return pathname === "/areas" || pathname === "/area-match" || pathname === "/compare-areas" || pathname === "/commute-reality" || pathname.startsWith("/areas/");
-    }
-    if (href === "/housing") {
-      return pathname === "/housing" || pathname === "/gaia-group" || pathname === "/housing-intro-readiness" || pathname === "/housing-brief-builder";
-    }
-    if (href === "/daily-life") {
-      return pathname === "/daily-life" || pathname === "/weekday-reality" || pathname === "/settling-in" || pathname === "/daily-life";
-    }
-    if (href === "/schools") {
-      return pathname === "/schools" || pathname === "/empathy-school-fit" || pathname === "/empathy-school-tour-prep";
-    }
-    return pathname === href;
+  const isActive = (item: NavItem) => item.match ? item.match(pathname) : pathname === item.href;
+  const isGroupActive = (group: NavGroup) => group.items.some((item) => isActive(item));
+  const groupId = (groupLabel: string) => groupLabel.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+  const toggleMobileGroup = (label: string) => {
+    setMobileOpenGroups((prev) => ({ ...prev, [label]: !prev[label] }));
   };
 
-  const linkCls = (href: string) =>
+  const linkCls = (item: NavItem) =>
     cn(
       "rounded-full px-3 py-2 text-xs font-medium text-gray-600 transition-colors duration-200 ease-out hover:bg-emerald-50 hover:text-gray-900 lg:text-sm",
-      isActive(href) && "bg-emerald-50 text-emerald-800 shadow-sm"
+      isActive(item) && "active bg-emerald-50 text-emerald-800 shadow-sm",
     );
 
   return (
@@ -125,11 +165,7 @@ export default function Navbar() {
 
       <div className="container">
         <div className="flex items-center justify-between gap-4 py-4">
-          <Link
-            className="flex items-center gap-3 font-semibold tracking-tight text-gray-900"
-            href="/"
-            data-track="nav_home"
-          >
+          <Link className="flex items-center gap-3 font-semibold tracking-tight text-gray-900" href="/" data-track="nav_home">
             <span
               className="h-2.5 w-2.5 rounded-full bg-gradient-to-br from-amber-400 to-emerald-700 shadow-sm"
               aria-hidden
@@ -139,16 +175,63 @@ export default function Navbar() {
 
           <div className="flex items-center gap-3">
             <nav className="hidden items-center gap-0.5 md:flex lg:gap-1" aria-label="Primary navigation">
-              {navItems.map((item) => (
+              {topLevelItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={linkCls(item.href)}
+                  className={linkCls(item)}
                   data-track={item.track}
-                  aria-current={isActive(item.href) ? "page" : undefined}
+                  aria-current={isActive(item) ? "page" : undefined}
                 >
                   {item.label}
                 </Link>
+              ))}
+              {groupedItems.map((group) => (
+                <div
+                  key={group.label}
+                  className="relative"
+                  onMouseEnter={() => setDesktopOpenGroup(group.label)}
+                  onMouseLeave={() => setDesktopOpenGroup(null)}
+                >
+                  <button
+                    type="button"
+                    className={cn(
+                      "rounded-full px-3 py-2 text-xs font-medium text-gray-600 transition-colors duration-200 ease-out hover:bg-emerald-50 hover:text-gray-900 lg:text-sm",
+                      isGroupActive(group) && "active bg-emerald-50 text-emerald-800 shadow-sm",
+                    )}
+                    aria-expanded={desktopOpenGroup === group.label}
+                    aria-haspopup="menu"
+                    aria-controls={`desktop-nav-${groupId(group.label)}`}
+                    onClick={() => setDesktopOpenGroup((prev) => (prev === group.label ? null : group.label))}
+                    data-track={group.track}
+                  >
+                    {group.label}
+                  </button>
+                  {desktopOpenGroup === group.label ? (
+                    <div
+                      id={`desktop-nav-${groupId(group.label)}`}
+                      role="menu"
+                      aria-label={`${group.label} links`}
+                      className="absolute left-0 top-full z-50 mt-2 min-w-56 rounded-2xl border border-stone-200 bg-white p-2 shadow-lg"
+                    >
+                      {group.items.map((item) => (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          role="menuitem"
+                          className={cn(
+                            "block rounded-xl px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-emerald-50 hover:text-gray-900",
+                            isActive(item) && "active bg-emerald-50 text-emerald-800",
+                          )}
+                          data-track={item.track}
+                          aria-current={isActive(item) ? "page" : undefined}
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
+                  ) : null}
+                </div>
               ))}
             </nav>
 
@@ -209,20 +292,58 @@ export default function Navbar() {
               {searchItem.label}
             </Link>
 
-            {navItems.map((item) => (
+            {topLevelItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 className={cn(
                   "rounded-xl px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-emerald-50 hover:text-gray-900",
-                  isActive(item.href) && "bg-emerald-50 text-emerald-800"
+                  isActive(item) && "active bg-emerald-50 text-emerald-800",
                 )}
                 data-track={item.track}
-                aria-current={isActive(item.href) ? "page" : undefined}
+                aria-current={isActive(item) ? "page" : undefined}
                 onClick={() => setMobileOpen(false)}
               >
                 {item.label}
               </Link>
+            ))}
+
+            {groupedItems.map((group) => (
+              <div key={group.label} className="rounded-xl border border-stone-200">
+                <button
+                  type="button"
+                  className={cn(
+                    "flex w-full items-center justify-between rounded-xl px-3 py-2 text-left text-sm font-semibold text-gray-800 transition hover:bg-emerald-50",
+                    isGroupActive(group) && "active bg-emerald-50 text-emerald-800",
+                  )}
+                  aria-expanded={Boolean(mobileOpenGroups[group.label])}
+                  aria-controls={`mobile-nav-${groupId(group.label)}`}
+                  onClick={() => toggleMobileGroup(group.label)}
+                  data-track={group.track}
+                >
+                  {group.label}
+                  <span aria-hidden>{mobileOpenGroups[group.label] ? "−" : "+"}</span>
+                </button>
+                {mobileOpenGroups[group.label] ? (
+                  <div id={`mobile-nav-${groupId(group.label)}`} className="grid gap-1 px-2 pb-2">
+                    {group.items.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className={cn(
+                          "rounded-xl px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-emerald-50 hover:text-gray-900",
+                          isActive(item) && "active bg-emerald-50 text-emerald-800",
+                        )}
+                        data-track={item.track}
+                        aria-current={isActive(item) ? "page" : undefined}
+                        onClick={() => setMobileOpen(false)}
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
             ))}
 
             <Link
