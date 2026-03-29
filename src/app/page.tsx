@@ -150,19 +150,6 @@ export default function HomePage() {
     },
   ];
 
-
-  const homeSectionLinks = [
-    ["#starting-points", "Start here"],
-    ["#move-system", "Tools"],
-    ["#family-setups", "Family setups"],
-    ["#daily-life", "Daily life"],
-    ["#comparison-tools", "Compare"],
-    ["#watch-before-you-decide", "Video recaps"],
-    ["#proof", "Proof"],
-    ["#areas", "Areas"],
-    ["#guides", "Guides"],
-  ] as const;
-
   const trustCards: CardItem[] = [
     {
       title: "Built by Empathy School",
@@ -227,28 +214,28 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className={cardCls + " bg-white/10 border-white/15 backdrop-blur"}>
-                <strong className="text-sm font-semibold text-white">Start with the order of decisions</strong>
-                <p className="mt-4 text-sm leading-6 text-white/85">
+              <div className={cardCls + " border-white/70 bg-white/95 backdrop-blur"}>
+                <strong className="text-sm font-semibold text-gray-900">Start with the order of decisions</strong>
+                <p className="mt-4 text-sm leading-6 text-gray-700">
                   Families usually do better when they decide the shape of the move first, shortlist areas second, build a budget range third, then use Empathy School and housing support in a more grounded way.
                 </p>
                 <div className="mt-6 grid gap-3 sm:grid-cols-2">
                   <a
-                    className="group rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
+                    className="group rounded-2xl border border-stone-300 bg-white px-4 py-3 text-sm font-semibold text-gray-900 transition hover:border-emerald-300 hover:bg-emerald-50"
                     href="/move-timeline"
                     data-track="home_hero_card_timeline"
                   >
                     Build the move timeline <span className="ml-1 inline-block transition group-hover:translate-x-0.5">→</span>
                   </a>
                   <a
-                    className="group rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
+                    className="group rounded-2xl border border-stone-300 bg-white px-4 py-3 text-sm font-semibold text-gray-900 transition hover:border-emerald-300 hover:bg-emerald-50"
                     href="/decision-checklists"
                     data-track="home_hero_card_checklists"
                   >
                     Open decision checklists <span className="ml-1 inline-block transition group-hover:translate-x-0.5">→</span>
                   </a>
                 </div>
-                <div className="mt-6 rounded-2xl border border-white/20 bg-white/10 p-4 text-sm leading-6 text-white/85">
+                <div className="mt-6 rounded-2xl border border-stone-200 bg-stone-50 p-4 text-sm leading-6 text-gray-700">
                   Housing support stays intentionally narrow. The public housing route points toward Gaia Group once timing,
                   area direction, and family needs are real enough to shape a useful shortlist.
                 </div>
@@ -267,9 +254,9 @@ export default function HomePage() {
                     key={q.href}
                     href={q.href}
                     data-track={q.track}
-                    className="group flex items-center gap-3 rounded-2xl border border-white/20 bg-white/10 p-4 text-white shadow-sm backdrop-blur transition hover:bg-white/15 hover:shadow-md"
+                    className="group flex items-center gap-3 rounded-2xl border border-white/25 bg-black/35 p-4 text-white shadow-sm backdrop-blur transition hover:bg-black/40 hover:shadow-md"
                   >
-                    <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/15 text-xs font-semibold text-white" aria-hidden>
+                    <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/90 text-xs font-semibold text-gray-900" aria-hidden>
                       {q.code}
                     </span>
                     <span className="text-sm font-semibold">{q.title}</span>
@@ -277,19 +264,6 @@ export default function HomePage() {
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-stone-200 bg-white py-6">
-        <div className="container">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className={badgeAccent}>Jump to</span>
-            {homeSectionLinks.map(([href, label]) => (
-              <a key={href} href={href} className="inline-flex items-center justify-center rounded-full border border-stone-200 bg-white px-3 py-1.5 text-sm font-medium text-stone-700 shadow-sm transition hover:border-emerald-200 hover:bg-emerald-50">
-                {label}
-              </a>
-            ))}
           </div>
         </div>
       </section>
