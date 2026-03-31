@@ -32,7 +32,7 @@
         "permission": "owned",
         "childrenVisible": false,
         "consentConfirmed": false,
-        "ctaText": "Explore Empathy School",
+        "ctaText": "Open school planning guide",
         "ctaHref": "/schools"
       },
       "social": {
@@ -398,8 +398,8 @@
     {
       "kind": "pillars",
       "slug": "schools",
-      "title": "Empathy School: what families want to know before moving to Bali",
-      "description": "A practical guide to using Empathy School as part of a Bali move: fit, age groups, routines, tours, commute reality, and how to tell if it feels right.",
+      "title": "School planning guide: how Empathy School fits the move",
+      "description": "A practical school-planning guide for families moving to Bali: how Empathy School might affect fit, age groups, routines, tours, commute reality, and the weekly rhythm.",
       "updated": "2026-03-22",
       "tags": [
         "schools",

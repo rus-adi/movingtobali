@@ -402,7 +402,7 @@ export default function AreaMatcher({ areas }: { areas: AreaItem[] }) {
               Request housing intro
             </a>
             <a className={buttonSecondary} href="/schools" data-track="area_match_empathy_school">
-              Use Empathy School as an anchor
+              Open school planning guide
             </a>
           </div>
         </div>

@@ -87,7 +87,7 @@ export default function EmpathySchoolFitPage() {
             body="The purpose is not to force a yes. It is to help a family decide whether Empathy School should shape area, commute, and timing decisions now, later, or only after a calmer test."
             links={[
               { href: "/what-families-notice", label: "Open the proof hub" },
-              { href: "/schools", label: "Explore Empathy School" },
+              { href: "/schools", label: "School planning guide" },
             ]}
           />
           <ParentVoiceStrip
@@ -113,7 +113,7 @@ export default function EmpathySchoolFitPage() {
       >
         <div className={grid3}>
           {[
-            ["/schools", "Empathy School", "Start with the main school page if you want the overall picture first."],
+            ["/schools", "School planning guide", "Start with the main school page if you want the overall picture first."],
             ["/guides/how-to-know-if-empathy-school-should-anchor-your-move", "Should Empathy School anchor the move?", "Use this when school is starting to influence housing, area, and timing."],
             ["/empathy-school-tour-prep", "Empathy School tour prep", "Plan a school day that still tells the truth once the rest of family life is included."],
             ["/guides/how-to-plan-an-empathy-school-tour-during-a-test-stay", "Plan a tour during a test stay", "Use this when the family wants the cleanest possible read."],

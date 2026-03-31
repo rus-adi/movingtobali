@@ -1,5 +1,6 @@
 import { getSite } from "@/lib/site";
 import { badge, badgeAccent, buttonSecondary, pill } from "@/components/ui/styles";
+import { schoolPlanningGuideHref, schoolPlanningGuideLabel } from "@/lib/schoolLinks";
 
 const groups = [
   {
@@ -7,7 +8,6 @@ const groups = [
     links: [
       ["/start-here", "Start here"],
       ["/how-this-hub-works", "How this hub works"],
-      ["/search", "Search the hub"],
       ["/plan-your-move", "Plan your move"],
       ["/move-timeline", "Move timeline"],
       ["/decision-checklists", "Decision checklists"],
@@ -42,9 +42,9 @@ const groups = [
     ],
   },
   {
-    title: "Empathy",
+    title: "School & partners",
     links: [
-      ["/schools", "Empathy School"],
+      [schoolPlanningGuideHref, schoolPlanningGuideLabel],
       ["/empathy-school-fit", "School fit"],
       ["/empathy-school-tour-prep", "Tour prep"],
       ["/camps", "Camps"],
@@ -100,14 +100,11 @@ export default function Footer() {
               <a className={buttonSecondary} href="/how-this-hub-works" data-track="footer_cta_hub">
                 How this hub works
               </a>
-              <a className={buttonSecondary} href="/search" data-track="footer_cta_search">
-                Search the hub
-              </a>
               <a className={buttonSecondary} href="/plan-your-move" data-track="footer_cta_plan">
                 Plan your move
               </a>
-              <a className={buttonSecondary} href="/schools" data-track="footer_cta_empathy">
-                Explore Empathy School
+              <a className={buttonSecondary} href={schoolPlanningGuideHref} data-track="footer_cta_school_guide">
+                {schoolPlanningGuideLabel}
               </a>
               <a className={buttonSecondary} href="/contact" data-track="footer_cta_contact">
                 Ask a question

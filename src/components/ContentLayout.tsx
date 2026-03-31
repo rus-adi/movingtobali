@@ -185,7 +185,7 @@ function getSidebarActionCard(item: ContentItem): SidebarActionCard {
     actions: [
       { label: "Ask a question", href: buildContactHref("General move planning", { from: path }), variant: "primary" },
       { label: "Start here", href: "/start-here", variant: "secondary" },
-      { label: "Explore Empathy School", href: "/schools", variant: "secondary" },
+      { label: "School planning guide", href: "/schools", variant: "secondary" },
     ],
   };
 }
@@ -290,7 +290,7 @@ export default function ContentLayout({
     <main>
       <section className="relative w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-amber-100/70 via-stone-100/40 to-emerald-100/65" />
-        <div className="absolute inset-0 opacity-60">
+        <div className="absolute inset-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/hero-bali.webp" alt="" className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-black/20" aria-hidden="true" />
@@ -298,15 +298,15 @@ export default function ContentLayout({
         <div className="relative py-16 md:py-24">
           <div className="container">
           <div>
-            <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 text-sm text-gray-600">
+            <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 text-sm text-white-600">
               {breadcrumbs.map((crumb, index) => (
                 <span key={`${crumb.label}-${index}`} className="inline-flex items-center gap-2">
                   {crumb.href ? (
-                    <Link href={crumb.href} className="transition hover:text-gray-900">
+                    <Link href={crumb.href} className="transition hover:text-white-900">
                       {crumb.label}
                     </Link>
                   ) : (
-                    <span className="text-gray-900">{crumb.label}</span>
+                    <span className="text-white-900">{crumb.label}</span>
                   )}
                   {index < breadcrumbs.length - 1 ? <span className="text-stone-300">/</span> : null}
                 </span>
@@ -321,9 +321,9 @@ export default function ContentLayout({
               {item.video?.youtubeId ? <span className={badgeGood}>Video</span> : null}
             </div>
 
-            <h1 className="mt-6 drop-shadow-sm  text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">{item.title}</h1>
+            <h1 className="mt-6 drop-shadow-sm  text-4xl font-bold tracking-tight text-white-900 sm:text-5xl">{item.title}</h1>
 
-            <p className="mt-4 drop-shadow-sm  text-base text-gray-600 sm:text-lg">{item.description}</p>
+            <p className="mt-4 drop-shadow-sm  text-base text-white-600 sm:text-lg">{item.description}</p>
 
             {/* MEDIA RULE: One YouTube embed directly below H1/intro when available */}
             {item.video ? (

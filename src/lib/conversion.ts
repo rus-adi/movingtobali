@@ -1,4 +1,5 @@
 import { buildContactHref, getContactPresetById, type ContactTopicPresetId } from "@/lib/contact";
+import { schoolPlanningGuideHref, schoolPlanningGuideLabel } from "@/lib/schoolLinks";
 
 export type ConversationRouteId = ContactTopicPresetId;
 
@@ -101,7 +102,7 @@ export const CONVERSATION_ROUTE_DETAILS: Record<ConversationRouteId, Conversatio
     bestWhen: "Use this when a tour, a fit question, or a school-first move could change bigger decisions.",
     notYet: "Do not use it as a vague info request. It works best when you can say what you want school to clarify for the family.",
     prepLinks: [
-      { href: "/schools", label: "Empathy School" },
+      { href: schoolPlanningGuideHref, label: schoolPlanningGuideLabel },
       { href: "/empathy-school-fit", label: "School fit tool" },
       { href: "/empathy-school-tour-prep", label: "Tour prep" },
       { href: "/resources/empathy-school-fit-notes-sheet", label: "Fit notes sheet" },

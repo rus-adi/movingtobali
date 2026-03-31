@@ -78,7 +78,7 @@ export default function EmpathySchoolTourPrepPage() {
       >
         <div className={grid3}>
           {[
-            ["/schools", "Empathy School", "Get the broader picture first if you still need the overview."],
+            ["/schools", "School planning guide", "Get the broader picture first if you still need the overview."],
             ["/empathy-school-fit", "Empathy School fit", "Use this if the bigger question is whether school should anchor the move at all."],
             ["/guides/how-to-use-an-empathy-school-tour-to-test-your-week", "Use a tour to test your week", "Connect the school day to the real family week."],
             ["/guides/how-to-plan-an-empathy-school-tour-during-a-test-stay", "Plan the tour during a test stay", "Best for families who want the cleanest, most grounded read."],

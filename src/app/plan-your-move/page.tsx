@@ -10,12 +10,30 @@ import HubMetricsStrip from "@/components/HubMetricsStrip";
 import MovePhasesBand from "@/components/MovePhasesBand";
 import BundleStrip from "@/components/BundleStrip";
 import { buildContactHref } from "@/lib/contact";
-import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
+import {
+  buildOrganizationSchema,
+  buildWebPageSchema,
+  buildWebSiteSchema,
+} from "@/lib/schema";
 import { getHardLessons, getScenarioVoices } from "@/lib/proof";
 import { getHubBundles, getHubCounts, getMovePhases } from "@/lib/hub";
-import { badgeAccent, btnRow, buttonPrimary, buttonSecondary, cardCls, grid2, grid3 } from "@/components/ui/styles";
+import {
+  badgeAccent,
+  btnRow,
+  buttonPrimary,
+  buttonSecondary,
+  cardCls,
+  grid2,
+  grid3,
+} from "@/components/ui/styles";
 
-type Card = { title: string; body: string; href: string; track: string; kicker?: string };
+type Card = {
+  title: string;
+  body: string;
+  href: string;
+  track: string;
+  kicker?: string;
+};
 
 const moveShapes: Card[] = [
   {
@@ -167,7 +185,8 @@ const tools: Card[] = [
 
 export const metadata: Metadata = {
   title: "Plan your move",
-  description: "A practical planning hub for families moving to Bali: timeline, tools, checklists, housing strategy, and how Empathy School fits.",
+  description:
+    "A practical planning hub for families moving to Bali: timeline, tools, checklists, housing strategy, and how Empathy School fits.",
   alternates: { canonical: "/plan-your-move" },
 };
 
@@ -178,7 +197,8 @@ export default function PlanYourMovePage() {
     buildWebPageSchema({
       pathname: "/plan-your-move",
       name: "Plan your move",
-      description: "A practical planning hub for families moving to Bali with kids.",
+      description:
+        "A practical planning hub for families moving to Bali with kids.",
     }),
   ];
 
@@ -197,17 +217,33 @@ export default function PlanYourMovePage() {
             Plan the move in a calmer order.
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
-            The goal is not to solve every Bali question today. It is to solve the right question next: move shape,
-            area shortlist, budget reality, Empathy School fit, and only then the heavier commitments like housing.
+            The goal is not to solve every Bali question today. It is to solve
+            the right question next: move shape, area shortlist, budget reality,
+            Empathy School fit, and only then the heavier commitments like
+            housing.
           </p>
           <div className={btnRow + " mt-8"}>
-            <a className={buttonPrimary} href="/move-timeline" data-track="plan_hero_timeline">
+            <a
+              className={buttonPrimary}
+              href="/move-timeline"
+              data-track="plan_hero_timeline"
+            >
               Build the timeline
             </a>
-            <a className={buttonSecondary} href="/decision-checklists" data-track="plan_hero_checklists">
+            <a
+              className={buttonSecondary}
+              href="/decision-checklists"
+              data-track="plan_hero_checklists"
+            >
               Open decision checklists
             </a>
-            <a className={buttonSecondary} href={buildContactHref("General move planning", { from: "/plan-your-move" })} data-track="plan_hero_contact">
+            <a
+              className={buttonSecondary}
+              href={buildContactHref("General move planning", {
+                from: "/plan-your-move",
+              })}
+              data-track="plan_hero_contact"
+            >
               Ask a planning question
             </a>
           </div>
@@ -244,11 +280,26 @@ export default function PlanYourMovePage() {
       >
         <div className={grid2}>
           {moveShapes.map((item) => (
-            <a key={item.href} href={item.href} className={cardCls} data-track={item.track}>
-              {item.kicker ? <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">{item.kicker}</div> : null}
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
-              <div className="mt-6 text-sm font-semibold text-gray-900">Open path →</div>
+            <a
+              key={item.href}
+              href={item.href}
+              className={cardCls}
+              data-track={item.track}
+            >
+              {item.kicker ? (
+                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                  {item.kicker}
+                </div>
+              ) : null}
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">
+                {item.title}
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                {item.body}
+              </p>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open path →
+              </div>
             </a>
           ))}
         </div>
@@ -271,10 +322,21 @@ export default function PlanYourMovePage() {
       >
         <div className={grid3}>
           {tools.map((item) => (
-            <a key={item.href} href={item.href} className={cardCls} data-track={item.track}>
-              <h2 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
-              <div className="mt-6 text-sm font-semibold text-gray-900">Open tool →</div>
+            <a
+              key={item.href}
+              href={item.href}
+              className={cardCls}
+              data-track={item.track}
+            >
+              <h2 className="text-xl font-semibold tracking-tight text-gray-900">
+                {item.title}
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                {item.body}
+              </p>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open tool →
+              </div>
             </a>
           ))}
         </div>
@@ -302,8 +364,12 @@ export default function PlanYourMovePage() {
             },
           ].map((item) => (
             <div key={item.title} className={cardCls}>
-              <h2 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
+              <h2 className="text-xl font-semibold tracking-tight text-gray-900">
+                {item.title}
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                {item.body}
+              </p>
             </div>
           ))}
         </div>
@@ -329,10 +395,17 @@ export default function PlanYourMovePage() {
           </div>
 
           <div className={cardCls}>
-            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Preferred housing partner</div>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-gray-900">Gaia Group, once the brief is real enough</h2>
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+              Preferred housing partner
+            </div>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-gray-900">
+              Gaia Group, once the brief is real enough
+            </h2>
             <p className="mt-4 text-sm leading-6 text-gray-600">
-              Gaia Group is most useful once your move timing, area direction, commute sensitivity, and bedroom needs are strong enough to create a calmer shortlist. That keeps the process useful instead of turning it into a flood of mismatched listings.
+              Gaia Group is most useful once your move timing, area direction,
+              commute sensitivity, and bedroom needs are strong enough to create
+              a calmer shortlist. That keeps the process useful instead of
+              turning it into a flood of mismatched listings.
             </p>
             <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
               <li>Use the housing guide first.</li>
@@ -340,13 +413,25 @@ export default function PlanYourMovePage() {
               <li>Build the housing brief before you ask for listings.</li>
             </ul>
             <div className={btnRow}>
-              <a className={buttonPrimary} href="/gaia-group" data-track="plan_gaia_profile">
+              <a
+                className={buttonPrimary}
+                href="/gaia-group"
+                data-track="plan_gaia_profile"
+              >
                 Open Gaia Group
               </a>
-              <a className={buttonSecondary} href="/housing-intro-readiness" data-track="plan_gaia_readiness">
+              <a
+                className={buttonSecondary}
+                href="/housing-intro-readiness"
+                data-track="plan_gaia_readiness"
+              >
                 Check readiness
               </a>
-              <a className={buttonSecondary} href="/housing-brief-builder" data-track="plan_gaia_brief_builder">
+              <a
+                className={buttonSecondary}
+                href="/housing-brief-builder"
+                data-track="plan_gaia_brief_builder"
+              >
                 Build the brief
               </a>
             </div>
@@ -410,17 +495,33 @@ export default function PlanYourMovePage() {
             },
           ].map((item) => (
             <a key={item.href} href={item.href} className={cardCls}>
-              <h2 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
-              <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
+              <h2 className="text-xl font-semibold tracking-tight text-gray-900">
+                {item.title}
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                {item.body}
+              </p>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open →
+              </div>
             </a>
           ))}
         </div>
         <div className={btnRow}>
-          <a className={buttonPrimary} href="/schools" data-track="plan_empathy_school">
-            Explore Empathy School
+          <a
+            className={buttonPrimary}
+            href="/schools"
+            data-track="plan_empathy_school"
+          >
+            Open school planning guide
           </a>
-          <a className={buttonSecondary} href={buildContactHref("Empathy School fit", { from: "/plan-your-move" })} data-track="plan_empathy_contact">
+          <a
+            className={buttonSecondary}
+            href={buildContactHref("Empathy School fit", {
+              from: "/plan-your-move",
+            })}
+            data-track="plan_empathy_contact"
+          >
             Ask about school fit
           </a>
         </div>
@@ -431,7 +532,6 @@ export default function PlanYourMovePage() {
         title="Need a reply that matches this tool?"
         lead="The site should help families route themselves. This keeps the next conversation tied to the decision you are already making here."
       />
-
     </main>
   );
 }

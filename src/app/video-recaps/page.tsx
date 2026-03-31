@@ -4,12 +4,24 @@ import JsonLd from "@/components/JsonLd";
 import Section from "@/components/Section";
 import TrustMetaStrip from "@/components/TrustMetaStrip";
 import { buildContactHref } from "@/lib/contact";
-import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
-import { badgeAccent, btnRow, buttonPrimary, buttonSecondary, cardCls, grid2 } from "@/components/ui/styles";
+import {
+  buildOrganizationSchema,
+  buildWebPageSchema,
+  buildWebSiteSchema,
+} from "@/lib/schema";
+import {
+  badgeAccent,
+  btnRow,
+  buttonPrimary,
+  buttonSecondary,
+  cardCls,
+  grid2,
+} from "@/components/ui/styles";
 
 export const metadata: Metadata = {
   title: "Video recaps",
-  description: "Written-first recaps of owned videos and clips from Empathy School: tours, camps, family rhythm, and how to watch them like a parent.",
+  description:
+    "Written-first recaps of owned videos and clips from Empathy School: tours, camps, family rhythm, and how to watch them like a parent.",
   alternates: { canonical: "/video-recaps" },
 };
 
@@ -69,7 +81,6 @@ const lifeCards: Card[] = [
   },
 ];
 
-
 const proofCards: Card[] = [
   {
     href: "/blog/founder-story-why-bali-became-home",
@@ -119,7 +130,8 @@ export default function VideoRecapsPage() {
     buildWebPageSchema({
       pathname: "/video-recaps",
       name: "Video recaps",
-      description: "Written-first recaps of owned videos and clips from Empathy School.",
+      description:
+        "Written-first recaps of owned videos and clips from Empathy School.",
     }),
   ];
 
@@ -134,17 +146,33 @@ export default function VideoRecapsPage() {
             Video recaps for parents who need more than vibe.
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
-            Every page here follows the same rule: written answer first, media second. The goal is to help families use tours,
-            camp clips, and daily-life footage as decision tools instead of letting good footage create false certainty.
+            Every page here follows the same rule: written answer first, media
+            second. The goal is to help families use tours, camp clips, and
+            daily-life footage as decision tools instead of letting good footage
+            create false certainty.
           </p>
           <div className={btnRow + " mt-8"}>
-            <a className={buttonPrimary} href="/plan-your-move" data-track="video_recaps_hero_plan">
+            <a
+              className={buttonPrimary}
+              href="/plan-your-move"
+              data-track="video_recaps_hero_plan"
+            >
               Plan your move
             </a>
-            <a className={buttonSecondary} href="/schools" data-track="video_recaps_hero_school">
-              Explore Empathy School
+            <a
+              className={buttonSecondary}
+              href="/schools"
+              data-track="video_recaps_hero_school"
+            >
+              Open school planning guide
             </a>
-            <a className={buttonSecondary} href={buildContactHref("General move planning", { from: "/video-recaps" })} data-track="video_recaps_hero_contact">
+            <a
+              className={buttonSecondary}
+              href={buildContactHref("General move planning", {
+                from: "/video-recaps",
+              })}
+              data-track="video_recaps_hero_contact"
+            >
               Ask a question
             </a>
           </div>
@@ -173,11 +201,24 @@ export default function VideoRecapsPage() {
       >
         <div className={grid2}>
           {schoolCards.map((card) => (
-            <Link key={card.href} href={card.href} className={cardCls} data-track="video_recaps_school_open">
-              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">{card.kicker}</div>
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">{card.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{card.body}</p>
-              <div className="mt-6 text-sm font-semibold text-gray-900">Open recap →</div>
+            <Link
+              key={card.href}
+              href={card.href}
+              className={cardCls}
+              data-track="video_recaps_school_open"
+            >
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                {card.kicker}
+              </div>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">
+                {card.title}
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                {card.body}
+              </p>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open recap →
+              </div>
             </Link>
           ))}
         </div>
@@ -191,16 +232,28 @@ export default function VideoRecapsPage() {
       >
         <div className={grid2}>
           {lifeCards.map((card) => (
-            <Link key={card.href} href={card.href} className={cardCls} data-track="video_recaps_life_open">
-              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">{card.kicker}</div>
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">{card.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{card.body}</p>
-              <div className="mt-6 text-sm font-semibold text-gray-900">Open recap →</div>
+            <Link
+              key={card.href}
+              href={card.href}
+              className={cardCls}
+              data-track="video_recaps_life_open"
+            >
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                {card.kicker}
+              </div>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">
+                {card.title}
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                {card.body}
+              </p>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open recap →
+              </div>
             </Link>
           ))}
         </div>
       </Section>
-
 
       <Section
         id="founder-community"
@@ -210,11 +263,24 @@ export default function VideoRecapsPage() {
       >
         <div className={grid2}>
           {proofCards.map((card) => (
-            <Link key={card.href} href={card.href} className={cardCls} data-track="video_recaps_proof_open">
-              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">{card.kicker}</div>
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">{card.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{card.body}</p>
-              <div className="mt-6 text-sm font-semibold text-gray-900">Open recap →</div>
+            <Link
+              key={card.href}
+              href={card.href}
+              className={cardCls}
+              data-track="video_recaps_proof_open"
+            >
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                {card.kicker}
+              </div>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">
+                {card.title}
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                {card.body}
+              </p>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open recap →
+              </div>
             </Link>
           ))}
         </div>
@@ -228,11 +294,24 @@ export default function VideoRecapsPage() {
       >
         <div className={grid2}>
           {housingCards.map((card) => (
-            <Link key={card.href} href={card.href} className={cardCls} data-track="video_recaps_housing_open">
-              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">{card.kicker}</div>
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">{card.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{card.body}</p>
-              <div className="mt-6 text-sm font-semibold text-gray-900">Open page →</div>
+            <Link
+              key={card.href}
+              href={card.href}
+              className={cardCls}
+              data-track="video_recaps_housing_open"
+            >
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                {card.kicker}
+              </div>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">
+                {card.title}
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                {card.body}
+              </p>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open page →
+              </div>
             </Link>
           ))}
         </div>

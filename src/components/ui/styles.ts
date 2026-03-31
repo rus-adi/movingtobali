@@ -41,4 +41,4 @@ export const inputBase =
 export const btnRow = "mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center";
 
 export const grid2 = "grid grid-cols-1 gap-12 md:grid-cols-2";
-export const grid3 = "grid grid-cols-1 gap-8 md:grid-cols-3";
+export const grid3 = "grid grid-cols-1 gap-8";

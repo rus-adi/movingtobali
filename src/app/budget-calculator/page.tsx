@@ -4,6 +4,7 @@ import SourceConversationPanel from "@/components/SourceConversationPanel";
 import BudgetCalculator from "@/components/BudgetCalculator";
 import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
 import { buildContactHref } from "@/lib/contact";
+import { schoolPlanningGuideHref, schoolPlanningGuideLabel } from "@/lib/schoolLinks";
 import { badge, btnRow, buttonPrimary, buttonSecondary, cardCls, grid2 } from "@/components/ui/styles";
 
 export const metadata: Metadata = {
@@ -67,8 +68,8 @@ export default function BudgetCalculatorPage() {
                 <a className={buttonSecondary} href="/housing" data-track="budget_next_housing">
                   Housing guide
                 </a>
-                <a className={buttonSecondary} href="/schools" data-track="budget_next_empathy">
-                  Empathy School
+                <a className={buttonSecondary} href={schoolPlanningGuideHref} data-track="budget_next_school_guide">
+                  {schoolPlanningGuideLabel}
                 </a>
               </div>
             </div>

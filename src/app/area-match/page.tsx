@@ -5,11 +5,19 @@ import SourceConversationPanel from "@/components/SourceConversationPanel";
 import AreaMatcher from "@/components/AreaMatcher";
 import { getAllContent } from "@/lib/content";
 import { buildWebPageSchema } from "@/lib/schema";
-import { badgeAccent, btnRow, buttonPrimary, buttonSecondary, cardCls, grid3 } from "@/components/ui/styles";
+import {
+  badgeAccent,
+  btnRow,
+  buttonPrimary,
+  buttonSecondary,
+  cardCls,
+  grid3,
+} from "@/components/ui/styles";
 
 export const metadata: Metadata = {
   title: "Area Match",
-  description: "Narrow Bali down by family rhythm, commute tolerance, budget posture, and whether Empathy School is part of the move.",
+  description:
+    "Narrow Bali down by family rhythm, commute tolerance, budget posture, and whether Empathy School is part of the move.",
   alternates: { canonical: "/area-match" },
 };
 
@@ -28,7 +36,8 @@ export default function AreaMatchPage() {
         data={buildWebPageSchema({
           pathname: "/area-match",
           name: "Area Match",
-          description: "A practical area-shortlisting tool for families moving to Bali.",
+          description:
+            "A practical area-shortlisting tool for families moving to Bali.",
         })}
       />
 
@@ -39,17 +48,31 @@ export default function AreaMatchPage() {
             Choose the Bali area that fits the week you actually want to live.
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
-            Families do better when they shortlist areas by rhythm, commute, and daily friction instead of trying to pick a winner from Bali’s whole personality at once.
+            Families do better when they shortlist areas by rhythm, commute, and
+            daily friction instead of trying to pick a winner from Bali’s whole
+            personality at once.
           </p>
           <div className={btnRow + " mt-8"}>
-            <a className={buttonPrimary} href="/areas" data-track="area_match_hero_open_areas">
+            <a
+              className={buttonPrimary}
+              href="/areas"
+              data-track="area_match_hero_open_areas"
+            >
               Browse all area guides
             </a>
-            <a className={buttonSecondary} href="/compare-areas" data-track="area_match_hero_compare">
+            <a
+              className={buttonSecondary}
+              href="/compare-areas"
+              data-track="area_match_hero_compare"
+            >
               Compare two areas
             </a>
-            <a className={buttonSecondary} href="/schools" data-track="area_match_hero_school">
-              Explore Empathy School
+            <a
+              className={buttonSecondary}
+              href="/schools"
+              data-track="area_match_hero_school"
+            >
+              Open school planning guide
             </a>
           </div>
         </div>
@@ -83,8 +106,12 @@ export default function AreaMatchPage() {
             },
           ].map((item) => (
             <div key={item.title} className={cardCls}>
-              <h2 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
+              <h2 className="text-xl font-semibold tracking-tight text-gray-900">
+                {item.title}
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                {item.body}
+              </p>
             </div>
           ))}
         </div>
@@ -98,8 +125,14 @@ export default function AreaMatchPage() {
       >
         <div className={grid3}>
           {[
-            ["/guides/how-to-shortlist-bali-areas-with-kids", "How to shortlist Bali areas with kids"],
-            ["/guides/how-to-use-empathy-school-to-test-area-fit", "Use Empathy School to test area fit"],
+            [
+              "/guides/how-to-shortlist-bali-areas-with-kids",
+              "How to shortlist Bali areas with kids",
+            ],
+            [
+              "/guides/how-to-use-empathy-school-to-test-area-fit",
+              "Use Empathy School to test area fit",
+            ],
             ["/resources/area-shortlist-scorecard", "Area shortlist scorecard"],
             ["/resources/area-visit-notes-sheet", "Area visit notes sheet"],
             ["/compare-areas", "Compare two areas"],
@@ -108,8 +141,12 @@ export default function AreaMatchPage() {
             ["/housing", "Housing guide"],
           ].map(([href, title]) => (
             <a key={href} href={href} className={cardCls}>
-              <h3 className="text-xl font-semibold tracking-tight text-gray-900">{title}</h3>
-              <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
+              <h3 className="text-xl font-semibold tracking-tight text-gray-900">
+                {title}
+              </h3>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open →
+              </div>
             </a>
           ))}
         </div>
@@ -120,7 +157,6 @@ export default function AreaMatchPage() {
         title="Need a reply that matches this tool?"
         lead="The site should help families route themselves. This keeps the next conversation tied to the decision you are already making here."
       />
-
     </main>
   );
 }

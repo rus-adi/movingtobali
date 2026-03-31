@@ -2,6 +2,7 @@ import { remark } from "remark";
 import remarkGfm from "remark-gfm";
 import remarkHtml from "remark-html";
 import { visit } from "unist-util-visit";
+import { getOfficialEmpathySchoolUrl } from "@/lib/schoolLinks";
 
 export type TocItem = { id: string; text: string; level: number };
 
@@ -122,6 +123,29 @@ function remarkQuickCards() {
   };
 }
 
+
+function rewriteOfficialSchoolLinks(html: string): string {
+  const officialUrl = getOfficialEmpathySchoolUrl();
+
+  return html.replace(/<a([^>]*?)href="\/schools"([^>]*)>([\s\S]*?)<\/a>/gi, (match, before, after, inner) => {
+    const plainText = String(inner || "")
+      .replace(/<[^>]+>/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .toLowerCase();
+
+    if (!plainText.includes("empathy school")) {
+      return match;
+    }
+
+    const attrs = `${before || ""}href="${officialUrl}"${after || ""}`;
+    const withTarget = /target=/i.test(attrs) ? attrs : `${attrs} target="_blank"`;
+    const withRel = /rel=/i.test(withTarget) ? withTarget : `${withTarget} rel="noreferrer"`;
+
+    return `<a${withRel}>${inner}</a>`;
+  });
+}
+
 export async function markdownToHtml(markdown: string): Promise<string> {
   const result = await remark()
     .use(remarkGfm)
@@ -131,7 +155,7 @@ export async function markdownToHtml(markdown: string): Promise<string> {
     .use(remarkHtml, { sanitize: false })
     .process(markdown);
 
-  return String(result);
+  return rewriteOfficialSchoolLinks(String(result));
 }
 
 export function extractToc(markdown: string): TocItem[] {

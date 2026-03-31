@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { schoolPlanningGuideHref, schoolPlanningGuideLabel } from "@/lib/schoolLinks";
 import { buildContactHref } from "@/lib/contact";
 import { badge, btnRow, buttonPrimary, buttonSecondary, cardCls, inputBase } from "@/components/ui/styles";
 
@@ -172,7 +173,7 @@ function buildPlan(kids: KidsKey, work: WorkKey, commute: CommuteKey, weather: W
     );
     watchouts.push("Do not leave school as a vague maybe if it is strong enough to change the whole week.");
     tests.push("Does the family still like the area after drop-off and pickup are real?");
-    nextLinks.splice(1, 0, { title: "Empathy School", href: "/schools" });
+    nextLinks.splice(1, 0, { title: schoolPlanningGuideLabel, href: schoolPlanningGuideHref });
     nextLinks.push({ title: "After-school rhythm guide", href: "/guides/after-school-rhythm-in-bali-for-families" });
   }
 

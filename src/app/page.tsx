@@ -4,46 +4,117 @@ import PostCard from "@/components/PostCard";
 import ParentVoiceStrip from "@/components/ParentVoiceStrip";
 import LearnedHardWay from "@/components/LearnedHardWay";
 import TrustMetaStrip from "@/components/TrustMetaStrip";
-import HubMetricsStrip from "@/components/HubMetricsStrip";
 import MovePhasesBand from "@/components/MovePhasesBand";
 import BundleStrip from "@/components/BundleStrip";
-import { buildContactHref } from "@/lib/contact";
 import { getAllContent } from "@/lib/content";
+import { getSite } from "@/lib/site";
 import { getHardLessons, getScenarioVoices } from "@/lib/proof";
-import { getHubBundles, getHubCounts, getMovePhases } from "@/lib/hub";
-import { badgeAccent, btnRow, buttonPrimary, buttonSecondary, cardCls, grid2, grid3 } from "@/components/ui/styles";
+import { getHubBundles, getMovePhases } from "@/lib/hub";
+import {
+  btnRow,
+  buttonPrimary,
+  buttonSecondary,
+  cardCls,
+  grid2,
+  grid3,
+} from "@/components/ui/styles";
 
-type QuickItem = { title: string; href: string; track: string; code: string };
-type CardItem = { title: string; href: string; body: string; track: string; kicker?: string };
+type HeroPath = {
+  title: string;
+  href: string;
+  body: string;
+  track: string;
+  icon: string;
+  kicker: string;
+};
+type CardItem = {
+  title: string;
+  href: string;
+  body: string;
+  track: string;
+  kicker?: string;
+  external?: boolean;
+};
 
 export default function HomePage() {
+  const site = getSite();
   const pillars = getAllContent("pillars");
   const latestBlog = getAllContent("blog").slice(0, 4);
   const latestGuides = getAllContent("guides").slice(0, 6);
   const featuredAreas = getAllContent("areas").slice(0, 6);
-  const hubCounts = getHubCounts();
   const movePhases = getMovePhases();
   const hubBundles = getHubBundles();
 
-  const quick: QuickItem[] = [
-    { title: "Plan Your Move", href: "/plan-your-move", track: "home_quick_plan", code: "PM" },
-    { title: "Move Timeline", href: "/move-timeline", track: "home_quick_timeline", code: "TL" },
-    { title: "Decision Checklists", href: "/decision-checklists", track: "home_quick_checklists", code: "CL" },
-    { title: "Family Path Match", href: "/family-path-match", track: "home_quick_family_path_match", code: "FP" },
-    { title: "Area Match", href: "/area-match", track: "home_quick_area_match", code: "AM" },
-    { title: "Budget Calculator", href: "/budget-calculator", track: "home_quick_budget", code: "BU" },
-    { title: "First Month Planner", href: "/first-month-planner", track: "home_quick_first_month", code: "FM" },
-    { title: "Housing Readiness", href: "/housing-intro-readiness", track: "home_quick_housing_readiness", code: "HR" },
-    { title: "Housing Brief", href: "/housing-brief-builder", track: "home_quick_housing_brief", code: "HB" },
-    { title: "Daily Life", href: "/daily-life", track: "home_quick_daily_life", code: "DL" },
-    { title: "Weekday Reality", href: "/weekday-reality", track: "home_quick_weekday_reality", code: "WR" },
-    { title: "Empathy School", href: "/schools", track: "home_quick_empathy", code: "ES" },
-    { title: "School Fit", href: "/empathy-school-fit", track: "home_quick_school_fit", code: "SF" },
-    { title: "Tour Prep", href: "/empathy-school-tour-prep", track: "home_quick_tour_prep", code: "TP" },
-    { title: "Compare Areas", href: "/compare-areas", track: "home_quick_compare_areas", code: "CA" },
-    { title: "Commute Reality", href: "/commute-reality", track: "home_quick_commute_reality", code: "CR" },
-    { title: "Move Shape Compare", href: "/test-stay-vs-full-move", track: "home_quick_move_shape_compare", code: "MS" },
-    { title: "Video Recaps", href: "/video-recaps", track: "home_quick_video_recaps", code: "VR" },
+  const heroPaths: HeroPath[] = [
+    {
+      title: "Plan Your Move",
+      href: "/plan-your-move",
+      body: "Build your first timeline, priorities, and next steps without having to solve the whole move today.",
+      track: "home_hero_path_plan",
+      icon: "🗓️",
+      kicker: "Timeline & next steps",
+    },
+    {
+      title: "Areas & Housing",
+      href: "/area-match",
+      body: "Shortlist the right part of Bali first so housing decisions stay grounded in the week you actually want.",
+      track: "home_hero_path_areas_housing",
+      icon: "🏡",
+      kicker: "Area-first route",
+    },
+    {
+      title: "Education for Your Kids",
+      href: "/empathy-school-fit",
+      body: "Use school fit to decide whether learning style, commute, and family rhythm should shape the move earlier.",
+      track: "home_hero_path_education",
+      icon: "🎒",
+      kicker: "School questions",
+    },
+  ];
+
+  const serviceCards: CardItem[] = [
+    {
+      title: "Planning & timelines",
+      href: "/plan-your-move",
+      body: "Start with the order of decisions, the shape of the move, and the timeline that fits your family instead of copying someone else’s path.",
+      track: "home_services_planning",
+      kicker: "Planning",
+    },
+    {
+      title: "Areas & housing",
+      href: "/area-match",
+      body: "Narrow Bali first, then pressure-test housing choices against commute, pace, and what your normal week would actually feel like.",
+      track: "home_services_areas_housing",
+      kicker: "Place",
+    },
+    {
+      title: "School fit & tours",
+      href: "/empathy-school-fit",
+      body: "Decide whether school should shape the move now, later, or only after a calmer test stay and a more honest tour day.",
+      track: "home_services_school",
+      kicker: "Learning",
+    },
+    {
+      title: "Camps & short stays",
+      href: "/camps",
+      body: "Use camps and shorter stays to test family rhythm, learning fit, and whether Bali feels workable before heavier commitments harden around guesswork.",
+      track: "home_services_camps",
+      kicker: "Test the fit",
+    },
+    {
+      title: "Costs & daily life",
+      href: "/costs",
+      body: "Build a more realistic view of budget, transport, routine, and the ordinary tradeoffs that decide whether the move stays calm after arrival.",
+      track: "home_services_costs",
+      kicker: "Reality check",
+    },
+    {
+      title: "Questions & introductions",
+      href: "/contact",
+      body: "Ask the next practical question or request the right introduction once your move plan is specific enough for school or partner support to be genuinely useful.",
+      track: "home_services_contact",
+      kicker: "Support",
+    },
   ];
 
   const startingPoints: CardItem[] = [
@@ -153,27 +224,28 @@ export default function HomePage() {
   const trustCards: CardItem[] = [
     {
       title: "Built by Empathy School",
-      href: "/schools",
-      body: "This hub is meant to feel like part of Empathy School: warm, family-first, and grounded in real campus life rather than generic relocation copy.",
+      href: site.brand.publisherUrl,
+      body: "This hub is meant to feel like the same family-first world: warm, grounded, and practical before it is promotional.",
       track: "home_trust_empathy",
+      external: true,
     },
     {
-      title: "Selective housing path",
-      href: "/housing",
-      body: "We are not building a noisy housing directory. The public housing route is intentionally centered on Gaia Group once a family brief becomes real enough to be useful.",
-      track: "home_trust_gaia",
+      title: "Guide-first, not pitch-first",
+      href: "/how-this-hub-works",
+      body: "We try to earn trust with tools, checklists, and calmer next steps before asking families to talk to a school or partner.",
+      track: "home_trust_guide_first",
     },
     {
       title: "Experience-based, not overconfident",
       href: "/visas",
-      body: "We share lived guidance, checklists, and practical next steps — while still pointing families back to official sources where rules change.",
+      body: "Where rules change, we point families back to official sources and practical due diligence instead of pretending certainty.",
       track: "home_trust_visas",
     },
     {
-      title: "Tools over filler",
-      href: "/decision-checklists",
-      body: "The site gets bigger by being more useful: timeline builder, checklists, calculators, and planning tools that reduce actual family stress.",
-      track: "home_trust_tools",
+      title: "Use one path at a time",
+      href: "/start-here",
+      body: "You do not need to decode the whole hub today. Start with the most urgent decision, then expand only when you need more detail.",
+      track: "home_trust_one_path",
     },
   ];
 
@@ -181,136 +253,214 @@ export default function HomePage() {
     <main>
       <section className="relative w-full overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/hero-bali.webp" alt="" fill className="object-cover" priority />
+          <Image
+            src="/images/hero-bali.webp"
+            alt=""
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/25" />
 
         <div className="relative py-16 md:py-24">
           <div className="container">
-            <div className="grid items-start gap-10 md:grid-cols-2 md:gap-12">
-              <div className="space-y-6">
-                <div className={badgeAccent}>Move to Bali with Kids — by Empathy School</div>
-                <h1 className="text-4xl font-semibold tracking-tight text-white drop-shadow-sm sm:text-5xl lg:text-6xl">
-                  A calmer way to move to Bali with kids.
-                </h1>
-                <p className="max-w-2xl text-base leading-relaxed text-white/90 sm:text-lg">
-                  This is a practical relocation hub for families: planning tools, area choices, budgets, housing strategy,
-                  first-month routines, and how Empathy School fits into a move that still feels human.
-                </p>
-                <div className={btnRow}>
-                  <a className={buttonPrimary} href="/plan-your-move" data-track="home_cta_plan">
-                    Plan your move
-                  </a>
-                  <a className={buttonSecondary} href="/schools" data-track="home_cta_empathy">
-                    Explore Empathy School
-                  </a>
-                  <a
-                    className="inline-flex w-full items-center justify-center gap-2 whitespace-nowrap rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-white/15 sm:w-auto"
-                    href="/search"
-                    data-track="home_cta_search"
-                  >
-                    Search the hub
-                  </a>
-                </div>
+            <div className="max-w-3xl space-y-6">
+              <div className="inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold text-white shadow-sm backdrop-blur">
+                A practical relocation hub by Empathy School
               </div>
-
-              <div className={cardCls + " border-white/70 bg-white/95 backdrop-blur"}>
-                <strong className="text-sm font-semibold text-gray-900">Start with the order of decisions</strong>
-                <p className="mt-4 text-sm leading-6 text-gray-700">
-                  Families usually do better when they decide the shape of the move first, shortlist areas second, build a budget range third, then use Empathy School and housing support in a more grounded way.
-                </p>
-                <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                  <a
-                    className="group rounded-2xl border border-stone-300 bg-white px-4 py-3 text-sm font-semibold text-gray-900 transition hover:border-emerald-300 hover:bg-emerald-50"
-                    href="/move-timeline"
-                    data-track="home_hero_card_timeline"
-                  >
-                    Build the move timeline <span className="ml-1 inline-block transition group-hover:translate-x-0.5">→</span>
-                  </a>
-                  <a
-                    className="group rounded-2xl border border-stone-300 bg-white px-4 py-3 text-sm font-semibold text-gray-900 transition hover:border-emerald-300 hover:bg-emerald-50"
-                    href="/decision-checklists"
-                    data-track="home_hero_card_checklists"
-                  >
-                    Open decision checklists <span className="ml-1 inline-block transition group-hover:translate-x-0.5">→</span>
-                  </a>
-                </div>
-                <div className="mt-6 rounded-2xl border border-stone-200 bg-stone-50 p-4 text-sm leading-6 text-gray-700">
-                  Housing support stays intentionally narrow. The public housing route points toward Gaia Group once timing,
-                  area direction, and family needs are real enough to shape a useful shortlist.
-                </div>
+              <h1 className="text-4xl font-semibold tracking-tight text-white drop-shadow-sm sm:text-5xl lg:text-6xl">
+                A calmer way to move to Bali with kids.
+              </h1>
+              <p className="max-w-2xl text-base leading-relaxed text-white/90 sm:text-lg">
+                Plan your timelines, find the right neighborhood, and navigate
+                family life. We help you build a transition that feels grounded
+                and human.
+              </p>
+              <div className={btnRow}>
+                <a
+                  className={buttonPrimary}
+                  href="/plan-your-move"
+                  data-track="home_cta_start_relocation_plan"
+                >
+                  Start Your Relocation Plan
+                </a>
               </div>
+              <p className="text-sm leading-6 text-white/75">
+                Start with one clear next step below. The deeper tools, area
+                guides, and school pages stay available when you are ready for
+                them.
+              </p>
             </div>
 
-            <div className="mt-12">
-              <div className="flex items-center gap-4">
-                <div className="h-px flex-1 bg-white/20" />
-                <h2 className="text-xl font-semibold tracking-tight text-white">Quick start</h2>
-                <div className="h-px flex-1 bg-white/20" />
-              </div>
-              <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6 xl:grid-cols-7">
-                {quick.map((q) => (
-                  <a
-                    key={q.href}
-                    href={q.href}
-                    data-track={q.track}
-                    className="group flex items-center gap-3 rounded-2xl border border-white/25 bg-black/35 p-4 text-white shadow-sm backdrop-blur transition hover:bg-black/40 hover:shadow-md"
-                  >
-                    <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/90 text-xs font-semibold text-gray-900" aria-hidden>
-                      {q.code}
+            <div className="mt-12 max-w-2xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/70">
+                Quick start
+              </p>
+              <p className="mt-3 text-sm leading-6 text-white/80">
+                Choose the question that feels most urgent right now.
+              </p>
+            </div>
+            <div className="mt-6 grid gap-4 md:grid-cols-3">
+              {heroPaths.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  data-track={item.track}
+                  className="group rounded-3xl border border-white/70 bg-white/95 p-6 text-gray-900 shadow-xl transition hover:-translate-y-0.5 hover:border-emerald-200 hover:bg-white hover:shadow-2xl"
+                >
+                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                    {item.kicker}
+                  </div>
+                  <div className="mt-4 flex items-start gap-4">
+                    <span className="mt-1 text-2xl" aria-hidden>
+                      {item.icon}
                     </span>
-                    <span className="text-sm font-semibold">{q.title}</span>
-                  </a>
-                ))}
-              </div>
+                    <div>
+                      <h2 className="text-xl font-semibold tracking-tight text-gray-900">
+                        {item.title}
+                      </h2>
+                      <p className="mt-3 text-sm leading-6 text-gray-600">
+                        {item.body}
+                      </p>
+                      <div className="mt-5 text-sm font-semibold text-emerald-800">
+                        Open path{" "}
+                        <span className="inline-block transition group-hover:translate-x-0.5">
+                          →
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
       <Section
-        id="hub-scale"
-        title="A bigger site should still feel easy to use"
-        lead="This premiumization pass tightened the visual system, clarified the decision order, and made the size of the hub feel structured instead of overwhelming."
-        tone="default"
+        id="what-we-help-with"
+        title="What we help families with"
+        lead="The hub is meant to answer the biggest practical questions quickly: how to plan the move, where to live, what school fit changes, and what daily life is likely to feel like once you arrive."
+        tone="muted"
       >
-        <HubMetricsStrip
-          metrics={hubCounts}
-          title="The hub is now genuinely broad — and more coherent"
-          lead="It now works more like a family relocation operating system: planning tools, comparison pages, daily-life reality checks, Empathy School decision support, and a guided housing lane with Gaia Group."
-        />
+        <div className={grid3}>
+          {serviceCards.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className={cardCls}
+              data-track={item.track}
+            >
+              {item.kicker ? (
+                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                  {item.kicker}
+                </div>
+              ) : null}
+              <h2 className="mt-3 text-xl font-semibold tracking-tight text-gray-900">
+                {item.title}
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                {item.body}
+              </p>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open path →
+              </div>
+            </a>
+          ))}
+        </div>
       </Section>
 
       <Section
         id="how-it-works"
-        title="How the hub works best"
-        lead="Families usually do better when they move through the site in phases: explore, test, narrow, then commit."
-        tone="muted"
+        title="A calmer order for the big decisions"
+        lead="Most families do better when they choose the shape of the move first, narrow the area second, and let school or housing support enter when the plan is concrete enough to benefit from them."
+        tone="default"
       >
         <MovePhasesBand phases={movePhases} />
         <div className={btnRow}>
-          <a className={buttonPrimary} href="/how-this-hub-works" data-track="home_how_hub_works">
-            See the full orientation page
+          <a
+            className={buttonPrimary}
+            href="/move-timeline"
+            data-track="home_how_move_timeline"
+          >
+            Build the move timeline
           </a>
-          <a className={buttonSecondary} href="/conversation-paths" data-track="home_how_conversation_paths">
-            Compare conversation paths
+          <a
+            className={buttonSecondary}
+            href="/decision-checklists"
+            data-track="home_how_decision_checklists"
+          >
+            Open decision checklists
+          </a>
+          <a
+            className={buttonSecondary}
+            href="/how-this-hub-works"
+            data-track="home_how_hub_works"
+          >
+            See how the hub works
           </a>
         </div>
       </Section>
 
       <Section
+        id="trust"
+        title="Why families trust this hub"
+        lead="The point is to be genuinely useful, not to behave like a thin directory or an overconfident relocation funnel."
+        tone="muted"
+      >
+        <div className={grid2}>
+          {trustCards.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className={cardCls}
+              data-track={item.track}
+              target={item.external ? "_blank" : undefined}
+              rel={item.external ? "noreferrer" : undefined}
+            >
+              <h2 className="text-xl font-semibold tracking-tight text-gray-900">
+                {item.title}
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                {item.body}
+              </p>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open →
+              </div>
+            </a>
+          ))}
+        </div>
+      </Section>
+
+      <Section
         id="starting-points"
-        title="Choose your starting point"
-        lead="The site feels larger and more helpful when the next step is obvious. Start with the card that sounds most like your family right now."
+        title="When you need a more specific starting point"
+        lead="Once the first question is clear, choose the card that sounds most like your family right now."
         tone="default"
       >
         <div className={grid3}>
           {startingPoints.map((item) => (
-            <a key={item.href} href={item.href} className={cardCls} data-track={item.track}>
-              {item.kicker ? <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">{item.kicker}</div> : null}
-              <h2 className="mt-3 text-xl font-semibold tracking-tight text-gray-900">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
-              <div className="mt-6 text-sm font-semibold text-gray-900">Open page →</div>
+            <a
+              key={item.href}
+              href={item.href}
+              className={cardCls}
+              data-track={item.track}
+            >
+              {item.kicker ? (
+                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                  {item.kicker}
+                </div>
+              ) : null}
+              <h2 className="mt-3 text-xl font-semibold tracking-tight text-gray-900">
+                {item.title}
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                {item.body}
+              </p>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open page →
+              </div>
             </a>
           ))}
         </div>
@@ -319,25 +469,65 @@ export default function HomePage() {
       <Section
         id="move-system"
         title="Plan the move, don’t just read about it"
-        lead="The strongest additions are tools that turn uncertainty into decisions: timing, budget, area shortlist, and arrival-week structure."
+        lead="When the move becomes more concrete, these tools turn uncertainty into decisions: timing, budget, area shortlist, and arrival-week structure."
         tone="muted"
       >
         <div className={grid3}>
           {[
-            ["/plan-your-move", "Plan Your Move", "Use the planning hub to choose the move shape, what to decide now, and what to delay until reality is clearer."],
-            ["/move-timeline", "Move Timeline", "Sequence the move around timing, school questions, area clarity, and when housing decisions should happen."],
-            ["/decision-checklists", "Decision Checklists", "Use the right checklist before the move, before a lease, before a school tour, and before arrival week."],
-            ["/first-month-planner", "First Month Planner", "Map the first month around routines, housing truth, transport, and whether Empathy School changes the week."],
-            ["/housing-intro-readiness", "Housing intro readiness", "Check whether the move is grounded enough for Gaia Group to be genuinely useful instead of prematurely noisy."],
-            ["/housing-brief-builder", "Housing brief builder", "Create the first housing message around real constraints: shortlist, budget band, bedrooms, commute, and dealbreakers."],
-            ["/empathy-school-fit", "Empathy School fit", "Decide whether Empathy School should anchor area, commute, and weekly rhythm now or later."],
-            ["/empathy-school-tour-prep", "Empathy School tour prep", "Plan a school day that still gives the family a useful signal instead of a rushed impression."],
-            ["/family-path-match", "Family Path Match", "Match your child stage, adult bandwidth, and move tempo to the path that should guide your next decisions first."],
+            [
+              "/plan-your-move",
+              "Plan Your Move",
+              "Use the planning hub to choose the move shape, what to decide now, and what to delay until reality is clearer.",
+            ],
+            [
+              "/move-timeline",
+              "Move Timeline",
+              "Sequence the move around timing, school questions, area clarity, and when housing decisions should happen.",
+            ],
+            [
+              "/decision-checklists",
+              "Decision Checklists",
+              "Use the right checklist before the move, before a lease, before a school tour, and before arrival week.",
+            ],
+            [
+              "/first-month-planner",
+              "First Month Planner",
+              "Map the first month around routines, housing truth, transport, and whether Empathy School changes the week.",
+            ],
+            [
+              "/housing-intro-readiness",
+              "Housing intro readiness",
+              "Check whether the move is grounded enough for Gaia Group to be genuinely useful instead of prematurely noisy.",
+            ],
+            [
+              "/housing-brief-builder",
+              "Housing brief builder",
+              "Create the first housing message around real constraints: shortlist, budget band, bedrooms, commute, and dealbreakers.",
+            ],
+            [
+              "/empathy-school-fit",
+              "Empathy School fit",
+              "Decide whether Empathy School should anchor area, commute, and weekly rhythm now or later.",
+            ],
+            [
+              "/empathy-school-tour-prep",
+              "Empathy School tour prep",
+              "Plan a school day that still gives the family a useful signal instead of a rushed impression.",
+            ],
+            [
+              "/family-path-match",
+              "Family Path Match",
+              "Match your child stage, adult bandwidth, and move tempo to the path that should guide your next decisions first.",
+            ],
           ].map(([href, title, body]) => (
             <a key={href} href={href} className={cardCls}>
-              <h2 className="text-xl font-semibold tracking-tight text-gray-900">{title}</h2>
+              <h2 className="text-xl font-semibold tracking-tight text-gray-900">
+                {title}
+              </h2>
               <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
-              <div className="mt-6 text-sm font-semibold text-gray-900">Open tool →</div>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open tool →
+              </div>
             </a>
           ))}
         </div>
@@ -351,22 +541,47 @@ export default function HomePage() {
       >
         <div className={grid3}>
           {familySetups.map((item) => (
-            <a key={item.href} href={item.href} className={cardCls} data-track={item.track}>
-              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">{item.kicker}</div>
-              <h2 className="mt-3 text-xl font-semibold tracking-tight text-gray-900">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
-              <div className="mt-6 text-sm font-semibold text-gray-900">Open guide →</div>
+            <a
+              key={item.href}
+              href={item.href}
+              className={cardCls}
+              data-track={item.track}
+            >
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                {item.kicker}
+              </div>
+              <h2 className="mt-3 text-xl font-semibold tracking-tight text-gray-900">
+                {item.title}
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                {item.body}
+              </p>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open guide →
+              </div>
             </a>
           ))}
         </div>
         <div className={btnRow}>
-          <a className={buttonPrimary} href="/family-path-match" data-track="home_family_paths_match">
+          <a
+            className={buttonPrimary}
+            href="/family-path-match"
+            data-track="home_family_paths_match"
+          >
             Use Family Path Match
           </a>
-          <a className={buttonSecondary} href="/family-paths" data-track="home_family_paths_hub">
+          <a
+            className={buttonSecondary}
+            href="/family-paths"
+            data-track="home_family_paths_hub"
+          >
             Open all family paths
           </a>
-          <a className={buttonSecondary} href="/settling-in" data-track="home_family_paths_settling">
+          <a
+            className={buttonSecondary}
+            href="/settling-in"
+            data-track="home_family_paths_settling"
+          >
             Settling-in guide
           </a>
         </div>
@@ -380,21 +595,39 @@ export default function HomePage() {
       >
         <div className={grid2}>
           {[
-            ["/daily-life", "Daily life", "Use the main hub to think about the ordinary family week instead of only the move itself."],
-            ["/weekday-reality", "Weekday reality", "Pressure-test your Bali plan against commute tolerance, weather, work, and child energy."],
-            ["/guides/how-to-build-a-calm-weekday-rhythm-in-bali", "Build a calm weekday rhythm", "Start smaller than you want to so mornings, pickups, food, and evenings hold together."],
-            ["/guides/after-school-rhythm-in-bali-for-families", "After-school rhythm", "Plan the hardest transition of the day before it becomes the hidden reason the move feels heavy."],
+            [
+              "/daily-life",
+              "Daily life",
+              "Use the main hub to think about the ordinary family week instead of only the move itself.",
+            ],
+            [
+              "/weekday-reality",
+              "Weekday reality",
+              "Pressure-test your Bali plan against commute tolerance, weather, work, and child energy.",
+            ],
+            [
+              "/guides/how-to-build-a-calm-weekday-rhythm-in-bali",
+              "Build a calm weekday rhythm",
+              "Start smaller than you want to so mornings, pickups, food, and evenings hold together.",
+            ],
+            [
+              "/guides/after-school-rhythm-in-bali-for-families",
+              "After-school rhythm",
+              "Plan the hardest transition of the day before it becomes the hidden reason the move feels heavy.",
+            ],
           ].map(([href, title, body]) => (
             <a key={href} href={href} className={cardCls}>
-              <h2 className="text-xl font-semibold tracking-tight text-gray-900">{title}</h2>
+              <h2 className="text-xl font-semibold tracking-tight text-gray-900">
+                {title}
+              </h2>
               <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
-              <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open →
+              </div>
             </a>
           ))}
         </div>
       </Section>
-
-
 
       <Section
         id="bundles"
@@ -413,22 +646,49 @@ export default function HomePage() {
       >
         <div className={grid3}>
           {[
-            ["/compare-areas", "Compare areas", "Put two realistic Bali options side by side and see which one protects the actual family week better."],
-            ["/commute-reality", "Commute reality", "Pressure-test route friction before school, work, and housing all start relying on the same fragile drive."],
-            ["/test-stay-vs-full-move", "Test stay vs full move", "Choose the move shape that gives your family the best signal with the least avoidable damage."],
-            ["/housing-style-compare", "Housing style compare", "Decide what kind of housing should carry this stage of the move before random listings take over."],
-            ["/resources/two-area-comparison-sheet", "Two-area comparison sheet", "Use a simple worksheet when both areas still sound good and you need a clearer yes."],
-            ["/resources/empathy-school-commute-decision-grid", "Empathy School commute grid", "See whether the school route keeps helping the move once normal life, pickup, and work all enter the picture."],
+            [
+              "/compare-areas",
+              "Compare areas",
+              "Put two realistic Bali options side by side and see which one protects the actual family week better.",
+            ],
+            [
+              "/commute-reality",
+              "Commute reality",
+              "Pressure-test route friction before school, work, and housing all start relying on the same fragile drive.",
+            ],
+            [
+              "/test-stay-vs-full-move",
+              "Test stay vs full move",
+              "Choose the move shape that gives your family the best signal with the least avoidable damage.",
+            ],
+            [
+              "/housing-style-compare",
+              "Housing style compare",
+              "Decide what kind of housing should carry this stage of the move before random listings take over.",
+            ],
+            [
+              "/resources/two-area-comparison-sheet",
+              "Two-area comparison sheet",
+              "Use a simple worksheet when both areas still sound good and you need a clearer yes.",
+            ],
+            [
+              "/resources/empathy-school-commute-decision-grid",
+              "Empathy School commute grid",
+              "See whether the school route keeps helping the move once normal life, pickup, and work all enter the picture.",
+            ],
           ].map(([href, title, body]) => (
             <a key={href} href={href} className={cardCls}>
-              <h2 className="text-xl font-semibold tracking-tight text-gray-900">{title}</h2>
+              <h2 className="text-xl font-semibold tracking-tight text-gray-900">
+                {title}
+              </h2>
               <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
-              <div className="mt-6 text-sm font-semibold text-gray-900">Open comparison →</div>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open comparison →
+              </div>
             </a>
           ))}
         </div>
       </Section>
-
 
       <Section
         id="watch-before-you-decide"
@@ -438,15 +698,35 @@ export default function HomePage() {
       >
         <div className={grid2}>
           {[
-            ["/video-recaps", "Video recaps hub", "Open the written-first media hub for school tours, camp clips, home-base cues, and daily-life rhythm recaps."],
-            ["/blog/video-how-we-run-a-school-tour", "How we run an Empathy School tour", "Use the tour recap to decide whether school fit should change your area shortlist, commute plan, or next test-stay step."],
-            ["/blog/empathy-school-summer-camp-highlights-recap", "Summer camp highlights recap", "Turn the camp highlight reel into a practical question: would camp make your first Bali weeks calmer or more complicated?"],
-            ["/guides/ubud-side-family-rhythm-video-recap", "What an Ubud-side family rhythm can feel like", "Use short daily-life clips as a rhythm walkthrough for the kind of week that often forms around Empathy School and the Ubud side of Bali."],
+            [
+              "/video-recaps",
+              "Video recaps hub",
+              "Open the written-first media hub for school tours, camp clips, home-base cues, and daily-life rhythm recaps.",
+            ],
+            [
+              "/blog/video-how-we-run-a-school-tour",
+              "How we run an Empathy School tour",
+              "Use the tour recap to decide whether school fit should change your area shortlist, commute plan, or next test-stay step.",
+            ],
+            [
+              "/blog/empathy-school-summer-camp-highlights-recap",
+              "Summer camp highlights recap",
+              "Turn the camp highlight reel into a practical question: would camp make your first Bali weeks calmer or more complicated?",
+            ],
+            [
+              "/guides/ubud-side-family-rhythm-video-recap",
+              "What an Ubud-side family rhythm can feel like",
+              "Use short daily-life clips as a rhythm walkthrough for the kind of week that often forms around Empathy School and the Ubud side of Bali.",
+            ],
           ].map(([href, title, body]) => (
             <a key={href} href={href} className={cardCls}>
-              <h2 className="text-xl font-semibold tracking-tight text-gray-900">{title}</h2>
+              <h2 className="text-xl font-semibold tracking-tight text-gray-900">
+                {title}
+              </h2>
               <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
-              <div className="mt-6 text-sm font-semibold text-gray-900">Open recap →</div>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open recap →
+              </div>
             </a>
           ))}
         </div>
@@ -484,37 +764,29 @@ export default function HomePage() {
       </Section>
 
       <Section
-        id="trust"
-        title="Why families trust this site"
-        lead="The point is to be genuinely useful, not to behave like a thin directory or an overconfident relocation funnel."
-        tone="muted"
-      >
-        <div className={grid2}>
-          {trustCards.map((item) => (
-            <a key={item.href} href={item.href} className={cardCls} data-track={item.track}>
-              <h2 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
-              <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
-            </a>
-          ))}
-        </div>
-      </Section>
-
-      <Section
         id="gaia-and-empathy"
-        title="The two strongest anchors in the hub"
-        lead="Empathy School and Gaia Group should feel like real, grounded parts of the planning system — not random promotions."
+        title="When school or housing becomes part of the plan"
+        lead="These routes work best after your timeline, area direction, and weekly reality are clear enough to make the next conversation genuinely useful."
         tone="default"
       >
         <div className={grid2}>
           <div className={cardCls}>
             <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white">
-              <Image src="/images/partners/pali-gaia-standin.svg" alt="Pali from Gaia Group" width={640} height={640} className="h-auto w-full" />
+              <Image
+                src="/images/partners/pali-gaia-standin.svg"
+                alt="Pali from Gaia Group"
+                width={640}
+                height={640}
+                className="h-auto w-full"
+              />
             </div>
-            <h2 className="mt-5 text-2xl font-semibold tracking-tight text-gray-900">Gaia Group for housing support</h2>
+            <h2 className="mt-5 text-2xl font-semibold tracking-tight text-gray-900">
+              Housing support when your brief is ready
+            </h2>
             <p className="mt-3 text-sm leading-6 text-gray-600">
-              Bring Gaia Group in once your timing, area direction, and family brief are strong enough to create a useful shortlist.
-              That keeps the housing path calmer and more specific.
+              Bring Gaia Group in once timing, area direction, budget band, and
+              family brief are strong enough to create a useful shortlist. That
+              keeps the housing path calmer and more specific.
             </p>
             <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
               <li>Check whether you are truly ready for a housing intro.</li>
@@ -522,44 +794,87 @@ export default function HomePage() {
               <li>Keep the route shortlist-first and verification-first.</li>
             </ul>
             <div className={btnRow}>
-              <a className={buttonPrimary} href="/gaia-group" data-track="home_gaia_profile">
-                Open Gaia Group page
-              </a>
-              <a className={buttonSecondary} href="/housing-intro-readiness" data-track="home_gaia_readiness">
+              <a
+                className={buttonPrimary}
+                href="/housing-intro-readiness"
+                data-track="home_gaia_readiness"
+              >
                 Check readiness
               </a>
-              <a className={buttonSecondary} href={buildContactHref("Housing intro", { from: "/", partner: "gaia-group-bali" })} data-track="home_gaia_intro">
-                Request housing intro
+              <a
+                className={buttonSecondary}
+                href="/housing-brief-builder"
+                data-track="home_gaia_brief"
+              >
+                Build housing brief
+              </a>
+              <a
+                className={buttonSecondary}
+                href="/gaia-group"
+                data-track="home_gaia_profile"
+              >
+                Open Gaia Group page
               </a>
             </div>
           </div>
 
           <div className={cardCls}>
-            <h2 className="text-2xl font-semibold tracking-tight text-gray-900">Empathy School as a real decision anchor</h2>
+            <h2 className="text-2xl font-semibold tracking-tight text-gray-900">
+              Empathy School when school fit truly matters
+            </h2>
             <p className="mt-3 text-sm leading-6 text-gray-600">
-              School fit should not sit at the edge of the move. If Empathy School matters, let it influence area, commute, routine, and whether the week still feels good once normal life begins.
+              School fit should not sit at the edge of the move. If Empathy
+              School matters, let it influence area, commute, routine, and
+              whether the week still feels good once normal life begins.
             </p>
             <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
-              <li>Tour the school as part of a real family day, not only as a one-off visit.</li>
-              <li>Use camp and commute reality to test whether the weekly rhythm still feels workable.</li>
-              <li>Let school fit change the move plan early enough to matter.</li>
+              <li>
+                Use school fit before you over-commit to an area or a long
+                drive.
+              </li>
+              <li>
+                Tour the school as part of a real family day, not only as a
+                one-off visit.
+              </li>
+              <li>
+                Let school fit change the move plan early enough to matter.
+              </li>
             </ul>
             <div className={btnRow}>
-              <a className={buttonPrimary} href="/schools" data-track="home_empathy_school">
-                Explore Empathy School
-              </a>
-              <a className={buttonSecondary} href="/empathy-school-fit" data-track="home_empathy_fit">
+              <a
+                className={buttonPrimary}
+                href="/empathy-school-fit"
+                data-track="home_empathy_fit"
+              >
                 Use school fit tool
               </a>
-              <a className={buttonSecondary} href="/empathy-school-tour-prep" data-track="home_empathy_tour_prep">
+              <a
+                className={buttonSecondary}
+                href="/empathy-school-tour-prep"
+                data-track="home_empathy_tour_prep"
+              >
                 Plan the tour day
+              </a>
+              <a
+                className={buttonSecondary}
+                href={site.brand.publisherUrl}
+                target="_blank"
+                rel="noreferrer"
+                data-track="home_empathy_school"
+              >
+                Visit Empathy School
               </a>
             </div>
           </div>
         </div>
       </Section>
 
-      <Section id="pillars" title="Explore the full hub" lead="Start with a pillar, then follow the linked deep-dives." tone="muted">
+      <Section
+        id="pillars"
+        title="Explore the full hub"
+        lead="Start with a pillar, then follow the linked deep-dives when you want more depth."
+        tone="muted"
+      >
         <div className={grid3}>
           {pillars.map((p) => (
             <PostCard key={p.slug} item={p} />
@@ -579,38 +894,72 @@ export default function HomePage() {
           ))}
         </div>
         <div className={btnRow}>
-          <a className={buttonPrimary} href="/areas" data-track="home_open_areas">
+          <a
+            className={buttonPrimary}
+            href="/areas"
+            data-track="home_open_areas"
+          >
             Browse all areas
           </a>
-          <a className={buttonSecondary} href="/area-match" data-track="home_open_area_match">
+          <a
+            className={buttonSecondary}
+            href="/area-match"
+            data-track="home_open_area_match"
+          >
             Use Area Match
           </a>
-          <a className={buttonSecondary} href="/compare-areas" data-track="home_open_compare_areas">
+          <a
+            className={buttonSecondary}
+            href="/compare-areas"
+            data-track="home_open_compare_areas"
+          >
             Compare two areas
           </a>
-          <a className={buttonSecondary} href="/commute-reality" data-track="home_open_commute_reality">
+          <a
+            className={buttonSecondary}
+            href="/commute-reality"
+            data-track="home_open_commute_reality"
+          >
             Test commute reality
           </a>
         </div>
       </Section>
 
-      <Section id="guides" title="Guides" lead="Evergreen, checklist-heavy guides that support the bigger decisions." tone="muted">
+      <Section
+        id="guides"
+        title="Guides"
+        lead="Evergreen, checklist-heavy guides that support the bigger decisions."
+        tone="muted"
+      >
         <div className={grid2}>
           {latestGuides.map((g) => (
             <PostCard key={g.slug} item={g} />
           ))}
         </div>
         <div className={btnRow}>
-          <a className={buttonPrimary} href="/guides" data-track="home_open_guides">
+          <a
+            className={buttonPrimary}
+            href="/guides"
+            data-track="home_open_guides"
+          >
             Browse all guides
           </a>
-          <a className={buttonSecondary} href="/resources" data-track="home_open_resources">
+          <a
+            className={buttonSecondary}
+            href="/resources"
+            data-track="home_open_resources"
+          >
             Resources
           </a>
         </div>
       </Section>
 
-      <Section id="blog" title="Latest from the blog" lead="Short posts that answer one practical question at a time." tone="default">
+      <Section
+        id="blog"
+        title="Latest from the blog"
+        lead="Short posts that answer one practical question at a time."
+        tone="default"
+      >
         <div className={grid2}>
           {latestBlog.map((p) => (
             <PostCard key={p.slug} item={p} />

@@ -1,7 +1,7 @@
 ---
 
-title: 'Empathy School: what families want to know before moving to Bali'
-description: "A practical guide to using Empathy School as part of a Bali move: fit, age groups, routines, tours, commute reality, and how to tell if it feels right."
+title: 'School planning guide: how Empathy School fits the move'
+description: "A practical school-planning guide for families moving to Bali: how Empathy School might affect fit, age groups, routines, tours, commute reality, and the weekly rhythm."
 order: 5
 tags:
   - schools

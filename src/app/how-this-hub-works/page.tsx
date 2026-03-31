@@ -7,12 +7,24 @@ import BundleStrip from "@/components/BundleStrip";
 import TrustMetaStrip from "@/components/TrustMetaStrip";
 import { buildContactHref } from "@/lib/contact";
 import { getHubBundles, getHubCounts, getMovePhases } from "@/lib/hub";
-import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
-import { badgeAccent, btnRow, buttonPrimary, buttonSecondary, cardCls, grid2 } from "@/components/ui/styles";
+import {
+  buildOrganizationSchema,
+  buildWebPageSchema,
+  buildWebSiteSchema,
+} from "@/lib/schema";
+import {
+  badgeAccent,
+  btnRow,
+  buttonPrimary,
+  buttonSecondary,
+  cardCls,
+  grid2,
+} from "@/components/ui/styles";
 
 export const metadata: Metadata = {
   title: "How this hub works",
-  description: "A guide to how the Move to Bali hub is structured: planning order, trust rules, and how Empathy School and Gaia Group fit into the system.",
+  description:
+    "A guide to how the Move to Bali hub is structured: planning order, trust rules, and how Empathy School and Gaia Group fit into the system.",
   alternates: { canonical: "/how-this-hub-works" },
 };
 
@@ -23,7 +35,8 @@ export default function HowThisHubWorksPage() {
     buildWebPageSchema({
       pathname: "/how-this-hub-works",
       name: "How this hub works",
-      description: "A guide to how the Move to Bali hub is structured for families.",
+      description:
+        "A guide to how the Move to Bali hub is structured for families.",
     }),
   ];
 
@@ -42,13 +55,25 @@ export default function HowThisHubWorksPage() {
             A bigger hub only helps if it still feels calm.
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
-            This page explains the logic behind the site: the order of decisions, the trust rules, and why Empathy School and Gaia Group sit inside the hub the way they do.
+            This page explains the logic behind the site: the order of
+            decisions, the trust rules, and why Empathy School and Gaia Group
+            sit inside the hub the way they do.
           </p>
           <div className={btnRow + " mt-8"}>
-            <a className={buttonPrimary} href="/plan-your-move" data-track="hub_works_hero_plan">
+            <a
+              className={buttonPrimary}
+              href="/plan-your-move"
+              data-track="hub_works_hero_plan"
+            >
               Plan your move
             </a>
-            <a className={buttonSecondary} href={buildContactHref("General move planning", { from: "/how-this-hub-works" })} data-track="hub_works_hero_contact">
+            <a
+              className={buttonSecondary}
+              href={buildContactHref("General move planning", {
+                from: "/how-this-hub-works",
+              })}
+              data-track="hub_works_hero_contact"
+            >
               Ask a planning question
             </a>
           </div>
@@ -112,7 +137,9 @@ export default function HowThisHubWorksPage() {
             ],
           ].map(([title, body]) => (
             <div key={title} className={cardCls}>
-              <h2 className="text-2xl font-semibold tracking-tight text-gray-900">{title}</h2>
+              <h2 className="text-2xl font-semibold tracking-tight text-gray-900">
+                {title}
+              </h2>
               <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
             </div>
           ))}
@@ -127,30 +154,54 @@ export default function HowThisHubWorksPage() {
       >
         <div className={grid2}>
           <div className={cardCls}>
-            <h2 className="text-2xl font-semibold tracking-tight text-gray-900">Empathy School</h2>
+            <h2 className="text-2xl font-semibold tracking-tight text-gray-900">
+              Empathy School
+            </h2>
             <p className="mt-3 text-sm leading-6 text-gray-600">
-              The school is not just another page. It is one of the strongest variables in the move because it can change area choice, weekly rhythm, commute tolerance, and what the first month feels like.
+              The school is not just another page. It is one of the strongest
+              variables in the move because it can change area choice, weekly
+              rhythm, commute tolerance, and what the first month feels like.
             </p>
             <div className={btnRow}>
-              <a className={buttonPrimary} href="/schools" data-track="hub_works_school">
-                Explore Empathy School
+              <a
+                className={buttonPrimary}
+                href="/schools"
+                data-track="hub_works_school"
+              >
+                Open school planning guide
               </a>
-              <a className={buttonSecondary} href="/empathy-school-fit" data-track="hub_works_school_fit">
+              <a
+                className={buttonSecondary}
+                href="/empathy-school-fit"
+                data-track="hub_works_school_fit"
+              >
                 Use school-fit tool
               </a>
             </div>
           </div>
 
           <div className={cardCls}>
-            <h2 className="text-2xl font-semibold tracking-tight text-gray-900">Gaia Group</h2>
+            <h2 className="text-2xl font-semibold tracking-tight text-gray-900">
+              Gaia Group
+            </h2>
             <p className="mt-3 text-sm leading-6 text-gray-600">
-              Housing becomes much more useful once the family has a real brief. Gaia Group belongs later in the decision order, when the move shape is clear enough for a shortlist to actually help.
+              Housing becomes much more useful once the family has a real brief.
+              Gaia Group belongs later in the decision order, when the move
+              shape is clear enough for a shortlist to actually help.
             </p>
             <div className={btnRow}>
-              <a className={buttonPrimary} href="/gaia-group" data-track="hub_works_gaia">
+              <a
+                className={buttonPrimary}
+                href="/gaia-group"
+                data-track="hub_works_gaia"
+              >
                 Open Gaia Group page
               </a>
-              <a className={buttonSecondary} href="/housing-intro-readiness" data-track="hub_works_gaia_readiness">
+              <a
+                className={buttonSecondary}
+                href="/housing-intro-readiness"
+                data-track="hub_works_gaia_readiness"
+              >
                 Check housing readiness
               </a>
             </div>

@@ -43,7 +43,7 @@ const browseCards = [
   },
   {
     href: "/schools",
-    title: "Empathy School",
+    title: "School planning guide",
     body: "Go straight to the Empathy School lane when school fit may shape your move, your commute, or your area shortlist.",
   },
   {
@@ -181,7 +181,7 @@ export default function SearchPage({ searchParams }: Props) {
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Link className={buttonSecondary} href="/plan-your-move">Plan your move</Link>
                   <Link className={buttonSecondary} href="/areas">Browse areas</Link>
-                  <Link className={buttonSecondary} href="/schools">Empathy School</Link>
+                  <Link className={buttonSecondary} href="/schools">School planning guide</Link>
                   <Link className={buttonSecondary} href="/contact">Ask a question</Link>
                 </div>
               </div>

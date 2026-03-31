@@ -1,28 +1,74 @@
-<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Pali from Gaia Group</title>
-  <desc id="desc">Stand-in profile illustration used until the final Gaia Group headshot is supplied.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Warm partner portrait illustration for Gaia Group housing support</title>
+  <desc id="desc">A calm, professional portrait-style illustration with tropical greenery and a subtle housing motif, used as a stand-in partner image.</desc>
   <defs>
-    <linearGradient id="bg" x1="96" y1="84" x2="624" y2="636" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F7F0E5"/>
-      <stop offset="1" stop-color="#E8F1EA"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F3E7CF"/>
+      <stop offset="60%" stop-color="#E7E2CF"/>
+      <stop offset="100%" stop-color="#D9E2D3"/>
     </linearGradient>
-    <linearGradient id="sun" x1="236" y1="200" x2="486" y2="496" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#EAC58A"/>
-      <stop offset="1" stop-color="#D0A05E"/>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E6C3A2"/>
+      <stop offset="100%" stop-color="#D8AE89"/>
     </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6B8A69"/>
+      <stop offset="100%" stop-color="#526D55"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#4E5F4D" flood-opacity="0.22"/>
+    </filter>
   </defs>
-  <rect width="720" height="720" rx="48" fill="url(#bg)"/>
-  <rect x="48" y="48" width="624" height="624" rx="40" fill="#FFFFFF" fill-opacity="0.64"/>
-  <circle cx="360" cy="248" r="124" fill="url(#sun)"/>
-  <path d="M292 236C292 196.235 324.235 164 364 164C403.765 164 436 196.235 436 236V272H292V236Z" fill="#3F5F4A"/>
-  <path d="M230 470C230 388.291 296.291 322 378 322H390C471.709 322 538 388.291 538 470V516H230V470Z" fill="#6F8E77"/>
-  <circle cx="364" cy="254" r="78" fill="#F5D8B4"/>
-  <path d="M317 240C329 213.333 349.667 200 379 200C408.333 200 428 213.333 438 240" stroke="#3F5F4A" stroke-width="18" stroke-linecap="round"/>
-  <path d="M333 272C346.333 283.333 363.667 289 385 289C406.333 289 423 283.333 435 272" stroke="#C58853" stroke-width="10" stroke-linecap="round"/>
-  <circle cx="338" cy="250" r="7" fill="#4A3A2A"/>
-  <circle cx="392" cy="250" r="7" fill="#4A3A2A"/>
-  <path d="M355 280C360.333 283.333 366.333 285 373 285C379.667 285 385.667 283.333 391 280" stroke="#A56B46" stroke-width="8" stroke-linecap="round"/>
-  <path d="M112 556H608" stroke="#D6E2D6" stroke-width="2"/>
-  <text x="112" y="608" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">Pali</text>
-  <text x="112" y="650" fill="#4B5563" font-family="Arial, Helvetica, sans-serif" font-size="24">Gaia Group · housing introductions via Empathy School</text>
+
+  <rect width="1200" height="1200" rx="120" fill="url(#bg)"/>
+  <circle cx="910" cy="290" r="120" fill="#F5D99A" opacity="0.7"/>
+  <g opacity="0.92">
+    <path d="M0 940C145 790 285 760 420 770C590 784 686 730 770 632C890 492 1022 466 1200 570V1200H0Z" fill="#B7C7A7"/>
+    <path d="M0 1015C130 905 292 874 452 900C648 932 795 840 918 706C998 618 1085 590 1200 640V1200H0Z" fill="#8AA07E"/>
+    <path d="M0 1100C152 1004 308 972 468 992C636 1013 806 952 972 834C1060 772 1135 746 1200 760V1200H0Z" fill="#688263"/>
+  </g>
+
+  <g transform="translate(126 160)" filter="url(#shadow)">
+    <rect x="0" y="0" width="948" height="884" rx="82" fill="#F9F7F0" opacity="0.76"/>
+  </g>
+
+  <g opacity="0.95">
+    <path d="M123 925C171 830 208 694 188 562C174 472 133 411 90 360" fill="none" stroke="#6C845F" stroke-width="24" stroke-linecap="round"/>
+    <path d="M88 362C162 322 215 282 256 206" fill="none" stroke="#79976C" stroke-width="16" stroke-linecap="round"/>
+    <path d="M112 406C192 388 252 392 334 418" fill="none" stroke="#86A376" stroke-width="15" stroke-linecap="round"/>
+    <path d="M162 532C233 514 286 494 352 440" fill="none" stroke="#759366" stroke-width="13" stroke-linecap="round"/>
+    <path d="M188 654C246 634 295 618 360 612" fill="none" stroke="#6C845F" stroke-width="12" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.9">
+    <path d="M1032 1010C986 918 950 776 970 646C985 556 1028 491 1074 444" fill="none" stroke="#6C845F" stroke-width="24" stroke-linecap="round"/>
+    <path d="M1072 448C995 410 938 374 898 296" fill="none" stroke="#79976C" stroke-width="16" stroke-linecap="round"/>
+    <path d="M1050 498C973 484 914 490 834 518" fill="none" stroke="#86A376" stroke-width="15" stroke-linecap="round"/>
+    <path d="M1025 620C960 606 910 584 846 536" fill="none" stroke="#759366" stroke-width="13" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(730 208)">
+    <rect x="0" y="0" width="210" height="190" rx="30" fill="#F2EEE2" stroke="#D2D8CC" stroke-width="8"/>
+    <path d="M25 92L105 30L185 92" fill="none" stroke="#9C7A5A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M42 92V160H168V92" fill="none" stroke="#9C7A5A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="88" y="112" width="34" height="48" rx="8" fill="#C6D7D8"/>
+    <rect x="58" y="104" width="20" height="20" rx="5" fill="#D8E8E8"/>
+    <rect x="132" y="104" width="20" height="20" rx="5" fill="#D8E8E8"/>
+  </g>
+
+  <g transform="translate(260 165)" filter="url(#shadow)">
+    <path d="M210 760C200 653 236 564 306 506C370 454 454 430 554 430C650 430 727 452 790 498C868 556 902 645 890 760L866 860H234Z" fill="url(#shirt)"/>
+    <path d="M423 468C453 521 504 551 553 551C605 551 657 520 690 468L735 514C684 590 620 626 554 626C485 626 422 590 379 514Z" fill="#E9E1D1"/>
+    <ellipse cx="552" cy="318" rx="182" ry="210" fill="url(#face)"/>
+    <path d="M422 300C421 229 438 172 474 132C518 82 586 64 656 86C735 110 793 174 798 298C775 270 745 252 713 246C655 234 585 250 532 226C486 206 448 232 422 300Z" fill="#4F413B"/>
+    <path d="M364 360C364 231 425 132 513 95C596 60 699 78 775 156C833 216 858 293 845 360C830 317 796 291 752 280C700 268 640 278 590 258C534 236 486 246 442 278C407 304 381 332 364 360Z" fill="#5A4A43"/>
+    <ellipse cx="404" cy="336" rx="28" ry="48" fill="#D8AE89"/>
+    <ellipse cx="700" cy="336" rx="28" ry="48" fill="#D8AE89"/>
+    <ellipse cx="486" cy="348" rx="11" ry="8" fill="#57453D"/>
+    <ellipse cx="622" cy="348" rx="11" ry="8" fill="#57453D"/>
+    <path d="M520 420C540 437 567 437 587 420" fill="none" stroke="#8D5D51" stroke-width="9" stroke-linecap="round"/>
+    <path d="M550 352C557 378 563 403 560 426" fill="none" stroke="#C38C73" stroke-width="8" stroke-linecap="round"/>
+    <path d="M457 298C479 280 503 274 528 279" fill="none" stroke="#4F413B" stroke-width="10" stroke-linecap="round"/>
+    <path d="M587 279C612 273 636 280 658 298" fill="none" stroke="#4F413B" stroke-width="10" stroke-linecap="round"/>
+  </g>
 </svg>

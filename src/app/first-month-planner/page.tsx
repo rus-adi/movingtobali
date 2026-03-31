@@ -3,12 +3,20 @@ import JsonLd from "@/components/JsonLd";
 import FirstMonthPlanner from "@/components/FirstMonthPlanner";
 import Section from "@/components/Section";
 import SourceConversationPanel from "@/components/SourceConversationPanel";
-import { badgeAccent, btnRow, buttonPrimary, buttonSecondary, cardCls, grid3 } from "@/components/ui/styles";
+import {
+  badgeAccent,
+  btnRow,
+  buttonPrimary,
+  buttonSecondary,
+  cardCls,
+  grid3,
+} from "@/components/ui/styles";
 import { buildWebPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "First Month Planner",
-  description: "Map the first month in Bali with kids: housing, routines, school fit, budget, and what to pressure-test first.",
+  description:
+    "Map the first month in Bali with kids: housing, routines, school fit, budget, and what to pressure-test first.",
   alternates: { canonical: "/first-month-planner" },
 };
 
@@ -19,7 +27,8 @@ export default function FirstMonthPlannerPage() {
         data={buildWebPageSchema({
           pathname: "/first-month-planner",
           name: "First Month Planner",
-          description: "A practical planner for families using the first month in Bali to test routines, housing, and school fit.",
+          description:
+            "A practical planner for families using the first month in Bali to test routines, housing, and school fit.",
         })}
       />
 
@@ -30,15 +39,24 @@ export default function FirstMonthPlannerPage() {
             Plan the first month so Bali feels more livable, not just exciting.
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
-            Families do better when the first month is treated like a real-world test: area fit, housing, school rhythm,
-            transport, groceries, and whether the adults still like the week by Thursday.
+            Families do better when the first month is treated like a real-world
+            test: area fit, housing, school rhythm, transport, groceries, and
+            whether the adults still like the week by Thursday.
           </p>
           <div className={btnRow + " mt-8"}>
-            <a className={buttonPrimary} href="/test-stay" data-track="first_month_hero_test_stay">
+            <a
+              className={buttonPrimary}
+              href="/test-stay"
+              data-track="first_month_hero_test_stay"
+            >
               Start with test stay planning
             </a>
-            <a className={buttonSecondary} href="/schools" data-track="first_month_hero_school">
-              Explore Empathy School
+            <a
+              className={buttonSecondary}
+              href="/schools"
+              data-track="first_month_hero_school"
+            >
+              Open school planning guide
             </a>
           </div>
         </div>
@@ -72,8 +90,12 @@ export default function FirstMonthPlannerPage() {
             },
           ].map((item) => (
             <div key={item.title} className={cardCls}>
-              <h2 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
+              <h2 className="text-xl font-semibold tracking-tight text-gray-900">
+                {item.title}
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                {item.body}
+              </p>
             </div>
           ))}
         </div>
@@ -87,16 +109,35 @@ export default function FirstMonthPlannerPage() {
       >
         <div className={grid3}>
           {[
-            ["/guides/first-month-in-bali-with-kids", "First month in Bali with kids"],
-            ["/guides/how-to-plan-your-first-week-in-bali-with-kids", "Plan your first week in Bali"],
-            ["/resources/first-week-arrival-checklist", "First-week arrival checklist"],
-            ["/resources/family-routine-reset-sheet", "Family routine reset sheet"],
-            ["/resources/empathy-school-commute-routine-test-sheet", "Empathy School commute test sheet"],
+            [
+              "/guides/first-month-in-bali-with-kids",
+              "First month in Bali with kids",
+            ],
+            [
+              "/guides/how-to-plan-your-first-week-in-bali-with-kids",
+              "Plan your first week in Bali",
+            ],
+            [
+              "/resources/first-week-arrival-checklist",
+              "First-week arrival checklist",
+            ],
+            [
+              "/resources/family-routine-reset-sheet",
+              "Family routine reset sheet",
+            ],
+            [
+              "/resources/empathy-school-commute-routine-test-sheet",
+              "Empathy School commute test sheet",
+            ],
             ["/budget-calculator", "Budget calculator"],
           ].map(([href, title]) => (
             <a key={href} href={href} className={cardCls}>
-              <h3 className="text-xl font-semibold tracking-tight text-gray-900">{title}</h3>
-              <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
+              <h3 className="text-xl font-semibold tracking-tight text-gray-900">
+                {title}
+              </h3>
+              <div className="mt-6 text-sm font-semibold text-gray-900">
+                Open →
+              </div>
             </a>
           ))}
         </div>
@@ -107,7 +148,6 @@ export default function FirstMonthPlannerPage() {
         title="Need a reply that matches this tool?"
         lead="The site should help families route themselves. This keeps the next conversation tied to the decision you are already making here."
       />
-
     </main>
   );
 }

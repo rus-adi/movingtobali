@@ -36,8 +36,8 @@
       "href": "/contact"
     },
     "empathy": {
-      "text": "Explore Empathy School",
-      "href": "/schools"
+      "text": "Visit Empathy School",
+      "href": "https://empathy.school/"
     }
   }
 }

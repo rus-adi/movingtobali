@@ -70,7 +70,7 @@ function buildPlan(
   const avoid: string[] = [];
   const dayPlan: string[] = [];
   const nextLinks: LinkItem[] = [
-    { title: "Empathy School", href: "/schools" },
+    { title: "School planning guide", href: "/schools" },
     { title: "School tour question list", href: "/resources/school-tour-question-list" },
     { title: "Commute + routine test sheet", href: "/resources/empathy-school-commute-routine-test-sheet" },
   ];
@@ -305,7 +305,7 @@ export default function SchoolTourPrepPlanner() {
 
         <div className={btnRow}>
           <a className={buttonPrimary} href="/schools" data-track="tour_prep_open_school">
-            Explore Empathy School
+            Open school planning guide
           </a>
           <a className={buttonSecondary} href="/resources/empathy-school-tour-day-plan" data-track="tour_prep_day_plan">
             Copy the tour day plan

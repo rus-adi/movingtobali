@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { getSite } from "@/lib/site";
 import { cn } from "@/lib/cn";
 import { buttonPrimary } from "@/components/ui/styles";
+import NavbarSearch from "@/components/NavbarSearch";
+import { schoolPlanningGuideHref, schoolPlanningGuideLabel } from "@/lib/schoolLinks";
 
 type NavItem = {
   href: string;
@@ -36,6 +38,7 @@ function MenuIcon({ className }: { className?: string }) {
 export default function Navbar() {
   const site = getSite();
   const pathname = usePathname();
+  const desktopCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const topLevelItems: NavItem[] = useMemo(
     () => [
@@ -73,7 +76,7 @@ export default function Navbar() {
         label: "School & Housing",
         track: "nav_group_school_housing",
         items: [
-          { href: "/schools", label: "Empathy School", track: "nav_empathy_school", match: (path) => path === "/schools" || path === "/empathy-school-fit" || path === "/empathy-school-tour-prep" },
+          { href: schoolPlanningGuideHref, label: schoolPlanningGuideLabel, track: "nav_school_planning", match: (path) => path === "/schools" || path === "/empathy-school-fit" || path === "/empathy-school-tour-prep" },
           { href: "/housing", label: "Housing", track: "nav_housing", match: (path) => path === "/housing" || path === "/gaia-group" || path === "/housing-intro-readiness" || path === "/housing-brief-builder" },
           { href: "/partners", label: "Partners", track: "nav_partners" },
         ],
@@ -82,6 +85,7 @@ export default function Navbar() {
         label: "Home sections",
         track: "nav_group_home_sections",
         items: [
+          { href: "/#what-we-help-with", label: "What we help with", track: "nav_home_services" },
           { href: "/#starting-points", label: "Starting points", track: "nav_home_starting_points" },
           { href: "/#move-system", label: "Tools", track: "nav_home_tools" },
           { href: "/#family-setups", label: "Family setups", track: "nav_home_family_setups" },
@@ -98,11 +102,6 @@ export default function Navbar() {
     []
   );
 
-  const searchItem: NavItem = useMemo(
-    () => ({ href: "/search", label: "Search", track: "nav_search" }),
-    []
-  );
-
   const [mobileOpen, setMobileOpen] = useState(false);
   const [desktopOpenGroup, setDesktopOpenGroup] = useState<string | null>(null);
   const [mobileOpenGroups, setMobileOpenGroups] = useState<Record<string, boolean>>({});
@@ -114,11 +113,20 @@ export default function Navbar() {
 
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
-      if (e.key === "Escape") setMobileOpen(false);
+      if (e.key === "Escape") {
+        setMobileOpen(false);
+        setDesktopOpenGroup(null);
+      }
     }
 
     document.addEventListener("keydown", onKeyDown);
     return () => document.removeEventListener("keydown", onKeyDown);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (desktopCloseTimer.current) clearTimeout(desktopCloseTimer.current);
+    };
   }, []);
 
   const isActive = (item: NavItem) => item.match ? item.match(pathname) : pathname === item.href;
@@ -127,6 +135,23 @@ export default function Navbar() {
   const toggleMobileGroup = (label: string) => {
     setMobileOpenGroups((prev) => ({ ...prev, [label]: !prev[label] }));
   };
+
+  function clearDesktopCloseTimer() {
+    if (desktopCloseTimer.current) {
+      clearTimeout(desktopCloseTimer.current);
+      desktopCloseTimer.current = null;
+    }
+  }
+
+  function openDesktopGroup(label: string) {
+    clearDesktopCloseTimer();
+    setDesktopOpenGroup(label);
+  }
+
+  function closeDesktopGroupSoon() {
+    clearDesktopCloseTimer();
+    desktopCloseTimer.current = setTimeout(() => setDesktopOpenGroup(null), 180);
+  }
 
   const linkCls = (item: NavItem) =>
     cn(
@@ -153,9 +178,6 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-3">
-            <Link href="/search" className="font-medium text-gray-700 transition hover:text-gray-900" data-track="nav_utility_search">
-              Search the hub
-            </Link>
             <Link href="/how-this-hub-works" className="font-semibold text-gray-900 transition hover:text-emerald-800" data-track="nav_utility_hub">
               How this hub works →
             </Link>
@@ -190,8 +212,8 @@ export default function Navbar() {
                 <div
                   key={group.label}
                   className="relative"
-                  onMouseEnter={() => setDesktopOpenGroup(group.label)}
-                  onMouseLeave={() => setDesktopOpenGroup(null)}
+                  onMouseEnter={() => openDesktopGroup(group.label)}
+                  onMouseLeave={closeDesktopGroupSoon}
                 >
                   <button
                     type="button"
@@ -203,46 +225,46 @@ export default function Navbar() {
                     aria-haspopup="menu"
                     aria-controls={`desktop-nav-${groupId(group.label)}`}
                     onClick={() => setDesktopOpenGroup((prev) => (prev === group.label ? null : group.label))}
+                    onFocus={() => openDesktopGroup(group.label)}
                     data-track={group.track}
                   >
                     {group.label}
                   </button>
                   {desktopOpenGroup === group.label ? (
                     <div
-                      id={`desktop-nav-${groupId(group.label)}`}
-                      role="menu"
-                      aria-label={`${group.label} links`}
-                      className="absolute left-0 top-full z-50 mt-2 min-w-56 rounded-2xl border border-stone-200 bg-white p-2 shadow-lg"
+                      className="absolute left-0 top-full z-50 pt-2"
+                      onMouseEnter={() => openDesktopGroup(group.label)}
+                      onMouseLeave={closeDesktopGroupSoon}
                     >
-                      {group.items.map((item) => (
-                        <Link
-                          key={item.href}
-                          href={item.href}
-                          role="menuitem"
-                          className={cn(
-                            "block rounded-xl px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-emerald-50 hover:text-gray-900",
-                            isActive(item) && "active bg-emerald-50 text-emerald-800",
-                          )}
-                          data-track={item.track}
-                          aria-current={isActive(item) ? "page" : undefined}
-                        >
-                          {item.label}
-                        </Link>
-                      ))}
+                      <div
+                        id={`desktop-nav-${groupId(group.label)}`}
+                        role="menu"
+                        aria-label={`${group.label} links`}
+                        className="min-w-56 rounded-2xl border border-stone-200 bg-white p-2 shadow-lg"
+                      >
+                        {group.items.map((item) => (
+                          <Link
+                            key={item.href}
+                            href={item.href}
+                            role="menuitem"
+                            className={cn(
+                              "block rounded-xl px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-emerald-50 hover:text-gray-900",
+                              isActive(item) && "active bg-emerald-50 text-emerald-800",
+                            )}
+                            data-track={item.track}
+                            aria-current={isActive(item) ? "page" : undefined}
+                          >
+                            {item.label}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   ) : null}
                 </div>
               ))}
             </nav>
 
-            <Link
-              href={searchItem.href}
-              data-track={searchItem.track}
-              aria-current={pathname === searchItem.href ? "page" : undefined}
-              className={cn("!hidden md:!inline-flex items-center justify-center", "rounded-full border border-stone-200 bg-white px-4 py-2 text-xs font-medium text-gray-700 shadow-sm transition hover:border-emerald-200 hover:bg-emerald-50 hover:text-gray-900 lg:text-sm")}
-            >
-              {searchItem.label}
-            </Link>
+            <NavbarSearch className="hidden md:block" />
 
             <Link
               href={contactItem.href}
@@ -252,6 +274,8 @@ export default function Navbar() {
             >
               {contactItem.label}
             </Link>
+
+            <NavbarSearch className="md:hidden" />
 
             <button
               type="button"
@@ -280,16 +304,6 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
             >
               How this hub works
-            </Link>
-
-            <Link
-              href={searchItem.href}
-              className="rounded-xl px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-emerald-50 hover:text-gray-900"
-              data-track={searchItem.track}
-              aria-current={pathname === searchItem.href ? "page" : undefined}
-              onClick={() => setMobileOpen(false)}
-            >
-              {searchItem.label}
             </Link>
 
             {topLevelItems.map((item) => (

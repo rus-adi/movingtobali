@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { buildContactHref } from "@/lib/contact";
+import { schoolPlanningGuideHref, schoolPlanningGuideLabel } from "@/lib/schoolLinks";
 import { badge, btnRow, buttonPrimary, buttonSecondary, cardCls, inputBase } from "@/components/ui/styles";
 
 type TimelineKey = "fast" | "steady" | "roomy";
@@ -41,8 +42,8 @@ const routeOptions: Record<RouteKey, { label: string; mistake: string; nextTool:
   schoolFirst: {
     label: "School-first planning",
     mistake: "Choosing an area before you know whether Empathy School should anchor the week.",
-    nextTool: "Empathy School fit",
-    nextHref: "/schools",
+    nextTool: schoolPlanningGuideLabel,
+    nextHref: schoolPlanningGuideHref,
   },
   housingFirst: {
     label: "Housing feels urgent",
@@ -165,7 +166,7 @@ export default function MoveTimelinePlanner() {
     ];
 
     if (school !== "notNow") {
-      items.splice(1, 0, { title: "Empathy School", href: "/schools" });
+      items.splice(1, 0, { title: schoolPlanningGuideLabel, href: schoolPlanningGuideHref });
     }
 
     return items.slice(0, 4);

@@ -50,7 +50,7 @@ const groups = [
     title: "Before you treat school as solved",
     lead: "These help families use Empathy School as a real fit test, not a vague future note.",
     items: [
-      ["/schools", "Empathy School"],
+      ["/schools", "School planning guide"],
       ["/empathy-school-fit", "Empathy School fit"],
       ["/empathy-school-tour-prep", "Empathy School tour prep"],
       ["/resources/empathy-school-fit-notes-sheet", "Fit notes sheet"],

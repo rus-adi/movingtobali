@@ -2,13 +2,24 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import DisclosureNotice from "@/components/DisclosureNotice";
-import TrustMetaStrip from "@/components/TrustMetaStrip";
 import PartnerBadge from "@/components/PartnerBadge";
 import RichTextBlock from "@/components/RichTextBlock";
 import { getPartners } from "@/lib/partners";
-import { buildOrganizationSchema, buildWebPageSchema, buildWebSiteSchema } from "@/lib/schema";
+import {
+  buildOrganizationSchema,
+  buildWebPageSchema,
+  buildWebSiteSchema,
+} from "@/lib/schema";
 import { buildContactHref } from "@/lib/contact";
-import { badge, badgeAccent, btnRow, buttonPrimary, buttonSecondary, cardCls, grid2, grid3 } from "@/components/ui/styles";
+import {
+  badge,
+  badgeAccent,
+  btnRow,
+  buttonPrimary,
+  buttonSecondary,
+  cardCls,
+  grid2,
+} from "@/components/ui/styles";
 
 export function generateMetadata(): Metadata {
   const items = getPartners();
@@ -16,20 +27,30 @@ export function generateMetadata(): Metadata {
 
   return {
     title: "Partners",
-    description: "Preferred services we can introduce families to (only verified partners are shown publicly).",
+    description:
+      "A clean directory of preferred services we can introduce families to (only verified partners are shown publicly).",
     alternates: { canonical: "/partners" },
     robots: noindex ? { index: false, follow: false } : undefined,
   };
 }
 
+const introSteps = [
+  "You share the timing, area direction, and question you are trying to solve now.",
+  "We confirm whether the partner is the right fit and whether they have capacity for your stage of the move.",
+  "You still verify contracts, fees, terms, and any property details before you commit.",
+];
+
 export default function PartnersPage() {
   const items = getPartners();
-  const featured = items[0] || null;
 
   const schemas = [
     buildOrganizationSchema(),
     buildWebSiteSchema(),
-    buildWebPageSchema({ pathname: "/partners", name: "Partners", description: "Preferred services we can introduce families to." }),
+    buildWebPageSchema({
+      pathname: "/partners",
+      name: "Partners",
+      description: "Preferred services we can introduce families to.",
+    }),
   ];
 
   return (
@@ -39,218 +60,285 @@ export default function PartnersPage() {
       <section className="bg-gray-50 py-16 md:py-24">
         <div className="container">
           <div className={badge}>Partners</div>
-          <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Preferred partners & services</h1>
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            Preferred partners & services
+          </h1>
           <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
-            We keep the public partner list intentionally narrow. Right now the featured public partner is Gaia Group for housing support.
+            This page stays intentionally clean. The cards below are the
+            directory layer; detailed background, fit notes, and process
+            guidance live on each partner’s own page.
           </p>
+          <div className="mt-8 max-w-4xl">
+            <DisclosureNotice compact />
+          </div>
+        </div>
+      </section>
 
-          {featured ? (
-            <div className={`${cardCls} mt-8`}>
-              <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
-                <div>
+      <section className="py-16 md:py-24">
+        <div className="container grid gap-10">
+          {items.length ? (
+            <div className={grid2}>
+              {items.map((partner) => (
+                <div key={partner.slug} className={cardCls}>
                   <div className="flex flex-wrap items-center gap-2">
-                    <PartnerBadge status={featured.status} />
-                    <span className={badgeAccent}>{featured.category}</span>
-                    {featured.contactName ? <span className={badge}>Contact: {featured.contactName}</span> : null}
+                    <PartnerBadge status={partner.status} />
+                    <span className={badgeAccent}>{partner.category}</span>
+                    {partner.contactName ? (
+                      <span className={badge}>
+                        Contact: {partner.contactName}
+                      </span>
+                    ) : null}
                   </div>
 
-                  <h2 className="mt-5 text-3xl font-semibold tracking-tight text-gray-900">{featured.name}</h2>
-                  <p className="mt-4 max-w-3xl text-sm leading-6 text-gray-600">{featured.bestFor}</p>
-
-                  {featured.services?.length ? (
-                    <div className="mt-5 text-sm leading-6 text-gray-600">
-                      <strong className="font-semibold text-gray-900">Services:</strong> {featured.services.join(", ")}
-                    </div>
+                  {partner.image ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={partner.image}
+                      alt={
+                        partner.contactName
+                          ? `${partner.contactName} from ${partner.name}`
+                          : partner.name
+                      }
+                      className="mt-6 h-56 w-full rounded-2xl border border-gray-200 bg-white object-cover"
+                    />
                   ) : null}
 
-                  {featured.areas?.length ? (
-                    <div className="mt-3 text-sm leading-6 text-gray-600">
-                      <strong className="font-semibold text-gray-900">Areas:</strong> {featured.areas.join(", ")}
+                  <h2 className="mt-6 text-2xl font-semibold tracking-tight text-gray-900">
+                    {partner.name}
+                  </h2>
+                  <p className="mt-3 text-sm leading-6 text-gray-600">
+                    {partner.bestFor}
+                  </p>
+
+                  {partner.services?.length ? (
+                    <p className="mt-4 text-sm leading-6 text-gray-600">
+                      <strong className="font-semibold text-gray-900">
+                        Services:
+                      </strong>{" "}
+                      {partner.services.join(", ")}
+                    </p>
+                  ) : null}
+
+                  {partner.areas?.length ? (
+                    <p className="mt-3 text-sm leading-6 text-gray-600">
+                      <strong className="font-semibold text-gray-900">
+                        Areas:
+                      </strong>{" "}
+                      {partner.areas.join(", ")}
+                    </p>
+                  ) : null}
+
+                  {partner.note ? (
+                    <div className="mt-5 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-600">
+                      {partner.note}
                     </div>
                   ) : null}
 
                   <div className={btnRow}>
                     <a
                       className={buttonPrimary}
-                      href={buildContactHref("Housing intro", { from: "/partners", partner: featured.slug })}
-                      data-track="partners_featured_intro"
+                      href={buildContactHref("Housing intro", {
+                        from: "/partners",
+                        partner: partner.slug,
+                      })}
+                      data-track="partners_card_intro"
                     >
-                      Request a housing intro
+                      Request an intro
                     </a>
-                    <Link className={buttonSecondary} href="/gaia-group" data-track="partners_featured_profile">
-                      Open Gaia Group page
-                    </Link>
-                    <Link className={buttonSecondary} href="/guides/how-gaia-group-housing-support-works" data-track="partners_featured_process">
-                      How the process works
+                    <Link
+                      className={buttonSecondary}
+                      href="/gaia-group"
+                      data-track="partners_card_profile"
+                    >
+                      Open partner page
                     </Link>
                   </div>
                 </div>
-
-                <div className="flex flex-col gap-5">
-                  {featured.image ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={featured.image}
-                      alt={featured.contactName ? `${featured.contactName} from ${featured.name}` : featured.name}
-                      className="h-64 w-full rounded-2xl border border-gray-200 bg-white object-cover"
-                    />
-                  ) : null}
-
-                  <div className="rounded-2xl border border-gray-200 bg-gray-50 p-5 text-sm leading-6 text-gray-600">
-                    <strong className="font-semibold text-gray-900">What this is for</strong>
-                    <p className="mt-3">
-                      A calmer housing start. Not a giant directory, not pressure to commit fast, and not a replacement for your own due diligence.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
-          ) : null}
-        </div>
-      </section>
-
-      <section className="py-16 md:py-24">
-        <div className="container grid gap-10">
-
-          <TrustMetaStrip
-            updated="2026-03-22"
-            title="Why the public partner list stays intentionally narrow"
-            body="This page is designed to build trust, not volume. Right now the site publicly features Gaia Group for housing because we would rather keep the partner layer selective and usable than let it become a vague directory."
-            links={[
-              { href: "/disclosure", label: "Disclosure" },
-              { href: "/gaia-group", label: "Open Gaia Group" },
-            ]}
-          />
-
-          {featured ? (
-            <>
-              <div className={grid3}>
-                <div className={cardCls}>
-                  <strong className="text-sm font-semibold text-gray-900">Why families use Gaia Group</strong>
-                  <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
-                    {(featured.trustPoints || []).map((point) => (
-                      <li key={point}>{point}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className={cardCls}>
-                  <strong className="text-sm font-semibold text-gray-900">Good fit</strong>
-                  <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
-                    {(featured.goodFit || []).map((point) => (
-                      <li key={point}>{point}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className={cardCls}>
-                  <strong className="text-sm font-semibold text-gray-900">Probably not the right fit</strong>
-                  <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
-                    {(featured.notFor || []).map((point) => (
-                      <li key={point}>{point}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              <div className={grid2}>
-                <Link className={cardCls} href="/housing-intro-readiness" data-track="partners_readiness_tool">
-                  <h3 className="text-xl font-semibold tracking-tight text-gray-900">Housing intro readiness</h3>
-                  <p className="mt-3 text-sm leading-6 text-gray-600">Use the filter before you request an intro so Gaia Group starts with a real shortlist instead of a wide-open wish list.</p>
-                  <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
-                </Link>
-                <Link className={cardCls} href="/housing-brief-builder" data-track="partners_brief_tool">
-                  <h3 className="text-xl font-semibold tracking-tight text-gray-900">Housing brief builder</h3>
-                  <p className="mt-3 text-sm leading-6 text-gray-600">Create the first housing message around budget band, bedrooms, shortlist, commute, and dealbreakers.</p>
-                  <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
-                </Link>
-              </div>
-
-              <div className={cardCls}>
-                <strong className="text-sm font-semibold text-gray-900">How the intro usually works</strong>
-                <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-                  {(featured.process || []).map((step, index) => (
-                    <div key={step} className="rounded-2xl border border-gray-200 bg-gray-50 p-5">
-                      <div className={badgeAccent}>Step {index + 1}</div>
-                      <p className="mt-4 text-sm leading-6 text-gray-600">{step}</p>
-                    </div>
-                  ))}
-                </div>
-                <div className={btnRow}>
-                  <Link className={buttonSecondary} href="/housing-brief-builder" data-track="partners_housing_brief_builder">
-                    Open the housing brief builder
-                  </Link>
-                  <a
-                    className={buttonPrimary}
-                    href={buildContactHref("Housing intro", { from: "/partners", partner: featured.slug })}
-                    data-track="partners_housing_intro_process"
-                  >
-                    Send the intro request
-                  </a>
-                </div>
-              </div>
-            </>
           ) : (
             <div className={cardCls}>
-              <strong className="text-sm font-semibold text-gray-900">Partners directory is being built</strong>
+              <strong className="text-sm font-semibold text-gray-900">
+                Partners directory is being built
+              </strong>
               <p className="mt-3 text-sm leading-6 text-gray-600">
-                We’re intentionally slow here. For visas and housing especially, we only publish partners once vetting and tracking are in place.
+                We publish partners slowly. For visas and housing especially,
+                only verified partners appear publicly once vetting and tracking
+                are in place.
               </p>
               <div className={btnRow}>
-                <a className={buttonPrimary} href={buildContactHref("General move planning", { from: "/partners" })} data-track="partners_request_intro_empty">
+                <a
+                  className={buttonPrimary}
+                  href={buildContactHref("General move planning", {
+                    from: "/partners",
+                  })}
+                  data-track="partners_request_intro_empty"
+                >
                   Ask a question
                 </a>
-                <Link className={buttonSecondary} href="/disclosure" data-track="partners_disclosure">
+                <Link
+                  className={buttonSecondary}
+                  href="/disclosure"
+                  data-track="partners_disclosure"
+                >
                   Disclosure
                 </Link>
               </div>
             </div>
           )}
 
+          <div className={grid2}>
+            <div className={cardCls}>
+              <strong className="text-sm font-semibold text-gray-900">
+                How introductions work
+              </strong>
+              <div className="mt-6 grid gap-4 md:grid-cols-3">
+                {introSteps.map((step, index) => (
+                  <div
+                    key={step}
+                    className="rounded-2xl border border-gray-200 bg-gray-50 p-5"
+                  >
+                    <div className={badgeAccent}>Step {index + 1}</div>
+                    <p className="mt-4 text-sm leading-6 text-gray-600">
+                      {step}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className={cardCls}>
+              <strong className="text-sm font-semibold text-gray-900">
+                What this page is for
+              </strong>
+              <p className="mt-4 text-sm leading-6 text-gray-600">
+                The directory page helps families see the available service
+                quickly, understand the category, and choose whether to open the
+                detailed partner page or request a warm intro. It is not meant
+                to repeat the full partner profile below the cards.
+              </p>
+              <div className={btnRow}>
+                <Link
+                  className={buttonSecondary}
+                  href="/gaia-group"
+                  data-track="partners_directory_open_detail"
+                >
+                  Open Gaia Group details
+                </Link>
+                <a
+                  className={buttonSecondary}
+                  href={buildContactHref("Housing intro", {
+                    from: "/partners",
+                  })}
+                  data-track="partners_directory_contact"
+                >
+                  Ask about an intro
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div className="grid gap-6 md:grid-cols-2">
             <div className={cardCls}>
-              <strong className="text-sm font-semibold text-gray-900">How to choose a visa agent safely</strong>
+              <strong className="text-sm font-semibold text-gray-900">
+                How to choose a visa agent safely
+              </strong>
               <RichTextBlock className="mt-4">
                 <ul>
                   <li>Ask for a written checklist + written fee breakdown.</li>
                   <li>Avoid “guaranteed approval” language.</li>
                   <li>Request receipts + proof of submission.</li>
-                  <li>Confirm anything changeable via our <a href="/official-links">Official links</a> page.</li>
+                  <li>
+                    Confirm anything changeable via our{" "}
+                    <a href="/official-links">Official links</a> page.
+                  </li>
                 </ul>
               </RichTextBlock>
               <div className={btnRow}>
-                <Link className={buttonPrimary} href="/guides/how-to-choose-a-visa-agent" data-track="partners_safe_visas_guide">
+                <Link
+                  className={buttonPrimary}
+                  href="/guides/how-to-choose-a-visa-agent"
+                  data-track="partners_safe_visas_guide"
+                >
                   Read: choose an agent
                 </Link>
-                <Link className={buttonSecondary} href="/resources/visa-agent-comparison-template" data-track="partners_safe_visas_template">
+                <Link
+                  className={buttonSecondary}
+                  href="/resources/visa-agent-comparison-template"
+                  data-track="partners_safe_visas_template"
+                >
                   Copy: comparison template
                 </Link>
               </div>
             </div>
 
             <div className={cardCls}>
-              <strong className="text-sm font-semibold text-gray-900">How to rent safely (deposits + contracts)</strong>
+              <strong className="text-sm font-semibold text-gray-900">
+                How to rent safely (deposits + contracts)
+              </strong>
               <RichTextBlock className="mt-4">
                 <ul>
-                  <li>Do a short stay first if you can, then view in person.</li>
-                  <li>Verify who owns the property (or who legally represents the owner).</li>
-                  <li>Clarify what’s included (electricity, internet, cleaning, maintenance).</li>
+                  <li>
+                    Do a short stay first if you can, then view in person.
+                  </li>
+                  <li>
+                    Verify who owns the property (or who legally represents the
+                    owner).
+                  </li>
+                  <li>
+                    Clarify what’s included (electricity, internet, cleaning,
+                    maintenance).
+                  </li>
                   <li>Never let urgency override verification.</li>
                 </ul>
               </RichTextBlock>
               <div className={btnRow}>
-                <Link className={buttonPrimary} href="/guides/renting-safely-in-bali" data-track="partners_safe_housing_guide">
+                <Link
+                  className={buttonPrimary}
+                  href="/guides/renting-safely-in-bali"
+                  data-track="partners_safe_housing_guide"
+                >
                   Read: renting safely
                 </Link>
-                <Link className={buttonSecondary} href="/resources/lease-deposit-checklist" data-track="partners_safe_housing_checklist">
+                <Link
+                  className={buttonSecondary}
+                  href="/resources/lease-deposit-checklist"
+                  data-track="partners_safe_housing_checklist"
+                >
                   Copy: lease checklist
                 </Link>
               </div>
             </div>
           </div>
 
-          <div className="mt-2">
-            <DisclosureNotice />
+          <div className={cardCls}>
+            <strong className="text-sm font-semibold text-gray-900">
+              Need a warm intro instead of browsing alone?
+            </strong>
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-gray-600">
+              Tell us the part of the move that feels stuck. If a partner
+              conversation would genuinely help, we can point you to the right
+              page or request the introduction without turning the directory
+              into a cluttered funnel.
+            </p>
+            <div className={btnRow}>
+              <a
+                className={buttonPrimary}
+                href={buildContactHref("General move planning", {
+                  from: "/partners",
+                })}
+                data-track="partners_contact_cta"
+              >
+                Ask a question
+              </a>
+              <Link
+                className={buttonSecondary}
+                href="/gaia-group"
+                data-track="partners_cta_profile"
+              >
+                Open Gaia Group page
+              </Link>
+            </div>
           </div>
         </div>
       </section>

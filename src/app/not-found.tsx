@@ -20,8 +20,8 @@ const quickLinks = [
   },
   {
     href: "/schools",
-    title: "Empathy School",
-    body: "Jump into the Empathy School lane if school fit is the real thing you were looking for.",
+    title: "School planning guide",
+    body: "Jump into the school-planning lane if fit, tours, or weekly rhythm are the real things you were trying to answer.",
   },
 ];
 

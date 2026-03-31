@@ -27,7 +27,7 @@ video:
   permission: owned
   childrenVisible: false
   consentConfirmed: false
-  ctaText: Explore Empathy School
+  ctaText: Open school planning guide
   ctaHref: /schools
 social:
   youtubeUrl: https://www.youtube.com/watch?v=vTds0BelBf0
