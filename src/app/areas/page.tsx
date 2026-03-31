@@ -55,19 +55,20 @@ export default function AreasIndexPage({ searchParams }: Props) {
       <JsonLd data={schemas} />
 
       <section className="relative w-full overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-100/70 via-stone-100/40 to-emerald-100/65" />
-      <div className="absolute inset-0 opacity-50">
+      <div className="absolute inset-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/images/hero-bali.webp" alt="" className="h-full w-full object-cover" />
       </div>
+      <div className="absolute inset-0 bg-gradient-to-br from-black/78 via-black/58 to-emerald-950/58" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.16),transparent_42%)]" />
       <div className="relative py-16 md:py-24">
 
         <div className="container">
           <div className="grid items-start gap-12 md:grid-cols-2">
             <div className="space-y-6">
               <div className={badge}>Areas</div>
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Bali areas for families</h1>
-              <p className="text-base text-gray-600 sm:text-lg">
+              <h1 className="text-4xl font-bold tracking-tight text-white drop-shadow-sm sm:text-5xl">Bali areas for families</h1>
+              <p className="text-base text-white/90 sm:text-lg">
                 Short, honest guides to help you choose where to live. Use these to shortlist 2–3 areas before your first visit.
               </p>
             </div>
@@ -122,7 +123,7 @@ export default function AreasIndexPage({ searchParams }: Props) {
             <div className="flex flex-wrap items-start justify-between gap-4">
               <div className="min-w-[240px]">
                 <strong className="text-sm font-semibold text-gray-900">Quick compare (rough signals)</strong>
-                <div className="mt-3 text-sm leading-6 text-gray-600">
+                <div className="mt-3 text-sm leading-6 text-gray-700">
                   These are subjective, “good enough to shortlist” signals — they can change street-by-street.
                 </div>
               </div>

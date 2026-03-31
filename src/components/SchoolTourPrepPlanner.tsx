@@ -245,7 +245,7 @@ export default function SchoolTourPrepPlanner() {
       <div className={cardCls}>
         <div className={badge}>Tour prep</div>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">Plan a school day that still tells the truth</h2>
-        <p className="mt-3 text-sm leading-6 text-gray-600">
+        <p className="mt-3 text-sm leading-6 text-gray-700">
           A useful Empathy School visit is not only about the tour. It is about whether the day around it still feels believable for your family. Use this planner to protect enough space, energy, and honesty that the visit changes real decisions.
         </p>
 
@@ -298,7 +298,7 @@ export default function SchoolTourPrepPlanner() {
 
         <div className="mt-6 rounded-2xl border border-gray-200 bg-gray-50 p-4">
           <div className="text-sm font-semibold text-gray-900">The main mistake to avoid</div>
-          <p className="mt-2 text-sm leading-6 text-gray-600">
+          <p className="mt-2 text-sm leading-6 text-gray-700">
             Families often try to turn one school day into a tour, an admissions meeting, an area decision, and a housing strategy session. The result is usually a blur. Protect the one or two truths you most need from the visit.
           </p>
         </div>
@@ -319,13 +319,13 @@ export default function SchoolTourPrepPlanner() {
             <span className={badge}>{plan.posture}</span>
           </div>
           <h3 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">{plan.headline}</h3>
-          <p className="mt-3 text-sm leading-6 text-gray-600">{plan.summary}</p>
+          <p className="mt-3 text-sm leading-6 text-gray-700">{plan.summary}</p>
         </div>
 
         <div className="grid gap-4 md:grid-cols-2">
           <div className={cardCls}>
             <h3 className="text-xl font-semibold tracking-tight text-gray-900">Protect these parts of the day</h3>
-            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-600">
+            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-700">
               {plan.protect.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -334,7 +334,7 @@ export default function SchoolTourPrepPlanner() {
 
           <div className={cardCls}>
             <h3 className="text-xl font-semibold tracking-tight text-gray-900">Avoid these traps</h3>
-            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-600">
+            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-700">
               {plan.avoid.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -344,7 +344,7 @@ export default function SchoolTourPrepPlanner() {
 
         <div className={cardCls}>
           <h3 className="text-xl font-semibold tracking-tight text-gray-900">A calmer version of the day</h3>
-          <ol className="mt-4 list-decimal space-y-3 pl-5 text-sm leading-6 text-gray-600">
+          <ol className="mt-4 list-decimal space-y-3 pl-5 text-sm leading-6 text-gray-700">
             {plan.dayPlan.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -354,7 +354,7 @@ export default function SchoolTourPrepPlanner() {
         <div className="grid gap-4 md:grid-cols-2">
           {plan.nextLinks.map((item) => (
             <a key={item.href} href={item.href} className={cardCls}>
-              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Next step</div>
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Next step</div>
               <div className="mt-3 text-xl font-semibold tracking-tight text-gray-900">{item.title}</div>
               <div className="mt-4 text-sm font-semibold text-gray-900">Open →</div>
             </a>

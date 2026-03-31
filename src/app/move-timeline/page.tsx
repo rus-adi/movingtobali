@@ -29,7 +29,7 @@ export default function MoveTimelinePage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Build a timeline that keeps the move calm.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             A lot of Bali stress comes from solving the right decisions in the wrong order. Use this page to create a sequence that matches your timeline, your children’s needs, and whether Empathy School is part of the move.
           </p>
         </div>
@@ -64,7 +64,7 @@ export default function MoveTimelinePage() {
           ].map((item) => (
             <div key={item.title} className={cardCls}>
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{item.body}</p>
             </div>
           ))}
         </div>

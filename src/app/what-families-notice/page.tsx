@@ -72,7 +72,7 @@ export default function WhatFamiliesNoticePage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             What families tend to notice once Bali becomes a real week.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             This page is intentionally honest: these are composite family scenarios and recurring patterns, not verbatim testimonials.
             The goal is to make decisions feel more concrete without pretending certainty or inventing proof we do not have.
           </p>
@@ -104,7 +104,7 @@ export default function WhatFamiliesNoticePage() {
           {storyCards.map((card) => (
             <Link key={card.href} href={card.href} className={cardCls} data-track="families_notice_story_open">
               <h2 className="text-2xl font-semibold tracking-tight text-gray-900">{card.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{card.body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{card.body}</p>
               <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
             </Link>
           ))}

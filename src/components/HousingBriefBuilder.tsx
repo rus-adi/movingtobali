@@ -256,7 +256,7 @@ export default function HousingBriefBuilder() {
             {copied ? <span className={badge}>Copied</span> : null}
           </div>
           <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">Your housing brief</h2>
-          <p className="mt-3 text-sm leading-6 text-gray-600">
+          <p className="mt-3 text-sm leading-6 text-gray-700">
             This does not need to sound polished. It just needs to be grounded enough that the first housing conversation starts with reality.
           </p>
           <textarea className={`${inputBase} mt-5 min-h-[420px] font-mono text-xs leading-6`} readOnly value={brief} />
@@ -279,7 +279,7 @@ export default function HousingBriefBuilder() {
 
         <div className={cardCls}>
           <strong className="text-sm font-semibold text-gray-900">What makes this stronger</strong>
-          <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+          <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-700">
             <li>Use a range, not one magic number.</li>
             <li>Keep the shortlist to two or three real areas.</li>
             <li>Say what your family is trying to avoid, not only what would be nice.</li>

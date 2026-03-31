@@ -12,7 +12,7 @@ export default function BundleStrip({
       {bundles.map((bundle) => (
         <div key={bundle.title} className={cardCls}>
           <h3 className="text-2xl font-semibold tracking-tight text-gray-900">{bundle.title}</h3>
-          <p className="mt-3 text-sm leading-6 text-gray-600">{bundle.body}</p>
+          <p className="mt-3 text-sm leading-6 text-gray-700">{bundle.body}</p>
           <div className="mt-5 grid gap-3">
             {bundle.links.map((link) => (
               <Link

@@ -23,7 +23,7 @@ export default function ParentVoiceStrip({
           <span className={badge}>Trust layer</span>
         </div>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">{title}</h2>
-        <p className="mt-3 text-sm leading-6 text-gray-600">{lead}</p>
+        <p className="mt-3 text-sm leading-6 text-gray-700">{lead}</p>
         {ctaHref && ctaLabel ? (
           <div className="mt-5">
             <Link className={buttonSecondary} href={ctaHref} data-track="proof_strip_open_hub">
@@ -36,9 +36,9 @@ export default function ParentVoiceStrip({
       <div className="grid gap-4">
         {voices.map((voice) => (
           <div key={`${voice.familyType}-${voice.title}`} className={cardCls}>
-            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">{voice.familyType}</div>
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">{voice.familyType}</div>
             <h3 className="mt-4 text-xl font-semibold tracking-tight text-gray-900">{voice.title}</h3>
-            <p className="mt-3 text-sm leading-6 text-gray-600">{voice.note}</p>
+            <p className="mt-3 text-sm leading-6 text-gray-700">{voice.note}</p>
             <p className="mt-4 text-sm leading-6 text-gray-900">
               <strong className="font-semibold">What changed:</strong> {voice.learn}
             </p>

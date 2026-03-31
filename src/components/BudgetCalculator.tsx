@@ -123,7 +123,7 @@ export default function BudgetCalculator() {
       <div className={cardCls}>
         <div className={badge}>Range builder</div>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">Shape a working monthly range</h2>
-        <p className="mt-3 text-sm leading-6 text-gray-600">
+        <p className="mt-3 text-sm leading-6 text-gray-700">
           These are planning ranges, not quotes. The point is to get to a usable first-pass budget faster, then adjust
           once your areas, housing style, and learning plan become more real.
         </p>
@@ -202,7 +202,7 @@ export default function BudgetCalculator() {
           </label>
         </div>
 
-        <div className="mt-6 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-600">
+        <div className="mt-6 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-700">
           {note}
         </div>
       </div>
@@ -211,25 +211,25 @@ export default function BudgetCalculator() {
         <div className={cardCls}>
           <div className="grid gap-3 sm:grid-cols-3">
             <div className="rounded-2xl border border-gray-200 bg-gray-50 p-4">
-              <div className="text-xs font-semibold uppercase tracking-wide text-gray-500">Low</div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-gray-600">Low</div>
               <div className="mt-2 text-2xl font-semibold tracking-tight text-gray-900">{formatMillions(result.monthly.low)}</div>
-              <div className="mt-1 text-xs text-gray-500">per month</div>
+              <div className="mt-1 text-xs text-gray-600">per month</div>
             </div>
             <div className="rounded-2xl border border-gray-200 bg-gray-50 p-4">
-              <div className="text-xs font-semibold uppercase tracking-wide text-gray-500">Mid</div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-gray-600">Mid</div>
               <div className="mt-2 text-2xl font-semibold tracking-tight text-gray-900">{formatMillions(result.monthly.mid)}</div>
-              <div className="mt-1 text-xs text-gray-500">per month</div>
+              <div className="mt-1 text-xs text-gray-600">per month</div>
             </div>
             <div className="rounded-2xl border border-gray-200 bg-gray-50 p-4">
-              <div className="text-xs font-semibold uppercase tracking-wide text-gray-500">High</div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-gray-600">High</div>
               <div className="mt-2 text-2xl font-semibold tracking-tight text-gray-900">{formatMillions(result.monthly.high)}</div>
-              <div className="mt-1 text-xs text-gray-500">per month</div>
+              <div className="mt-1 text-xs text-gray-600">per month</div>
             </div>
           </div>
 
           <div className="mt-6 rounded-2xl border border-gray-200 bg-white p-4">
             <div className="text-sm font-semibold text-gray-900">First month / setup cushion</div>
-            <div className="mt-3 grid gap-2 text-sm text-gray-600 sm:grid-cols-3">
+            <div className="mt-3 grid gap-2 text-sm text-gray-700 sm:grid-cols-3">
               <div>{formatMillions(result.setup.low)}</div>
               <div>{formatMillions(result.setup.mid)}</div>
               <div>{formatMillions(result.setup.high)}</div>
@@ -239,7 +239,7 @@ export default function BudgetCalculator() {
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             <div className="rounded-2xl border border-gray-200 bg-white p-4">
               <div className="text-sm font-semibold text-gray-900">Three-month runway</div>
-              <div className="mt-3 grid gap-2 text-sm text-gray-600 sm:grid-cols-3 md:grid-cols-1 xl:grid-cols-3">
+              <div className="mt-3 grid gap-2 text-sm text-gray-700 sm:grid-cols-3 md:grid-cols-1 xl:grid-cols-3">
                 <div>{formatMillions(result.runwayThreeMonths.low)}</div>
                 <div>{formatMillions(result.runwayThreeMonths.mid)}</div>
                 <div>{formatMillions(result.runwayThreeMonths.high)}</div>
@@ -248,7 +248,7 @@ export default function BudgetCalculator() {
 
             <div className="rounded-2xl border border-gray-200 bg-white p-4">
               <div className="text-sm font-semibold text-gray-900">Twelve-month view</div>
-              <div className="mt-3 grid gap-2 text-sm text-gray-600 sm:grid-cols-3 md:grid-cols-1 xl:grid-cols-3">
+              <div className="mt-3 grid gap-2 text-sm text-gray-700 sm:grid-cols-3 md:grid-cols-1 xl:grid-cols-3">
                 <div>{formatMillions(result.runwayTwelveMonths.low)}</div>
                 <div>{formatMillions(result.runwayTwelveMonths.mid)}</div>
                 <div>{formatMillions(result.runwayTwelveMonths.high)}</div>
@@ -263,7 +263,7 @@ export default function BudgetCalculator() {
             {Object.entries(result.categories).map(([label, range]) => (
               <div key={label} className="rounded-2xl border border-gray-200 bg-gray-50 p-4">
                 <div className="text-sm font-semibold text-gray-900">{label}</div>
-                <div className="mt-2 grid gap-2 text-sm text-gray-600 sm:grid-cols-3">
+                <div className="mt-2 grid gap-2 text-sm text-gray-700 sm:grid-cols-3">
                   <div>{formatMillions(range.low)}</div>
                   <div>{formatMillions(range.mid)}</div>
                   <div>{formatMillions(range.high)}</div>
@@ -275,7 +275,7 @@ export default function BudgetCalculator() {
 
         <div className={cardCls}>
           <h3 className="text-lg font-semibold tracking-tight text-gray-900">How to use this well</h3>
-          <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+          <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-700">
             <li>Use this to decide whether the move feels plausible, not to “win” at precision.</li>
             <li>Once your area shortlist is real, revisit housing and transport first.</li>
             <li>If Empathy School is central to the move, test the school commute before trusting any budget too much.</li>

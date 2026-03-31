@@ -34,7 +34,7 @@ export default function BudgetCalculatorPage() {
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Build a realistic Bali move budget range
           </h1>
-          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base text-gray-700 sm:text-lg">
             This tool is meant to turn vague planning into a workable range. Start broad, then tighten the numbers
             after you have a stronger area shortlist, a housing style, and a clearer learning plan.
           </p>
@@ -48,7 +48,7 @@ export default function BudgetCalculatorPage() {
           <div className={`${grid2} mt-12`}>
             <div className={cardCls}>
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">What improves the estimate fastest</h2>
-              <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+              <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-700">
                 <li>Choosing your top two areas instead of pricing all of Bali at once.</li>
                 <li>Knowing whether you want a short stay, trial term, or longer move.</li>
                 <li>Being honest about transport and convenience spending.</li>
@@ -58,7 +58,7 @@ export default function BudgetCalculatorPage() {
 
             <div className={cardCls}>
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">Next steps</h2>
-              <p className="mt-4 text-sm leading-6 text-gray-600">
+              <p className="mt-4 text-sm leading-6 text-gray-700">
                 Once the range feels plausible, move on to the pages that remove the biggest unknowns.
               </p>
               <div className={btnRow}>

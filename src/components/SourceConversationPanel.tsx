@@ -40,7 +40,7 @@ export default function SourceConversationPanel({ sourcePath, compact = false, t
           <span className={badgeAccent}>Best next conversation</span>
           <span className={badge}>{detail.label}</span>
         </div>
-        <p className="mt-4 text-sm leading-6 text-gray-600">{context.reason}</p>
+        <p className="mt-4 text-sm leading-6 text-gray-700">{context.reason}</p>
         <div className={btnRow}>
           <a
             className={buttonPrimary}
@@ -66,7 +66,7 @@ export default function SourceConversationPanel({ sourcePath, compact = false, t
           <h2 className="mt-6 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
             {title || "Choose the next conversation on purpose"}
           </h2>
-          <p className="mt-4 text-base leading-7 text-gray-600">
+          <p className="mt-4 text-base leading-7 text-gray-700">
             {lead || "The strongest next contact usually depends on the page you just used. This keeps the site practical instead of making every question look the same."}
           </p>
         </div>
@@ -78,8 +78,8 @@ export default function SourceConversationPanel({ sourcePath, compact = false, t
               <span className={badge}>{detail.label}</span>
             </div>
             <h3 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">{detail.ctaLabel}</h3>
-            <p className="mt-3 text-sm leading-6 text-gray-600">{context.reason}</p>
-            <div className="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-600">
+            <p className="mt-3 text-sm leading-6 text-gray-700">{context.reason}</p>
+            <div className="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-700">
               <strong className="text-gray-900">Best when</strong>
               <p className="mt-1">{detail.bestWhen}</p>
             </div>
@@ -119,7 +119,7 @@ export default function SourceConversationPanel({ sourcePath, compact = false, t
             {alternatives.length ? (
               <div className={cardCls}>
                 <strong className="text-sm font-semibold text-gray-900">Another valid route if this is too early</strong>
-                <p className="mt-3 text-sm leading-6 text-gray-600">
+                <p className="mt-3 text-sm leading-6 text-gray-700">
                   The site should help families route themselves. If the recommended conversation still feels premature, use one of the alternatives instead of forcing the wrong contact.
                 </p>
                 <div className={btnRow}>

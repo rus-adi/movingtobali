@@ -246,7 +246,7 @@ export default function AreaCompareTool({ areas }: { areas: AreaItem[] }) {
       <div className={cardCls}>
         <div className={badge}>Compare areas</div>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">Put two good options side by side.</h2>
-        <p className="mt-3 text-sm leading-6 text-gray-600">
+        <p className="mt-3 text-sm leading-6 text-gray-700">
           This is for the moment when both areas sound good on paper and you need to see which version of family life each one actually creates.
         </p>
 
@@ -323,7 +323,7 @@ export default function AreaCompareTool({ areas }: { areas: AreaItem[] }) {
       <div className={cardCls}>
         <div className={badge}>{compared.winner === "tie" ? "Near tie" : "Comparison result"}</div>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">{summary}</h2>
-        <p className="mt-3 text-sm leading-6 text-gray-600">
+        <p className="mt-3 text-sm leading-6 text-gray-700">
           Use this to decide what to test next, not to crown a perfect winner from your laptop.
         </p>
 
@@ -347,18 +347,18 @@ export default function AreaCompareTool({ areas }: { areas: AreaItem[] }) {
             <div key={card.area.slug} className={`rounded-2xl border p-5 ${card.active ? "border-blue-300 bg-blue-50" : "border-gray-200 bg-gray-50"}`}>
               <div className="flex items-center justify-between gap-3">
                 <div>
-                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">{card.area.category || "Area"}</div>
+                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">{card.area.category || "Area"}</div>
                   <div className="mt-2 text-xl font-semibold tracking-tight text-gray-900">{cleanAreaTitle(card.area.title)}</div>
                 </div>
                 <div className="rounded-xl border border-gray-200 bg-white px-3 py-2 text-sm font-semibold text-gray-900">{card.score}/100</div>
               </div>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{card.area.description}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{card.area.description}</p>
               <div className="mt-4 text-sm font-semibold text-gray-900">Choose this if…</div>
-              <ul className="mt-3 list-disc pl-5 text-sm leading-6 text-gray-600">
+              <ul className="mt-3 list-disc pl-5 text-sm leading-6 text-gray-700">
                 {card.chooseIf.map((item) => <li key={item}>{item}</li>)}
               </ul>
               <div className="mt-4 text-sm font-semibold text-gray-900">What changes if you choose it</div>
-              <ul className="mt-3 list-disc pl-5 text-sm leading-6 text-gray-600">
+              <ul className="mt-3 list-disc pl-5 text-sm leading-6 text-gray-700">
                 {card.changes.map((item) => <li key={item}>{item}</li>)}
               </ul>
               <div className="mt-5 text-sm font-semibold text-gray-900">
@@ -378,9 +378,9 @@ export default function AreaCompareTool({ areas }: { areas: AreaItem[] }) {
               <div className="flex flex-wrap items-start justify-between gap-4">
                 <div>
                   <h3 className="text-lg font-semibold tracking-tight text-gray-900">{signal.label}</h3>
-                  <p className="mt-2 text-sm leading-6 text-gray-600">{signal.description}</p>
+                  <p className="mt-2 text-sm leading-6 text-gray-700">{signal.description}</p>
                 </div>
-                <div className="rounded-xl border border-gray-200 bg-gray-50 px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                <div className="rounded-xl border border-gray-200 bg-gray-50 px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">
                   What changes if you choose this
                 </div>
               </div>
@@ -427,7 +427,7 @@ export default function AreaCompareTool({ areas }: { areas: AreaItem[] }) {
         ].map((item) => (
           <div key={item.title} className={cardCls}>
             <h3 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h3>
-            <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
+            <p className="mt-3 text-sm leading-6 text-gray-700">{item.body}</p>
           </div>
         ))}
       </div>
@@ -437,7 +437,7 @@ export default function AreaCompareTool({ areas }: { areas: AreaItem[] }) {
           <div>
             <div className={badge}>Still stuck?</div>
             <h3 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">Use the comparison to ask a sharper question.</h3>
-            <p className="mt-3 text-sm leading-6 text-gray-600">
+            <p className="mt-3 text-sm leading-6 text-gray-700">
               When families compare areas well, the next question is rarely “Which Bali area is best?” It becomes “Which tradeoff is better for our actual week?”
             </p>
           </div>

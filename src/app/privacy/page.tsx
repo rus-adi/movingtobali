@@ -29,7 +29,7 @@ export default function PrivacyPage() {
         <div className="container">
           <div className={badge}>Privacy</div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Privacy Policy</h1>
-          <p className="mt-4 text-base text-gray-600 sm:text-lg">
+          <p className="mt-4 text-base text-gray-700 sm:text-lg">
             This policy explains what information we collect, how we use it, and the choices you have.
           </p>
         </div>
@@ -116,7 +116,7 @@ export default function PrivacyPage() {
             </RichTextBlock>
           </div>
 
-          <div className="text-xs text-gray-500">Last updated: {LAST_UPDATED}</div>
+          <div className="text-xs text-gray-600">Last updated: {LAST_UPDATED}</div>
         </div>
       </section>
     </main>

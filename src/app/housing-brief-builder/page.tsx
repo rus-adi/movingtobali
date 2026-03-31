@@ -29,7 +29,7 @@ export default function HousingBriefBuilderPage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Build the housing message before you start browsing harder.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             The first housing brief does not need to be beautiful. It needs to be specific enough that Gaia Group — or any agent — understands your real timing, shortlist, budget band, and what the family week actually needs from the home.
           </p>
         </div>
@@ -64,7 +64,7 @@ export default function HousingBriefBuilderPage() {
           ].map((item) => (
             <div key={item.title} className={cardCls}>
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{item.body}</p>
             </div>
           ))}
         </div>

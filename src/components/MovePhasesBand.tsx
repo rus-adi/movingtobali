@@ -15,7 +15,7 @@ export default function MovePhasesBand({
         <div key={phase.title} className={cardCls}>
           <div className={badgeAccent}>{phase.kicker}</div>
           <h3 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">{phase.title}</h3>
-          <p className="mt-3 text-sm leading-6 text-gray-600">{phase.body}</p>
+          <p className="mt-3 text-sm leading-6 text-gray-700">{phase.body}</p>
           <div className="mt-5 flex flex-wrap gap-3">
             {phase.links.map((link) => (
               <Link

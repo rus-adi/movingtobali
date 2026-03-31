@@ -50,11 +50,11 @@ export default function GaiaGroupPage() {
                 {partner.contactName ? <span className={badge}>Contact: {partner.contactName}</span> : null}
               </div>
               <h1 className="mt-5 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Gaia Group for calmer family housing decisions</h1>
-              <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+              <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
                 This is the narrow housing lane inside the hub. Not a giant property portal. Not pressure to commit fast. A smaller,
                 more grounded housing path once your timing, shortlist, and family brief are strong enough to make the conversation useful.
               </p>
-              <p className="mt-4 text-sm leading-6 text-gray-600">{partner.bestFor}</p>
+              <p className="mt-4 text-sm leading-6 text-gray-700">{partner.bestFor}</p>
               <div className={btnRow}>
                 <a className={buttonPrimary} href="/housing-intro-readiness" data-track="gaia_hero_readiness">
                   Check intro readiness
@@ -80,7 +80,7 @@ export default function GaiaGroupPage() {
         <div className={grid3}>
           <div className={cardCls}>
             <strong className="text-sm font-semibold text-gray-900">Best fit</strong>
-            <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+            <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-700">
               {(partner.goodFit || []).map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -89,13 +89,13 @@ export default function GaiaGroupPage() {
 
           <div className={cardCls}>
             <strong className="text-sm font-semibold text-gray-900">What Gaia Group tends to help with</strong>
-            <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+            <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-700">
               {(partner.services || []).map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
             {partner.areas?.length ? (
-              <p className="mt-4 text-sm leading-6 text-gray-600">
+              <p className="mt-4 text-sm leading-6 text-gray-700">
                 <strong className="font-semibold text-gray-900">Usually strongest around:</strong> {partner.areas.join(", ")}
               </p>
             ) : null}
@@ -103,7 +103,7 @@ export default function GaiaGroupPage() {
 
           <div className={cardCls}>
             <strong className="text-sm font-semibold text-gray-900">Probably not the right fit yet</strong>
-            <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+            <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-700">
               {(partner.notFor || []).map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -127,7 +127,7 @@ export default function GaiaGroupPage() {
           ].map(([href, title, body]) => (
             <a key={href} href={href} className={cardCls}>
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">{title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{body}</p>
               <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
             </a>
           ))}
@@ -144,7 +144,7 @@ export default function GaiaGroupPage() {
           {(partner.process || []).map((step, index) => (
             <div key={step} className={cardCls}>
               <div className={badgeAccent}>Step {index + 1}</div>
-              <p className="mt-4 text-sm leading-6 text-gray-600">{step}</p>
+              <p className="mt-4 text-sm leading-6 text-gray-700">{step}</p>
             </div>
           ))}
         </div>
@@ -159,7 +159,7 @@ export default function GaiaGroupPage() {
         <div className={grid2}>
           <div className={cardCls}>
             <strong className="text-sm font-semibold text-gray-900">What this route is</strong>
-            <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+            <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-700">
               {(partner.trustPoints || []).map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -168,7 +168,7 @@ export default function GaiaGroupPage() {
 
           <div className={cardCls}>
             <strong className="text-sm font-semibold text-gray-900">What this route is not</strong>
-            <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+            <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-700">
               <li>It is not a public listings portal.</li>
               <li>It is not a promise that every property question disappears.</li>
               <li>It is not a substitute for reading contracts, verifying identity, or slowing down deposits.</li>

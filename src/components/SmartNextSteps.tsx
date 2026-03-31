@@ -14,7 +14,7 @@ export default function SmartNextSteps({ item }: { item: ContentItem }) {
           <span className={badge}>CTA intelligence</span>
         </div>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">{group.title}</h2>
-        <p className="mt-3 max-w-3xl text-sm leading-6 text-gray-600">{group.lead}</p>
+        <p className="mt-3 max-w-3xl text-sm leading-6 text-gray-700">{group.lead}</p>
       </div>
 
       <div className="grid gap-4">
@@ -22,9 +22,9 @@ export default function SmartNextSteps({ item }: { item: ContentItem }) {
           const className = action.variant === "primary" ? buttonPrimary : buttonSecondary;
           return (
             <div key={`${action.label}-${action.href}`} className={cardCls}>
-              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">{action.slot === "conversation" ? "Conversation" : action.slot === "primary" ? "Do this next" : "Pair with this"}</div>
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">{action.slot === "conversation" ? "Conversation" : action.slot === "primary" ? "Do this next" : "Pair with this"}</div>
               <h3 className="mt-3 text-xl font-semibold tracking-tight text-gray-900">{action.label}</h3>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{action.body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{action.body}</p>
               <div className="mt-6">
                 <Link
                   href={action.href}

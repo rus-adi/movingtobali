@@ -117,11 +117,11 @@ export default function ContactForm({
   return (
     <div className={cardCls}>
       <strong className="text-sm font-semibold text-gray-900">{title}</strong>
-      <p className="mt-3 text-sm leading-6 text-gray-600">
+      <p className="mt-3 text-sm leading-6 text-gray-700">
         Share a few details and we’ll reply with next steps. If you’re requesting an intro, we’ll ask the partner if they can take new families.
       </p>
       {from ? (
-        <div className="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-600">
+        <div className="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-700">
           <strong className="text-gray-900">Source page</strong>
           <p className="mt-1">{from}</p>
         </div>
@@ -129,34 +129,34 @@ export default function ContactForm({
 
       <form onSubmit={onSubmit} className="mt-6 grid gap-5" aria-label="Contact form">
         <div className="grid gap-2">
-          <label htmlFor="name" className="text-xs font-medium text-gray-600">Full name (optional)</label>
+          <label htmlFor="name" className="text-xs font-medium text-gray-700">Full name (optional)</label>
           <input id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} autoComplete="name" className={inputBase} />
         </div>
 
         <div className="grid gap-2">
-          <label htmlFor="email" className="text-xs font-medium text-gray-600">Email (required)</label>
+          <label htmlFor="email" className="text-xs font-medium text-gray-700">Email (required)</label>
           <input id="email" name="email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" className={inputBase} />
         </div>
 
         <div className="grid gap-2">
-          <label htmlFor="whatsapp" className="text-xs font-medium text-gray-600">WhatsApp / phone (optional)</label>
+          <label htmlFor="whatsapp" className="text-xs font-medium text-gray-700">WhatsApp / phone (optional)</label>
           <input id="whatsapp" name="whatsapp" type="tel" value={whatsapp} onChange={(e) => setWhatsapp(e.target.value)} autoComplete="tel" className={inputBase} />
         </div>
 
         <div className="grid gap-5 md:grid-cols-2">
           <div className="grid gap-2">
-            <label htmlFor="kidsAges" className="text-xs font-medium text-gray-600">Kids’ ages (optional)</label>
+            <label htmlFor="kidsAges" className="text-xs font-medium text-gray-700">Kids’ ages (optional)</label>
             <input id="kidsAges" name="kidsAges" value={kidsAges} onChange={(e) => setKidsAges(e.target.value)} placeholder="e.g., 3 and 7" className={inputBase} />
           </div>
 
           <div className="grid gap-2">
-            <label htmlFor="timeline" className="text-xs font-medium text-gray-600">Timeline (optional)</label>
+            <label htmlFor="timeline" className="text-xs font-medium text-gray-700">Timeline (optional)</label>
             <input id="timeline" name="timeline" value={timeline} onChange={(e) => setTimeline(e.target.value)} placeholder={timelinePlaceholder || "e.g., moving in June, staying 6 months"} className={inputBase} />
           </div>
         </div>
 
         <div className="grid gap-2">
-          <label htmlFor="message" className="text-xs font-medium text-gray-600">Message (required)</label>
+          <label htmlFor="message" className="text-xs font-medium text-gray-700">Message (required)</label>
           <textarea id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} rows={6} placeholder={messagePlaceholder} className={inputBase} />
         </div>
 
@@ -176,14 +176,14 @@ export default function ContactForm({
           </a>
         </div>
 
-        <div className="text-xs text-gray-600">
+        <div className="text-xs text-gray-700">
           By sending this form, you agree to our <a href="/privacy" className="underline underline-offset-4">Privacy Policy</a>.
         </div>
 
         {status === "success" ? (
           <div className="rounded-2xl border border-blue-200 bg-blue-50 p-5 shadow-sm">
             <strong className="text-sm font-semibold text-gray-900">Received.</strong>
-            <div className="mt-3 text-sm leading-6 text-gray-600">
+            <div className="mt-3 text-sm leading-6 text-gray-700">
               Thanks — we’ll respond by email as soon as we can.
             </div>
           </div>
@@ -192,7 +192,7 @@ export default function ContactForm({
         {status === "error" ? (
           <div className="rounded-2xl border border-gray-200 bg-gray-50 p-5 shadow-sm">
             <strong className="text-sm font-semibold text-gray-900">Couldn’t send.</strong>
-            <div className="mt-3 text-sm leading-6 text-gray-600">
+            <div className="mt-3 text-sm leading-6 text-gray-700">
               {errorMsg || "Please try again or email us directly."}
             </div>
           </div>

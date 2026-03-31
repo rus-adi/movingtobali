@@ -29,7 +29,7 @@ export default function WeekdayRealityPage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Test the weekday, not only the dream.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             This is the page for the question underneath a lot of Bali research: what will our actual week feel like once it is not a holiday anymore? Use the tool to pressure-test commute, school or camp rhythm, food, rain, and the after-school window.
           </p>
         </div>
@@ -50,7 +50,7 @@ export default function WeekdayRealityPage() {
         <div className={grid2}>
           <div className={cardCls}>
             <h2 className="text-2xl font-semibold tracking-tight text-gray-900">Often easier than expected</h2>
-            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-600">
+            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-700">
               <li>Outdoor time and movement when the family finds the right rhythm.</li>
               <li>Food and errands once the same few defaults start repeating.</li>
               <li>Community once you stop searching widely and start repeating the same places.</li>
@@ -59,7 +59,7 @@ export default function WeekdayRealityPage() {
           </div>
           <div className={cardCls}>
             <h2 className="text-2xl font-semibold tracking-tight text-gray-900">Often heavier than expected</h2>
-            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-600">
+            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-700">
               <li>Longer daily drives, especially when pickup energy is already low.</li>
               <li>Wet afternoons without a backup plan.</li>
               <li>Sick days when the clinic route or household roles are still vague.</li>
@@ -86,7 +86,7 @@ export default function WeekdayRealityPage() {
           ].map(([href, title, body]) => (
             <a key={href} href={href} className={cardCls}>
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">{title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{body}</p>
               <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
             </a>
           ))}

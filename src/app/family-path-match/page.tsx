@@ -28,7 +28,7 @@ export default function FamilyPathMatchPage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Choose the version of Bali your family is actually trying to build.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             This tool helps families stop treating every guide equally. Match your child stage, move tempo, adult bandwidth, and family pattern to the path that should shape the next few decisions first.
           </p>
         </div>
@@ -63,7 +63,7 @@ export default function FamilyPathMatchPage() {
           ].map((item) => (
             <div key={item.title} className={cardCls}>
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{item.body}</p>
             </div>
           ))}
         </div>
@@ -86,7 +86,7 @@ export default function FamilyPathMatchPage() {
           ].map(([href, title, body]) => (
             <a key={href} href={href} className={cardCls}>
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">{title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{body}</p>
               <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
             </a>
           ))}

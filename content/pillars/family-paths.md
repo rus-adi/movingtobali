@@ -48,57 +48,57 @@ updated: '2026-03-22'
   <a class="rounded-2xl border border-blue-200 bg-blue-50 p-5 no-underline shadow-sm transition hover:-translate-y-0.5 hover:bg-white hover:shadow-md" href="/family-path-match">
     <div class="text-xs font-semibold uppercase tracking-[0.18em] text-blue-700">Tool</div>
     <h3 class="mt-3 text-xl font-semibold tracking-tight text-gray-900">Family path match</h3>
-    <p class="mt-3 text-sm leading-6 text-gray-600">Use the matcher if your child stage, adult reality, and move tempo all matter at once and you need help choosing the best primary lens.</p>
+    <p class="mt-3 text-sm leading-6 text-gray-700">Use the matcher if your child stage, adult reality, and move tempo all matter at once and you need help choosing the best primary lens.</p>
   </a>
   <a class="rounded-2xl border border-gray-200 bg-white p-5 no-underline shadow-sm transition hover:-translate-y-0.5 hover:shadow-md" href="/guides/moving-to-bali-with-toddlers">
-    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Toddlers</div>
+    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Toddlers</div>
     <h3 class="mt-3 text-xl font-semibold tracking-tight text-gray-900">Moving to Bali with toddlers</h3>
-    <p class="mt-3 text-sm leading-6 text-gray-600">For families optimizing around naps, shorter drives, simple food loops, and a home that helps the whole day stay gentler.</p>
+    <p class="mt-3 text-sm leading-6 text-gray-700">For families optimizing around naps, shorter drives, simple food loops, and a home that helps the whole day stay gentler.</p>
   </a>
   <a class="rounded-2xl border border-gray-200 bg-white p-5 no-underline shadow-sm transition hover:-translate-y-0.5 hover:shadow-md" href="/guides/moving-to-bali-with-primary-age-kids">
-    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Primary age</div>
+    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Primary age</div>
     <h3 class="mt-3 text-xl font-semibold tracking-tight text-gray-900">Moving to Bali with primary-age kids</h3>
-    <p class="mt-3 text-sm leading-6 text-gray-600">Best if routine, community, learning rhythm, and one or two weekly anchors will decide whether Bali feels workable.</p>
+    <p class="mt-3 text-sm leading-6 text-gray-700">Best if routine, community, learning rhythm, and one or two weekly anchors will decide whether Bali feels workable.</p>
   </a>
   <a class="rounded-2xl border border-gray-200 bg-white p-5 no-underline shadow-sm transition hover:-translate-y-0.5 hover:shadow-md" href="/guides/moving-to-bali-with-pre-teens-and-teens">
-    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Pre-teens & teens</div>
+    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Pre-teens & teens</div>
     <h3 class="mt-3 text-xl font-semibold tracking-tight text-gray-900">Moving to Bali with pre-teens and teens</h3>
-    <p class="mt-3 text-sm leading-6 text-gray-600">Use this when buy-in, independence, social fit, and whether your older child can imagine real life here are the big questions.</p>
+    <p class="mt-3 text-sm leading-6 text-gray-700">Use this when buy-in, independence, social fit, and whether your older child can imagine real life here are the big questions.</p>
   </a>
   <a class="rounded-2xl border border-gray-200 bg-white p-5 no-underline shadow-sm transition hover:-translate-y-0.5 hover:shadow-md" href="/guides/one-to-three-month-family-stay-in-bali">
-    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Short stay</div>
+    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Short stay</div>
     <h3 class="mt-3 text-xl font-semibold tracking-tight text-gray-900">A 1–3 month family stay in Bali</h3>
-    <p class="mt-3 text-sm leading-6 text-gray-600">For families who want something more real than a holiday, but are not ready to lock in a longer move yet.</p>
+    <p class="mt-3 text-sm leading-6 text-gray-700">For families who want something more real than a holiday, but are not ready to lock in a longer move yet.</p>
   </a>
   <a class="rounded-2xl border border-gray-200 bg-white p-5 no-underline shadow-sm transition hover:-translate-y-0.5 hover:shadow-md" href="/guides/moving-to-bali-as-a-remote-working-family">
-    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Remote work</div>
+    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Remote work</div>
     <h3 class="mt-3 text-xl font-semibold tracking-tight text-gray-900">Moving to Bali as a remote-working family</h3>
-    <p class="mt-3 text-sm leading-6 text-gray-600">Start here if adult work windows, child rhythm, internet, and the shape of the weekly calendar all need to fit together.</p>
+    <p class="mt-3 text-sm leading-6 text-gray-700">Start here if adult work windows, child rhythm, internet, and the shape of the weekly calendar all need to fit together.</p>
   </a>
   <a class="rounded-2xl border border-gray-200 bg-white p-5 no-underline shadow-sm transition hover:-translate-y-0.5 hover:shadow-md" href="/guides/moving-to-bali-as-a-single-parent">
-    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Single parent</div>
+    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Single parent</div>
     <h3 class="mt-3 text-xl font-semibold tracking-tight text-gray-900">Moving to Bali as a single parent</h3>
-    <p class="mt-3 text-sm leading-6 text-gray-600">Best when one adult is carrying most of the logistics and the move has to get lighter, smaller, and easier to sustain.</p>
+    <p class="mt-3 text-sm leading-6 text-gray-700">Best when one adult is carrying most of the logistics and the move has to get lighter, smaller, and easier to sustain.</p>
   </a>
   <a class="rounded-2xl border border-gray-200 bg-white p-5 no-underline shadow-sm transition hover:-translate-y-0.5 hover:shadow-md" href="/guides/moving-to-bali-with-a-slower-to-warm-up-child">
-    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Child temperament</div>
+    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Child temperament</div>
     <h3 class="mt-3 text-xl font-semibold tracking-tight text-gray-900">Moving to Bali with a slower-to-warm-up child</h3>
-    <p class="mt-3 text-sm leading-6 text-gray-600">Use this when repetition, predictability, and trust-building matter more than fast first impressions or constant novelty.</p>
+    <p class="mt-3 text-sm leading-6 text-gray-700">Use this when repetition, predictability, and trust-building matter more than fast first impressions or constant novelty.</p>
   </a>
   <a class="rounded-2xl border border-gray-200 bg-white p-5 no-underline shadow-sm transition hover:-translate-y-0.5 hover:shadow-md" href="/guides/moving-to-bali-with-a-highly-active-outdoor-child">
-    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Highly active child</div>
+    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Highly active child</div>
     <h3 class="mt-3 text-xl font-semibold tracking-tight text-gray-900">Moving to Bali with a highly active outdoor child</h3>
-    <p class="mt-3 text-sm leading-6 text-gray-600">Start here if movement, nature, and enough daily outlet will determine whether the whole family week feels calmer.</p>
+    <p class="mt-3 text-sm leading-6 text-gray-700">Start here if movement, nature, and enough daily outlet will determine whether the whole family week feels calmer.</p>
   </a>
   <a class="rounded-2xl border border-gray-200 bg-white p-5 no-underline shadow-sm transition hover:-translate-y-0.5 hover:shadow-md" href="/guides/structure-first-family-move-to-bali">
-    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Structure-first</div>
+    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Structure-first</div>
     <h3 class="mt-3 text-xl font-semibold tracking-tight text-gray-900">A structure-first family move to Bali</h3>
-    <p class="mt-3 text-sm leading-6 text-gray-600">Best for families who regulate through routine, predictability, stronger weekly anchors, and fewer open-ended plans.</p>
+    <p class="mt-3 text-sm leading-6 text-gray-700">Best for families who regulate through routine, predictability, stronger weekly anchors, and fewer open-ended plans.</p>
   </a>
   <a class="rounded-2xl border border-gray-200 bg-white p-5 no-underline shadow-sm transition hover:-translate-y-0.5 hover:shadow-md" href="/guides/the-slower-relocation-path-to-bali">
-    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Move tempo</div>
+    <div class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Move tempo</div>
     <h3 class="mt-3 text-xl font-semibold tracking-tight text-gray-900">The slower relocation path to Bali</h3>
-    <p class="mt-3 text-sm leading-6 text-gray-600">For families who want more checkpoints, fewer irreversible decisions, and a calmer sequence from test stay to stronger commitments.</p>
+    <p class="mt-3 text-sm leading-6 text-gray-700">For families who want more checkpoints, fewer irreversible decisions, and a calmer sequence from test stay to stronger commitments.</p>
   </a>
 </div>
 

@@ -78,7 +78,7 @@ export default function TestStayVsFullMovePage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Compare move shapes before you overcommit.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             The question is not “What is the bravest move?” It is which move shape gives your family the best signal with the least avoidable damage.
           </p>
           <div className={btnRow + " mt-8"}>
@@ -97,21 +97,21 @@ export default function TestStayVsFullMovePage() {
         <div className={grid3}>
           {shapes.map((shape) => (
             <div key={shape.title} className={cardCls}>
-              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">{shape.kicker}</div>
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">{shape.kicker}</div>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">{shape.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600"><strong>Best for:</strong> {shape.bestFor}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700"><strong>Best for:</strong> {shape.bestFor}</p>
               <div className="mt-4 text-sm font-semibold text-gray-900">What it solves</div>
-              <ul className="mt-3 list-disc pl-5 text-sm leading-6 text-gray-600">
+              <ul className="mt-3 list-disc pl-5 text-sm leading-6 text-gray-700">
                 {shape.solves.map((item) => <li key={item}>{item}</li>)}
               </ul>
               <div className="mt-4 text-sm font-semibold text-gray-900">Watchouts</div>
-              <ul className="mt-3 list-disc pl-5 text-sm leading-6 text-gray-600">
+              <ul className="mt-3 list-disc pl-5 text-sm leading-6 text-gray-700">
                 {shape.watchouts.map((item) => <li key={item}>{item}</li>)}
               </ul>
               <div className="mt-4 text-sm font-semibold text-gray-900">How school enters</div>
-              <p className="mt-2 text-sm leading-6 text-gray-600">{shape.school}</p>
+              <p className="mt-2 text-sm leading-6 text-gray-700">{shape.school}</p>
               <div className="mt-4 text-sm font-semibold text-gray-900">How housing changes</div>
-              <p className="mt-2 text-sm leading-6 text-gray-600">{shape.housing}</p>
+              <p className="mt-2 text-sm leading-6 text-gray-700">{shape.housing}</p>
             </div>
           ))}
         </div>
@@ -140,7 +140,7 @@ export default function TestStayVsFullMovePage() {
           ].map((item) => (
             <div key={item.title} className={cardCls}>
               <h3 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h3>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{item.body}</p>
             </div>
           ))}
         </div>

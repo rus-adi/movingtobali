@@ -216,7 +216,7 @@ export default function WeekdayRealityBuilder() {
       <div className={cardCls}>
         <div className={badge}>Reality builder</div>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">Pressure-test the ordinary week</h2>
-        <p className="mt-3 text-sm leading-6 text-gray-600">
+        <p className="mt-3 text-sm leading-6 text-gray-700">
           Choose the family shape that feels closest to real life right now. This tool does not predict the move. It helps you notice which parts of the weekday need more honesty.
         </p>
 
@@ -270,9 +270,9 @@ export default function WeekdayRealityBuilder() {
 
       <div className="grid gap-6">
         <div className={cardCls}>
-          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Week summary</div>
+          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Week summary</div>
           <h3 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">{plan.headline}</h3>
-          <p className="mt-3 text-sm leading-6 text-gray-600">{plan.summary}</p>
+          <p className="mt-3 text-sm leading-6 text-gray-700">{plan.summary}</p>
           <div className={btnRow}>
             <a className={buttonPrimary} href="/resources/weekday-reality-planner" data-track="weekday_reality_planner">
               Open the planner
@@ -285,8 +285,8 @@ export default function WeekdayRealityBuilder() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <div className={cardCls}>
-            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Build around these anchors</div>
-            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-600">
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Build around these anchors</div>
+            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-700">
               {plan.anchors.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -294,8 +294,8 @@ export default function WeekdayRealityBuilder() {
           </div>
 
           <div className={cardCls}>
-            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Watch these pressure points</div>
-            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-600">
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Watch these pressure points</div>
+            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-700">
               {plan.watchouts.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -305,8 +305,8 @@ export default function WeekdayRealityBuilder() {
 
         <div className="grid gap-6 md:grid-cols-[1.1fr_0.9fr]">
           <div className={cardCls}>
-            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Questions worth testing this week</div>
-            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-600">
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Questions worth testing this week</div>
+            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-700">
               {plan.tests.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -314,7 +314,7 @@ export default function WeekdayRealityBuilder() {
           </div>
 
           <div className={cardCls}>
-            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Best next pages</div>
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Best next pages</div>
             <div className="mt-4 grid gap-3">
               {plan.nextLinks.map((item) => (
                 <a key={item.href} href={item.href} className="rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm font-semibold text-gray-900 transition hover:bg-white">

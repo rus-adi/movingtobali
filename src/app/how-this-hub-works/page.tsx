@@ -54,7 +54,7 @@ export default function HowThisHubWorksPage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             A bigger hub only helps if it still feels calm.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             This page explains the logic behind the site: the order of
             decisions, the trust rules, and why Empathy School and Gaia Group
             sit inside the hub the way they do.
@@ -140,7 +140,7 @@ export default function HowThisHubWorksPage() {
               <h2 className="text-2xl font-semibold tracking-tight text-gray-900">
                 {title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{body}</p>
             </div>
           ))}
         </div>
@@ -157,7 +157,7 @@ export default function HowThisHubWorksPage() {
             <h2 className="text-2xl font-semibold tracking-tight text-gray-900">
               Empathy School
             </h2>
-            <p className="mt-3 text-sm leading-6 text-gray-600">
+            <p className="mt-3 text-sm leading-6 text-gray-700">
               The school is not just another page. It is one of the strongest
               variables in the move because it can change area choice, weekly
               rhythm, commute tolerance, and what the first month feels like.
@@ -184,7 +184,7 @@ export default function HowThisHubWorksPage() {
             <h2 className="text-2xl font-semibold tracking-tight text-gray-900">
               Gaia Group
             </h2>
-            <p className="mt-3 text-sm leading-6 text-gray-600">
+            <p className="mt-3 text-sm leading-6 text-gray-700">
               Housing becomes much more useful once the family has a real brief.
               Gaia Group belongs later in the decision order, when the move
               shape is clear enough for a shortlist to actually help.

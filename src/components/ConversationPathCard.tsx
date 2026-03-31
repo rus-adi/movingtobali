@@ -17,9 +17,9 @@ export default function ConversationPathCard({ routeId, from }: Props) {
         <span className={badge}>{detail.label}</span>
       </div>
       <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">{detail.label}</h2>
-      <p className="mt-3 text-sm leading-6 text-gray-600">{detail.summary}</p>
+      <p className="mt-3 text-sm leading-6 text-gray-700">{detail.summary}</p>
 
-      <div className="mt-6 space-y-4 text-sm leading-6 text-gray-600">
+      <div className="mt-6 space-y-4 text-sm leading-6 text-gray-700">
         <div>
           <strong className="text-gray-900">Best when</strong>
           <p className="mt-1">{detail.bestWhen}</p>

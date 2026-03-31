@@ -81,9 +81,9 @@ updated: '2026-03-22'
     <img src="/images/partners/pali-gaia-standin.svg" alt="Pali from Gaia Group" class="h-28 w-28 rounded-2xl border border-gray-200 bg-white object-cover" />
     <div class="min-w-0 flex-1">
       <h2 class="text-2xl font-semibold tracking-tight text-gray-900">Gaia Group</h2>
-      <p class="mt-3 text-sm leading-6 text-gray-600">If you want housing support that stays close to family reality, Gaia Group is our preferred partner. We use a request-intro flow rather than a big public directory so the first conversation can be matched to your timing, area shortlist, and whether Empathy School is part of the move.</p>
-      <p class="mt-3 text-sm leading-6 text-gray-600"><strong>Contact:</strong> Pali</p>
-      <p class="mt-3 text-xs leading-5 text-gray-600">This image is a simple stand-in until the final Gaia Group headshot is added. Disclosure: introductions to Gaia Group may be tracked as a partner referral. We still recommend doing your own due diligence on pricing, contracts, and fit.</p>
+      <p class="mt-3 text-sm leading-6 text-gray-700">If you want housing support that stays close to family reality, Gaia Group is our preferred partner. We use a request-intro flow rather than a big public directory so the first conversation can be matched to your timing, area shortlist, and whether Empathy School is part of the move.</p>
+      <p class="mt-3 text-sm leading-6 text-gray-700"><strong>Contact:</strong> Pali</p>
+      <p class="mt-3 text-xs leading-5 text-gray-700">This image is a simple stand-in until the final Gaia Group headshot is added. Disclosure: introductions to Gaia Group may be tracked as a partner referral. We still recommend doing your own due diligence on pricing, contracts, and fit.</p>
     </div>
   </div>
   <div class="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">

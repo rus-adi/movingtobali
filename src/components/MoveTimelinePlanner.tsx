@@ -177,7 +177,7 @@ export default function MoveTimelinePlanner() {
       <div className={cardCls}>
         <div className={badge}>Timeline builder</div>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">Build a calmer sequence</h2>
-        <p className="mt-3 text-sm leading-6 text-gray-600">
+        <p className="mt-3 text-sm leading-6 text-gray-700">
           This does not try to predict every detail. It gives you a smarter order of operations so the family is not solving housing, school, areas, visas, and first-week logistics all in one emotional pile.
         </p>
 
@@ -221,7 +221,7 @@ export default function MoveTimelinePlanner() {
 
         <div className="mt-6 rounded-2xl border border-gray-200 bg-gray-50 p-4">
           <div className="text-sm font-semibold text-gray-900">The mistake to avoid</div>
-          <p className="mt-2 text-sm leading-6 text-gray-600">{routeMeta.mistake}</p>
+          <p className="mt-2 text-sm leading-6 text-gray-700">{routeMeta.mistake}</p>
         </div>
 
         <div className={btnRow}>
@@ -238,7 +238,7 @@ export default function MoveTimelinePlanner() {
         <div className="grid gap-4 md:grid-cols-2">
           {nextActions.map((item) => (
             <a key={item.href} href={item.href} className={cardCls}>
-              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Next tool</div>
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Next tool</div>
               <div className="mt-3 text-xl font-semibold tracking-tight text-gray-900">{item.title}</div>
               <div className="mt-4 text-sm font-semibold text-gray-900">Open →</div>
             </a>
@@ -250,15 +250,15 @@ export default function MoveTimelinePlanner() {
             <div key={stage.title} className={cardCls}>
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <div>
-                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Stage {index + 1}</div>
+                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Stage {index + 1}</div>
                   <h3 className="mt-2 text-xl font-semibold tracking-tight text-gray-900">{stage.title}</h3>
                 </div>
                 <div className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-semibold text-gray-700">
                   {stage.window}
                 </div>
               </div>
-              <p className="mt-4 text-sm leading-6 text-gray-600">{stage.body}</p>
-              <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+              <p className="mt-4 text-sm leading-6 text-gray-700">{stage.body}</p>
+              <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-700">
                 {stage.actions.map((action) => (
                   <li key={action}>{action}</li>
                 ))}

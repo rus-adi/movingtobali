@@ -15,7 +15,7 @@ export default function FaqBlock({ faqs }: { faqs: FaqItem[] }) {
       </div>
 
       <h2 className="mt-6 text-xl font-semibold tracking-tight text-gray-900">Questions families ask</h2>
-      <p className="mt-2 text-sm leading-6 text-gray-600">
+      <p className="mt-2 text-sm leading-6 text-gray-700">
         Short answers first. If you want deeper context, use the links above or explore related guides.
       </p>
 

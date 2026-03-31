@@ -128,7 +128,7 @@ export default function ContactPage({ searchParams }: Props) {
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Ask a question or request the right introduction.
           </h1>
-          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base text-gray-700 sm:text-lg">
             This page now starts with the essentials: how to contact us, which
             route fits your question, and the form itself. If you already know
             the decision you are trying to make, pick the route that matches it
@@ -138,7 +138,7 @@ export default function ContactPage({ searchParams }: Props) {
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             <div className={cardCls}>
               <div className={badgeAccent}>Direct email</div>
-              <p className="mt-4 text-sm leading-6 text-gray-600">
+              <p className="mt-4 text-sm leading-6 text-gray-700">
                 Prefer to write directly? Use the email below and include your
                 family timing, kids’ ages, and the one decision you want help
                 with.
@@ -162,14 +162,14 @@ export default function ContactPage({ searchParams }: Props) {
                   </span>
                 ) : null}
               </div>
-              <p className="mt-4 text-sm leading-6 text-gray-600">
+              <p className="mt-4 text-sm leading-6 text-gray-700">
                 {routeDetail.summary}
               </p>
             </div>
 
             <div className={cardCls}>
               <div className={badgeAccent}>Official school site</div>
-              <p className="mt-4 text-sm leading-6 text-gray-600">
+              <p className="mt-4 text-sm leading-6 text-gray-700">
                 If the next step is a direct look at the school itself, go
                 straight to the official Empathy School site. If you still need
                 context first, use the hub’s school planning guide.
@@ -207,7 +207,7 @@ export default function ContactPage({ searchParams }: Props) {
                   <span className={badge}>{preset.label}</span>
                   {from ? <span className={badge}>From: {from}</span> : null}
                 </div>
-                <p className="mt-4 text-sm leading-6 text-gray-600">
+                <p className="mt-4 text-sm leading-6 text-gray-700">
                   {sourceContext.reason}
                 </p>
               </div>
@@ -227,7 +227,7 @@ export default function ContactPage({ searchParams }: Props) {
                 ) : null}
                 {from ? <span className={badge}>From: {from}</span> : null}
               </div>
-              <p className="mt-4 text-sm leading-6 text-gray-600">
+              <p className="mt-4 text-sm leading-6 text-gray-700">
                 {routeDetail.bestWhen}
               </p>
             </div>
@@ -250,7 +250,7 @@ export default function ContactPage({ searchParams }: Props) {
               <strong className="text-sm font-semibold text-gray-900">
                 Choose a route
               </strong>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 Pick the option that sounds closest to the decision your family
                 is trying to make now.
               </p>
@@ -277,7 +277,7 @@ export default function ContactPage({ searchParams }: Props) {
                       <div className="text-sm font-semibold text-gray-900">
                         {item.label}
                       </div>
-                      <p className="mt-2 text-sm leading-6 text-gray-600">
+                      <p className="mt-2 text-sm leading-6 text-gray-700">
                         {item.description}
                       </p>
                     </a>
@@ -290,7 +290,7 @@ export default function ContactPage({ searchParams }: Props) {
               <strong className="text-sm font-semibold text-gray-900">
                 What to include
               </strong>
-              <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+              <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-700">
                 {preset.bullets.map((bullet) => (
                   <li key={bullet}>{bullet}</li>
                 ))}
@@ -332,7 +332,7 @@ export default function ContactPage({ searchParams }: Props) {
                 <strong className="text-sm font-semibold text-gray-900">
                   If this still feels too early
                 </strong>
-                <p className="mt-3 text-sm leading-6 text-gray-600">
+                <p className="mt-3 text-sm leading-6 text-gray-700">
                   That usually means another route would serve the family better
                   first. Use one of these alternatives instead of forcing the
                   wrong conversation.

@@ -45,7 +45,7 @@ export default function AboutPage() {
         <div className="container">
           <div className={badge}>About</div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">About this guide</h1>
-          <p className="mt-4 text-base text-gray-600 sm:text-lg">
+          <p className="mt-4 text-base text-gray-700 sm:text-lg">
             <strong>Moving to Bali with Kids</strong> is a practical, parent-first content hub—built to reduce overwhelm and help families make good decisions.
           </p>
         </div>
@@ -130,7 +130,7 @@ export default function AboutPage() {
             </RichTextBlock>
           </div>
 
-          <div className="text-xs text-gray-500">Last updated: {LAST_UPDATED}</div>
+          <div className="text-xs text-gray-600">Last updated: {LAST_UPDATED}</div>
         </div>
       </section>
     </main>

@@ -13,7 +13,7 @@ export default function SafetyNotice({ kind }: { kind: "visa" | "housing" | "gen
   return (
     <div className={`${card} p-6`}>
       <strong className="text-sm font-semibold text-gray-900">{title}</strong>
-      <div className="mt-3 text-sm leading-6 text-gray-600">{body}</div>
+      <div className="mt-3 text-sm leading-6 text-gray-700">{body}</div>
       <div className="mt-4 flex flex-wrap gap-3">
         <Link className={pill} href="/official-links" data-track="notice_official_links">
           Official links

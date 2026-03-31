@@ -147,7 +147,7 @@ If you want a deeper guide: [Finding community in Bali with kids](/guides/findin
 
 <details class="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-5">
   <summary class="text-sm font-semibold text-gray-900">Key takeaways (how to apply this)</summary>
-  <div class="mt-4 whitespace-pre-wrap text-sm leading-6 text-gray-600">
+  <div class="mt-4 whitespace-pre-wrap text-sm leading-6 text-gray-700">
 - Don’t optimize too early. Your first goal is repetition: same places, same people.
 - Kids often settle faster than parents when they have predictable “friend time.”
 - The calm version of Bali usually appears after week 2–4, not day 2.

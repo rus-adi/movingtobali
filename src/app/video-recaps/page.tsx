@@ -145,7 +145,7 @@ export default function VideoRecapsPage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Video recaps for parents who need more than vibe.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             Every page here follows the same rule: written answer first, media
             second. The goal is to help families use tours, camp clips, and
             daily-life footage as decision tools instead of letting good footage
@@ -207,13 +207,13 @@ export default function VideoRecapsPage() {
               className={cardCls}
               data-track="video_recaps_school_open"
             >
-              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">
                 {card.kicker}
               </div>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">
                 {card.title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 {card.body}
               </p>
               <div className="mt-6 text-sm font-semibold text-gray-900">
@@ -238,13 +238,13 @@ export default function VideoRecapsPage() {
               className={cardCls}
               data-track="video_recaps_life_open"
             >
-              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">
                 {card.kicker}
               </div>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">
                 {card.title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 {card.body}
               </p>
               <div className="mt-6 text-sm font-semibold text-gray-900">
@@ -269,13 +269,13 @@ export default function VideoRecapsPage() {
               className={cardCls}
               data-track="video_recaps_proof_open"
             >
-              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">
                 {card.kicker}
               </div>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">
                 {card.title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 {card.body}
               </p>
               <div className="mt-6 text-sm font-semibold text-gray-900">
@@ -300,13 +300,13 @@ export default function VideoRecapsPage() {
               className={cardCls}
               data-track="video_recaps_housing_open"
             >
-              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">
                 {card.kicker}
               </div>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">
                 {card.title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 {card.body}
               </p>
               <div className="mt-6 text-sm font-semibold text-gray-900">

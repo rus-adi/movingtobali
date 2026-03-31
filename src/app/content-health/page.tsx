@@ -36,7 +36,7 @@ export default function ContentHealthPage() {
           <div className="max-w-3xl">
             <div className={badgeAccent}>Content health</div>
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">A public view of how we keep the hub honest.</h1>
-            <p className="mt-6 text-base leading-7 text-gray-600 sm:text-lg">
+            <p className="mt-6 text-base leading-7 text-gray-700 sm:text-lg">
               This is not meant to be flashy. It is here so the site can grow without feeling vague or unmanaged.
               The counts below show which pages are on tighter review cadences, which are already fresh, and which should be watched next.
             </p>
@@ -55,7 +55,7 @@ export default function ContentHealthPage() {
             ["Noindex / experimental", String(summary.noindex)],
           ].map(([title, value]) => (
             <div key={title} className={cardCls}>
-              <div className="text-sm font-medium text-gray-500">{title}</div>
+              <div className="text-sm font-medium text-gray-600">{title}</div>
               <div className="mt-3 text-4xl font-bold tracking-tight text-gray-900">{value}</div>
             </div>
           ))}
@@ -69,13 +69,13 @@ export default function ContentHealthPage() {
         <div className={grid2}>
           <div className={cardCls}>
             <h2 className="text-xl font-semibold tracking-tight text-gray-900">Tighter cadence</h2>
-            <p className="mt-3 text-sm leading-6 text-gray-600">
+            <p className="mt-3 text-sm leading-6 text-gray-700">
               Pages around visas, housing, costs, Gaia Group, Empathy School fit, and similar decision lanes are reviewed faster because small drift creates bigger family mistakes.
             </p>
           </div>
           <div className={cardCls}>
             <h2 className="text-xl font-semibold tracking-tight text-gray-900">Experience-based pages still need discipline</h2>
-            <p className="mt-3 text-sm leading-6 text-gray-600">
+            <p className="mt-3 text-sm leading-6 text-gray-700">
               Story, rhythm, and family-life pages can be more evergreen, but they still get dates, ownership, and clear labeling so they do not blur into vague inspiration.
             </p>
           </div>
@@ -115,7 +115,7 @@ export default function ContentHealthPage() {
         <div className={grid2}>
           <div className={cardCls}>
             <h2 className="text-xl font-semibold tracking-tight text-gray-900">Editorial standards</h2>
-            <p className="mt-3 text-sm leading-6 text-gray-600">
+            <p className="mt-3 text-sm leading-6 text-gray-700">
               See how we label evidence, how composite family scenarios are handled, when official links matter, and why the partner system stays intentionally narrow.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -129,7 +129,7 @@ export default function ContentHealthPage() {
           </div>
           <div className={cardCls}>
             <h2 className="text-xl font-semibold tracking-tight text-gray-900">Official links and trust pages</h2>
-            <p className="mt-3 text-sm leading-6 text-gray-600">
+            <p className="mt-3 text-sm leading-6 text-gray-700">
               Visa and policy pages should orient the family, then hand them back to the official source before action. That is why the trust layer lives in public, not hidden away.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">

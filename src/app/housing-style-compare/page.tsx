@@ -69,7 +69,7 @@ export default function HousingStyleComparePage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Choose the housing style that fits the stage of the move.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             Families often compare individual listings too early. Start by deciding what kind of housing should carry this stage of the move at all.
           </p>
           <div className={btnRow + " mt-8"}>
@@ -88,15 +88,15 @@ export default function HousingStyleComparePage() {
         <div className={grid3}>
           {styles.map((style) => (
             <div key={style.title} className={cardCls}>
-              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">{style.kicker}</div>
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">{style.kicker}</div>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">{style.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600"><strong>Best for:</strong> {style.bestFor}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700"><strong>Best for:</strong> {style.bestFor}</p>
               <div className="mt-4 text-sm font-semibold text-gray-900">What it gives you</div>
-              <ul className="mt-3 list-disc pl-5 text-sm leading-6 text-gray-600">
+              <ul className="mt-3 list-disc pl-5 text-sm leading-6 text-gray-700">
                 {style.wins.map((item) => <li key={item}>{item}</li>)}
               </ul>
               <div className="mt-4 text-sm font-semibold text-gray-900">Watchouts</div>
-              <ul className="mt-3 list-disc pl-5 text-sm leading-6 text-gray-600">
+              <ul className="mt-3 list-disc pl-5 text-sm leading-6 text-gray-700">
                 {style.watchouts.map((item) => <li key={item}>{item}</li>)}
               </ul>
             </div>
@@ -127,7 +127,7 @@ export default function HousingStyleComparePage() {
           ].map((item) => (
             <div key={item.title} className={cardCls}>
               <h3 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h3>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{item.body}</p>
             </div>
           ))}
         </div>

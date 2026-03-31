@@ -79,7 +79,7 @@ export default function PostCard({ item }: { item: ContentItem }) {
       </div>
 
       <h3 className="mt-4 text-xl font-semibold tracking-tight text-gray-900">{item.title}</h3>
-      <p className="mt-2 text-sm leading-6 text-gray-600">{item.description}</p>
+      <p className="mt-2 text-sm leading-6 text-gray-700">{item.description}</p>
 
       <div className={btnRow}>
         <Link className={buttonPrimary} href={href} data-track="card_open" data-kind={item.kind} data-slug={item.slug}>

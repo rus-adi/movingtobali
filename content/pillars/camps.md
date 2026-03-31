@@ -123,12 +123,12 @@ This hub is published by Empathy School, so we’ll always be transparent when w
 
 <div class="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-6">
   <strong class="text-sm font-semibold text-gray-900">A quick snapshot</strong>
-  <ul class="mt-4 text-sm leading-6 text-gray-600">
+  <ul class="mt-4 text-sm leading-6 text-gray-700">
     <li><strong>Location:</strong> Ubud area</li>
     <li><strong>Style:</strong> nature-first, hands-on days with calm routines</li>
     <li><strong>Best for:</strong> families who want kids outdoors, moving, building confidence—and making friends fast</li>
   </ul>
-  <p class="mt-4 text-sm leading-6 text-gray-600">
+  <p class="mt-4 text-sm leading-6 text-gray-700">
     Dates change seasonally. The fastest way to get current options is to <a href="/contact">ask us</a> and tell us your child’s age + your travel dates.
   </p>
 </div>
@@ -168,7 +168,7 @@ A short version (the questions that prevent most problems):
 
 <details class="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-5">
   <summary class="text-sm font-semibold text-gray-900">How to watch this like a parent (not a tourist)</summary>
-  <div class="mt-4 whitespace-pre-wrap text-sm leading-6 text-gray-600">
+  <div class="mt-4 whitespace-pre-wrap text-sm leading-6 text-gray-700">
 While you watch, try to answer:
 - Do you see consistent adult presence (supervision you can feel)?
 - Does the day look over-scheduled, chaotic, or calm?
@@ -190,8 +190,8 @@ Because dates change, we treat seasonal content as **examples + social proof**, 
 
 <div class="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-6">
   <strong class="text-sm font-semibold text-gray-900">Seasonal snapshots (supporting posts)</strong>
-  <p class="mt-3 text-sm leading-6 text-gray-600">If you want current dates, use the contact form and we’ll share what’s available.</p>
-  <ul class="mt-4 text-sm leading-6 text-gray-600">
+  <p class="mt-3 text-sm leading-6 text-gray-700">If you want current dates, use the contact form and we’ll share what’s available.</p>
+  <ul class="mt-4 text-sm leading-6 text-gray-700">
     <li>Winter camp snapshot: https://www.instagram.com/empathy.school/p/DQ6G6XjkVoi/</li>
     <li>Winter camp vibe: https://www.instagram.com/empathy.school/p/DTKdXFTgeg9/</li>
     <li>Winter camp countdown (reel): https://www.instagram.com/empathy.school/reel/DRQ8ZF7kesd/</li>

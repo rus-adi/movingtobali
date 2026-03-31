@@ -38,7 +38,7 @@ export default function CommuteRealityPage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Test the commute before it becomes the hidden cost of the move.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             Family moves rarely break because the house is ugly. They break because the route quietly eats the margin out of mornings, pickups, and adult energy.
           </p>
           <div className={btnRow + " mt-8"}>
@@ -77,7 +77,7 @@ export default function CommuteRealityPage() {
           ].map((item) => (
             <div key={item.title} className={cardCls}>
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{item.body}</p>
             </div>
           ))}
         </div>

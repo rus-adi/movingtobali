@@ -16,7 +16,7 @@ export default function EditorialStandardsPage() {
           <div className="max-w-3xl">
             <div className={badgeAccent}>Editorial standards</div>
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">How this hub stays useful without sounding overconfident.</h1>
-            <p className="mt-6 text-base leading-7 text-gray-600 sm:text-lg">
+            <p className="mt-6 text-base leading-7 text-gray-700 sm:text-lg">
               Move to Bali is a family relocation hub built by Empathy School. That means the tone should stay calm,
               practical, and human. We want a parent to trust the next step on the page, not feel pushed into a fast yes.
             </p>
@@ -56,7 +56,7 @@ export default function EditorialStandardsPage() {
           ].map(([title, body]) => (
             <div key={title} className={cardCls}>
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">{title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{body}</p>
             </div>
           ))}
         </div>
@@ -70,21 +70,21 @@ export default function EditorialStandardsPage() {
           <div className={cardCls}>
             <div className={badge}>Experience-based</div>
             <h2 className="mt-4 text-xl font-semibold tracking-tight text-gray-900">Lived guidance and recurring family questions</h2>
-            <p className="mt-3 text-sm leading-6 text-gray-600">
+            <p className="mt-3 text-sm leading-6 text-gray-700">
               These pages help families picture daily life, test routines, and make calmer decisions. They are practical, but they are not legal or regulatory authority.
             </p>
           </div>
           <div className={cardCls}>
             <div className={badgeAccent}>Reviewed</div>
             <h2 className="mt-4 text-xl font-semibold tracking-tight text-gray-900">Decision pages checked on a tighter cadence</h2>
-            <p className="mt-3 text-sm leading-6 text-gray-600">
+            <p className="mt-3 text-sm leading-6 text-gray-700">
               Areas, housing, Empathy School fit, costs, and other decision-heavy pages are reviewed more tightly because families use them to make real commitments.
             </p>
           </div>
           <div className={cardCls}>
             <div className={badgeGood}>Official links</div>
             <h2 className="mt-4 text-xl font-semibold tracking-tight text-gray-900">Pages where changing rules matter</h2>
-            <p className="mt-3 text-sm leading-6 text-gray-600">
+            <p className="mt-3 text-sm leading-6 text-gray-700">
               In visas and similar lanes, the job of the page is to orient the family and then hand them back to the right official source before they act.
             </p>
           </div>
@@ -107,7 +107,7 @@ export default function EditorialStandardsPage() {
           ].map(([title, body]) => (
             <div key={title} className={cardCls}>
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">{title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{body}</p>
             </div>
           ))}
         </div>
@@ -120,7 +120,7 @@ export default function EditorialStandardsPage() {
         <div className={grid2}>
           <div className={cardCls}>
             <h2 className="text-xl font-semibold tracking-tight text-gray-900">We will avoid</h2>
-            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-gray-600">
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-gray-700">
               <li>generic “best schools in Bali” publishing</li>
               <li>thin doorway pages</li>
               <li>inflated partner listings</li>
@@ -130,7 +130,7 @@ export default function EditorialStandardsPage() {
           </div>
           <div className={cardCls}>
             <h2 className="text-xl font-semibold tracking-tight text-gray-900">We will keep building</h2>
-            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-gray-600">
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-gray-700">
               <li>decision tools</li>
               <li>checklists and planning boards</li>
               <li>real routine guidance</li>

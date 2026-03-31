@@ -260,7 +260,7 @@ export default function AreaMatcher({ areas }: { areas: AreaItem[] }) {
       <div className={cardCls}>
         <div className={badge}>Area match</div>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">Narrow Bali down before you go all-in on housing.</h2>
-        <p className="mt-3 text-sm leading-6 text-gray-600">
+        <p className="mt-3 text-sm leading-6 text-gray-700">
           Pick the family rhythm you are actually trying to build. The goal is not to find one perfect area. The goal is to stop comparing places that solve different problems.
         </p>
 
@@ -331,7 +331,7 @@ export default function AreaMatcher({ areas }: { areas: AreaItem[] }) {
           </label>
         </div>
 
-        <div className="mt-6 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-600">
+        <div className="mt-6 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-700">
           {summary}
         </div>
       </div>
@@ -341,7 +341,7 @@ export default function AreaMatcher({ areas }: { areas: AreaItem[] }) {
           <div className="flex items-center justify-between gap-4">
             <div>
               <div className="text-sm font-semibold text-gray-900">Best starting points right now</div>
-              <div className="mt-1 text-sm text-gray-600">Use these as a shortlist. Then test the street, the commute, and the evening rhythm.</div>
+              <div className="mt-1 text-sm text-gray-700">Use these as a shortlist. Then test the street, the commute, and the evening rhythm.</div>
             </div>
           </div>
 
@@ -350,36 +350,36 @@ export default function AreaMatcher({ areas }: { areas: AreaItem[] }) {
               <div key={result.area.slug} className="rounded-2xl border border-gray-200 bg-white p-4">
                 <div className="flex flex-wrap items-start justify-between gap-3">
                   <div>
-                    <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                    <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">
                       {index === 0 ? "Top fit" : `Option ${index + 1}`}
                     </div>
                     <h3 className="mt-2 text-xl font-semibold tracking-tight text-gray-900">
-                      <a href={`/areas/${result.area.slug}`} className="transition hover:text-blue-600">
+                      <a href={`/areas/${result.area.slug}`} className="transition hover:text-emerald-800">
                         {cleanTitle(result.area.title)}
                       </a>
                     </h3>
-                    <p className="mt-1 text-sm text-gray-600">{result.area.category || "Area guide"}</p>
+                    <p className="mt-1 text-sm text-gray-700">{result.area.category || "Area guide"}</p>
                   </div>
                   <div className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-sm font-semibold text-gray-900">
                     Score {Math.round(result.score / 4)}
                   </div>
                 </div>
 
-                <p className="mt-3 text-sm leading-6 text-gray-600">{result.area.description}</p>
+                <p className="mt-3 text-sm leading-6 text-gray-700">{result.area.description}</p>
 
-                <ul className="mt-4 grid gap-2 text-sm leading-6 text-gray-600">
+                <ul className="mt-4 grid gap-2 text-sm leading-6 text-gray-700">
                   {result.reasons.map((reason) => (
                     <li key={reason}>• {reason}</li>
                   ))}
                 </ul>
 
-                <div className="mt-4 flex flex-wrap gap-2 text-xs text-gray-600">
+                <div className="mt-4 flex flex-wrap gap-2 text-xs text-gray-700">
                   {result.area.area?.pace ? <span className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1">Pace: {result.area.area.pace}</span> : null}
                   {result.area.area?.traffic ? <span className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1">Traffic: {result.area.area.traffic}</span> : null}
                   {result.area.area?.costTier ? <span className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1">Cost: {result.area.area.costTier}</span> : null}
                 </div>
 
-                <div className="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-3 text-sm leading-6 text-gray-600">
+                <div className="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-3 text-sm leading-6 text-gray-700">
                   <strong className="font-semibold text-gray-900">Watch out for:</strong> {result.caution}
                 </div>
               </div>
@@ -389,7 +389,7 @@ export default function AreaMatcher({ areas }: { areas: AreaItem[] }) {
 
         <div className={cardCls}>
           <div className="text-sm font-semibold text-gray-900">What to do with the shortlist</div>
-          <ul className="mt-4 grid gap-2 text-sm leading-6 text-gray-600">
+          <ul className="mt-4 grid gap-2 text-sm leading-6 text-gray-700">
             <li>• Open the top two area guides and compare the actual tradeoffs, not just the vibe.</li>
             <li>• If Empathy School is likely, test the commute before housing becomes emotional.</li>
             <li>• Request a Gaia Group intro only after your shortlist and budget band feel real.</li>

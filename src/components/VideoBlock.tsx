@@ -62,7 +62,7 @@ export default function VideoBlock({ video }: { video: VideoBlockType }) {
       {video.summary ? (
         <div className="mt-6">
           <strong className="text-sm font-semibold text-gray-900">Summary</strong>
-          <p className="mt-3 text-sm leading-6 text-gray-600">{video.summary}</p>
+          <p className="mt-3 text-sm leading-6 text-gray-700">{video.summary}</p>
         </div>
       ) : null}
 
@@ -70,22 +70,22 @@ export default function VideoBlock({ video }: { video: VideoBlockType }) {
         <div className="mt-6">
           <details className="rounded-2xl border border-gray-200 bg-gray-50 p-5">
             <summary className="cursor-pointer text-sm font-semibold text-gray-900">
-              Transcript <span className="font-normal text-gray-600">(click to expand)</span>
+              Transcript <span className="font-normal text-gray-700">(click to expand)</span>
             </summary>
-            <div id="transcript" className="mt-4 whitespace-pre-wrap text-sm leading-6 text-gray-600">
+            <div id="transcript" className="mt-4 whitespace-pre-wrap text-sm leading-6 text-gray-700">
               {transcript}
             </div>
           </details>
         </div>
       ) : (
-        <div className="mt-6 text-sm leading-6 text-gray-600">
+        <div className="mt-6 text-sm leading-6 text-gray-700">
           Transcript: coming soon. You can still watch the video above.
         </div>
       )}
 
       <div className="mt-8 border-t border-gray-200 pt-6">
         <strong className="text-sm font-semibold text-gray-900">Next step</strong>
-        <p className="mt-3 text-sm leading-6 text-gray-600">
+        <p className="mt-3 text-sm leading-6 text-gray-700">
           If your family is considering Bali, start with the roadmap, then follow the pillar that matches your stage.
         </p>
         <div className={btnRow}>

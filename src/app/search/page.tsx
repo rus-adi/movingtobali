@@ -93,7 +93,7 @@ export default function SearchPage({ searchParams }: Props) {
         <div className="container">
           <div className={badge}>Search</div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Search the hub</h1>
-          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base text-gray-700 sm:text-lg">
             Search across pillars, areas, guides, blog posts, and resources. If your question is broad, use the browse cards below instead of forcing the perfect keyword.
           </p>
 
@@ -117,7 +117,7 @@ export default function SearchPage({ searchParams }: Props) {
                   <span className={badgeAccent}>Browse instead</span>
                   <span className={badge}>Best when your question is still fuzzy</span>
                 </div>
-                <p className="mt-4 text-sm leading-6 text-gray-600">
+                <p className="mt-4 text-sm leading-6 text-gray-700">
                   Search works well for specific terms. If the move still feels broad, go straight to the right hub and let the site narrow the question for you.
                 </p>
               </div>
@@ -125,7 +125,7 @@ export default function SearchPage({ searchParams }: Props) {
                 {browseCards.map((card) => (
                   <Link key={card.href} href={card.href} className={cardCls} data-track="search_browse_card">
                     <h2 className="text-xl font-semibold tracking-tight text-gray-900">{card.title}</h2>
-                    <p className="mt-3 text-sm leading-6 text-gray-600">{card.body}</p>
+                    <p className="mt-3 text-sm leading-6 text-gray-700">{card.body}</p>
                     <div className="mt-6 text-sm font-semibold text-gray-900">Open hub →</div>
                   </Link>
                 ))}
@@ -139,7 +139,7 @@ export default function SearchPage({ searchParams }: Props) {
                   <span className={badge}>Query: {q}</span>
                   <span className={badge}>{results.length} matches</span>
                 </div>
-                <p className="mt-4 text-sm leading-6 text-gray-600">
+                <p className="mt-4 text-sm leading-6 text-gray-700">
                   Matches are grouped by content type so you can decide whether you want a hub, a guide, a daily-life post, or a resource.
                 </p>
               </div>
@@ -160,7 +160,7 @@ export default function SearchPage({ searchParams }: Props) {
                           >
                             {r.title}
                           </Link>
-                          <div className="text-sm text-gray-600">{r.description}</div>
+                          <div className="text-sm text-gray-700">{r.description}</div>
                         </div>
                       ))}
                     </div>
@@ -175,7 +175,7 @@ export default function SearchPage({ searchParams }: Props) {
                   <span className={badgeAccent}>No exact matches</span>
                   <span className={badge}>Query: {q}</span>
                 </div>
-                <p className="mt-4 text-sm leading-6 text-gray-600">
+                <p className="mt-4 text-sm leading-6 text-gray-700">
                   Try a broader phrase, drop brand-specific wording, or jump into one of the core hubs below. Many families get farther by starting with a tool or pillar instead of a narrow keyword.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
@@ -189,7 +189,7 @@ export default function SearchPage({ searchParams }: Props) {
                 {browseCards.slice(0, 4).map((card) => (
                   <Link key={card.href} href={card.href} className={cardCls} data-track="search_no_results_browse">
                     <h2 className="text-xl font-semibold tracking-tight text-gray-900">{card.title}</h2>
-                    <p className="mt-3 text-sm leading-6 text-gray-600">{card.body}</p>
+                    <p className="mt-3 text-sm leading-6 text-gray-700">{card.body}</p>
                     <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
                   </Link>
                 ))}

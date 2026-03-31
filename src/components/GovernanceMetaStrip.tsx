@@ -33,7 +33,7 @@ export default function GovernanceMetaStrip({ item, compact = false }: { item: C
   return (
     <div className={cardCls}>
       <strong className="text-sm font-semibold text-gray-900">Page governance</strong>
-      <p className="mt-3 text-sm leading-6 text-gray-600">{summary.note}</p>
+      <p className="mt-3 text-sm leading-6 text-gray-700">{summary.note}</p>
 
       <div className="mt-4 flex flex-wrap gap-2">
         <span className={summary.freshness === "fresh" ? badgeGood : badgeAccent}>{freshnessLabel(summary.freshness)}</span>

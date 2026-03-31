@@ -18,14 +18,14 @@ export default function LearnedHardWay({
           <span className={badge}>Practical trust</span>
         </div>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">{title}</h2>
-        <p className="mt-3 text-sm leading-6 text-gray-600">{lead}</p>
+        <p className="mt-3 text-sm leading-6 text-gray-700">{lead}</p>
       </div>
 
       <div className={grid3}>
         {items.map((item) => (
           <div key={item.title} className={cardCls}>
             <h3 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h3>
-            <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
+            <p className="mt-3 text-sm leading-6 text-gray-700">{item.body}</p>
           </div>
         ))}
       </div>

@@ -261,7 +261,7 @@ export default function HomePage() {
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/25" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/82 via-black/66 to-black/48" />
 
         <div className="relative py-16 md:py-24">
           <div className="container">
@@ -272,7 +272,7 @@ export default function HomePage() {
               <h1 className="text-4xl font-semibold tracking-tight text-white drop-shadow-sm sm:text-5xl lg:text-6xl">
                 A calmer way to move to Bali with kids.
               </h1>
-              <p className="max-w-2xl text-base leading-relaxed text-white/90 sm:text-lg">
+              <p className="max-w-2xl text-base leading-relaxed text-white/95 sm:text-lg">
                 Plan your timelines, find the right neighborhood, and navigate
                 family life. We help you build a transition that feels grounded
                 and human.
@@ -286,7 +286,7 @@ export default function HomePage() {
                   Start Your Relocation Plan
                 </a>
               </div>
-              <p className="text-sm leading-6 text-white/75">
+              <p className="text-sm leading-6 text-white/88">
                 Start with one clear next step below. The deeper tools, area
                 guides, and school pages stay available when you are ready for
                 them.
@@ -294,10 +294,10 @@ export default function HomePage() {
             </div>
 
             <div className="mt-12 max-w-2xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/70">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/88">
                 Quick start
               </p>
-              <p className="mt-3 text-sm leading-6 text-white/80">
+              <p className="mt-3 text-sm leading-6 text-white/90">
                 Choose the question that feels most urgent right now.
               </p>
             </div>
@@ -309,7 +309,7 @@ export default function HomePage() {
                   data-track={item.track}
                   className="group rounded-3xl border border-white/70 bg-white/95 p-6 text-gray-900 shadow-xl transition hover:-translate-y-0.5 hover:border-emerald-200 hover:bg-white hover:shadow-2xl"
                 >
-                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">
                     {item.kicker}
                   </div>
                   <div className="mt-4 flex items-start gap-4">
@@ -320,7 +320,7 @@ export default function HomePage() {
                       <h2 className="text-xl font-semibold tracking-tight text-gray-900">
                         {item.title}
                       </h2>
-                      <p className="mt-3 text-sm leading-6 text-gray-600">
+                      <p className="mt-3 text-sm leading-6 text-gray-700">
                         {item.body}
                       </p>
                       <div className="mt-5 text-sm font-semibold text-emerald-800">
@@ -353,14 +353,14 @@ export default function HomePage() {
               data-track={item.track}
             >
               {item.kicker ? (
-                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">
                   {item.kicker}
                 </div>
               ) : null}
               <h2 className="mt-3 text-xl font-semibold tracking-tight text-gray-900">
                 {item.title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 {item.body}
               </p>
               <div className="mt-6 text-sm font-semibold text-gray-900">
@@ -422,7 +422,7 @@ export default function HomePage() {
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">
                 {item.title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 {item.body}
               </p>
               <div className="mt-6 text-sm font-semibold text-gray-900">
@@ -448,14 +448,14 @@ export default function HomePage() {
               data-track={item.track}
             >
               {item.kicker ? (
-                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">
                   {item.kicker}
                 </div>
               ) : null}
               <h2 className="mt-3 text-xl font-semibold tracking-tight text-gray-900">
                 {item.title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 {item.body}
               </p>
               <div className="mt-6 text-sm font-semibold text-gray-900">
@@ -524,7 +524,7 @@ export default function HomePage() {
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">
                 {title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{body}</p>
               <div className="mt-6 text-sm font-semibold text-gray-900">
                 Open tool →
               </div>
@@ -547,13 +547,13 @@ export default function HomePage() {
               className={cardCls}
               data-track={item.track}
             >
-              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">
                 {item.kicker}
               </div>
               <h2 className="mt-3 text-xl font-semibold tracking-tight text-gray-900">
                 {item.title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 {item.body}
               </p>
               <div className="mt-6 text-sm font-semibold text-gray-900">
@@ -620,7 +620,7 @@ export default function HomePage() {
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">
                 {title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{body}</p>
               <div className="mt-6 text-sm font-semibold text-gray-900">
                 Open →
               </div>
@@ -681,7 +681,7 @@ export default function HomePage() {
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">
                 {title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{body}</p>
               <div className="mt-6 text-sm font-semibold text-gray-900">
                 Open comparison →
               </div>
@@ -723,7 +723,7 @@ export default function HomePage() {
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">
                 {title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{body}</p>
               <div className="mt-6 text-sm font-semibold text-gray-900">
                 Open recap →
               </div>
@@ -783,12 +783,12 @@ export default function HomePage() {
             <h2 className="mt-5 text-2xl font-semibold tracking-tight text-gray-900">
               Housing support when your brief is ready
             </h2>
-            <p className="mt-3 text-sm leading-6 text-gray-600">
+            <p className="mt-3 text-sm leading-6 text-gray-700">
               Bring Gaia Group in once timing, area direction, budget band, and
               family brief are strong enough to create a useful shortlist. That
               keeps the housing path calmer and more specific.
             </p>
-            <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+            <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-700">
               <li>Check whether you are truly ready for a housing intro.</li>
               <li>Build the brief before you ask for listings.</li>
               <li>Keep the route shortlist-first and verification-first.</li>
@@ -822,12 +822,12 @@ export default function HomePage() {
             <h2 className="text-2xl font-semibold tracking-tight text-gray-900">
               Empathy School when school fit truly matters
             </h2>
-            <p className="mt-3 text-sm leading-6 text-gray-600">
+            <p className="mt-3 text-sm leading-6 text-gray-700">
               School fit should not sit at the edge of the move. If Empathy
               School matters, let it influence area, commute, routine, and
               whether the week still feels good once normal life begins.
             </p>
-            <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+            <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-700">
               <li>
                 Use school fit before you over-commit to an area or a long
                 drive.

@@ -374,7 +374,7 @@ export default function EmpathySchoolFitBuilder() {
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">
           Use school fit as a real move decision
         </h2>
-        <p className="mt-3 text-sm leading-6 text-gray-600">
+        <p className="mt-3 text-sm leading-6 text-gray-700">
           This tool does not tell you whether Empathy School is "the answer." It
           helps you judge whether the school question deserves to move forward
           now — and whether it should shape area, commute, and the weekly rhythm
@@ -472,7 +472,7 @@ export default function EmpathySchoolFitBuilder() {
           <div className="text-sm font-semibold text-gray-900">
             What this is trying to prevent
           </div>
-          <p className="mt-2 text-sm leading-6 text-gray-600">
+          <p className="mt-2 text-sm leading-6 text-gray-700">
             The common mistake is judging school as an isolated product.
             Families usually make better decisions when they judge campus feel,
             commute, area logic, and child energy as one combined reality.
@@ -506,7 +506,7 @@ export default function EmpathySchoolFitBuilder() {
           <h3 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">
             {result.headline}
           </h3>
-          <p className="mt-3 text-sm leading-6 text-gray-600">
+          <p className="mt-3 text-sm leading-6 text-gray-700">
             {result.summary}
           </p>
         </div>
@@ -516,7 +516,7 @@ export default function EmpathySchoolFitBuilder() {
             <h3 className="text-xl font-semibold tracking-tight text-gray-900">
               Signals pointing toward a real fit test
             </h3>
-            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-600">
+            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-700">
               {result.signals.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -527,7 +527,7 @@ export default function EmpathySchoolFitBuilder() {
             <h3 className="text-xl font-semibold tracking-tight text-gray-900">
               Watch carefully
             </h3>
-            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-600">
+            <ul className="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-gray-700">
               {result.watchouts.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -538,7 +538,7 @@ export default function EmpathySchoolFitBuilder() {
         <div className="grid gap-4 md:grid-cols-2">
           {result.nextLinks.map((item) => (
             <a key={item.href} href={item.href} className={cardCls}>
-              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">
                 Next step
               </div>
               <div className="mt-3 text-xl font-semibold tracking-tight text-gray-900">

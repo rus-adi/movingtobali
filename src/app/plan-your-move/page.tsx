@@ -216,7 +216,7 @@ export default function PlanYourMovePage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Plan the move in a calmer order.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             The goal is not to solve every Bali question today. It is to solve
             the right question next: move shape, area shortlist, budget reality,
             Empathy School fit, and only then the heavier commitments like
@@ -287,14 +287,14 @@ export default function PlanYourMovePage() {
               data-track={item.track}
             >
               {item.kicker ? (
-                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">
                   {item.kicker}
                 </div>
               ) : null}
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-gray-900">
                 {item.title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 {item.body}
               </p>
               <div className="mt-6 text-sm font-semibold text-gray-900">
@@ -331,7 +331,7 @@ export default function PlanYourMovePage() {
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">
                 {item.title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 {item.body}
               </p>
               <div className="mt-6 text-sm font-semibold text-gray-900">
@@ -367,7 +367,7 @@ export default function PlanYourMovePage() {
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">
                 {item.title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 {item.body}
               </p>
             </div>
@@ -395,19 +395,19 @@ export default function PlanYourMovePage() {
           </div>
 
           <div className={cardCls}>
-            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">
               Preferred housing partner
             </div>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-gray-900">
               Gaia Group, once the brief is real enough
             </h2>
-            <p className="mt-4 text-sm leading-6 text-gray-600">
+            <p className="mt-4 text-sm leading-6 text-gray-700">
               Gaia Group is most useful once your move timing, area direction,
               commute sensitivity, and bedroom needs are strong enough to create
               a calmer shortlist. That keeps the process useful instead of
               turning it into a flood of mismatched listings.
             </p>
-            <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+            <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-700">
               <li>Use the housing guide first.</li>
               <li>Check readiness before you request an intro.</li>
               <li>Build the housing brief before you ask for listings.</li>
@@ -498,7 +498,7 @@ export default function PlanYourMovePage() {
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">
                 {item.title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 {item.body}
               </p>
               <div className="mt-6 text-sm font-semibold text-gray-900">

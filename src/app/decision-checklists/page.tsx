@@ -113,7 +113,7 @@ export default function DecisionChecklistsPage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Use checklists where they change the decision.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             The goal is not to collect PDFs. It is to use the right checklist at the right moment: before a test stay, before a lease, before a school tour, and before arrival week starts filling up with avoidable friction.
           </p>
         </div>

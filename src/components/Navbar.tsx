@@ -155,14 +155,14 @@ export default function Navbar() {
 
   const linkCls = (item: NavItem) =>
     cn(
-      "rounded-full px-3 py-2 text-xs font-medium text-gray-600 transition-colors duration-200 ease-out hover:bg-emerald-50 hover:text-gray-900 lg:text-sm",
+      "rounded-full px-3 py-2 text-xs font-medium text-gray-700 transition-colors duration-200 ease-out hover:bg-emerald-50 hover:text-stone-950 lg:text-sm",
       isActive(item) && "active bg-emerald-50 text-emerald-800 shadow-sm",
     );
 
   return (
     <header className="sticky top-0 z-50 border-b border-stone-200 bg-white/85 backdrop-blur">
       <div className="border-b border-stone-200 bg-gradient-to-r from-amber-50 via-white to-emerald-50">
-        <div className="container flex flex-wrap items-center justify-between gap-3 py-2 text-[11px] font-medium text-gray-600 sm:text-xs">
+        <div className="container flex flex-wrap items-center justify-between gap-3 py-2 text-[11px] font-medium text-gray-700 sm:text-xs">
           <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <a href={site.brand.publisherUrl} target="_blank" rel="noreferrer" className="transition hover:text-gray-900" data-track="nav_utility_empathy">
               Built by Empathy School
@@ -218,7 +218,7 @@ export default function Navbar() {
                   <button
                     type="button"
                     className={cn(
-                      "rounded-full px-3 py-2 text-xs font-medium text-gray-600 transition-colors duration-200 ease-out hover:bg-emerald-50 hover:text-gray-900 lg:text-sm",
+                      "rounded-full px-3 py-2 text-xs font-medium text-gray-700 transition-colors duration-200 ease-out hover:bg-emerald-50 hover:text-stone-950 lg:text-sm",
                       isGroupActive(group) && "active bg-emerald-50 text-emerald-800 shadow-sm",
                     )}
                     aria-expanded={desktopOpenGroup === group.label}
@@ -248,7 +248,7 @@ export default function Navbar() {
                             href={item.href}
                             role="menuitem"
                             className={cn(
-                              "block rounded-xl px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-emerald-50 hover:text-gray-900",
+                              "block rounded-xl px-3 py-2 text-sm font-medium text-gray-800 transition hover:bg-emerald-50 hover:text-stone-950",
                               isActive(item) && "active bg-emerald-50 text-emerald-800",
                             )}
                             data-track={item.track}
@@ -279,7 +279,7 @@ export default function Navbar() {
 
             <button
               type="button"
-              className="inline-flex items-center justify-center rounded-xl border border-stone-200 bg-white p-2.5 text-gray-700 shadow-sm transition hover:bg-emerald-50 md:hidden"
+              className="inline-flex items-center justify-center rounded-xl border border-stone-200 bg-white p-2.5 text-gray-800 shadow-sm transition hover:bg-emerald-50 md:hidden"
               aria-label="Open menu"
               aria-expanded={mobileOpen}
               onClick={() => setMobileOpen((v) => !v)}
@@ -299,7 +299,7 @@ export default function Navbar() {
           <nav className="grid gap-1 pt-2" aria-label="Mobile navigation">
             <Link
               href="/how-this-hub-works"
-              className="rounded-xl px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-emerald-50 hover:text-gray-900"
+              className="rounded-xl px-3 py-2 text-sm font-medium text-gray-800 transition hover:bg-emerald-50 hover:text-stone-950"
               data-track="nav_mobile_hub"
               onClick={() => setMobileOpen(false)}
             >
@@ -311,7 +311,7 @@ export default function Navbar() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "rounded-xl px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-emerald-50 hover:text-gray-900",
+                  "rounded-xl px-3 py-2 text-sm font-medium text-gray-800 transition hover:bg-emerald-50 hover:text-stone-950",
                   isActive(item) && "active bg-emerald-50 text-emerald-800",
                 )}
                 data-track={item.track}
@@ -345,7 +345,7 @@ export default function Navbar() {
                         key={item.href}
                         href={item.href}
                         className={cn(
-                          "rounded-xl px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-emerald-50 hover:text-gray-900",
+                          "rounded-xl px-3 py-2 text-sm font-medium text-gray-800 transition hover:bg-emerald-50 hover:text-stone-950",
                           isActive(item) && "active bg-emerald-50 text-emerald-800",
                         )}
                         data-track={item.track}

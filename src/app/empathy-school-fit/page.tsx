@@ -33,7 +33,7 @@ export default function EmpathySchoolFitPage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Decide whether Empathy School should shape the move now.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             This page is for families who do not want school to stay vague for too long. Use it to judge whether Empathy School deserves to anchor area, commute, and weekly rhythm now — or whether the calmer next step is a tour, a test stay, or a direct conversation first.
           </p>
         </div>
@@ -68,7 +68,7 @@ export default function EmpathySchoolFitPage() {
           ].map((item) => (
             <div key={item.title} className={cardCls}>
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{item.body}</p>
             </div>
           ))}
         </div>
@@ -122,7 +122,7 @@ export default function EmpathySchoolFitPage() {
           ].map(([href, title, body]) => (
             <a key={href} href={href} className={cardCls}>
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">{title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{body}</p>
               <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
             </a>
           ))}

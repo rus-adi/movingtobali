@@ -63,7 +63,7 @@ export default function PartnersPage() {
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Preferred partners & services
           </h1>
-          <p className="mt-4 max-w-3xl text-base text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base text-gray-700 sm:text-lg">
             This page stays intentionally clean. The cards below are the
             directory layer; detailed background, fit notes, and process
             guidance live on each partner’s own page.
@@ -106,12 +106,12 @@ export default function PartnersPage() {
                   <h2 className="mt-6 text-2xl font-semibold tracking-tight text-gray-900">
                     {partner.name}
                   </h2>
-                  <p className="mt-3 text-sm leading-6 text-gray-600">
+                  <p className="mt-3 text-sm leading-6 text-gray-700">
                     {partner.bestFor}
                   </p>
 
                   {partner.services?.length ? (
-                    <p className="mt-4 text-sm leading-6 text-gray-600">
+                    <p className="mt-4 text-sm leading-6 text-gray-700">
                       <strong className="font-semibold text-gray-900">
                         Services:
                       </strong>{" "}
@@ -120,7 +120,7 @@ export default function PartnersPage() {
                   ) : null}
 
                   {partner.areas?.length ? (
-                    <p className="mt-3 text-sm leading-6 text-gray-600">
+                    <p className="mt-3 text-sm leading-6 text-gray-700">
                       <strong className="font-semibold text-gray-900">
                         Areas:
                       </strong>{" "}
@@ -129,7 +129,7 @@ export default function PartnersPage() {
                   ) : null}
 
                   {partner.note ? (
-                    <div className="mt-5 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-600">
+                    <div className="mt-5 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-700">
                       {partner.note}
                     </div>
                   ) : null}
@@ -161,7 +161,7 @@ export default function PartnersPage() {
               <strong className="text-sm font-semibold text-gray-900">
                 Partners directory is being built
               </strong>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 We publish partners slowly. For visas and housing especially,
                 only verified partners appear publicly once vetting and tracking
                 are in place.
@@ -199,7 +199,7 @@ export default function PartnersPage() {
                     className="rounded-2xl border border-gray-200 bg-gray-50 p-5"
                   >
                     <div className={badgeAccent}>Step {index + 1}</div>
-                    <p className="mt-4 text-sm leading-6 text-gray-600">
+                    <p className="mt-4 text-sm leading-6 text-gray-700">
                       {step}
                     </p>
                   </div>
@@ -211,7 +211,7 @@ export default function PartnersPage() {
               <strong className="text-sm font-semibold text-gray-900">
                 What this page is for
               </strong>
-              <p className="mt-4 text-sm leading-6 text-gray-600">
+              <p className="mt-4 text-sm leading-6 text-gray-700">
                 The directory page helps families see the available service
                 quickly, understand the category, and choose whether to open the
                 detailed partner page or request a warm intro. It is not meant
@@ -315,7 +315,7 @@ export default function PartnersPage() {
             <strong className="text-sm font-semibold text-gray-900">
               Need a warm intro instead of browsing alone?
             </strong>
-            <p className="mt-3 max-w-3xl text-sm leading-6 text-gray-600">
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-gray-700">
               Tell us the part of the move that feels stuck. If a partner
               conversation would genuinely help, we can point you to the right
               page or request the introduction without turning the directory

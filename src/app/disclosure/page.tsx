@@ -28,7 +28,7 @@ export default function DisclosurePage() {
         <div className="container">
           <div className={badge}>Disclosure</div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Partner links & editorial independence</h1>
-          <p className="mt-4 text-base text-gray-600 sm:text-lg">
+          <p className="mt-4 text-base text-gray-700 sm:text-lg">
             Transparency builds trust. Here’s exactly how partner links work on this site.
           </p>
         </div>
@@ -54,13 +54,13 @@ export default function DisclosurePage() {
             <RichTextBlock className="mt-4">
               <p>We use simple labels to make status obvious:</p>
               <div className="flex flex-wrap items-center gap-3">
-                <PartnerBadge status="owned" /> <span className="text-gray-600">Owned or operated by Empathy School.</span>
+                <PartnerBadge status="owned" /> <span className="text-gray-700">Owned or operated by Empathy School.</span>
               </div>
               <div className="mt-4 flex flex-wrap items-center gap-3">
-                <PartnerBadge status="verified" /> <span className="text-gray-600">Vetted and approved to be shown publicly.</span>
+                <PartnerBadge status="verified" /> <span className="text-gray-700">Vetted and approved to be shown publicly.</span>
               </div>
               <div className="mt-4 flex flex-wrap items-center gap-3">
-                <PartnerBadge status="check" /> <span className="text-gray-600">Still under review — hidden on the public site.</span>
+                <PartnerBadge status="check" /> <span className="text-gray-700">Still under review — hidden on the public site.</span>
               </div>
               <p>
                 You can see the public list on <a href="/partners">Partners</a>.
@@ -83,7 +83,7 @@ export default function DisclosurePage() {
             </RichTextBlock>
           </div>
 
-          <div className="text-xs text-gray-500">Last updated: {LAST_UPDATED}</div>
+          <div className="text-xs text-gray-600">Last updated: {LAST_UPDATED}</div>
         </div>
       </section>
     </main>

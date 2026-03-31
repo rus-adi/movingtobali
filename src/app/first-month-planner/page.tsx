@@ -38,7 +38,7 @@ export default function FirstMonthPlannerPage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Plan the first month so Bali feels more livable, not just exciting.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             Families do better when the first month is treated like a real-world
             test: area fit, housing, school rhythm, transport, groceries, and
             whether the adults still like the week by Thursday.
@@ -93,7 +93,7 @@ export default function FirstMonthPlannerPage() {
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">
                 {item.title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 {item.body}
               </p>
             </div>

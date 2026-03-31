@@ -47,7 +47,7 @@ export default function AreaMatchPage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Choose the Bali area that fits the week you actually want to live.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             Families do better when they shortlist areas by rhythm, commute, and
             daily friction instead of trying to pick a winner from Bali’s whole
             personality at once.
@@ -109,7 +109,7 @@ export default function AreaMatchPage() {
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">
                 {item.title}
               </h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 {item.body}
               </p>
             </div>

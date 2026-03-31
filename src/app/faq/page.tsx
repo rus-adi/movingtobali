@@ -88,17 +88,18 @@ export default function FaqPage({ searchParams }: Props) {
       <JsonLd data={schemas} />
 
       <section className="relative w-full overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-100/70 via-stone-100/40 to-emerald-100/65" />
-      <div className="absolute inset-0 opacity-50">
+      <div className="absolute inset-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/images/hero-bali.webp" alt="" className="h-full w-full object-cover" />
       </div>
+      <div className="absolute inset-0 bg-gradient-to-br from-black/78 via-black/58 to-emerald-950/58" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.16),transparent_42%)]" />
       <div className="relative py-16 md:py-24">
 
         <div className="container">
           <div className={badge}>FAQ</div>
-          <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Questions parents ask</h1>
-          <p className="mt-4 text-base text-gray-600 sm:text-lg">
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-white drop-shadow-sm sm:text-5xl">Questions parents ask</h1>
+          <p className="mt-4 text-base text-white/90 sm:text-lg">
             Short answers here, then links to the deeper guide so you can act on it.
           </p>
 
@@ -106,7 +107,7 @@ export default function FaqPage({ searchParams }: Props) {
             <SearchBoxUrl placeholder="Search FAQs… (e.g., eVOA, deposit, school tour, Sanur)" />
           </div>
 
-          <div className="mt-4 text-sm text-gray-600">
+          <div className="mt-4 text-sm text-white/85">
             {total} question{total === 1 ? "" : "s"} found
           </div>
 
@@ -127,12 +128,12 @@ export default function FaqPage({ searchParams }: Props) {
             {items.map((f, idx) => (
               <div key={`${f.sourceUrl}-${idx}`} className={cardCls}>
                 <strong className="text-sm font-semibold text-gray-900">{f.q}</strong>
-                <p className="mt-3 text-sm leading-6 text-gray-600">{f.a}</p>
+                <p className="mt-3 text-sm leading-6 text-gray-700">{f.a}</p>
                 <div className="mt-4 flex flex-wrap items-center gap-2 text-sm">
                   <span className={badge}>From</span>
                   <Link
                     href={f.sourceUrl}
-                    className="font-semibold text-blue-600 underline underline-offset-4 transition-colors hover:text-blue-700"
+                    className="font-semibold text-emerald-800 underline underline-offset-4 transition-colors hover:text-emerald-900"
                     data-track="faq_source_open"
                     data-url={f.sourceUrl}
                   >

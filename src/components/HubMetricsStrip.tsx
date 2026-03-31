@@ -20,7 +20,7 @@ export default function HubMetricsStrip({
           <span className={badge}>Selective housing: Gaia Group</span>
         </div>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">{title}</h2>
-        <p className="mt-3 text-sm leading-6 text-gray-600">{lead}</p>
+        <p className="mt-3 text-sm leading-6 text-gray-700">{lead}</p>
         <div className="mt-5 flex flex-wrap gap-3">
           <Link className={buttonSecondary} href="/how-this-hub-works" data-track="hub_metrics_how_it_works">
             How this hub works
@@ -36,8 +36,8 @@ export default function HubMetricsStrip({
           const content = (
             <>
               <div className="text-3xl font-semibold tracking-tight text-gray-900">{metric.value}</div>
-              <div className="mt-2 text-sm font-semibold uppercase tracking-[0.18em] text-gray-500">{metric.label}</div>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{metric.detail}</p>
+              <div className="mt-2 text-sm font-semibold uppercase tracking-[0.18em] text-gray-600">{metric.label}</div>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{metric.detail}</p>
             </>
           );
 

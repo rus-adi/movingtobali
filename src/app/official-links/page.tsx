@@ -59,7 +59,7 @@ export default function OfficialLinksPage() {
         <div className="container">
           <div className={badge}>Reference</div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Official links we reference</h1>
-          <p className="mt-4 text-base text-gray-600 sm:text-lg">
+          <p className="mt-4 text-base text-gray-700 sm:text-lg">
             Visa and entry procedures can change. This page is the “bookmark list” we keep pointing families to when details shift.
           </p>
 
@@ -76,7 +76,7 @@ export default function OfficialLinksPage() {
         <div className="container">
           <div className={`${cardCls} mb-10`}>
             <strong className="text-sm font-semibold text-gray-900">Important</strong>
-            <p className="mt-3 text-sm leading-6 text-gray-600">
+            <p className="mt-3 text-sm leading-6 text-gray-700">
               We write from experience, not as legal advice. When you’re unsure, confirm through official portals or a qualified agent.
             </p>
           </div>
@@ -94,7 +94,7 @@ export default function OfficialLinksPage() {
                     return (
                       <div key={l.url} className={`${card} p-5`}>
                         <strong className="text-sm font-semibold text-gray-900">{l.title}</strong>
-                        {l.note ? <p className="mt-3 text-sm leading-6 text-gray-600">{l.note}</p> : null}
+                        {l.note ? <p className="mt-3 text-sm leading-6 text-gray-700">{l.note}</p> : null}
 
                         <div className="mt-4 flex flex-wrap gap-2">
                           {l.lastVerified ? <span className={badge}>Verified: {l.lastVerified}</span> : <span className={badgeWarn}>Needs verification</span>}

@@ -20,34 +20,34 @@ export default function AreasCompareTable({ areas }: { areas: ContentItem[] }) {
       <table className="min-w-[860px] w-full border-collapse text-sm">
         <thead>
           <tr className="bg-gray-50">
-            <th className="sticky top-0 w-[18%] border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+            <th className="sticky top-0 w-[18%] border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-700">
               Area
             </th>
-            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-700">
               Region
             </th>
-            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-700">
               Pace
             </th>
-            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-700">
               Traffic
             </th>
-            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-700">
               Walkability
             </th>
-            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-700">
               Family fit
             </th>
-            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-700">
               Beach
             </th>
-            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-700">
               Nature
             </th>
-            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+            <th className="sticky top-0 border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-700">
               Cost
             </th>
-            <th className="sticky top-0 w-[22%] border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+            <th className="sticky top-0 w-[22%] border-b border-gray-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gray-700">
               Note
             </th>
           </tr>
@@ -56,7 +56,7 @@ export default function AreasCompareTable({ areas }: { areas: ContentItem[] }) {
           {areas.map((a) => (
             <tr key={a.slug} className="border-b border-gray-200 last:border-b-0">
               <td className="px-3 py-3 align-top">
-                <Link href={`/areas/${a.slug}`} className="font-semibold text-gray-900 transition-colors hover:text-blue-600">
+                <Link href={`/areas/${a.slug}`} className="font-semibold text-gray-900 transition-colors hover:text-emerald-800">
                   {a.title.replace(/\sfor families$/i, "")}
                 </Link>
               </td>
@@ -68,7 +68,7 @@ export default function AreasCompareTable({ areas }: { areas: ContentItem[] }) {
               <td className="px-3 py-3 align-top">{v(a.area?.beachAccess)}</td>
               <td className="px-3 py-3 align-top">{v(a.area?.natureAccess)}</td>
               <td className="px-3 py-3 align-top">{v(a.area?.costTier)}</td>
-              <td className="px-3 py-3 align-top text-gray-600">{v(a.area?.note)}</td>
+              <td className="px-3 py-3 align-top text-gray-700">{v(a.area?.note)}</td>
             </tr>
           ))}
         </tbody>

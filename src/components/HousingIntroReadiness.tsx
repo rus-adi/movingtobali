@@ -296,11 +296,11 @@ export default function HousingIntroReadiness() {
 
         <div className={cardCls}>
           <strong className="text-sm font-semibold text-gray-900">What this tool is really doing</strong>
-          <p className="mt-3 text-sm leading-6 text-gray-600">
+          <p className="mt-3 text-sm leading-6 text-gray-700">
             Gaia Group is most helpful once the family has moved past “show us anything nice” and into something closer to: timing,
             shortlist, budget band, home shape, and what daily life actually has to do.
           </p>
-          <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+          <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-700">
             <li>It is fine if you are not ready yet.</li>
             <li>A short delay now often saves much more stress later.</li>
             <li>The goal is a better first housing conversation, not a higher score for its own sake.</li>

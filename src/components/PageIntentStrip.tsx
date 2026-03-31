@@ -116,7 +116,7 @@ export default function PageIntentStrip({ item }: { item: ContentItem }) {
           <span className={badgeAccent}>Best for</span>
           <span className={badge}>Use this page well</span>
         </div>
-        <p className="mt-4 text-sm leading-6 text-gray-600">{intent.bestFor}</p>
+        <p className="mt-4 text-sm leading-6 text-gray-700">{intent.bestFor}</p>
       </div>
 
       <div className={cardCls}>
@@ -143,7 +143,7 @@ export default function PageIntentStrip({ item }: { item: ContentItem }) {
           <span className={badgeAccent}>Watch for</span>
           <span className={badge}>Common mistake</span>
         </div>
-        <p className="mt-4 text-sm leading-6 text-gray-600">{intent.watchFor}</p>
+        <p className="mt-4 text-sm leading-6 text-gray-700">{intent.watchFor}</p>
       </div>
     </div>
   );

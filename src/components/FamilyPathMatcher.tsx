@@ -433,7 +433,7 @@ export default function FamilyPathMatcher() {
       <div className={cardCls}>
         <div className={badge}>Path matcher</div>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">Find the family lens that should guide the move first</h2>
-        <p className="mt-3 text-sm leading-6 text-gray-600">
+        <p className="mt-3 text-sm leading-6 text-gray-700">
           Families do better when they stop reading every Bali page equally. Pick the pattern that sounds most like your real family, then use the recommended path as your main lens for the next set of decisions.
         </p>
 
@@ -494,7 +494,7 @@ export default function FamilyPathMatcher() {
           </div>
 
           <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">Start with {result.primary.title.toLowerCase()}.</h2>
-          <p className="mt-3 text-sm leading-6 text-gray-600">{result.primary.summary}</p>
+          <p className="mt-3 text-sm leading-6 text-gray-700">{result.primary.summary}</p>
 
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <a href={result.primary.href} className="rounded-2xl border border-blue-200 bg-blue-50 p-5 text-sm text-gray-900 transition hover:border-blue-300 hover:bg-white">
@@ -504,7 +504,7 @@ export default function FamilyPathMatcher() {
             </a>
             {result.secondary ? (
               <a href={result.secondary.href} className="rounded-2xl border border-gray-200 bg-gray-50 p-5 text-sm text-gray-900 transition hover:border-gray-300 hover:bg-white">
-                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Secondary lens</div>
+                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">Secondary lens</div>
                 <div className="mt-3 text-lg font-semibold tracking-tight">{result.secondary.title}</div>
                 <p className="mt-2 leading-6 text-gray-700">Use this page next if the child pattern and the adult pattern are both shaping the move.</p>
               </a>
@@ -520,7 +520,7 @@ export default function FamilyPathMatcher() {
 
         <div className={cardCls}>
           <strong className="text-sm font-semibold text-gray-900">Why this path matches</strong>
-          <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+          <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-700">
             {result.signals.map((signal) => (
               <li key={signal}>{signal}</li>
             ))}
@@ -529,7 +529,7 @@ export default function FamilyPathMatcher() {
 
         <div className={cardCls}>
           <strong className="text-sm font-semibold text-gray-900">Watchouts</strong>
-          <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-600">
+          <ul className="mt-4 list-disc pl-5 text-sm leading-6 text-gray-700">
             {result.watchouts.map((item) => (
               <li key={item}>{item}</li>
             ))}

@@ -14,7 +14,7 @@ export default function Section({
   return (
     <section
       id={id}
-      className={tone === "muted" ? "bg-gray-50 py-16 md:py-24" : "bg-white py-16 md:py-24"}
+      className={tone === "muted" ? "bg-stone-50 py-16 md:py-24" : "bg-white py-16 md:py-24"}
     >
       <div className="container">
         <div className="max-w-3xl space-y-6">
@@ -23,7 +23,7 @@ export default function Section({
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">{title}</h2>
             <div className="h-px flex-1 bg-gray-200" />
           </div>
-          {lead ? <p className="text-base text-gray-600 sm:text-lg">{lead}</p> : null}
+          {lead ? <p className="text-base leading-7 text-gray-700 sm:text-lg">{lead}</p> : null}
         </div>
         <div className="mt-10">{children}</div>
       </div>

@@ -19,7 +19,7 @@ export default function SocialLinks({ social }: { social?: SocialBlock }) {
   return (
     <div className={cardCls}>
       <strong className="text-sm font-semibold text-gray-900">Related social</strong>
-      <p className="mt-3 text-sm leading-6 text-gray-600">
+      <p className="mt-3 text-sm leading-6 text-gray-700">
         Social posts are supporting context. The written guide on this page is the primary answer.
       </p>
 

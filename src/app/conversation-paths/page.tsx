@@ -64,7 +64,7 @@ export default function ConversationPathsPage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Choose the right conversation before you hit contact.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             A bigger site only helps if it routes families well. This page turns the contact path into part of the planning system: broad planning questions, test-stay questions, areas + budget, housing intro, or Empathy School fit.
           </p>
           <div className={btnRow + " mt-8"}>
@@ -103,10 +103,10 @@ export default function ConversationPathsPage() {
             const topic = routes.find((route) => route.id === context.recommendedRouteId)?.topic || "General move planning";
             return (
               <div key={item.href} className={cardCls}>
-                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">From {item.title}</div>
+                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">From {item.title}</div>
                 <h2 className="mt-3 text-xl font-semibold tracking-tight text-gray-900">{context.sourceLabel}</h2>
-                <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
-                <div className="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-600">
+                <p className="mt-3 text-sm leading-6 text-gray-700">{item.body}</p>
+                <div className="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-700">
                   <strong className="text-gray-900">Likely next conversation</strong>
                   <p className="mt-1">{context.reason}</p>
                 </div>
@@ -145,7 +145,7 @@ export default function ConversationPathsPage() {
           ].map(([href, title, body]) => (
             <a key={href} href={href} className={cardCls}>
               <h3 className="text-xl font-semibold tracking-tight text-gray-900">{title}</h3>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{body}</p>
               <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
             </a>
           ))}

@@ -199,7 +199,7 @@ export default function FirstMonthPlanner() {
       <div className={cardCls}>
         <div className={badge}>First-month planner</div>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">Turn the first month into a calmer test</h2>
-        <p className="mt-3 text-sm leading-6 text-gray-600">
+        <p className="mt-3 text-sm leading-6 text-gray-700">
           This is not a strict schedule. It is a way to pressure-test the move without pretending every family should do Bali the same way.
         </p>
 
@@ -259,7 +259,7 @@ export default function FirstMonthPlanner() {
           </label>
         </div>
 
-        <div className="mt-6 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-600">
+        <div className="mt-6 rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm leading-6 text-gray-700">
           The goal is not to do everything in 30 days. The goal is to finish the month knowing what helps your family feel more settled — and what clearly does not.
         </div>
       </div>
@@ -267,7 +267,7 @@ export default function FirstMonthPlanner() {
       <div className="grid gap-6">
         <div className={cardCls}>
           <div className="text-sm font-semibold text-gray-900">What to prioritize now</div>
-          <ul className="mt-4 grid gap-3 text-sm leading-6 text-gray-600">
+          <ul className="mt-4 grid gap-3 text-sm leading-6 text-gray-700">
             {summary.map((item) => (
               <li key={item} className="rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3">{item}</li>
             ))}
@@ -278,7 +278,7 @@ export default function FirstMonthPlanner() {
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
               <div className="text-sm font-semibold text-gray-900">Weekly focus</div>
-              <div className="mt-1 text-sm text-gray-600">{weeklyFocus.base.title}</div>
+              <div className="mt-1 text-sm text-gray-700">{weeklyFocus.base.title}</div>
             </div>
             <button type="button" className={buttonSecondary} onClick={handleCopy} data-track="first_month_copy_plan">
               Copy plan
@@ -286,7 +286,7 @@ export default function FirstMonthPlanner() {
           </div>
 
           <div className="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-4">
-            <ul className="grid gap-2 text-sm leading-6 text-gray-600">
+            <ul className="grid gap-2 text-sm leading-6 text-gray-700">
               {weeklyFocus.base.bullets.map((b) => (
                 <li key={b}>• {b}</li>
               ))}
@@ -301,7 +301,7 @@ export default function FirstMonthPlanner() {
           ].map(({ label, bullets }) => (
             <div key={label} className="mt-4 rounded-2xl border border-gray-200 bg-white p-4">
               <div className="text-sm font-semibold text-gray-900">{label}</div>
-              <ul className="mt-3 grid gap-2 text-sm leading-6 text-gray-600">
+              <ul className="mt-3 grid gap-2 text-sm leading-6 text-gray-700">
                 {bullets.map((b) => (
                   <li key={b}>• {b}</li>
                 ))}

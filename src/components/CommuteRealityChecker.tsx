@@ -151,7 +151,7 @@ export default function CommuteRealityChecker({ areas }: { areas: AreaItem[] }) 
       <div className={cardCls}>
         <div className={badge}>Commute reality</div>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">Test the route before it quietly shapes the whole move.</h2>
-        <p className="mt-3 text-sm leading-6 text-gray-600">
+        <p className="mt-3 text-sm leading-6 text-gray-700">
           A commute can look survivable on a map and still flatten mornings, school pickup, or adult work windows. Use this before you romanticize an area.
         </p>
 
@@ -233,7 +233,7 @@ export default function CommuteRealityChecker({ areas }: { areas: AreaItem[] }) 
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">
           {cleanAreaTitle(area.title)}: {result.score}/100 commute pressure
         </h2>
-        <p className="mt-3 text-sm leading-6 text-gray-600">{result.note}</p>
+        <p className="mt-3 text-sm leading-6 text-gray-700">{result.note}</p>
 
         <div className="mt-5 h-3 rounded-full bg-gray-100">
           <div className="h-3 rounded-full bg-blue-600" style={{ width: `${result.score}%` }} />
@@ -243,14 +243,14 @@ export default function CommuteRealityChecker({ areas }: { areas: AreaItem[] }) 
           {result.lenses.map((item) => (
             <div key={item.title} className={`rounded-2xl border p-5 ${item.tone}`}>
               <div className="text-sm font-semibold text-gray-900">{item.title}</div>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{item.body}</p>
             </div>
           ))}
         </div>
 
         <div className="mt-6 rounded-2xl border border-gray-200 bg-gray-50 p-5">
           <div className="text-sm font-semibold text-gray-900">What to do next</div>
-          <ul className="mt-3 list-disc pl-5 text-sm leading-6 text-gray-600">
+          <ul className="mt-3 list-disc pl-5 text-sm leading-6 text-gray-700">
             {result.nextSteps.map((step) => <li key={step}>{step}</li>)}
           </ul>
         </div>
@@ -273,7 +273,7 @@ export default function CommuteRealityChecker({ areas }: { areas: AreaItem[] }) 
         ].map((item) => (
           <div key={item.title} className={cardCls}>
             <h3 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h3>
-            <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
+            <p className="mt-3 text-sm leading-6 text-gray-700">{item.body}</p>
           </div>
         ))}
       </div>
@@ -283,7 +283,7 @@ export default function CommuteRealityChecker({ areas }: { areas: AreaItem[] }) 
           <div>
             <div className={badge}>School + housing reality</div>
             <h3 className="mt-4 text-2xl font-semibold tracking-tight text-gray-900">Do not separate the commute from the housing brief.</h3>
-            <p className="mt-3 text-sm leading-6 text-gray-600">
+            <p className="mt-3 text-sm leading-6 text-gray-700">
               If the commute is already heavy, the housing search should optimize for radius, repeatability, and calmer mornings before it optimizes for a dream listing.
             </p>
           </div>

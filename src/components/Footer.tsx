@@ -71,12 +71,12 @@ export default function Footer() {
   const site = getSite();
 
   return (
-    <footer className="mt-16 border-t border-stone-200 bg-white/95 py-16">
+    <footer className="mt-16 border-t border-stone-200 bg-white py-16">
       <div className="container">
         <div className="grid gap-12 lg:grid-cols-[1.1fr_1.4fr]">
           <div>
             <div className="text-sm font-semibold text-gray-900">{site.brand.name}</div>
-            <div className="mt-4 max-w-md text-sm leading-6 text-gray-600">{site.brand.tagline}</div>
+            <div className="mt-4 max-w-md text-sm leading-6 text-gray-700">{site.brand.tagline}</div>
 
             <div className="mt-6 flex flex-wrap gap-2">
               <span className={badgeAccent}>Built by Empathy School</span>
@@ -116,9 +116,9 @@ export default function Footer() {
             {groups.map((group) => (
               <div key={group.title}>
                 <div className="text-sm font-semibold text-gray-900">{group.title}</div>
-                <div className="mt-4 grid gap-2 text-sm text-gray-600">
+                <div className="mt-4 grid gap-2 text-sm text-gray-700">
                   {group.links.map(([href, label]) => (
-                    <a key={href} className="transition-colors hover:text-gray-900" href={href}>
+                    <a key={href} className="transition-colors hover:text-stone-950" href={href}>
                       {label}
                     </a>
                   ))}
@@ -128,7 +128,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-stone-200 pt-6 text-xs leading-5 text-gray-500">
+        <div className="mt-12 border-t border-stone-200 pt-6 text-xs leading-5 text-gray-700">
           Disclaimer: This site shares experience-based guidance for families. It is not immigration, legal, or tax advice. Rules, partner details, and pricing can change — verify via official sources where needed.
         </div>
       </div>

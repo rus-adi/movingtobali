@@ -29,7 +29,7 @@ export default function EmpathySchoolTourPrepPage() {
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Plan an Empathy School visit that still tells the truth.
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-gray-700 sm:text-lg">
             The value of a school visit often comes from everything around it: where you started, how much you stacked into the day, whether the child joined, and whether the drive still feels workable afterwards. Use this page to protect the signal.
           </p>
         </div>
@@ -64,7 +64,7 @@ export default function EmpathySchoolTourPrepPage() {
           ].map((item) => (
             <div key={item.title} className={cardCls}>
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{item.body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{item.body}</p>
             </div>
           ))}
         </div>
@@ -87,7 +87,7 @@ export default function EmpathySchoolTourPrepPage() {
           ].map(([href, title, body]) => (
             <a key={href} href={href} className={cardCls}>
               <h2 className="text-xl font-semibold tracking-tight text-gray-900">{title}</h2>
-              <p className="mt-3 text-sm leading-6 text-gray-600">{body}</p>
+              <p className="mt-3 text-sm leading-6 text-gray-700">{body}</p>
               <div className="mt-6 text-sm font-semibold text-gray-900">Open →</div>
             </a>
           ))}

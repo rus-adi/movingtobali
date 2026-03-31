@@ -70,7 +70,7 @@ function SearchBoxUrlInner({
         </button>
       </form>
 
-      {helperText ? <p className="mt-3 text-sm leading-6 text-gray-600">{helperText}</p> : null}
+      {helperText ? <p className="mt-3 text-sm leading-6 text-gray-700">{helperText}</p> : null}
 
       {suggestions.length ? (
         <div className="mt-4 flex flex-wrap gap-2">

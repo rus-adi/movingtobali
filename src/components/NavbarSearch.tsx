@@ -227,7 +227,7 @@ export default function NavbarSearch({ className }: { className?: string }) {
       <button
         ref={triggerRef}
         type="button"
-        className="inline-flex items-center justify-center gap-2 rounded-full border border-stone-200 bg-white px-3 py-2 text-xs font-medium text-gray-700 shadow-sm transition hover:border-emerald-200 hover:bg-emerald-50 hover:text-gray-900 lg:px-4 lg:text-sm"
+        className="inline-flex items-center justify-center gap-2 rounded-full border border-stone-200 bg-white px-3 py-2 text-xs font-medium text-gray-800 shadow-sm transition hover:border-emerald-200 hover:bg-emerald-50 hover:text-stone-950 lg:px-4 lg:text-sm"
         aria-label="Search the hub"
         aria-expanded={open}
         aria-controls={panelId}
@@ -246,7 +246,7 @@ export default function NavbarSearch({ className }: { className?: string }) {
           <div className="border-b border-stone-200 bg-stone-50/80 p-4">
             <label
               htmlFor="navbar-search-input"
-              className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500"
+              className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-700"
             >
               Search the hub
             </label>
@@ -260,7 +260,7 @@ export default function NavbarSearch({ className }: { className?: string }) {
               className={cn(inputBase, "mt-3")}
               autoComplete="off"
             />
-            <p className="mt-3 text-xs leading-5 text-gray-500">
+            <p className="mt-3 text-xs leading-5 text-gray-700">
               Start typing for instant results. Press Enter to open the full
               search page if you want every match.
             </p>
@@ -270,7 +270,7 @@ export default function NavbarSearch({ className }: { className?: string }) {
             {!normalizedQuery ? (
               <div className="grid gap-5">
                 <div>
-                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-700">
                     Popular searches
                   </div>
                   <div className="mt-3 flex flex-wrap gap-2">
@@ -294,7 +294,7 @@ export default function NavbarSearch({ className }: { className?: string }) {
                 </div>
 
                 <div>
-                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-700">
                     Browse instead
                   </div>
                   <div className="mt-3 grid gap-3 sm:grid-cols-2">
@@ -339,7 +339,7 @@ export default function NavbarSearch({ className }: { className?: string }) {
                     <div className="mt-3 text-sm font-semibold text-gray-900">
                       {item.title}
                     </div>
-                    <p className="mt-1 text-sm leading-6 text-gray-600">
+                    <p className="mt-1 text-sm leading-6 text-gray-700">
                       {item.description}
                     </p>
                   </Link>
@@ -347,7 +347,7 @@ export default function NavbarSearch({ className }: { className?: string }) {
               </div>
             ) : (
               <div className="grid gap-4">
-                <div className="rounded-2xl border border-stone-200 bg-stone-50 px-4 py-4 text-sm leading-6 text-gray-600">
+                <div className="rounded-2xl border border-stone-200 bg-stone-50 px-4 py-4 text-sm leading-6 text-gray-700">
                   <strong className="font-semibold text-gray-900">
                     No exact matches.
                   </strong>

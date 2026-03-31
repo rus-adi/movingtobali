@@ -13,14 +13,14 @@ export const badgeBase =
   // Badges: modern pills with subtle depth + color transitions for interactive badges (links)
   "inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-semibold shadow-sm [transition-property:background-color,border-color,color,box-shadow,transform] duration-200 ease-out";
 
-export const badge = `${badgeBase} border-stone-200 bg-stone-100 text-stone-700`;
-export const badgeAccent = `${badgeBase} border-emerald-200 bg-emerald-50 text-emerald-700`;
+export const badge = `${badgeBase} border-stone-200 bg-stone-100 text-stone-800`;
+export const badgeAccent = `${badgeBase} border-emerald-200 bg-emerald-50 text-emerald-900`;
 // Keep the palette minimal: reuse blue/gray tones for semantic variants.
 export const badgeGood = `${badgeBase} border-amber-200 bg-amber-50 text-amber-800`;
 export const badgeWarn = `${badgeBase} border-stone-200 bg-stone-100 text-stone-700`;
 
 export const pill =
-  "inline-flex items-center justify-center rounded-full border border-stone-200 bg-white px-3 py-1.5 text-sm font-medium text-stone-700 shadow-sm transform-gpu [transition-property:background-color,border-color,color,box-shadow,transform] duration-200 ease-out hover:border-emerald-200 hover:bg-emerald-50 motion-safe:hover:scale-[1.02] active:scale-[0.99]";
+  "inline-flex items-center justify-center rounded-full border border-stone-200 bg-white px-3 py-1.5 text-sm font-medium text-stone-800 shadow-sm transform-gpu [transition-property:background-color,border-color,color,box-shadow,transform] duration-200 ease-out hover:border-emerald-200 hover:bg-emerald-50 hover:text-stone-900 motion-safe:hover:scale-[1.02] active:scale-[0.99]";
 
 export const buttonBase =
   // Buttons: subtle motion + clean transitions. Stack on mobile via w-full.
@@ -30,12 +30,12 @@ export const buttonPrimary =
   `${buttonBase} bg-emerald-700 text-white hover:bg-emerald-800 motion-safe:hover:scale-105 motion-safe:hover:shadow-lg active:scale-[0.98] focus-visible:ring-emerald-100`;
 
 export const buttonSecondary =
-  `${buttonBase} border border-stone-200 bg-white text-gray-900 hover:border-emerald-200 hover:bg-emerald-50 motion-safe:hover:scale-[1.02] motion-safe:hover:shadow-md active:scale-[0.99] focus-visible:ring-stone-100`;
+  `${buttonBase} border border-stone-300 bg-white text-stone-900 hover:border-emerald-300 hover:bg-emerald-50 hover:text-stone-950 motion-safe:hover:scale-[1.02] motion-safe:hover:shadow-md active:scale-[0.99] focus-visible:ring-stone-100`;
 
 export const buttonDisabled = "pointer-events-none opacity-50";
 
 export const inputBase =
-  "w-full rounded-xl border border-stone-200 bg-white px-4 py-3 text-sm text-gray-900 shadow-sm placeholder:text-gray-400 focus:border-emerald-700 focus:outline-none focus:ring-4 focus:ring-emerald-100";
+  "w-full rounded-xl border border-stone-300 bg-white px-4 py-3 text-sm text-stone-900 shadow-sm placeholder:text-gray-500 focus:border-emerald-800 focus:outline-none focus:ring-4 focus:ring-emerald-100";
 
 // Buttons should stack on mobile and sit inline on desktop.
 export const btnRow = "mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center";

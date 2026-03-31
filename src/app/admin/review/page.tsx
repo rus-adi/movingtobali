@@ -195,7 +195,7 @@ export default function AdminReviewPage() {
         <div className="container">
           <div className={badgeWarn}>Internal</div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Content review dashboard</h1>
-          <p className="mt-4 text-base text-gray-600 sm:text-lg">
+          <p className="mt-4 text-base text-gray-700 sm:text-lg">
             This page is <strong>noindex</strong>. It exists to help you ship cleaner content (freshness, FAQs, internal links).
           </p>
         </div>
@@ -206,13 +206,13 @@ export default function AdminReviewPage() {
           {officialIssues.length ? (
             <div className={cardCls}>
               <strong className="text-sm font-semibold text-gray-900">Official links need review</strong>
-              <p className="mt-3 text-sm leading-6 text-gray-600">
+              <p className="mt-3 text-sm leading-6 text-gray-700">
                 These are the “source-of-truth” portals referenced in visa/entry guides. Update <code>lastVerified</code> after checking.
               </p>
               <div className="mt-6 grid gap-3">
                 {officialIssues.slice(0, 12).map((o) => (
                   <div key={o.url} className="flex flex-wrap items-center justify-between gap-3">
-                    <span className="text-sm text-gray-600">{o.title}</span>
+                    <span className="text-sm text-gray-700">{o.title}</span>
                     <span className={badgeWarn}>{o.issue}</span>
                   </div>
                 ))}
@@ -227,7 +227,7 @@ export default function AdminReviewPage() {
             {byKind.map((r) => (
               <div key={r.kind} className={cardCls}>
                 <strong className="text-sm font-semibold text-gray-900 capitalize">{r.kind}</strong>
-                <div className="mt-4 text-sm text-gray-600">
+                <div className="mt-4 text-sm text-gray-700">
                   Total: <strong className="text-gray-900">{r.count}</strong> · Flagged: <strong className="text-gray-900">{r.flagged}</strong>
                 </div>
               </div>
@@ -243,13 +243,13 @@ export default function AdminReviewPage() {
                   .map((it) => (
                     <div key={it.key} className="border-t border-gray-200 pt-6 first:border-t-0 first:pt-0">
                       <div className="flex flex-wrap items-baseline gap-3">
-                        <a href={it.path} className="font-semibold text-gray-900 transition-colors hover:text-blue-600">
+                        <a href={it.path} className="font-semibold text-gray-900 transition-colors hover:text-emerald-800">
                           {it.title}
                         </a>
                         <span className={badge}>{it.kind}</span>
-                        {it.updated ? <span className="text-xs text-gray-500">Updated: {it.updated}</span> : null}
+                        {it.updated ? <span className="text-xs text-gray-600">Updated: {it.updated}</span> : null}
                       </div>
-                      <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-gray-600">
+                      <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-gray-700">
                         {it.issues.map((m, idx) => (
                           <li key={idx}>{m}</li>
                         ))}
@@ -257,13 +257,13 @@ export default function AdminReviewPage() {
                     </div>
                   ))
               ) : (
-                <div className="text-sm text-gray-600">Nothing flagged. (Still do a human read-through before launch.)</div>
+                <div className="text-sm text-gray-700">Nothing flagged. (Still do a human read-through before launch.)</div>
               )}
             </div>
           </div>
 
           <div className={cardCls}>
-            <div className="text-sm text-gray-600">
+            <div className="text-sm text-gray-700">
               Tip: run <code>npm run validate:strict</code> and <code>npm run audit:review</code> before launching.
             </div>
           </div>
